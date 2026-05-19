@@ -1,0 +1,45 @@
+# 02 — scFoundation: foundation model embeddings vs RNA PCA
+
+## Research question
+
+Does replacing RNA PCA features with scFoundation single-cell foundation model
+embeddings (768-dim, pretrained on 50M cells) improve drug-blind per-drug r?
+
+## Background
+
+The representation sweep (01) showed that all ≥500-dim representations
+converge to the same per-drug r. A skeptic can argue these are all simple
+linear transformations of the same RNA-seq data. Large foundation models
+pre-trained on tens of millions of single-cell transcriptomes (scFoundation:
+50M cells, 768-dim embeddings) may capture non-linear functional cell-state
+structure that PCA misses. If the per-drug r ceiling is a representation
+bottleneck rather than a measurement noise or training distribution issue,
+foundation model embeddings should break it.
+
+## Experimental design
+
+- **Model**: Ridge, 10-fold PASO drug-blind CV
+- **Conditions**:
+  - A: RNA PCA(550) + mutation PCA(200) (baseline)
+  - B: scFoundation embeddings (768-dim)
+  - C: RNA PCA(550) + mutation PCA(200) + scFoundation (concat)
+
+## Results
+
+| Condition | Per-drug r | Delta vs A |
+|-----------|:---------:|:----------:|
+{% set sA = results_A_rna_mut_pca.summary[results_A_rna_mut_pca.condition] -%}
+{% set sB = results_B_scfoundation.summary[results_B_scfoundation.condition] -%}
+{% set sC = results_C_concat.summary[results_C_concat.condition] -%}
+| A: RNA + mutation PCA | {{ sA.per_drug_r_mean | fmt }} | — |
+| B: scFoundation (768-dim) | {{ sB.per_drug_r_mean | fmt }} | {{ sB.delta_vs_A | signed if sB.delta_vs_A is not none else "+0.000" }} |
+| C: RNA + mut + scFoundation | {{ sC.per_drug_r_mean | fmt }} | {{ sC.delta_vs_A | signed if sC.delta_vs_A is not none else "+0.000" }} |
+
+## Interpretation
+
+scFoundation embeddings achieve the same per-drug r as standard RNA PCA
+(delta ≈ +0.000). Concatenating foundation embeddings with
+RNA+mutation features provides no additional benefit. The per-drug r ceiling
+is not a cell-representation bottleneck — even a foundation model pretrained
+on 50 million single-cell transcriptomes cannot break it.
+

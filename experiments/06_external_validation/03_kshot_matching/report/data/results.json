@@ -1,0 +1,123 @@
+{
+  "ctrpv2": {
+    "k_curve": [
+      {
+        "k": 0,
+        "per_drug_r": 0.4114567682067606
+      },
+      {
+        "k": 1,
+        "per_drug_r": 0.41604556344108806
+      },
+      {
+        "k": 3,
+        "per_drug_r": 0.31388610707618375
+      },
+      {
+        "k": 5,
+        "per_drug_r": 0.3085353117767942
+      },
+      {
+        "k": 10,
+        "per_drug_r": 0.3254665920412942
+      },
+      {
+        "k": 20,
+        "per_drug_r": 0.3787575245502339
+      },
+      {
+        "k": 50,
+        "per_drug_r": 0.4628019791237903
+      }
+    ],
+    "n_drugs": 545,
+    "n_cells": 812
+  },
+  "beataml": {
+    "k_curve": [
+      {
+        "k": 0,
+        "per_drug_r": 0.4531586750211683
+      },
+      {
+        "k": 1,
+        "per_drug_r": 0.45409055932952697
+      },
+      {
+        "k": 3,
+        "per_drug_r": 0.38509069806071733
+      },
+      {
+        "k": 5,
+        "per_drug_r": 0.3952768335991322
+      },
+      {
+        "k": 10,
+        "per_drug_r": 0.4332639381870112
+      },
+      {
+        "k": 20,
+        "per_drug_r": 0.4653799638940804
+      },
+      {
+        "k": 50,
+        "per_drug_r": 0.5205892584061713
+      }
+    ],
+    "n_drugs": 155,
+    "n_patients": 520,
+    "note": "N_REPEATS=20 random anchor draws per drug per K"
+  },
+  "prism": {
+    "k_curve": [
+      {
+        "k": 0,
+        "per_drug_r": 0.11160049410988704
+      },
+      {
+        "k": 1,
+        "per_drug_r": 0.11152941002589782
+      },
+      {
+        "k": 3,
+        "per_drug_r": 0.02201832872397565
+      },
+      {
+        "k": 5,
+        "per_drug_r": 0.012541385375562939
+      },
+      {
+        "k": 10,
+        "per_drug_r": 0.004447035959676715
+      },
+      {
+        "k": 20,
+        "per_drug_r": 0.0011247519096690228
+      },
+      {
+        "k": 50,
+        "per_drug_r": 0.006418159291493198
+      }
+    ],
+    "n_drugs": 1079,
+    "n_cells": 477,
+    "note": "Same cell lines as GDSC2 omics \u2014 tests drug panel breadth (1415 drugs), not cell OOD transfer"
+  },
+  "gates": [
+    {
+      "dataset": "ctrpv2",
+      "k50_gt_k0": true,
+      "k1_lt_k0": false
+    },
+    {
+      "dataset": "beataml",
+      "k50_gt_k0": true,
+      "k1_lt_k0": false
+    },
+    {
+      "dataset": "prism",
+      "k50_gt_k0": false,
+      "k1_lt_k0": true
+    }
+  ]
+}

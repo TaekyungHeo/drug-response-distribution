@@ -1,0 +1,106 @@
+# 02 — Representation Ablation
+
+## Research question
+
+Does any drug representation class — structural, functional, mechanistic, or pharmacological
+— improve within-drug cell-line ranking (per-drug r) in the drug-blind setting?
+
+## Background
+
+The hypothesis that drug features improve drug response prediction is foundational in the
+field: models like PASO, DeepCDR, and DrugCell all incorporate drug representations
+(fingerprints, graph neural networks, or target profiles) alongside cell features, and their
+improvement over cell-only baselines is cited as evidence that chemical information helps.
+However, those comparisons use global r as the primary metric, which is dominated by
+between-drug potency differences that a model can "predict" without using drug features at all
+(see 01_metric_decomposition).
+
+Per-drug r isolates the within-drug ranking question: for a fixed drug, does the model
+correctly rank cell lines by sensitivity? This metric cannot respond to drug-specific
+constants — a drug feature shifts the predicted mean for a drug but leaves cell rankings
+unchanged, unless the model uses drug-cell interactions. The drug feature null hypothesis is
+therefore testable only under per-drug r: if drug features do not improve within-drug ranking,
+they are not contributing the kind of information that would generalize to new drugs.
+
+This is the headline experiment. All representation types — structural (Morgan FP),
+language-model (ChemBERTa), mechanistic (ChEMBL targets), and pharmacological (LINCS) —
+are evaluated under an identical protocol so that differences in outcome cannot be attributed
+to protocol differences. Degenerate controls (shuffled fingerprints, random vectors) quantify
+the baseline delta from adding extra dimensions to Ridge.
+
+## Experimental design
+
+- **Model**: Ridge regression (alpha=1.0)
+- **Cell features**: RNA PCA(550) + mutation PCA(200)
+- **Splits**: PASO 10-fold drug-blind CV (233 drugs, 687 cell lines)
+- **Primary metric**: per-drug Pearson r (unweighted mean, drugs with >=50 cell lines)
+- **Decision gate**: delta > 0.01 over no_drug baseline (Holm-Bonferroni corrected)
+
+{% set c = metrics.conditions %}
+## Results
+
+### Primary results table
+
+| Condition | Per-drug r | delta vs no_drug | Holm p |
+|-----------|:---:|:---:|:---:|
+| no_drug (baseline) | {{ c.no_drug.mean | fmt }} ± {{ c.no_drug.std | fmt }} | — | — |
+| morgan_fp | {{ c.morgan_fp.mean | fmt }} ± {{ c.morgan_fp.std | fmt }} | {{ c.morgan_fp.delta | signed }} | {{ c.morgan_fp.holm_p | fmt(4) }} |
+| chemberta (PCA-64) | {{ c.chemberta.mean | fmt }} ± {{ c.chemberta.std | fmt }} | {{ c.chemberta.delta | signed }} | {{ c.chemberta.holm_p | fmt(4) }} |
+| chembl_targets | {{ c.chembl_targets.mean | fmt }} ± {{ c.chembl_targets.std | fmt }} | {{ c.chembl_targets.delta | signed }} | {{ c.chembl_targets.holm_p | fmt(4) }} |
+| lincs (PCA-64, {{ c.lincs.n_drugs }} drugs) | {{ c.lincs.mean | fmt }} ± {{ c.lincs.std | fmt }} | {{ c.lincs.delta | signed }} | {{ c.lincs.holm_p | fmt(4) }} |
+| all_concat | {{ c.all_concat.mean | fmt }} ± {{ c.all_concat.std | fmt }} | {{ c.all_concat.delta | signed }} | {{ c.all_concat.holm_p | fmt(4) }} |
+| morgan_fp_shuffled (degenerate) | {{ c.morgan_fp_shuffled.mean | fmt }} ± {{ c.morgan_fp_shuffled.std | fmt }} | {{ c.morgan_fp_shuffled.delta | signed }} | — |
+| random_continuous (degenerate) | {{ c.random_continuous.mean | fmt }} ± {{ c.random_continuous.std | fmt }} | {{ c.random_continuous.delta | signed }} | — |
+
+**Decision gate: delta > 0.01. No representation crosses the gate.**
+
+### Degenerate baseline check
+
+Shuffled Morgan FP and random continuous vectors produce delta = {{ c.morgan_fp_shuffled.delta | signed }}
+and {{ c.random_continuous.delta | signed }} respectively — identical to real Morgan FP
+({{ c.morgan_fp.delta | signed }}). Adding ANY extra features to Ridge produces the same tiny
+positive delta due to the mechanical effect of additional input dimensions. The "real" drug
+feature signal is indistinguishable from noise.
+
+### Alpha sensitivity
+
+{% for alpha, result in metrics.alpha_sensitivity_morgan_fp.items() %}
+| {{ alpha }} | {{ result.mean | fmt }} |
+{% endfor %}
+
+Per-drug r is invariant to alpha across 4 orders of magnitude, ruling out the hypothesis
+that alpha=1.0 suppresses drug feature coefficients.
+
+### Drug feature scaling
+
+{% for scale, result in metrics.drug_scale_sweep.items() %}
+| {{ scale }}x | {{ result.delta | signed }} |
+{% endfor %}
+
+Scaling drug features by 10x has no effect.
+
+### Similarity-stratified delta
+
+| Tanimoto bin | n_drugs | delta |
+|:---:|:---:|:---:|
+| Low ({{ metrics.similarity_stratified_delta.low.sim_range[0] }}-{{ metrics.similarity_stratified_delta.low.sim_range[1] }}) | {{ metrics.similarity_stratified_delta.low.n_drugs }} | {{ metrics.similarity_stratified_delta.low.delta | signed }} |
+| Mid ({{ metrics.similarity_stratified_delta.mid.sim_range[0] }}-{{ metrics.similarity_stratified_delta.mid.sim_range[1] }}) | {{ metrics.similarity_stratified_delta.mid.n_drugs }} | {{ metrics.similarity_stratified_delta.mid.delta | signed }} |
+| High ({{ metrics.similarity_stratified_delta.high.sim_range[0] }}-{{ metrics.similarity_stratified_delta.high.sim_range[1] }}) | {{ metrics.similarity_stratified_delta.high.n_drugs }} | {{ metrics.similarity_stratified_delta.high.delta | signed }} |
+
+Even for the most structurally novel drugs, Morgan FP provides no meaningful benefit.
+
+## Interpretation
+
+1. **No drug representation crosses the decision gate (delta > 0.01).** Structural
+   (Morgan FP), learned (ChemBERTa), mechanistic (ChEMBL targets), and pharmacological
+   (LINCS) representations all fail.
+
+2. **The delta is indistinguishable from noise.** Real Morgan FP delta
+   ({{ c.morgan_fp.delta | signed }}) equals shuffled ({{ c.morgan_fp_shuffled.delta | signed }})
+   and random ({{ c.random_continuous.delta | signed }}). Drug features are not being used
+   for drug-specific prediction.
+
+3. **Power caveat**: MDE ~{{ power_analysis.fold_level.mde_80pct | fmt }} at 80% power
+   (Monte Carlo gate power = {{ power_analysis.monte_carlo.gate_power | fmt }}). The degenerate
+   baseline equivalence provides stronger evidence than the gate alone.
+

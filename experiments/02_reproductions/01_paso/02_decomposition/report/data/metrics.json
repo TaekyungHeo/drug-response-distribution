@@ -1,0 +1,87 @@
+{
+  "n_folds": 10,
+  "paso_reported_r": 0.745,
+  "paso_style_mean": 0.5505,
+  "paso_style_std": 0.1311,
+  "fair_mean": 0.5088,
+  "fair_std": 0.1432,
+  "inflation": 0.0417,
+  "best_fold_test_r": 0.7506,
+  "best_fold_val_r": 0.8072,
+  "fold_details": [
+    {
+      "best_test_r": 0.5128,
+      "best_test_epoch": 41,
+      "best_val_test_r": 0.5128,
+      "fair_per_drug_r": 0.6429,
+      "paso_style_per_drug_r": 0.6429
+    },
+    {
+      "best_test_r": 0.5392,
+      "best_test_epoch": 46,
+      "best_val_test_r": 0.5,
+      "fair_per_drug_r": 0.6278,
+      "paso_style_per_drug_r": 0.6196
+    },
+    {
+      "best_test_r": 0.4543,
+      "best_test_epoch": 75,
+      "best_val_test_r": 0.4228,
+      "fair_per_drug_r": 0.6758,
+      "paso_style_per_drug_r": 0.6644
+    },
+    {
+      "best_test_r": 0.6175,
+      "best_test_epoch": 14,
+      "best_val_test_r": 0.5079,
+      "fair_per_drug_r": 0.6161,
+      "paso_style_per_drug_r": 0.6418
+    },
+    {
+      "best_test_r": 0.4848,
+      "best_test_epoch": 6,
+      "best_val_test_r": 0.4655,
+      "fair_per_drug_r": 0.6391,
+      "paso_style_per_drug_r": 0.6404
+    },
+    {
+      "best_test_r": 0.349,
+      "best_test_epoch": 19,
+      "best_val_test_r": 0.3353,
+      "fair_per_drug_r": 0.6327,
+      "paso_style_per_drug_r": 0.6308
+    },
+    {
+      "best_test_r": 0.6758,
+      "best_test_epoch": 22,
+      "best_val_test_r": 0.6403,
+      "fair_per_drug_r": 0.6065,
+      "paso_style_per_drug_r": 0.6317
+    },
+    {
+      "best_test_r": 0.7506,
+      "best_test_epoch": 13,
+      "best_val_test_r": 0.7235,
+      "fair_per_drug_r": 0.6582,
+      "paso_style_per_drug_r": 0.6858
+    },
+    {
+      "best_test_r": 0.7272,
+      "best_test_epoch": 47,
+      "best_val_test_r": 0.715,
+      "fair_per_drug_r": 0.6669,
+      "paso_style_per_drug_r": 0.6641
+    },
+    {
+      "best_test_r": 0.3932,
+      "best_test_epoch": 81,
+      "best_val_test_r": 0.2646,
+      "fair_per_drug_r": 0.6533,
+      "paso_style_per_drug_r": 0.6416
+    }
+  ],
+  "paso_style_per_drug_mean": 0.6463,
+  "paso_style_per_drug_std": 0.0186,
+  "fair_per_drug_mean": 0.6419,
+  "fair_per_drug_std": 0.0209
+}

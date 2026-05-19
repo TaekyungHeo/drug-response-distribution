@@ -1,0 +1,7 @@
+{
+  "experiment": "01_global_vs_perdrug",
+  "completed_at": "2026-05-19",
+  "n_folds": 5,
+  "device": "cuda (NVIDIA GB10)",
+  "cluster": "spark1/spark2 (Slurm)"
+}

@@ -1,0 +1,952 @@
+{
+  "pancancer_overall": {
+    "mean": 0.6453267305466059,
+    "std": 0.02457873947978517
+  },
+  "by_lineage": {
+    "Breast": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.57919647142228,
+          "n_train_cells": 47,
+          "n_test_cells": 46,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5582673476510774,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6185547496154644,
+          "n_train_cells": 47,
+          "n_test_cells": 46,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5546015059251989,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5763046427830077,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5482652266549822,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5257800569754173,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5883676301741655,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5933802025114642,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5618390309755079,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.5704556864688566,
+      "within_lineage_std": 0.02496595366366626,
+      "n_valid_folds": 10
+    },
+    "CNS": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.5854380991096765,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.638550217661734,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6608064228335225,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6104979693044215,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6316396119077136,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6670632636941803,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6552688885396563,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6566282763036055,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6464084943914337,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6810829292283512,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.6433384172974295,
+      "within_lineage_std": 0.026854720960406364,
+      "n_valid_folds": 10
+    },
+    "Colorectal": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.5081999257482808,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5217541856712642,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.593819050613762,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5247913282525395,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.483960045071263,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5323131198129784,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.49936380311492273,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6529224005064423,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6127065291968197,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6114801975828504,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.5541310585571123,
+      "within_lineage_std": 0.055202420193278506,
+      "n_valid_folds": 10
+    },
+    "Hematologic": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.490221777052533,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5212102613131423,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5674397454995962,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.4626341174633417,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5190768763106569,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.4983844597276465,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5411904964675043,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.549422434567198,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5562456711262531,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.529172924412406,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.5234998763940277,
+      "within_lineage_std": 0.030802242826743438,
+      "n_valid_folds": 10
+    },
+    "Lung": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.559985189708225,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5535010318251711,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6085764417355296,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.586163781993318,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5900712527887838,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6140176773956457,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5893688821760523,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6094174576579597,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6252849754652425,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.6443858952307691,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.5980772585976697,
+      "within_lineage_std": 0.026641299097403245,
+      "n_valid_folds": 10
+    },
+    "Skin": {
+      "within_lineage_folds": [
+        {
+          "per_drug_r": 0.41210620397367187,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.4845499698067616,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.49431142834989633,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.43074114304489397,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5625597555508219,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.4625272905048822,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.4202404344604359,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5657363410208562,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5021565642097415,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        {
+          "per_drug_r": 0.5015865460628115,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      ],
+      "within_lineage_mean": 0.48365156769847734,
+      "within_lineage_std": 0.05111595566436748,
+      "n_valid_folds": 10
+    }
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "pancancer_r": 0.6005864288857922,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.57919647142228,
+          "n_train_cells": 47,
+          "n_test_cells": 46,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.5854380991096765,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.5081999257482808,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.490221777052533,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.559985189708225,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.41210620397367187,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "pancancer_r": 0.6131265617772189,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5582673476510774,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.638550217661734,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.5217541856712642,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.5212102613131423,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.5535010318251711,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.4845499698067616,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "pancancer_r": 0.6512088836018397,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.6185547496154644,
+          "n_train_cells": 47,
+          "n_test_cells": 46,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6608064228335225,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.593819050613762,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.5674397454995962,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.6085764417355296,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 24,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.49431142834989633,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 24,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "pancancer_r": 0.6370569594163964,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5546015059251989,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6104979693044215,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.5247913282525395,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.4626341174633417,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.586163781993318,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.43074114304489397,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "pancancer_r": 0.6608871424436233,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5763046427830077,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6316396119077136,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.483960045071263,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.5190768763106569,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.5900712527887838,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.5625597555508219,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "pancancer_r": 0.6487811505322015,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5482652266549822,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6670632636941803,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.5323131198129784,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.4983844597276465,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.6140176773956457,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.4625272905048822,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 6,
+      "pancancer_r": 0.6244667065912404,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5257800569754173,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6552688885396563,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.49936380311492273,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.5411904964675043,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.5893688821760523,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.4202404344604359,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 7,
+      "pancancer_r": 0.67000245986933,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5883676301741655,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6566282763036055,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.6529224005064423,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.549422434567198,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.6094174576579597,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.5657363410208562,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 8,
+      "pancancer_r": 0.6719124154104688,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5933802025114642,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6464084943914337,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.6127065291968197,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.5562456711262531,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.6252849754652425,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.5021565642097415,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    },
+    {
+      "fold": 9,
+      "pancancer_r": 0.6752385969379483,
+      "by_lineage": {
+        "Breast": {
+          "per_drug_r": 0.5618390309755079,
+          "n_train_cells": 47,
+          "n_test_cells": 47,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "CNS": {
+          "per_drug_r": 0.6810829292283512,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Colorectal": {
+          "per_drug_r": 0.6114801975828504,
+          "n_train_cells": 42,
+          "n_test_cells": 42,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Hematologic": {
+          "per_drug_r": 0.529172924412406,
+          "n_train_cells": 109,
+          "n_test_cells": 109,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Lung": {
+          "per_drug_r": 0.6443858952307691,
+          "n_train_cells": 131,
+          "n_test_cells": 131,
+          "n_drugs": 23,
+          "skipped": false
+        },
+        "Skin": {
+          "per_drug_r": 0.5015865460628115,
+          "n_train_cells": 36,
+          "n_test_cells": 36,
+          "n_drugs": 23,
+          "skipped": false
+        }
+      }
+    }
+  ]
+}

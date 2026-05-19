@@ -1,0 +1,55 @@
+# 02 — MoA-Weighted Ridge Training — Weight Sweep
+
+## Research question
+
+Does upweighting same-MoA training samples approach the gains of strict
+within-MoA training, and what is the optimal weight W?
+
+## Background
+
+Strict within-MoA leave-one-out training (01_within_moa) discards all
+out-of-class drugs — for small MoA classes (3–5 drugs), this severely limits
+the training set. Sample weighting offers a softer alternative: keep all
+training data but give higher weight to same-MoA observations. W=1 is the
+all-drug baseline; increasing W progressively biases the model toward
+within-MoA patterns. If performance plateaus well below the strict within-MoA
+ceiling, strict exclusion is necessary. If soft weighting matches it, the
+practical deployment method is simpler.
+
+## Experimental design
+
+| Component | Description |
+|-----------|-------------|
+| Data | GDSC2, PASO 10-fold drug-blind CV |
+| Model | Ridge(alpha=1.0), RNA PCA(550) + mutation PCA(200), cell features only |
+| Weights | Same-MoA sample weight W in {{ results.weights }} |
+| Metric | Per-drug Pearson r, macro-averaged within each MoA class |
+
+## Results
+
+### Overall by weight
+
+| W | mean per-drug r | n_drugs |
+|---|-----------------|---------|
+{% for o in results.overall %}
+| {{ o.weight }} | {{ o.mean_per_drug_r | fmt }} | {{ o.n_drugs }} |
+{% endfor %}
+
+### Per-MoA breakdown
+
+{% set moas = results.per_moa | groupby('moa') %}
+| MoA | {% for w in results.weights %}W={{ w }} | {% endfor %}n_drugs |
+|-----|{% for w in results.weights %}--------|{% endfor %}---------|
+{% for moa_label, records in moas %}
+{% set by_w = {} %}{% for r in records %}{% if by_w.update({r.weight: r}) %}{% endif %}{% endfor %}
+| {{ moa_label }} | {% for w in results.weights %}{{ by_w[w].mean_r | fmt if w in by_w else "—" }} | {% endfor %}{{ records[0].n_drugs }} |
+{% endfor %}
+
+## Interpretation
+
+Hard classes (ERK MAPK, EGFR) should show monotonic improvement with W as the
+model is progressively biased toward within-MoA patterns. Easy classes (Mitosis,
+Cell cycle) should be flat or slightly declining — over-weighting same-MoA
+samples for already-easy classes does not help and reduces data efficiency.
+The optimal W balances these two effects across all classes.
+

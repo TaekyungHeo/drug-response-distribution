@@ -1,0 +1,362 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Costello et~al.(2014)Costello, Heiser, Georgii, G{\"o}nen, Menden,
+  Wang, Bansal, Ammad-ud din, Hintsanen, Khan, Mpindi, Kallioniemi, Honkela,
+  Aittokallio, Wennerberg, Collins, Gallahan, Singer, Saez-Rodriguez, Kaski,
+  Gray, and Stolovitzky]{costello2014community}
+James~C. Costello, Laura~M. Heiser, Elisabeth Georgii, Mehmet G{\"o}nen,
+  Michael~P. Menden, Nicholas~J. Wang, Mukesh Bansal, Muhammad Ammad-ud din,
+  Petteri Hintsanen, Suleiman~A. Khan, John-Patrick Mpindi, Olli Kallioniemi,
+  Antti Honkela, Tero Aittokallio, Krister Wennerberg, James~J. Collins, Dan
+  Gallahan, Dinah Singer, Julio Saez-Rodriguez, Samuel Kaski, Joe~W. Gray, and
+  Gustavo Stolovitzky.
+\newblock A community effort to assess and improve drug sensitivity prediction
+  algorithms.
+\newblock \emph{Nat. Biotechnol.}, 32:\penalty0 1202--1212, 2014.
+\newblock \doi{10.1038/nbt.2877}.
+
+\bibitem[Adam et~al.(2020)Adam, Ramp{\'a}{\v{s}}ek, Safikhani, Smirnov,
+  Haibe-Kains, and Goldenberg]{adam2020machine}
+George Adam, Ladislav Ramp{\'a}{\v{s}}ek, Zhaleh Safikhani, Petr Smirnov,
+  Benjamin Haibe-Kains, and Anna Goldenberg.
+\newblock Machine learning approaches to drug response prediction: challenges
+  and recent progress.
+\newblock \emph{npj Precis. Oncol.}, 4:\penalty0 19, 2020.
+\newblock \doi{10.1038/s41698-020-0122-1}.
+
+\bibitem[Zhu et~al.(2022)Zhu, Ouyang, Chen, Feng, Chen, Cao, and
+  Wu]{zhu2022tgsa}
+Yiheng Zhu, Zhenqiu Ouyang, Wenbo Chen, Ruiwei Feng, Danny~Z. Chen, Ji~Cao, and
+  Jian Wu.
+\newblock {TGSA}: protein--protein association-based twin graph neural networks
+  for drug response prediction with similarity augmentation.
+\newblock \emph{Bioinformatics}, 38:\penalty0 461--468, 2022.
+\newblock \doi{10.1093/bioinformatics/btab650}.
+
+\bibitem[Han et~al.(2026)Han, Kim, Jeong, Lee, Yun, and Lim]{han2026dispa}
+Yewon Han, Sunghyun Kim, Eunyi Jeong, Sungkyung Lee, Seokwoo Yun, and Sangsoo
+  Lim.
+\newblock {DiSPA}: differential substructure-pathway attention for drug
+  response prediction.
+\newblock \emph{Preprint at arXiv}, 2026.
+\newblock arXiv:2601.14346.
+
+\bibitem[Codic{\`e} et~al.(2025)Codic{\`e}, Pancotti, Rollo, Moreau, Fariselli,
+  and Raimondi]{specgame2025}
+Francesco Codic{\`e}, Corrado Pancotti, Cesare Rollo, Yves Moreau, Piero
+  Fariselli, and Daniele Raimondi.
+\newblock The specification game: rethinking the evaluation of drug response
+  prediction for precision oncology.
+\newblock \emph{J. Cheminform.}, 17:\penalty0 33, 2025.
+\newblock \doi{10.1186/s13321-025-00972-y}.
+
+\bibitem[Branson et~al.(2025)Branson, Cutillas, and
+  Bessant]{branson2025understanding}
+Nikhil Branson, Pedro~R. Cutillas, and Conrad Bessant.
+\newblock Understanding the sources of performance in deep drug response models
+  reveals insights and improvements.
+\newblock \emph{Bioinformatics}, 41:\penalty0 i142--i149, 2025.
+\newblock \doi{10.1093/bioinformatics/btaf255}.
+
+\bibitem[Rogers and Hahn(2010)]{rogers2010extended}
+David Rogers and Mathew Hahn.
+\newblock Extended-connectivity fingerprints.
+\newblock \emph{J. Chem. Inf. Model.}, 50:\penalty0 742--754, 2010.
+\newblock \doi{10.1021/ci100050t}.
+
+\bibitem[Chithrananda et~al.(2020)Chithrananda, Grand, and
+  Ramsundar]{chithrananda2020chemberta}
+Seyone Chithrananda, Gabriel Grand, and Bharath Ramsundar.
+\newblock {ChemBERTa}: large-scale self-supervised pretraining for molecular
+  property prediction.
+\newblock \emph{Preprint at arXiv}, 2020.
+\newblock arXiv:2010.09885.
+
+\bibitem[Subramanian et~al.(2017)Subramanian, Narayan, Corsello, Peck, Natoli,
+  Lu, Gould, Davis, Tubelli, Asiedu, Lahr, Hirschman, Liu, Donahue, Julian,
+  Khan, Wadden, Smith, Lam, Liberzon, Toder, Bagul, Orzechowski, Enache,
+  Piccioni, Johnson, Lyons, Berger, Shamji, Brooks, Vrcic, Flynn, Rosains,
+  Takeda, Hu, Davison, Lamb, Ardlie, Hogstrom, Greenside, Gray, Clemons,
+  Silver, Wu, Zhao, Read-Button, Wu, Haggarty, Ronco, Boehm, Schreiber, Doench,
+  Bittker, Root, Wong, and Golub]{subramanian2017next}
+Aravind Subramanian, Rajiv Narayan, Steven~M. Corsello, David~D. Peck, Ted~E.
+  Natoli, Xiaodong Lu, Joshua Gould, John~F. Davis, Andrew~A. Tubelli, Jacob~K.
+  Asiedu, David~L. Lahr, Jodi~E. Hirschman, Zihan Liu, Melanie Donahue, Bina
+  Julian, Mariya Khan, David Wadden, Ian~C. Smith, Daniel Lam, Arthur Liberzon,
+  Courtney Toder, Mukta Bagul, Marek Orzechowski, Oana~M. Enache, Federica
+  Piccioni, Sarah~A. Johnson, Nicholas~J. Lyons, Alice~H. Berger, Alykhan~F.
+  Shamji, Angela~N. Brooks, Anita Vrcic, Corey Flynn, Jacqueline Rosains,
+  David~Y. Takeda, Roger Hu, Desiree Davison, Justin Lamb, Kristin Ardlie,
+  Larson Hogstrom, Peyton Greenside, Nathanael~S. Gray, Paul~A. Clemons, Serena
+  Silver, Xiaoyun Wu, Wen-Ning Zhao, Willis Read-Button, Xiaohua Wu, Stephen~J.
+  Haggarty, Lucienne~V. Ronco, Jesse~S. Boehm, Stuart~L. Schreiber, John~G.
+  Doench, Joshua~A. Bittker, David~E. Root, Bang Wong, and Todd~R. Golub.
+\newblock A next generation connectivity map: {L1000} platform and the first
+  1,000,000 profiles.
+\newblock \emph{Cell}, 171:\penalty0 1437--1452.e17, 2017.
+\newblock \doi{10.1016/j.cell.2017.10.049}.
+
+\bibitem[Herbert et~al.(2026)Herbert, Chia, Jensen, and
+  Walther-Antonio]{herbert2026monotherapy}
+William~G. Herbert, Nicholas Chia, Paul~A. Jensen, and Marina R.~S.
+  Walther-Antonio.
+\newblock Monotherapy cancer drug-blind response prediction is limited to
+  intraclass generalization.
+\newblock \emph{PLoS Comput. Biol.}, 22:\penalty0 e1013232, 2026.
+\newblock \doi{10.1371/journal.pcbi.1013232}.
+
+\bibitem[Bernett et~al.(2025)Bernett, Iversen, Picciani, Wilhelm, Baum, and
+  List]{bernett2025dreval}
+Judith Bernett, Pascal Iversen, Mario Picciani, Mathias Wilhelm, Katharina
+  Baum, and Markus List.
+\newblock From hype to health check: critical evaluation of drug response
+  prediction models with {DrEval}.
+\newblock \emph{Preprint at bioRxiv}, 2025.
+\newblock \doi{10.1101/2025.05.26.655288}.
+
+\bibitem[Carli et~al.(2025)Carli, Di~Chiaro, Morelli, Arora, Bisceglia,
+  De~Oliveira~Rosa, Cortesi, Franceschi, Lessi, Di~Stefano, Santonocito,
+  Pasqualetti, Aretini, Miglionico, Diaferia, Giannotti, Li{\`o},
+  Duran-Frigola, Mazzanti, Natoli, and Raimondi]{carli2025cellhit}
+Francesco Carli, Pierluigi Di~Chiaro, Mariangela Morelli, Chakit Arora, Luisa
+  Bisceglia, Natalia De~Oliveira~Rosa, Alice Cortesi, Sara Franceschi,
+  Francesca Lessi, Anna~Luisa Di~Stefano, Orazio~Santo Santonocito, Francesco
+  Pasqualetti, Paolo Aretini, Pasquale Miglionico, Giuseppe~R. Diaferia, Fosca
+  Giannotti, Pietro Li{\`o}, Miquel Duran-Frigola, Chiara~Maria Mazzanti,
+  Gioacchino Natoli, and Francesco Raimondi.
+\newblock Learning and actioning general principles of cancer cell drug
+  sensitivity.
+\newblock \emph{Nat. Commun.}, 16:\penalty0 1654, 2025.
+\newblock \doi{10.1038/s41467-025-56827-5}.
+
+\bibitem[Asiaee et~al.(2026)Asiaee, Strauch, Azinfar, Pal, Pua, Long, and
+  Coombes]{asiaee2026widespread}
+Amir Asiaee, Jared Strauch, Leila Azinfar, Samhita Pal, Heather~H. Pua,
+  James~P. Long, and Kevin~R. Coombes.
+\newblock Widespread data leakage inflates accuracy and corrupts biomarker
+  discovery in cancer drug response prediction.
+\newblock \emph{Preprint at bioRxiv}, 2026.
+\newblock \doi{10.64898/2026.02.05.704016}.
+
+\bibitem[Wu et~al.(2025)Wu, Chen, and Qin]{wu2025paso}
+Yang Wu, Ming Chen, and Yufang Qin.
+\newblock Anticancer drug response prediction integrating multi-omics
+  pathway-based difference features and multiple deep learning techniques.
+\newblock \emph{PLoS Comput. Biol.}, 21:\penalty0 e1012905, 2025.
+\newblock \doi{10.1371/journal.pcbi.1012905}.
+
+\bibitem[Liu et~al.(2020)Liu, Hu, Jiang, and Zhou]{liu2020deepcdr}
+Qiao Liu, Zhiqiang Hu, Rui Jiang, and Mu~Zhou.
+\newblock {DeepCDR}: a hybrid graph convolutional network for predicting cancer
+  drug response.
+\newblock \emph{Bioinformatics}, 36:\penalty0 i911--i918, 2020.
+\newblock \doi{10.1093/bioinformatics/btaa822}.
+
+\bibitem[Kuenzi et~al.(2020)Kuenzi, Park, Fong, Sanchez, Lee, Kreisberg, Ma,
+  and Ideker]{kuenzi2020predicting}
+Brent~M. Kuenzi, Jisoo Park, Samson~H. Fong, Kyle~S. Sanchez, John Lee,
+  Jason~F. Kreisberg, Jianzhu Ma, and Trey Ideker.
+\newblock Predicting drug response and synergy using a deep learning model of
+  human cancer cells.
+\newblock \emph{Cancer Cell}, 38:\penalty0 672--684.e6, 2020.
+\newblock \doi{10.1016/j.ccell.2020.09.014}.
+
+\bibitem[Lynch et~al.(2004)Lynch, Bell, Sordella, Gurubhagavatula, Okimoto,
+  Brannigan, Harris, Haserlat, Supko, Haluska, Louis, Christiani, Settleman,
+  and Haber]{lynch2004activating}
+Thomas~J. Lynch, Daphne~W. Bell, Raffaella Sordella, Sarada Gurubhagavatula,
+  Ross~A. Okimoto, Brian~W. Brannigan, Patricia~L. Harris, Sara~M. Haserlat,
+  Jeffrey~G. Supko, Frank~G. Haluska, David~N. Louis, David~C. Christiani, Jeff
+  Settleman, and Daniel~A. Haber.
+\newblock Activating mutations in the epidermal growth factor receptor
+  underlying responsiveness of non-small-cell lung cancer to gefitinib.
+\newblock \emph{N. Engl. J. Med.}, 350:\penalty0 2129--2139, 2004.
+\newblock \doi{10.1056/nejmoa040938}.
+
+\bibitem[Davies et~al.(2002)Davies, Bignell, Cox, Stephens, Edkins, Clegg,
+  Teague, Woffendin, Garnett, Bottomley, Davis, Dicks, Ewing, Floyd, Gray,
+  Hall, Hawes, Hughes, Kosmidou, Menzies, Mould, Parker, Stevens, Watt, Hooper,
+  Wilson, Jayatilake, Gusterson, Cooper, Shipley, Hargrave, Pritchard-Jones,
+  Maitland, Chenevix-Trench, Riggins, Bigner, Palmieri, Cossu, Flanagan,
+  Nicholson, Ho, Leung, Yuen, Weber, Seigler, Darrow, Paterson, Marais,
+  Marshall, Wooster, Stratton, and Futreal]{davies2002mutations}
+Helen Davies, Graham~R. Bignell, Charles Cox, Philip Stephens, Sarah Edkins,
+  Sheila Clegg, Jon Teague, Hayley Woffendin, Mathew~J. Garnett, William
+  Bottomley, Neil Davis, Ed~Dicks, Rebecca Ewing, Yvonne Floyd, Kristian Gray,
+  Sarah Hall, Rachel Hawes, Jaime Hughes, Vivian Kosmidou, Andrew Menzies,
+  Catherine Mould, Adrian Parker, Claire Stevens, Stephen Watt, Steven Hooper,
+  Rebecca Wilson, Hiran Jayatilake, Barry~A. Gusterson, Colin Cooper, Janet
+  Shipley, Darren Hargrave, Katherine Pritchard-Jones, Norman Maitland, Georgia
+  Chenevix-Trench, Gregory~J. Riggins, Darell~D. Bigner, Giuseppe Palmieri,
+  Antonio Cossu, Adrienne Flanagan, Andrew Nicholson, Judy W.~C. Ho, Suet~Y.
+  Leung, Siu~T. Yuen, Barbara~L. Weber, Hilliard~F. Seigler, Timothy~L. Darrow,
+  Hugh Paterson, Richard Marais, Christopher~J. Marshall, Richard Wooster,
+  Michael~R. Stratton, and P.~Andrew Futreal.
+\newblock Mutations of the {BRAF} gene in human cancer.
+\newblock \emph{Nature}, 417:\penalty0 949--954, 2002.
+\newblock \doi{10.1038/nature00766}.
+
+\bibitem[Bottomly et~al.(2022)Bottomly, Long, Schultz, Kurtz, Tognon, Johnson,
+  Abel, Agarwal, Avaylon, Benton, Blucher, Borate, Braun, Brown, Bryant, Burke,
+  Carlos, Chang, Cho, Christy, Coblentz, Cohen, d'Almeida, Cook, Danilov, Dao,
+  Degnin, Dibb, Eide, English, Hagler, Harrelson, Henson, Ho, Joshi, Junio,
+  Kaempf, Kosaka, Laderas, Lawhead, Lee, Leonard, Lin, Lind, Liu, Lo, Loriaux,
+  Luty, Maxson, Macey, Martinez, Minnier, Monteblanco, Mori, Morrow, Nelson,
+  Ramsdill, Rofelty, Rogers, Romine, Ryabinin, Saultz, Sampson, Savage, Schuff,
+  Searles, Smith, Spurgeon, Sweeney, Swords, Thapa, Thiel-Klare, Traer, Wagner,
+  Wilmot, Wolf, Wu, Yates, Zhang, Cogle, Collins, Deininger, Hourigan, Jordan,
+  Lin, Martinez, Pallapati, Pollyea, Pomicter, Watts, Weir, Druker, McWeeney,
+  and Tyner]{bottomly2022integrative}
+Daniel Bottomly, Nicola Long, Anna~Reister Schultz, Stephen~E. Kurtz,
+  Cristina~E. Tognon, Kara Johnson, Melissa Abel, Anupriya Agarwal, Sammantha
+  Avaylon, Erik Benton, Aurora Blucher, Uma Borate, Theodore~P. Braun, Jordana
+  Brown, Jade Bryant, Russell Burke, Amy Carlos, Bill~H. Chang, Hyun~Jun Cho,
+  Stephen Christy, Cody Coblentz, Aaron~M. Cohen, Amanda d'Almeida, Rachel
+  Cook, Alexey Danilov, Kim-Hien~T. Dao, Michie Degnin, James Dibb,
+  Christopher~A. Eide, Isabel English, Stuart Hagler, Heath Harrelson, Rachel
+  Henson, Hibery Ho, Sunil~K. Joshi, Brian Junio, Andy Kaempf, Yoko Kosaka, Ted
+  Laderas, Matt Lawhead, Hyunjung Lee, Jessica~T. Leonard, Chenwei Lin, Evan~F.
+  Lind, Selina~Qiuying Liu, Pierrette Lo, Marc~M. Loriaux, Samuel Luty,
+  Julia~E. Maxson, Tara Macey, Jacqueline Martinez, Jessica Minnier, Andrea
+  Monteblanco, Motomi Mori, Quinlan Morrow, Dylan Nelson, Justin Ramsdill,
+  Angela Rofelty, Alexandra Rogers, Kyle~A. Romine, Peter Ryabinin, Jennifer~N.
+  Saultz, David~A. Sampson, Samantha~L. Savage, Robert Schuff, Robert Searles,
+  Rebecca~L. Smith, Stephen~E. Spurgeon, Tyler Sweeney, Ronan~T. Swords, Aashis
+  Thapa, Karina Thiel-Klare, Elie Traer, Jake Wagner, Beth Wilmot, Joelle Wolf,
+  Guanming Wu, Amy Yates, Haijiao Zhang, Christopher~R. Cogle, Robert~H.
+  Collins, Michael~W. Deininger, Christopher~S. Hourigan, Craig~T. Jordan,
+  Tara~L. Lin, Micaela~E. Martinez, Rachel~R. Pallapati, Daniel~A. Pollyea,
+  Anthony~D. Pomicter, Justin~M. Watts, Scott~J. Weir, Brian~J. Druker,
+  Shannon~K. McWeeney, and Jeffrey~W. Tyner.
+\newblock Integrative analysis of drug response and clinical outcome in acute
+  myeloid leukemia.
+\newblock \emph{Cancer Cell}, 40:\penalty0 850--864.e9, 2022.
+\newblock \doi{10.1016/j.ccell.2022.07.002}.
+
+\bibitem[Iorio et~al.(2016)Iorio, Knijnenburg, Vis, Bignell, Menden, Schubert,
+  Aben, Gon{\c{c}}alves, Barthorpe, Lightfoot, Cokelaer, Greninger, van Dyk,
+  Chang, de~Silva, Heyn, Deng, Egan, Liu, Mironenko, Mitropoulos, Richardson,
+  Wang, Zhang, Moran, Sayols, Soleimani, Tamborero, Lopez-Bigas,
+  Ross-Macdonald, Esteller, Gray, Haber, Stratton, Benes, Wessels,
+  Saez-Rodriguez, McDermott, and Garnett]{iorio2016landscape}
+Francesco Iorio, Theo~A. Knijnenburg, Daniel~J. Vis, Graham~R. Bignell,
+  Michael~P. Menden, Michael Schubert, Nanne Aben, Emanuel Gon{\c{c}}alves, Syd
+  Barthorpe, Howard Lightfoot, Thomas Cokelaer, Patricia Greninger, Ewald van
+  Dyk, Han Chang, Heshani de~Silva, Holger Heyn, Xianming Deng, Regina~K. Egan,
+  Qingsong Liu, Tatiana Mironenko, Xeni Mitropoulos, Laura Richardson, Jinhua
+  Wang, Tinghu Zhang, Sebastian Moran, Sergi Sayols, Maryam Soleimani, David
+  Tamborero, Nuria Lopez-Bigas, Petra Ross-Macdonald, Manel Esteller,
+  Nathanael~S. Gray, Daniel~A. Haber, Michael~R. Stratton, Cyril~H. Benes,
+  Lodewyk F.~A. Wessels, Julio Saez-Rodriguez, Ultan McDermott, and Mathew~J.
+  Garnett.
+\newblock A landscape of pharmacogenomic interactions in cancer.
+\newblock \emph{Cell}, 166:\penalty0 740--754, 2016.
+\newblock \doi{10.1016/j.cell.2016.06.017}.
+
+\bibitem[Ghandi et~al.(2019)Ghandi, Huang, Jan{\'e}-Valbuena, Kryukov, Lo,
+  McDonald~III, Barretina, Gelfand, Bielski, Li, Hu, Andreev-Drakhlin, Kim,
+  Hess, Haas, Aguet, Weir, Rothberg, Paolella, Lawrence, Akbani, Lu, Tiv,
+  Gokhale, de~Weck, Mansour, Oh, Shih, Hadi, Rosen, Bistline, Venkatesan,
+  Reddy, Sonkin, Liu, Lehar, Korn, Porter, Jones, Golji, Caponigro, Taylor,
+  Dunning, Creech, Warren, McFarland, Zamanighomi, Kauffmann, Stransky,
+  Imielinski, Maruvka, Cherniack, Tsherniak, Vazquez, Jaffe, Lane, Weinstock,
+  Johannessen, Morrissey, Stegmeier, Schlegel, Hahn, Getz, Mills, Boehm, Golub,
+  Garraway, and Sellers]{ghandi2019next}
+Mahmoud Ghandi, Franklin~W. Huang, Judit Jan{\'e}-Valbuena, Gregory~V. Kryukov,
+  Christopher~C. Lo, E.~Robert McDonald~III, Jordi Barretina, Ellen~T. Gelfand,
+  Craig~M. Bielski, Haoxin Li, Kevin Hu, Alexander~Y. Andreev-Drakhlin, Jaegil
+  Kim, Julian~M. Hess, Brian~J. Haas, Fran{\c{c}}ois Aguet, Barbara~A. Weir,
+  Michael~V. Rothberg, Brenton~R. Paolella, Michael~S. Lawrence, Rehan Akbani,
+  Yiling Lu, Hong~L. Tiv, Prafulla~C. Gokhale, Antoine de~Weck, Ali~Amin
+  Mansour, Coyin Oh, Juliann Shih, Kevin Hadi, Yanay Rosen, Jonathan Bistline,
+  Kavitha Venkatesan, Anupama Reddy, Dmitriy Sonkin, Manway Liu, Joseph Lehar,
+  Joshua~M. Korn, Dale~A. Porter, Michael~D. Jones, Javad Golji, Giordano
+  Caponigro, Jordan~E. Taylor, Caitlin~M. Dunning, Amanda~L. Creech, Allison~C.
+  Warren, James~M. McFarland, Mahdi Zamanighomi, Audrey Kauffmann, Nicolas
+  Stransky, Marcin Imielinski, Yosef~E. Maruvka, Andrew~D. Cherniack, Aviad
+  Tsherniak, Francisca Vazquez, Jacob~D. Jaffe, Andrew~A. Lane, David~M.
+  Weinstock, Cory~M. Johannessen, Michael~P. Morrissey, Frank Stegmeier, Robert
+  Schlegel, William~C. Hahn, Gad Getz, Gordon~B. Mills, Jesse~S. Boehm, Todd~R.
+  Golub, Levi~A. Garraway, and William~R. Sellers.
+\newblock Next-generation characterization of the {Cancer Cell Line
+  Encyclopedia}.
+\newblock \emph{Nature}, 569:\penalty0 503--508, 2019.
+\newblock \doi{10.1038/s41586-019-1186-3}.
+
+\bibitem[Rouillard et~al.(2016)Rouillard, Gundersen, Fernandez, Wang, Monteiro,
+  McDermott, and Ma'ayan]{rouillard2016harmonizome}
+Andrew~D. Rouillard, Gregory~W. Gundersen, Nicolas~F. Fernandez, Zichen Wang,
+  Caroline~D. Monteiro, Michael~G. McDermott, and Avi Ma'ayan.
+\newblock The harmonizome: a collection of processed datasets gathered to serve
+  and mine knowledge about genes and proteins.
+\newblock \emph{Database}, 2016:\penalty0 baw100, 2016.
+\newblock \doi{10.1093/database/baw100}.
+
+\bibitem[Seashore-Ludlow et~al.(2015)Seashore-Ludlow, Rees, Cheah, Cokol,
+  Price, Coletti, Jones, Bodycombe, Soule, Gould, Alexander, Li, Montgomery,
+  Wawer, Kuru, Kotz, Hon, Munoz, Liefeld, Dan{\v{c}}{\'{i}}k, Bittker, Palmer,
+  Bradner, Shamji, Clemons, and Schreiber]{seashoreludlow2015}
+Brinton Seashore-Ludlow, Matthew~G. Rees, Jaime~H. Cheah, Murat Cokol,
+  Edmund~V. Price, Matthew~E. Coletti, Victor Jones, Nicole~E. Bodycombe,
+  Christian~K. Soule, Joshua Gould, Benjamin Alexander, Ava Li, Philip
+  Montgomery, Mathias~J. Wawer, Nurdan Kuru, Joanne~D. Kotz, C.~Suk-Yee Hon,
+  Benito Munoz, Ted Liefeld, Vlado Dan{\v{c}}{\'{i}}k, Joshua~A. Bittker,
+  Michelle Palmer, James~E. Bradner, Alykhan~F. Shamji, Paul~A. Clemons, and
+  Stuart~L. Schreiber.
+\newblock Harnessing connectivity in a large-scale small-molecule sensitivity
+  dataset.
+\newblock \emph{Cancer Discov.}, 5:\penalty0 1210--1223, 2015.
+\newblock \doi{10.1158/2159-8290.CD-15-0235}.
+
+\bibitem[Corsello et~al.(2020)Corsello, Nagari, Spangler, Rossen, Kocak, Bryan,
+  Humeidi, Peck, Wu, Tang, Wang, Bender, Lemire, Narayan, Montgomery,
+  Ben-David, Garvie, Chen, Rees, Lyons, McFarland, Wong, Wang, Dumont, O'Hearn,
+  Stefan, Doench, Harrington, Greulich, Meyerson, Vazquez, Subramanian, Roth,
+  Bittker, Boehm, Mader, Tsherniak, and Golub]{corsello2020prism}
+Steven~M. Corsello, Rohith~T. Nagari, Ryan~D. Spangler, Jordan Rossen, Mustafa
+  Kocak, Jordan~G. Bryan, Ranad Humeidi, David Peck, Xiaoyun Wu, Andrew~A.
+  Tang, Vickie~M. Wang, Samantha~A. Bender, Evan Lemire, Rajiv Narayan, Philip
+  Montgomery, Uri Ben-David, Colin~W. Garvie, Yejia Chen, Matthew~G. Rees,
+  Nicholas~J. Lyons, James~M. McFarland, Bang~T. Wong, Li~Wang, Nancy Dumont,
+  Patrick~J. O'Hearn, Eric Stefan, John~G. Doench, Caitlin~N. Harrington, Heidi
+  Greulich, Matthew Meyerson, Francisca Vazquez, Aravind Subramanian,
+  Jennifer~A. Roth, Joshua~A. Bittker, Jesse~S. Boehm, Christopher~C. Mader,
+  Aviad Tsherniak, and Todd~R. Golub.
+\newblock Discovering the anticancer potential of non-oncology drugs by
+  systematic viability profiling.
+\newblock \emph{Nat. Cancer}, 1:\penalty0 235--248, 2020.
+\newblock \doi{10.1038/s43018-019-0018-6}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Adv. Neural Inf. Process. Syst.}, volume~30, 2017.
+
+\bibitem[Suphavilai et~al.(2018)Suphavilai, Bertrand, and
+  Nagarajan]{suphavilai2018predicting}
+Chayaporn Suphavilai, Denis Bertrand, and Niranjan Nagarajan.
+\newblock Predicting cancer drug response using a recommender system.
+\newblock \emph{Bioinformatics}, 34:\penalty0 3907--3914, 2018.
+\newblock \doi{10.1093/bioinformatics/bty452}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Chen, Guan, Liu, and Li]{zhang2018hybrid}
+Lin Zhang, Xing Chen, Na-Na Guan, Hui Liu, and Jian-Qiang Li.
+\newblock A hybrid interpolation weighted collaborative filtering method for
+  anti-cancer drug response prediction.
+\newblock \emph{Front. Pharmacol.}, 9:\penalty0 1017, 2018.
+\newblock \doi{10.3389/fphar.2018.01017}.
+
+\bibitem[Bemis and Murcko(1996)]{bemis1996properties}
+Guy~W. Bemis and Mark~A. Murcko.
+\newblock The properties of known drugs. 1. {M}olecular frameworks.
+\newblock \emph{J. Med. Chem.}, 39:\penalty0 2887--2893, 1996.
+\newblock \doi{10.1021/jm9602928}.
+
+\end{thebibliography}

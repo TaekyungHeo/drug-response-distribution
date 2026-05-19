@@ -1,0 +1,29 @@
+{
+  "fold": 3,
+  "results": {
+    "morgan_fp": [
+      {
+        "fold": 3,
+        "condition": "morgan_fp",
+        "best_epoch": 25,
+        "best_val_r": 0.6660360948899858,
+        "test_per_drug_r": 0.630211453031858,
+        "n_train": 113111,
+        "n_val": 13762,
+        "n_test": 14131
+      }
+    ],
+    "no_drug": [
+      {
+        "fold": 3,
+        "condition": "no_drug",
+        "best_epoch": 140,
+        "best_val_r": 0.6396732750872325,
+        "test_per_drug_r": 0.6371012369130701,
+        "n_train": 113111,
+        "n_val": 13762,
+        "n_test": 14131
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+From github.com:TaekyungHeo/multi-onco
+   fa0bd83..6d57a54  main       -> origin/main
+Uninstalled 1 package in 0.49ms
+Installed 1 package in 1ms
+2026-05-08 03:31:04,711 INFO SMOKE MODE: focus MoAs only (EGFR inhibitor, MEK inhibitor)
+2026-05-08 03:31:04,711 INFO === CTRPv2 ===
+2026-05-08 03:31:06,730 INFO CTRPv2: 545 drugs, 838 cells, 364849 pairs
+2026-05-08 03:31:06,785 INFO CTRPv2 after filter: 545 drugs, 812 cells
+2026-05-08 03:31:06,794 INFO CTRPv2: 545 drugs, 812 cells
+Traceback (most recent call last):
+  File "/home/spark/multi-onco/experiments/06_external_validation/02_moa_training/jobs/run.py", line 288, in <module>
+    main()
+  File "/home/spark/multi-onco/experiments/06_external_validation/02_moa_training/jobs/run.py", line 262, in main
+    datasets[ds] = runners[ds](smoke=args.smoke)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/experiments/06_external_validation/02_moa_training/jobs/run.py", line 188, in run_ctrpv2
+    return analyze_dataset(X_cell, y, drug_names, all_drugs, "CTRPv2", smoke=smoke)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/experiments/06_external_validation/02_moa_training/jobs/run.py", line 114, in analyze_dataset
+    drug_moa = build_drug_moa_map(all_drugs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/src/data/repurposing_hub.py", line 58, in build_drug_moa_map
+    hub = load_repurposing_hub(path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/src/data/repurposing_hub.py", line 31, in load_repurposing_hub
+    df = pd.read_csv(path, sep="\t", comment="!")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/spark/multi-onco/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/spark/multi-onco/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/processed/repurposing_hub_moa.tsv'

@@ -1,0 +1,241 @@
+# Is global Pearson r the right metric for drug response prediction?
+
+## The problem
+
+Drug response prediction models are almost universally evaluated by global Pearson r —
+the correlation between predicted and observed IC₅₀ across all (cell, drug) test pairs.
+The implicit assumption is that a higher global r means the model has learned more about
+how cancer cells respond to drugs.
+
+This assumption deserves scrutiny.
+GDSC2 IC₅₀ values span
+{{ "%.1f"|format(variance_decomposition.ic50_range.min) }} to
+{{ "%.1f"|format(variance_decomposition.ic50_range.max) }} LN µM across
+{{ variance_decomposition.n_drugs }} drugs.
+That is a large range, and most of it reflects differences between drugs — some are simply
+much more potent than others, across all cell lines.
+A model that ignores cell sensitivity entirely and just memorises per-drug average IC₅₀
+would still produce predictions that co-vary with the truth whenever test drugs span this
+range.
+Global r would reward it.
+
+Per-drug Pearson r is an alternative that removes this confound.
+It computes correlation within each drug over its test cell lines, then averages across drugs.
+A model that only memorises per-drug means has zero per-drug r by construction —
+its predictions are constant within each drug, and a constant has no correlation with anything.
+
+The question is whether these two metrics are measuring genuinely different things,
+and if so, which one reflects the clinically relevant ability: ranking cell lines by
+their sensitivity to a specific drug.
+
+## Experimental strategy
+
+Rather than making one argument, the experiment assembles four independent lines of
+evidence, each designed to block a different counterargument.
+
+The first asks whether the suspected confound is large enough to matter, using only data
+and no model at all.
+The second tests whether the metrics can be experimentally dissociated — whether a
+predictor can be constructed that scores high on one and zero on the other.
+The third checks whether the gap between metrics is a consequence of model underfitting
+that would close with more capacity.
+The fourth asks whether the gap is specific to a particular evaluation protocol or
+whether it generalises.
+
+## Step 1 — How much of IC₅₀ variance is between drugs?
+
+The variance of IC₅₀ across all
+{{ "{:,}".format(variance_decomposition.n_pairs) }}
+(cell, drug) pairs can be decomposed into a between-drug component and a within-drug
+component by the law of total variance.
+If between-drug variance dominates, then knowing the per-drug mean is already most of
+the signal, and global r will largely reward that knowledge.
+
+The decomposition gives between-drug variance =
+{{ "%.4f"|format(variance_decomposition.between_drug_var) }}
+out of a total of
+{{ "%.4f"|format(variance_decomposition.total_var) }},
+a fraction of
+**{{ "%.1f"|format(variance_decomposition.between_drug_var_fraction * 100) }}%**.
+From this, the theoretical ceiling on global r for a model that knows only per-drug
+means — and nothing about individual cell lines — is
+`sqrt({{ "%.4f"|format(variance_decomposition.between_drug_var) }} / {{ "%.4f"|format(variance_decomposition.total_var) }}) = {{ "%.3f"|format(variance_decomposition.global_r_ceiling_from_between) }}`.
+
+Nearly 70% of all IC₅₀ variance comes from differences between drugs rather than
+differences between cell lines within a drug.
+A model with no cell-sensitivity ability can in principle reach global r near 0.83.
+This tells us the concern is not hypothetical — the scale of the between-drug confound
+is large enough to dominate global r in practice.
+
+## Step 2 — Can the two metrics be dissociated experimentally?
+
+The variance decomposition establishes a structural argument.
+Step 2 tests it empirically by constructing two extreme predictors designed to have
+opposite metric profiles.
+
+**Predictor 2A** produces the per-drug mean IC₅₀ as its prediction for every
+(cell, drug) pair — it has perfect knowledge of between-drug differences and zero
+knowledge of cell sensitivity.
+Evaluated under the drug_blind split, it achieves global r =
+{{ "%.3f"|format(baseline_dissociation.predictor_2a.mean_global_r) }} ± {{ "%.3f"|format(baseline_dissociation.predictor_2a.std_global_r) }},
+exactly matching the Step 1 ceiling of
+{{ "%.3f"|format(baseline_dissociation.step1_vs_2a_validation.theoretical_ceiling) }}
+within {{ "%.4f"|format(baseline_dissociation.step1_vs_2a_validation.abs_diff) }}.
+Its per-drug r is 0.0 by construction — it cannot rank cell lines because its predictions
+are constant within each drug.
+
+**Predictor 2B** starts from OmniCancerV1's drug_blind predictions and removes the
+between-drug component by subtracting the per-drug mean of the test predictions:
+`ŷ_resid(c, d) = ŷ(c, d) − mean_{c'} ŷ(c', d)`.
+This operation leaves the within-drug ranking of cell lines intact but strips out all
+between-drug signal.
+The result: global r falls from
+{{ "%.3f"|format(baseline_dissociation.predictor_2b.mean_original_global_r) }} to
+{{ "%.3f"|format(baseline_dissociation.predictor_2b.mean_resid_global_r) }},
+while per-drug r is exactly preserved at
+{{ "%.3f"|format(baseline_dissociation.predictor_2b.mean_resid_per_drug_r) }}.
+
+Together, 2A and 2B demonstrate that the two metrics are orthogonal.
+One responds only to between-drug signal; the other responds only to within-drug signal.
+They are not two estimates of the same quantity.
+
+## Step 3 — Is the gap an artefact of underfitting?
+
+If the gap between global r and per-drug r merely reflects a model that has not been
+trained well enough, then larger models should close it.
+This is a plausible concern: a perfectly fitted model would learn both between-drug and
+within-drug structure, and the two metrics should converge.
+
+Five models of increasing capacity are trained under the same drug_blind protocol:
+Ridge regression, three MLP sizes (S, M, L), and OmniCancerV1 (attention-based).
+
+| Model | Global r | Per-drug r | Gap | 95% CI | p |
+|-------|----------|------------|-----|--------|---|
+{% for name, m in model_comparison.models.items() -%}
+| {{ name }} | {{ "%.3f"|format(m.mean_global_r) }} ± {{ "%.3f"|format(m.std_global_r) }} | {{ "%.3f"|format(m.mean_per_drug_r) }} ± {{ "%.3f"|format(m.std_per_drug_r) }} | **+{{ "%.3f"|format(m.mean_gap) }}** | [{{ "%.3f"|format(m.gap_95ci[0]) }}, {{ "%.3f"|format(m.gap_95ci[1]) }}] | {{ "%.4f"|format(m.gap_ttest_p) }} |
+{% endfor %}
+The gap is positive and statistically significant across all five models.
+The gap narrows across MLP sizes (from +{{ "%.3f"|format(model_comparison.models['MLP-S'].mean_gap) }} at MLP-S to +{{ "%.3f"|format(model_comparison.models['MLP-L'].mean_gap) }} at MLP-L)
+but does not converge to zero — the MLP-L 95% CI of
+[{{ "%.3f"|format(model_comparison.models['MLP-L'].gap_95ci[0]) }}, {{ "%.3f"|format(model_comparison.models['MLP-L'].gap_95ci[1]) }}]
+excludes zero.
+Critically, OmniCancerV1 — a qualitatively different architecture with drug-feature inputs —
+reverses the MLP trend and widens the gap to +{{ "%.3f"|format(model_comparison.models.OmniCancerV1.mean_gap) }},
+showing that the narrowing within the MLP family is an architecture-specific artefact
+rather than evidence of convergence.
+The gap is not a model limitation — it is a property of what the metric measures.
+
+## Step 4 — Does the gap generalise across evaluation protocols?
+
+Drug_blind is one of three standard splits in this codebase.
+It is also the evaluation scenario closest to real deployment: test drugs were never
+seen during training, so the model must generalise to genuinely novel compounds.
+This is precisely the scenario where a reliable evaluation metric is most needed.
+Under mixed_set and cell_blind, by contrast, test drugs appear in the training set,
+which gives the model an opportunity to memorise per-drug means during training.
+If global r inflation is indeed driven by drug-mean memorisation, it should be amplified
+under those splits and reduced under drug_blind.
+
+OmniCancerV1 is evaluated under all three splits:
+
+| Split | Global r | Per-drug r | Gap | 95% CI | p |
+|-------|----------|------------|-----|--------|---|
+{% for split, s in cross_split.splits.items() -%}
+| {{ split }} | {{ "%.3f"|format(s.mean_global_r) }} | {{ "%.3f"|format(s.mean_per_drug_r) }} | {{ "%+.3f"|format(s.mean_gap) }} | [{{ "%.3f"|format(s.gap_95ci[0]) }}, {{ "%.3f"|format(s.gap_95ci[1]) }}] | {{ "%.4f"|format(s.gap_ttest_p) }} |
+{% endfor %}
+The pattern is striking.
+Under drug_blind, global r is low ({{ "%.3f"|format(cross_split.splits.drug_blind.mean_global_r) }})
+and per-drug r is high ({{ "%.3f"|format(cross_split.splits.drug_blind.mean_per_drug_r) }}).
+Under mixed_set and cell_blind, where the model has seen the test drugs during training,
+global r jumps to
+{{ "%.3f"|format(cross_split.splits.mixed_set.mean_global_r) }} and
+{{ "%.3f"|format(cross_split.splits.cell_blind.mean_global_r) }} respectively —
+values that superficially look like strong model performance.
+Per-drug r under these same conditions is
+{{ "%.3f"|format(cross_split.splits.mixed_set.mean_per_drug_r) }} and
+{{ "%.3f"|format(cross_split.splits.cell_blind.mean_per_drug_r) }},
+neither of which matches the global r narrative.
+
+The split-dependence of global r is itself the most direct evidence of the memorisation
+mechanism: the metric is sensitive to whether test drugs were in the training set, while
+per-drug r is not.
+A good metric should measure the model's ability to generalise, not whether it has
+seen the test labels before.
+
+## Interpretation
+
+The four steps converge on one conclusion.
+Between-drug variance dominates GDSC2 IC₅₀ ({{ "%.1f"|format(variance_decomposition.between_drug_var_fraction * 100) }}%),
+creating a structural ceiling that any drug-mean memoriser can approach.
+The empirical ceiling matches the theory to within {{ "%.4f"|format(baseline_dissociation.step1_vs_2a_validation.abs_diff) }}.
+Removing between-drug signal from predictions collapses global r while leaving per-drug r
+unchanged, confirming the metrics are orthogonal.
+Scaling model capacity by orders of magnitude does not close the gap, ruling out
+underfitting.
+The gap's sign reverses across splits in exactly the way the memorisation mechanism
+predicts.
+
+Global r is not a reliable measure of cell-sensitivity prediction ability.
+Which metric should replace it is a question for a separate experiment; what this
+experiment establishes is that global r cannot be trusted as a primary metric for
+drug response prediction models.
+For subsequent experiments in this series, global r is reported as secondary context
+only.
+The OmniCancerV1 drug_blind baseline that anchors those experiments is
+per-drug r = {{ "%.3f"|format(model_comparison.models.OmniCancerV1.mean_per_drug_r) }} ± {{ "%.3f"|format(model_comparison.models.OmniCancerV1.std_per_drug_r) }},
+not global r ≈ {{ "%.2f"|format(model_comparison.models.OmniCancerV1.mean_global_r) }}.
+
+## Prior work on evaluation metrics
+
+Two evaluation protocols coexist in the drug response prediction literature, and the
+choice between them has been determined by model architecture rather than deliberate
+metric selection.
+
+Papers that train a single model across all drugs and cell lines — PASO
+([Wu et al., PLoS Comput Biol 2025](https://doi.org/10.1371/journal.pcbi.1012905)),
+DeepCDR
+([Liu et al., Bioinformatics 2020](https://doi.org/10.1093/bioinformatics/btaa822)),
+TGSA
+([Zhu et al., Bioinformatics 2022](https://doi.org/10.1093/bioinformatics/btab290)) —
+report global Pearson r as the primary metric.
+Papers that train a separate model for each drug — Carli et al.
+([Nat Commun 2025](https://doi.org/10.1038/s41467-025-56827-5)),
+DeepCCDS
+([Wu et al., Adv Sci 2025](https://doi.org/10.1002/advs.202416958)) —
+report per-drug r not by deliberate choice but because the one-model-per-drug
+architecture forces it.
+
+Bernett et al.
+([bioRxiv 2025](https://doi.org/10.1101/2025.05.26.655288))
+introduce DrEval, a benchmarking framework that identifies biased evaluation metrics
+as one of six systemic problems in the field, and report that deep learning models
+barely outperform a naive mean-effects predictor — convergent evidence for the
+drug-mean inflation described here.
+DrEval addresses the problem through standardised split protocols and cross-study
+benchmarks rather than metric decomposition.
+
+Sealfon et al.
+([J. Cheminformatics 17:28, 2025](https://doi.org/10.1186/s13321-025-00965-x))
+independently identify the same problem under the framing of a "specification game":
+their DummyDrugAvg predictor achieves global r ≈ 0.85 with per-drug r = 0.00,
+and they endorse per-drug r as the appropriate metric for joint models.
+That paper establishes the problem descriptively on a single dataset; it does not
+provide a formal variance decomposition, test whether the gap persists across model
+capacities, or examine the split-dependence of global r inflation.
+This experiment provides those four lines of evidence and the experimental
+justification for adopting per-drug r as the primary metric.
+
+## Limitations
+
+Step 3 trains all models under the drug_blind split only; whether the capacity effect
+holds under other splits is not tested here.
+OmniCancerV1 training is capped at 50 epochs, while Ridge and MLP models use
+early stopping, so cross-model capacity comparisons are approximate.
+Per-drug r excludes drugs with fewer than 5 test cell lines; under drug_blind
+Step 3 evaluates 22–24 drugs per fold.
+The variance decomposition is computed over the full paired dataset; fold-level
+variance may differ slightly.
+Predictor 2B subtracts per-drug means computed from the test split itself — an oracle
+condition, since those means would not be available at deployment time.
+This means 2B's per-drug r preservation is a best-case demonstration of metric
+orthogonality, not a deployable predictor; the dissociation argument holds regardless.

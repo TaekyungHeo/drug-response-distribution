@@ -1,0 +1,18 @@
+{
+  "n_drugs": 155,
+  "n_patients": 520,
+  "n_folds": 5,
+  "n_repeats": 30,
+  "cell_specific": {
+    "per_drug_r": 0.356,
+    "description": "Nearest training drug by |response at observed patient - observation|"
+  },
+  "mean_potency": {
+    "per_drug_r": 0.298,
+    "description": "Nearest training drug by |mean response - observation|"
+  },
+  "delta_A_minus_B": 0.059,
+  "gdsc2_reference": {
+    "note": "In GDSC2, K=1 A ≈ B (pure potency calibration; cell-specific signal is absent at K=1)"
+  }
+}

@@ -1,0 +1,24 @@
+\subsection*{Per-drug evaluation reveals a hidden ceiling}
+
+The standard drug-blind metric, global Pearson $r$ over all test pairs, conflates two signals: between-drug potency ranking and within-drug cell sensitivity ranking\cite{specgame2025}. A drug-mean oracle that predicts each compound's average IC$_{50}$ regardless of cell line already surpasses the reported drug-blind ceiling by a wide margin (global $r = \DrugMeanOracleR$ vs.\ the published ceiling of ${\sim}0.51$), demonstrating that the ceiling reflects failure to predict drug potency for unseen compounds, not failure to rank cells.
+
+Global $r$ decomposes into a weighted sum of between-drug and within-drug components (Supplementary Note~1). In GDSC2, between-drug variance dominates because drug means span an order of magnitude more than within-drug variation, so global $r$ is driven almost entirely by scale prediction (Fig.~\ref{fig:decomp}a).
+
+Per-drug Pearson $r$, the correlation within each test drug across cell lines averaged over drugs, isolates cell ranking. Training with per-drug $z$-scored targets collapsed global $r$ while preserving per-drug $r$, confirming that the two signals are independent (Fig.~\ref{fig:decomp}a). Cell-blind CV on held-out cell lines inverts the conventional ranking: familiar cells enable accurate ranking without drug information, but unfamiliar cells cannot be ranked even when the drug is known (Fig.~\ref{fig:decomp}d).
+
+Cross-assay replicate concordance between GDSC1 and GDSC2 provides an empirical ceiling of $r = \MeasurementCeiling$ (9 anchor drugs, per-drug range 0.57--0.93). The zero-shot baseline already reaches 86\% of this ceiling (Fig.~\ref{fig:decomp}d).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig2_metric_decomposition.pdf}
+\caption{\textbf{Per-drug $r$ reveals a ceiling invisible to global $r$, and no drug representation improves within-drug cell ranking.}
+\textbf{a}, Global vs.\ per-drug $r$ under standard training and $z$-scoring.
+\textbf{b}, Per-drug $r$ across drug feature types (structural and functional), all within $\Delta \leq +0.001$ of the no-drug-features baseline (dashed). LINCS is evaluated on its 104-drug covered subset (within-subset $\Delta = +0.001$).
+\textbf{c}, Omics ablation. RNA-seq alone achieves per-drug $r = \RnaOnlyOmicsR$; mutations and further modalities each add $\leq +0.001$.
+\textbf{d}, Per-drug $r$ for three reference predictors: cell-blind ridge (out-of-distribution cells), cell-mean prior ($K=0$ zero-shot), and ridge without drug features (drug-blind standard). Dotted line: within-assay replicate ceiling ($r = \MeasurementCeiling$).}
+\label{fig:decomp}
+\end{figure}
+
+\subsection*{Evaluation artifacts in three prominent models}
+
+PASO\cite{wu2025paso} reported drug-blind $r = 0.745$. Examination of the publicly available implementation revealed checkpoint selection by maximizing \emph{test-set} Pearson $r$ each epoch with no validation holdout. DeepCDR\cite{liu2020deepcdr} and DrugCell\cite{kuenzi2020predicting} showed the same pattern. Under a fair protocol with a validation holdout, test-set leakage and best-fold selection together account for the gap between the fair mean and the published figure (Extended Data Fig.~1). Leakage was confirmed in 23 of 32 audited methods across the field\cite{asiaee2026widespread}. We therefore ask, under a corrected evaluation protocol, whether any drug encoding can improve per-drug $r$.

@@ -1,0 +1,17 @@
+\section*{Introduction}
+
+Predicting which drugs will suppress a specific tumor from its molecular profile is the central computational challenge of precision oncology\cite{costello2014community,adam2020machine}. In the drug-blind setting, where models must generalize to compounds absent from training, a decade of increasingly sophisticated drug encoders has converged on a ceiling of global Pearson $r \approx 0.45$--$0.55$\cite{zhu2022tgsa,han2026dispa}, raising the question of whether drug representations are fundamentally limited or merely underspecified.
+
+Recent evidence reframes this debate. A drug-mean oracle achieves global Pearson $r = 0.85$ on GDSC\cite{specgame2025}, and removing the drug branch from deep models does not degrade performance in cancer-blind evaluation\cite{branson2025understanding}. We show that the same null extends to the drug-blind setting under per-drug $r$ (Fig.~\ref{fig:decomp}b). These observations indicate that global $r$ conflates two signals: between-drug potency ranking and within-drug cell ranking. Per-drug Pearson $r$, computed within each test drug across cell lines, isolates cell ranking and more directly addresses the clinical question of which patients respond to a given compound.
+
+Under per-drug $r$, no drug representation produces more than a negligible improvement over cell-only features. This holds for structural encodings (Morgan fingerprints\cite{rogers2010extended}, ChemBERTa\cite{chithrananda2020chemberta}), functional encodings (LINCS L1000 perturbation signatures\cite{subramanian2017next}), and drug-target vectors, and is confirmed independently in drug-blind evaluation\cite{herbert2026monotherapy,bernett2025dreval} and in the drug-seen regime\cite{carli2025cellhit}. We replicate the null in both ridge regression and an 11.7M-parameter Transformer encoder. Reported ceilings above this null are explained by test-set checkpoint selection in several prominent models, consistent with widespread evaluation leakage documented across the field\cite{asiaee2026widespread}.
+
+\begin{figure}[!b]
+    \centering
+    \includegraphics[width=\textwidth]{fig1_framework.pdf}
+    \caption{\textbf{Global $r$ conflates two independent signals. Per-drug $r$ isolates within-drug cell ranking.}
+    Three drugs (colored) span different mean sensitivity levels (potency) while sharing the same relative cell-line ordering. Global Pearson $r$ (left) reflects both potency differences and cell ranking. Removing each drug's mean (per-drug $z$-scoring) yields per-drug $r$ (right), which isolates cell ranking.}
+    \label{fig:framework}
+    \end{figure}
+
+Here, we address whether this failure is informational (the model lacks the right drug encoding) or distributional (the model trains on the wrong drugs). A controlled experiment channels the same mechanism of action (MoA) information through two routes: as a drug feature or as a training distribution (Fig.~\ref{fig:moa}). Training distribution alignment dominates representation across both ridge regression and an 11.7M-parameter Transformer encoder, and two practical strategies exploit this to improve within-drug cell ranking across independent datasets.

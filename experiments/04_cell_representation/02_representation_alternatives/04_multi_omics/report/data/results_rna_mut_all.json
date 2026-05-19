@@ -1,0 +1,55 @@
+{
+  "rna_mut_all": {
+    "condition": "rna_mut_all",
+    "modalities": [
+      "rna",
+      "mutations",
+      "cnv",
+      "metabolomics"
+    ],
+    "folds": [
+      {
+        "per_drug_r": 0.6031138918554294,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6163336264761684,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.652133256707616,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6435111061199535,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6664128840922462,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6567274585269586,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6267514271090114,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6741423799681128,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6766165834624942,
+        "feat_dim": 1275
+      },
+      {
+        "per_drug_r": 0.6795397610252695,
+        "feat_dim": 1275
+      }
+    ],
+    "per_drug_r_mean": 0.6495282375343261,
+    "per_drug_r_std": 0.02528872255376528
+  }
+}

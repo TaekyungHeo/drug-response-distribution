@@ -1,0 +1,28 @@
+{
+  "seeds": [
+    {
+      "seed": 0,
+      "oracle": {
+        "global_r": 0.8264656432516456,
+        "per_drug_r": NaN
+      },
+      "fair": {
+        "global_r": 0.8523398637771606,
+        "per_drug_r": 0.6362001114515028
+      },
+      "snooping": {
+        "global_r": 0.8503844141960144,
+        "per_drug_r": NaN
+      },
+      "snooping_delta": -0.0019554495811462402
+    }
+  ],
+  "summary": {
+    "oracle_global_r_mean": 0.8264656432516456,
+    "fair_global_r_mean": 0.8523398637771606,
+    "fair_per_drug_r_mean": 0.6362001114515028,
+    "snooping_global_r_mean": 0.8503844141960144,
+    "snooping_delta_mean": -0.0019554495811462402,
+    "note": "DrugCell reported on GDSC+CTRPv2 AUC; this proxy uses GDSC2 IC50 to demonstrate protocol artifact"
+  }
+}

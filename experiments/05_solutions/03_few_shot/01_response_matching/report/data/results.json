@@ -1,0 +1,9860 @@
+{
+  "overall": {
+    "cell_mean_prior_r": 0.645,
+    "cell_mean_oracle_r": 0.644,
+    "measurement_ceiling": 0.754
+  },
+  "k_curve": [
+    {
+      "k": 0,
+      "mean_r": 0.645022,
+      "std_r": 0.139126,
+      "optimal_w": 0.0,
+      "cv_w": 0.0,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 1,
+      "mean_r": 0.644973,
+      "std_r": 0.139114,
+      "optimal_w": 0.0,
+      "cv_w": 0.1,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 3,
+      "mean_r": 0.645045,
+      "std_r": 0.139063,
+      "optimal_w": 0.0,
+      "cv_w": 0.0,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 5,
+      "mean_r": 0.646105,
+      "std_r": 0.134365,
+      "optimal_w": 0.1,
+      "cv_w": 0.1,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 10,
+      "mean_r": 0.653268,
+      "std_r": 0.124991,
+      "optimal_w": 0.2,
+      "cv_w": 0.2,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 20,
+      "mean_r": 0.670465,
+      "std_r": 0.116378,
+      "optimal_w": 0.3,
+      "cv_w": 0.3,
+      "permuted_r": null,
+      "n_drugs": 233
+    },
+    {
+      "k": 50,
+      "mean_r": 0.700693,
+      "std_r": 0.112387,
+      "optimal_w": 0.5,
+      "cv_w": 0.6,
+      "permuted_r": 0.560719,
+      "n_drugs": 233
+    }
+  ],
+  "per_drug": [
+    {
+      "drug": "5-Fluorouracil",
+      "k": 0,
+      "mean_r": 0.755486,
+      "std_r": 0.0
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 0,
+      "mean_r": 0.738374,
+      "std_r": 0.0
+    },
+    {
+      "drug": "A-366",
+      "k": 0,
+      "mean_r": 0.739601,
+      "std_r": 0.0
+    },
+    {
+      "drug": "ABT737",
+      "k": 0,
+      "mean_r": 0.468113,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 0,
+      "mean_r": 0.671026,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 0,
+      "mean_r": 0.646986,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AGK2",
+      "k": 0,
+      "mean_r": 0.632077,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AMG-319",
+      "k": 0,
+      "mean_r": 0.738634,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AT13148",
+      "k": 0,
+      "mean_r": 0.658906,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZ6102",
+      "k": 0,
+      "mean_r": 0.619776,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZ960",
+      "k": 0,
+      "mean_r": 0.723199,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD1208",
+      "k": 0,
+      "mean_r": 0.772653,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD1332",
+      "k": 0,
+      "mean_r": 0.518972,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD2014",
+      "k": 0,
+      "mean_r": 0.547518,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD3759",
+      "k": 0,
+      "mean_r": 0.461846,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD4547",
+      "k": 0,
+      "mean_r": 0.546702,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD5153",
+      "k": 0,
+      "mean_r": 0.669346,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD5363",
+      "k": 0,
+      "mean_r": 0.621058,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD5438",
+      "k": 0,
+      "mean_r": 0.818605,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD5582",
+      "k": 0,
+      "mean_r": 0.48572,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD5991",
+      "k": 0,
+      "mean_r": 0.663856,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD6482",
+      "k": 0,
+      "mean_r": 0.624191,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD6738",
+      "k": 0,
+      "mean_r": 0.74188,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD7762",
+      "k": 0,
+      "mean_r": 0.731504,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD8055",
+      "k": 0,
+      "mean_r": 0.560392,
+      "std_r": 0.0
+    },
+    {
+      "drug": "AZD8186",
+      "k": 0,
+      "mean_r": 0.458325,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Acetalax",
+      "k": 0,
+      "mean_r": 0.151312,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Afatinib",
+      "k": 0,
+      "mean_r": 0.44073,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 0,
+      "mean_r": 0.610418,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Alisertib",
+      "k": 0,
+      "mean_r": 0.704045,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 0,
+      "mean_r": 0.593119,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 0,
+      "mean_r": 0.712177,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Axitinib",
+      "k": 0,
+      "mean_r": 0.744174,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BI-2536",
+      "k": 0,
+      "mean_r": 0.773256,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 0,
+      "mean_r": 0.670306,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 0,
+      "mean_r": 0.779756,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 0,
+      "mean_r": 0.506589,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 0,
+      "mean_r": 0.632814,
+      "std_r": 0.0
+    },
+    {
+      "drug": "BX795",
+      "k": 0,
+      "mean_r": 0.740559,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 0,
+      "mean_r": 0.644625,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 0,
+      "mean_r": 0.622081,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 0,
+      "mean_r": 0.62355,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 0,
+      "mean_r": 0.620868,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 0,
+      "mean_r": 0.672351,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 0,
+      "mean_r": 0.695686,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 0,
+      "mean_r": 0.746512,
+      "std_r": 0.0
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 0,
+      "mean_r": 0.73943,
+      "std_r": 0.0
+    },
+    {
+      "drug": "CCT007093",
+      "k": 0,
+      "mean_r": 0.743773,
+      "std_r": 0.0
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 0,
+      "mean_r": 0.672528,
+      "std_r": 0.0
+    },
+    {
+      "drug": "CPI-637",
+      "k": 0,
+      "mean_r": 0.723966,
+      "std_r": 0.0
+    },
+    {
+      "drug": "CZC24832",
+      "k": 0,
+      "mean_r": 0.773547,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 0,
+      "mean_r": 0.726791,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Carmustine",
+      "k": 0,
+      "mean_r": 0.771402,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Cediranib",
+      "k": 0,
+      "mean_r": 0.546646,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 0,
+      "mean_r": 0.792634,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 0,
+      "mean_r": 0.778092,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 0,
+      "mean_r": 0.764535,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 0,
+      "mean_r": 0.75945,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 0,
+      "mean_r": 0.498106,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 0,
+      "mean_r": 0.682252,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 0,
+      "mean_r": 0.821203,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 0,
+      "mean_r": 0.664981,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Daporinad",
+      "k": 0,
+      "mean_r": 0.331146,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 0,
+      "mean_r": 0.292403,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 0,
+      "mean_r": 0.176944,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 0,
+      "mean_r": 0.742597,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 0,
+      "mean_r": 0.77502,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 0,
+      "mean_r": 0.627762,
+      "std_r": 0.0
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 0,
+      "mean_r": 0.536865,
+      "std_r": 0.0
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 0,
+      "mean_r": 0.787713,
+      "std_r": 0.0
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 0,
+      "mean_r": 0.793767,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Elephantin",
+      "k": 0,
+      "mean_r": 0.721858,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 0,
+      "mean_r": 0.698102,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Entinostat",
+      "k": 0,
+      "mean_r": 0.686297,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 0,
+      "mean_r": 0.608052,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 0,
+      "mean_r": 0.776783,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 0,
+      "mean_r": 0.440509,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 0,
+      "mean_r": 0.614305,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Foretinib",
+      "k": 0,
+      "mean_r": 0.650789,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 0,
+      "mean_r": 0.762575,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GDC0810",
+      "k": 0,
+      "mean_r": 0.677584,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GNE-317",
+      "k": 0,
+      "mean_r": 0.538085,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 0,
+      "mean_r": 0.649243,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 0,
+      "mean_r": 0.669793,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 0,
+      "mean_r": 0.622577,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 0,
+      "mean_r": 0.701599,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 0,
+      "mean_r": 0.698224,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 0,
+      "mean_r": 0.6502,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK2801",
+      "k": 0,
+      "mean_r": 0.712939,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 0,
+      "mean_r": 0.79186,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK343",
+      "k": 0,
+      "mean_r": 0.792042,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GSK591",
+      "k": 0,
+      "mean_r": 0.657234,
+      "std_r": 0.0
+    },
+    {
+      "drug": "GW441756",
+      "k": 0,
+      "mean_r": 0.624433,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 0,
+      "mean_r": 0.654986,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 0,
+      "mean_r": 0.455007,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 0,
+      "mean_r": 0.691991,
+      "std_r": 0.0
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 0,
+      "mean_r": 0.716092,
+      "std_r": 0.0
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 0,
+      "mean_r": 0.783099,
+      "std_r": 0.0
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 0,
+      "mean_r": 0.762651,
+      "std_r": 0.0
+    },
+    {
+      "drug": "IOX2",
+      "k": 0,
+      "mean_r": 0.729716,
+      "std_r": 0.0
+    },
+    {
+      "drug": "IWP-2",
+      "k": 0,
+      "mean_r": 0.711035,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 0,
+      "mean_r": 0.496992,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 0,
+      "mean_r": 0.595404,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 0,
+      "mean_r": 0.757609,
+      "std_r": 0.0
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 0,
+      "mean_r": 0.723488,
+      "std_r": 0.0
+    },
+    {
+      "drug": "JQ1",
+      "k": 0,
+      "mean_r": 0.701451,
+      "std_r": 0.0
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 0,
+      "mean_r": 0.730369,
+      "std_r": 0.0
+    },
+    {
+      "drug": "KU-55933",
+      "k": 0,
+      "mean_r": 0.727307,
+      "std_r": 0.0
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 0,
+      "mean_r": 0.609904,
+      "std_r": 0.0
+    },
+    {
+      "drug": "LCL161",
+      "k": 0,
+      "mean_r": 0.57695,
+      "std_r": 0.0
+    },
+    {
+      "drug": "LGK974",
+      "k": 0,
+      "mean_r": 0.574163,
+      "std_r": 0.0
+    },
+    {
+      "drug": "LJI308",
+      "k": 0,
+      "mean_r": 0.724088,
+      "std_r": 0.0
+    },
+    {
+      "drug": "LMP744",
+      "k": 0,
+      "mean_r": 0.72698,
+      "std_r": 0.0
+    },
+    {
+      "drug": "LY2109761",
+      "k": 0,
+      "mean_r": 0.655546,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 0,
+      "mean_r": 0.515066,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 0,
+      "mean_r": 0.673054,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 0,
+      "mean_r": 0.772492,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 0,
+      "mean_r": 0.762611,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 0,
+      "mean_r": 0.573092,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Luminespib",
+      "k": 0,
+      "mean_r": 0.706508,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MG-132",
+      "k": 0,
+      "mean_r": 0.519857,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MIM1",
+      "k": 0,
+      "mean_r": 0.653204,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 0,
+      "mean_r": 0.794928,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MK-1775",
+      "k": 0,
+      "mean_r": 0.761071,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MK-2206",
+      "k": 0,
+      "mean_r": 0.695522,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MK-8776",
+      "k": 0,
+      "mean_r": 0.699985,
+      "std_r": 0.0
+    },
+    {
+      "drug": "ML323",
+      "k": 0,
+      "mean_r": 0.628093,
+      "std_r": 0.0
+    },
+    {
+      "drug": "MN-64",
+      "k": 0,
+      "mean_r": 0.615091,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 0,
+      "mean_r": 0.305313,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Mirin",
+      "k": 0,
+      "mean_r": 0.770432,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 0,
+      "mean_r": 0.725867,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Motesanib",
+      "k": 0,
+      "mean_r": 0.760356,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 0,
+      "mean_r": 0.699609,
+      "std_r": 0.0
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 0,
+      "mean_r": 0.511108,
+      "std_r": 0.0
+    },
+    {
+      "drug": "NU7441",
+      "k": 0,
+      "mean_r": 0.747549,
+      "std_r": 0.0
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 0,
+      "mean_r": 0.658764,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 0,
+      "mean_r": 0.401806,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 0,
+      "mean_r": 0.737113,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 0,
+      "mean_r": 0.662269,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Niraparib",
+      "k": 0,
+      "mean_r": 0.769387,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 0,
+      "mean_r": 0.6558,
+      "std_r": 0.0
+    },
+    {
+      "drug": "OF-1",
+      "k": 0,
+      "mean_r": 0.370664,
+      "std_r": 0.0
+    },
+    {
+      "drug": "OSI-027",
+      "k": 0,
+      "mean_r": 0.414536,
+      "std_r": 0.0
+    },
+    {
+      "drug": "OTX015",
+      "k": 0,
+      "mean_r": 0.672982,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 0,
+      "mean_r": 0.606125,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Olaparib",
+      "k": 0,
+      "mean_r": 0.775409,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 0,
+      "mean_r": 0.426425,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 0,
+      "mean_r": 0.816582,
+      "std_r": 0.0
+    },
+    {
+      "drug": "P22077",
+      "k": 0,
+      "mean_r": 0.692329,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 0,
+      "mean_r": 0.753612,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PD0325901",
+      "k": 0,
+      "mean_r": 0.214536,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PD173074",
+      "k": 0,
+      "mean_r": 0.599289,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 0,
+      "mean_r": 0.601678,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PFI-1",
+      "k": 0,
+      "mean_r": 0.675288,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PFI3",
+      "k": 0,
+      "mean_r": 0.772695,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 0,
+      "mean_r": 0.548746,
+      "std_r": 0.0
+    },
+    {
+      "drug": "POMHEX",
+      "k": 0,
+      "mean_r": 0.533555,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 0,
+      "mean_r": 0.650884,
+      "std_r": 0.0
+    },
+    {
+      "drug": "PRT062607",
+      "k": 0,
+      "mean_r": 0.721906,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 0,
+      "mean_r": 0.776959,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 0,
+      "mean_r": 0.761891,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 0,
+      "mean_r": 0.70565,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 0,
+      "mean_r": 0.728857,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 0,
+      "mean_r": 0.575781,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 0,
+      "mean_r": 0.758835,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 0,
+      "mean_r": 0.779617,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 0,
+      "mean_r": 0.670565,
+      "std_r": 0.0
+    },
+    {
+      "drug": "RO-3306",
+      "k": 0,
+      "mean_r": 0.825028,
+      "std_r": 0.0
+    },
+    {
+      "drug": "RVX-208",
+      "k": 0,
+      "mean_r": 0.738448,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 0,
+      "mean_r": 0.606524,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Refametinib",
+      "k": 0,
+      "mean_r": 0.232419,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Remodelin",
+      "k": 0,
+      "mean_r": 0.417233,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 0,
+      "mean_r": 0.789865,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 0,
+      "mean_r": 0.586229,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 0,
+      "mean_r": 0.743246,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 0,
+      "mean_r": 0.683403,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SB216763",
+      "k": 0,
+      "mean_r": 0.68687,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SB505124",
+      "k": 0,
+      "mean_r": 0.349324,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SB590885",
+      "k": 0,
+      "mean_r": 0.614298,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SCH772984",
+      "k": 0,
+      "mean_r": 0.345308,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 0,
+      "mean_r": 0.660629,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SGC0946",
+      "k": 0,
+      "mean_r": 0.62224,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SL0101",
+      "k": 0,
+      "mean_r": 0.615717,
+      "std_r": 0.0
+    },
+    {
+      "drug": "SN-38",
+      "k": 0,
+      "mean_r": 0.605423,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 0,
+      "mean_r": 0.679986,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 0,
+      "mean_r": 0.23435,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 0,
+      "mean_r": 0.536329,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 0,
+      "mean_r": 0.747731,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 0,
+      "mean_r": 0.300008,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 0,
+      "mean_r": 0.154133,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 0,
+      "mean_r": 0.765271,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Sinularin",
+      "k": 0,
+      "mean_r": 0.687046,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 0,
+      "mean_r": 0.726149,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 0,
+      "mean_r": 0.609083,
+      "std_r": 0.0
+    },
+    {
+      "drug": "TW 37",
+      "k": 0,
+      "mean_r": 0.653989,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 0,
+      "mean_r": 0.692937,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 0,
+      "mean_r": 0.597508,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 0,
+      "mean_r": 0.443888,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Taselisib",
+      "k": 0,
+      "mean_r": 0.489753,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 0,
+      "mean_r": 0.713246,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 0,
+      "mean_r": 0.777737,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 0,
+      "mean_r": 0.583003,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Teniposide",
+      "k": 0,
+      "mean_r": 0.785152,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Topotecan",
+      "k": 0,
+      "mean_r": 0.669209,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 0,
+      "mean_r": 0.781685,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Trametinib",
+      "k": 0,
+      "mean_r": 0.212706,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 0,
+      "mean_r": 0.714944,
+      "std_r": 0.0
+    },
+    {
+      "drug": "UMI-77",
+      "k": 0,
+      "mean_r": 0.477291,
+      "std_r": 0.0
+    },
+    {
+      "drug": "UNC0379",
+      "k": 0,
+      "mean_r": 0.748897,
+      "std_r": 0.0
+    },
+    {
+      "drug": "UNC0638",
+      "k": 0,
+      "mean_r": 0.79496,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 0,
+      "mean_r": 0.489125,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 0,
+      "mean_r": 0.613433,
+      "std_r": 0.0
+    },
+    {
+      "drug": "VE-822",
+      "k": 0,
+      "mean_r": 0.726577,
+      "std_r": 0.0
+    },
+    {
+      "drug": "VE821",
+      "k": 0,
+      "mean_r": 0.771208,
+      "std_r": 0.0
+    },
+    {
+      "drug": "VX-11e",
+      "k": 0,
+      "mean_r": 0.510432,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Veliparib",
+      "k": 0,
+      "mean_r": 0.795845,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 0,
+      "mean_r": 0.597188,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 0,
+      "mean_r": 0.806893,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Vincristine",
+      "k": 0,
+      "mean_r": 0.783585,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 0,
+      "mean_r": 0.80832,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 0,
+      "mean_r": 0.757788,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 0,
+      "mean_r": 0.759534,
+      "std_r": 0.0
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 0,
+      "mean_r": 0.394938,
+      "std_r": 0.0
+    },
+    {
+      "drug": "WIKI4",
+      "k": 0,
+      "mean_r": 0.433665,
+      "std_r": 0.0
+    },
+    {
+      "drug": "WZ4003",
+      "k": 0,
+      "mean_r": 0.575429,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 0,
+      "mean_r": 0.788282,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 0,
+      "mean_r": 0.656957,
+      "std_r": 0.0
+    },
+    {
+      "drug": "XAV939",
+      "k": 0,
+      "mean_r": 0.568394,
+      "std_r": 0.0
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 0,
+      "mean_r": 0.823851,
+      "std_r": 0.0
+    },
+    {
+      "drug": "ZM447439",
+      "k": 0,
+      "mean_r": 0.747683,
+      "std_r": 0.0
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 0,
+      "mean_r": 0.811434,
+      "std_r": 0.0
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 0,
+      "mean_r": 0.696219,
+      "std_r": 0.0
+    },
+    {
+      "drug": "glutathione",
+      "k": 0,
+      "mean_r": 0.619617,
+      "std_r": 0.0
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 1,
+      "mean_r": 0.755601,
+      "std_r": 0.000313
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 1,
+      "mean_r": 0.738532,
+      "std_r": 0.000531
+    },
+    {
+      "drug": "A-366",
+      "k": 1,
+      "mean_r": 0.739305,
+      "std_r": 0.001324
+    },
+    {
+      "drug": "ABT737",
+      "k": 1,
+      "mean_r": 0.468303,
+      "std_r": 0.001059
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 1,
+      "mean_r": 0.670945,
+      "std_r": 0.000458
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 1,
+      "mean_r": 0.646651,
+      "std_r": 0.002321
+    },
+    {
+      "drug": "AGK2",
+      "k": 1,
+      "mean_r": 0.631733,
+      "std_r": 0.00085
+    },
+    {
+      "drug": "AMG-319",
+      "k": 1,
+      "mean_r": 0.738699,
+      "std_r": 0.000759
+    },
+    {
+      "drug": "AT13148",
+      "k": 1,
+      "mean_r": 0.659156,
+      "std_r": 0.000372
+    },
+    {
+      "drug": "AZ6102",
+      "k": 1,
+      "mean_r": 0.619642,
+      "std_r": 0.000487
+    },
+    {
+      "drug": "AZ960",
+      "k": 1,
+      "mean_r": 0.723643,
+      "std_r": 0.00131
+    },
+    {
+      "drug": "AZD1208",
+      "k": 1,
+      "mean_r": 0.772447,
+      "std_r": 0.000644
+    },
+    {
+      "drug": "AZD1332",
+      "k": 1,
+      "mean_r": 0.518456,
+      "std_r": 0.000818
+    },
+    {
+      "drug": "AZD2014",
+      "k": 1,
+      "mean_r": 0.546856,
+      "std_r": 0.003079
+    },
+    {
+      "drug": "AZD3759",
+      "k": 1,
+      "mean_r": 0.461698,
+      "std_r": 0.000556
+    },
+    {
+      "drug": "AZD4547",
+      "k": 1,
+      "mean_r": 0.546578,
+      "std_r": 0.000714
+    },
+    {
+      "drug": "AZD5153",
+      "k": 1,
+      "mean_r": 0.66915,
+      "std_r": 0.001268
+    },
+    {
+      "drug": "AZD5363",
+      "k": 1,
+      "mean_r": 0.621553,
+      "std_r": 0.001452
+    },
+    {
+      "drug": "AZD5438",
+      "k": 1,
+      "mean_r": 0.818503,
+      "std_r": 0.000344
+    },
+    {
+      "drug": "AZD5582",
+      "k": 1,
+      "mean_r": 0.485655,
+      "std_r": 0.001089
+    },
+    {
+      "drug": "AZD5991",
+      "k": 1,
+      "mean_r": 0.663856,
+      "std_r": 0.00065
+    },
+    {
+      "drug": "AZD6482",
+      "k": 1,
+      "mean_r": 0.625592,
+      "std_r": 0.002267
+    },
+    {
+      "drug": "AZD6738",
+      "k": 1,
+      "mean_r": 0.741833,
+      "std_r": 0.000851
+    },
+    {
+      "drug": "AZD7762",
+      "k": 1,
+      "mean_r": 0.731498,
+      "std_r": 0.000655
+    },
+    {
+      "drug": "AZD8055",
+      "k": 1,
+      "mean_r": 0.560131,
+      "std_r": 0.000682
+    },
+    {
+      "drug": "AZD8186",
+      "k": 1,
+      "mean_r": 0.458654,
+      "std_r": 0.001078
+    },
+    {
+      "drug": "Acetalax",
+      "k": 1,
+      "mean_r": 0.150912,
+      "std_r": 0.002002
+    },
+    {
+      "drug": "Afatinib",
+      "k": 1,
+      "mean_r": 0.440486,
+      "std_r": 0.00054
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 1,
+      "mean_r": 0.610579,
+      "std_r": 0.000495
+    },
+    {
+      "drug": "Alisertib",
+      "k": 1,
+      "mean_r": 0.703794,
+      "std_r": 0.000634
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 1,
+      "mean_r": 0.593083,
+      "std_r": 0.000467
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 1,
+      "mean_r": 0.711921,
+      "std_r": 0.00066
+    },
+    {
+      "drug": "Axitinib",
+      "k": 1,
+      "mean_r": 0.744146,
+      "std_r": 0.000137
+    },
+    {
+      "drug": "BI-2536",
+      "k": 1,
+      "mean_r": 0.773096,
+      "std_r": 0.000242
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 1,
+      "mean_r": 0.670099,
+      "std_r": 0.001075
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 1,
+      "mean_r": 0.779718,
+      "std_r": 0.000635
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 1,
+      "mean_r": 0.506812,
+      "std_r": 0.000807
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 1,
+      "mean_r": 0.633,
+      "std_r": 0.000711
+    },
+    {
+      "drug": "BX795",
+      "k": 1,
+      "mean_r": 0.73963,
+      "std_r": 0.0043
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 1,
+      "mean_r": 0.643679,
+      "std_r": 0.004605
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 1,
+      "mean_r": 0.621514,
+      "std_r": 0.001247
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 1,
+      "mean_r": 0.622959,
+      "std_r": 0.001062
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 1,
+      "mean_r": 0.620717,
+      "std_r": 0.000516
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 1,
+      "mean_r": 0.67213,
+      "std_r": 0.000962
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 1,
+      "mean_r": 0.695932,
+      "std_r": 0.000838
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 1,
+      "mean_r": 0.746806,
+      "std_r": 0.000899
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 1,
+      "mean_r": 0.739564,
+      "std_r": 0.002705
+    },
+    {
+      "drug": "CCT007093",
+      "k": 1,
+      "mean_r": 0.74354,
+      "std_r": 0.001697
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 1,
+      "mean_r": 0.670842,
+      "std_r": 0.003316
+    },
+    {
+      "drug": "CPI-637",
+      "k": 1,
+      "mean_r": 0.723839,
+      "std_r": 0.000348
+    },
+    {
+      "drug": "CZC24832",
+      "k": 1,
+      "mean_r": 0.773706,
+      "std_r": 0.000348
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 1,
+      "mean_r": 0.726527,
+      "std_r": 0.000793
+    },
+    {
+      "drug": "Carmustine",
+      "k": 1,
+      "mean_r": 0.771262,
+      "std_r": 0.000745
+    },
+    {
+      "drug": "Cediranib",
+      "k": 1,
+      "mean_r": 0.546799,
+      "std_r": 0.001891
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 1,
+      "mean_r": 0.792789,
+      "std_r": 0.00104
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 1,
+      "mean_r": 0.778071,
+      "std_r": 0.000631
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 1,
+      "mean_r": 0.764549,
+      "std_r": 0.000434
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 1,
+      "mean_r": 0.759611,
+      "std_r": 0.000609
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 1,
+      "mean_r": 0.497864,
+      "std_r": 0.000584
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 1,
+      "mean_r": 0.682245,
+      "std_r": 0.000558
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 1,
+      "mean_r": 0.82157,
+      "std_r": 0.000727
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 1,
+      "mean_r": 0.664545,
+      "std_r": 0.001393
+    },
+    {
+      "drug": "Daporinad",
+      "k": 1,
+      "mean_r": 0.331161,
+      "std_r": 0.002623
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 1,
+      "mean_r": 0.29281,
+      "std_r": 0.00058
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 1,
+      "mean_r": 0.177419,
+      "std_r": 0.0016
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 1,
+      "mean_r": 0.74258,
+      "std_r": 0.000245
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 1,
+      "mean_r": 0.774969,
+      "std_r": 0.000601
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 1,
+      "mean_r": 0.627511,
+      "std_r": 0.001214
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 1,
+      "mean_r": 0.536963,
+      "std_r": 0.000603
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 1,
+      "mean_r": 0.787591,
+      "std_r": 0.000364
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 1,
+      "mean_r": 0.793707,
+      "std_r": 0.00025
+    },
+    {
+      "drug": "Elephantin",
+      "k": 1,
+      "mean_r": 0.721311,
+      "std_r": 0.000785
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 1,
+      "mean_r": 0.699505,
+      "std_r": 0.007198
+    },
+    {
+      "drug": "Entinostat",
+      "k": 1,
+      "mean_r": 0.686424,
+      "std_r": 0.000782
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 1,
+      "mean_r": 0.608188,
+      "std_r": 0.000391
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 1,
+      "mean_r": 0.77679,
+      "std_r": 0.000373
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 1,
+      "mean_r": 0.440518,
+      "std_r": 0.000556
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 1,
+      "mean_r": 0.613865,
+      "std_r": 0.000927
+    },
+    {
+      "drug": "Foretinib",
+      "k": 1,
+      "mean_r": 0.651623,
+      "std_r": 0.002055
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 1,
+      "mean_r": 0.762698,
+      "std_r": 0.000545
+    },
+    {
+      "drug": "GDC0810",
+      "k": 1,
+      "mean_r": 0.677671,
+      "std_r": 0.00064
+    },
+    {
+      "drug": "GNE-317",
+      "k": 1,
+      "mean_r": 0.538603,
+      "std_r": 0.0008
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 1,
+      "mean_r": 0.649094,
+      "std_r": 0.000535
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 1,
+      "mean_r": 0.670079,
+      "std_r": 0.000943
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 1,
+      "mean_r": 0.621902,
+      "std_r": 0.001397
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 1,
+      "mean_r": 0.701527,
+      "std_r": 0.0005
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 1,
+      "mean_r": 0.697956,
+      "std_r": 0.000684
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 1,
+      "mean_r": 0.649604,
+      "std_r": 0.00209
+    },
+    {
+      "drug": "GSK2801",
+      "k": 1,
+      "mean_r": 0.712851,
+      "std_r": 0.000727
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 1,
+      "mean_r": 0.791813,
+      "std_r": 0.000341
+    },
+    {
+      "drug": "GSK343",
+      "k": 1,
+      "mean_r": 0.79224,
+      "std_r": 0.000676
+    },
+    {
+      "drug": "GSK591",
+      "k": 1,
+      "mean_r": 0.657141,
+      "std_r": 0.001407
+    },
+    {
+      "drug": "GW441756",
+      "k": 1,
+      "mean_r": 0.624909,
+      "std_r": 0.00065
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 1,
+      "mean_r": 0.655247,
+      "std_r": 0.000873
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 1,
+      "mean_r": 0.454939,
+      "std_r": 0.000511
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 1,
+      "mean_r": 0.692164,
+      "std_r": 0.000615
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 1,
+      "mean_r": 0.71617,
+      "std_r": 0.0008
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 1,
+      "mean_r": 0.782972,
+      "std_r": 0.000531
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 1,
+      "mean_r": 0.762619,
+      "std_r": 0.000462
+    },
+    {
+      "drug": "IOX2",
+      "k": 1,
+      "mean_r": 0.728671,
+      "std_r": 0.001891
+    },
+    {
+      "drug": "IWP-2",
+      "k": 1,
+      "mean_r": 0.710963,
+      "std_r": 0.000268
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 1,
+      "mean_r": 0.496822,
+      "std_r": 0.001407
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 1,
+      "mean_r": 0.595233,
+      "std_r": 0.001575
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 1,
+      "mean_r": 0.757898,
+      "std_r": 0.000521
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 1,
+      "mean_r": 0.723617,
+      "std_r": 0.00048
+    },
+    {
+      "drug": "JQ1",
+      "k": 1,
+      "mean_r": 0.701058,
+      "std_r": 0.000989
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 1,
+      "mean_r": 0.730902,
+      "std_r": 0.000764
+    },
+    {
+      "drug": "KU-55933",
+      "k": 1,
+      "mean_r": 0.72741,
+      "std_r": 0.000584
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 1,
+      "mean_r": 0.60921,
+      "std_r": 0.001549
+    },
+    {
+      "drug": "LCL161",
+      "k": 1,
+      "mean_r": 0.576461,
+      "std_r": 0.001444
+    },
+    {
+      "drug": "LGK974",
+      "k": 1,
+      "mean_r": 0.573922,
+      "std_r": 0.000836
+    },
+    {
+      "drug": "LJI308",
+      "k": 1,
+      "mean_r": 0.724372,
+      "std_r": 0.00066
+    },
+    {
+      "drug": "LMP744",
+      "k": 1,
+      "mean_r": 0.72684,
+      "std_r": 0.000506
+    },
+    {
+      "drug": "LY2109761",
+      "k": 1,
+      "mean_r": 0.655577,
+      "std_r": 0.000113
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 1,
+      "mean_r": 0.514921,
+      "std_r": 0.001475
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 1,
+      "mean_r": 0.673091,
+      "std_r": 0.000475
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 1,
+      "mean_r": 0.772251,
+      "std_r": 0.000456
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 1,
+      "mean_r": 0.762596,
+      "std_r": 0.000621
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 1,
+      "mean_r": 0.573136,
+      "std_r": 0.000534
+    },
+    {
+      "drug": "Luminespib",
+      "k": 1,
+      "mean_r": 0.706551,
+      "std_r": 0.000512
+    },
+    {
+      "drug": "MG-132",
+      "k": 1,
+      "mean_r": 0.519715,
+      "std_r": 0.000404
+    },
+    {
+      "drug": "MIM1",
+      "k": 1,
+      "mean_r": 0.652804,
+      "std_r": 0.001241
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 1,
+      "mean_r": 0.794956,
+      "std_r": 0.000387
+    },
+    {
+      "drug": "MK-1775",
+      "k": 1,
+      "mean_r": 0.760762,
+      "std_r": 0.001043
+    },
+    {
+      "drug": "MK-2206",
+      "k": 1,
+      "mean_r": 0.695374,
+      "std_r": 0.000616
+    },
+    {
+      "drug": "MK-8776",
+      "k": 1,
+      "mean_r": 0.699548,
+      "std_r": 0.001158
+    },
+    {
+      "drug": "ML323",
+      "k": 1,
+      "mean_r": 0.628025,
+      "std_r": 0.000522
+    },
+    {
+      "drug": "MN-64",
+      "k": 1,
+      "mean_r": 0.614777,
+      "std_r": 0.001043
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 1,
+      "mean_r": 0.305243,
+      "std_r": 0.000851
+    },
+    {
+      "drug": "Mirin",
+      "k": 1,
+      "mean_r": 0.770517,
+      "std_r": 0.00036
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 1,
+      "mean_r": 0.726035,
+      "std_r": 0.00076
+    },
+    {
+      "drug": "Motesanib",
+      "k": 1,
+      "mean_r": 0.760241,
+      "std_r": 0.000233
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 1,
+      "mean_r": 0.699658,
+      "std_r": 0.00067
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 1,
+      "mean_r": 0.511668,
+      "std_r": 0.001109
+    },
+    {
+      "drug": "NU7441",
+      "k": 1,
+      "mean_r": 0.747817,
+      "std_r": 0.00059
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 1,
+      "mean_r": 0.658949,
+      "std_r": 0.000652
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 1,
+      "mean_r": 0.401445,
+      "std_r": 0.00065
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 1,
+      "mean_r": 0.73701,
+      "std_r": 0.000388
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 1,
+      "mean_r": 0.662052,
+      "std_r": 0.000489
+    },
+    {
+      "drug": "Niraparib",
+      "k": 1,
+      "mean_r": 0.769453,
+      "std_r": 0.000433
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 1,
+      "mean_r": 0.656007,
+      "std_r": 0.000479
+    },
+    {
+      "drug": "OF-1",
+      "k": 1,
+      "mean_r": 0.37009,
+      "std_r": 0.00202
+    },
+    {
+      "drug": "OSI-027",
+      "k": 1,
+      "mean_r": 0.413996,
+      "std_r": 0.002174
+    },
+    {
+      "drug": "OTX015",
+      "k": 1,
+      "mean_r": 0.672642,
+      "std_r": 0.001261
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 1,
+      "mean_r": 0.606361,
+      "std_r": 0.001408
+    },
+    {
+      "drug": "Olaparib",
+      "k": 1,
+      "mean_r": 0.775217,
+      "std_r": 0.000226
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 1,
+      "mean_r": 0.425678,
+      "std_r": 0.002268
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 1,
+      "mean_r": 0.816292,
+      "std_r": 0.000623
+    },
+    {
+      "drug": "P22077",
+      "k": 1,
+      "mean_r": 0.692326,
+      "std_r": 0.000836
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 1,
+      "mean_r": 0.753847,
+      "std_r": 0.000478
+    },
+    {
+      "drug": "PD0325901",
+      "k": 1,
+      "mean_r": 0.213328,
+      "std_r": 0.002903
+    },
+    {
+      "drug": "PD173074",
+      "k": 1,
+      "mean_r": 0.599262,
+      "std_r": 0.000938
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 1,
+      "mean_r": 0.601702,
+      "std_r": 0.004529
+    },
+    {
+      "drug": "PFI-1",
+      "k": 1,
+      "mean_r": 0.675528,
+      "std_r": 0.000921
+    },
+    {
+      "drug": "PFI3",
+      "k": 1,
+      "mean_r": 0.772766,
+      "std_r": 0.000225
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 1,
+      "mean_r": 0.548896,
+      "std_r": 0.001358
+    },
+    {
+      "drug": "POMHEX",
+      "k": 1,
+      "mean_r": 0.533744,
+      "std_r": 0.000741
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 1,
+      "mean_r": 0.650985,
+      "std_r": 0.000797
+    },
+    {
+      "drug": "PRT062607",
+      "k": 1,
+      "mean_r": 0.721844,
+      "std_r": 0.000649
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 1,
+      "mean_r": 0.777024,
+      "std_r": 0.000377
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 1,
+      "mean_r": 0.761866,
+      "std_r": 0.000469
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 1,
+      "mean_r": 0.705643,
+      "std_r": 0.000576
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 1,
+      "mean_r": 0.729467,
+      "std_r": 0.001379
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 1,
+      "mean_r": 0.575667,
+      "std_r": 0.000419
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 1,
+      "mean_r": 0.757472,
+      "std_r": 0.001882
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 1,
+      "mean_r": 0.779619,
+      "std_r": 0.000544
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 1,
+      "mean_r": 0.670524,
+      "std_r": 0.000853
+    },
+    {
+      "drug": "RO-3306",
+      "k": 1,
+      "mean_r": 0.825157,
+      "std_r": 0.000332
+    },
+    {
+      "drug": "RVX-208",
+      "k": 1,
+      "mean_r": 0.737815,
+      "std_r": 0.001342
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 1,
+      "mean_r": 0.607331,
+      "std_r": 0.001346
+    },
+    {
+      "drug": "Refametinib",
+      "k": 1,
+      "mean_r": 0.232519,
+      "std_r": 0.00073
+    },
+    {
+      "drug": "Remodelin",
+      "k": 1,
+      "mean_r": 0.418721,
+      "std_r": 0.001691
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 1,
+      "mean_r": 0.789948,
+      "std_r": 0.000617
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 1,
+      "mean_r": 0.586473,
+      "std_r": 0.000712
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 1,
+      "mean_r": 0.743245,
+      "std_r": 0.000887
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 1,
+      "mean_r": 0.683049,
+      "std_r": 0.000492
+    },
+    {
+      "drug": "SB216763",
+      "k": 1,
+      "mean_r": 0.687281,
+      "std_r": 0.000602
+    },
+    {
+      "drug": "SB505124",
+      "k": 1,
+      "mean_r": 0.350701,
+      "std_r": 0.003704
+    },
+    {
+      "drug": "SB590885",
+      "k": 1,
+      "mean_r": 0.6146,
+      "std_r": 0.001056
+    },
+    {
+      "drug": "SCH772984",
+      "k": 1,
+      "mean_r": 0.344668,
+      "std_r": 0.001758
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 1,
+      "mean_r": 0.660543,
+      "std_r": 0.00087
+    },
+    {
+      "drug": "SGC0946",
+      "k": 1,
+      "mean_r": 0.621942,
+      "std_r": 0.000927
+    },
+    {
+      "drug": "SL0101",
+      "k": 1,
+      "mean_r": 0.61562,
+      "std_r": 0.005372
+    },
+    {
+      "drug": "SN-38",
+      "k": 1,
+      "mean_r": 0.606258,
+      "std_r": 0.001715
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 1,
+      "mean_r": 0.68019,
+      "std_r": 0.000567
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 1,
+      "mean_r": 0.234383,
+      "std_r": 0.000491
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 1,
+      "mean_r": 0.536324,
+      "std_r": 0.000604
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 1,
+      "mean_r": 0.747588,
+      "std_r": 0.00057
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 1,
+      "mean_r": 0.299939,
+      "std_r": 0.000399
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 1,
+      "mean_r": 0.154152,
+      "std_r": 0.000624
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 1,
+      "mean_r": 0.765408,
+      "std_r": 0.000275
+    },
+    {
+      "drug": "Sinularin",
+      "k": 1,
+      "mean_r": 0.68678,
+      "std_r": 0.000639
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 1,
+      "mean_r": 0.726212,
+      "std_r": 0.00049
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 1,
+      "mean_r": 0.609295,
+      "std_r": 0.000503
+    },
+    {
+      "drug": "TW 37",
+      "k": 1,
+      "mean_r": 0.653865,
+      "std_r": 0.001016
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 1,
+      "mean_r": 0.692818,
+      "std_r": 0.000625
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 1,
+      "mean_r": 0.597727,
+      "std_r": 0.001275
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 1,
+      "mean_r": 0.443644,
+      "std_r": 0.001755
+    },
+    {
+      "drug": "Taselisib",
+      "k": 1,
+      "mean_r": 0.489637,
+      "std_r": 0.000315
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 1,
+      "mean_r": 0.713527,
+      "std_r": 0.000678
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 1,
+      "mean_r": 0.777675,
+      "std_r": 0.000404
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 1,
+      "mean_r": 0.583105,
+      "std_r": 0.000673
+    },
+    {
+      "drug": "Teniposide",
+      "k": 1,
+      "mean_r": 0.784727,
+      "std_r": 0.001015
+    },
+    {
+      "drug": "Topotecan",
+      "k": 1,
+      "mean_r": 0.669883,
+      "std_r": 0.001133
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 1,
+      "mean_r": 0.780838,
+      "std_r": 0.002204
+    },
+    {
+      "drug": "Trametinib",
+      "k": 1,
+      "mean_r": 0.212285,
+      "std_r": 0.000931
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 1,
+      "mean_r": 0.712193,
+      "std_r": 0.008946
+    },
+    {
+      "drug": "UMI-77",
+      "k": 1,
+      "mean_r": 0.477639,
+      "std_r": 0.000808
+    },
+    {
+      "drug": "UNC0379",
+      "k": 1,
+      "mean_r": 0.748864,
+      "std_r": 0.000352
+    },
+    {
+      "drug": "UNC0638",
+      "k": 1,
+      "mean_r": 0.794921,
+      "std_r": 0.000294
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 1,
+      "mean_r": 0.489065,
+      "std_r": 0.001641
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 1,
+      "mean_r": 0.613628,
+      "std_r": 0.000438
+    },
+    {
+      "drug": "VE-822",
+      "k": 1,
+      "mean_r": 0.726514,
+      "std_r": 0.000983
+    },
+    {
+      "drug": "VE821",
+      "k": 1,
+      "mean_r": 0.770796,
+      "std_r": 0.00059
+    },
+    {
+      "drug": "VX-11e",
+      "k": 1,
+      "mean_r": 0.510871,
+      "std_r": 0.000724
+    },
+    {
+      "drug": "Veliparib",
+      "k": 1,
+      "mean_r": 0.795706,
+      "std_r": 0.000731
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 1,
+      "mean_r": 0.597156,
+      "std_r": 0.00035
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 1,
+      "mean_r": 0.806825,
+      "std_r": 0.000501
+    },
+    {
+      "drug": "Vincristine",
+      "k": 1,
+      "mean_r": 0.783536,
+      "std_r": 0.000469
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 1,
+      "mean_r": 0.808307,
+      "std_r": 0.000198
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 1,
+      "mean_r": 0.757722,
+      "std_r": 0.000482
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 1,
+      "mean_r": 0.759545,
+      "std_r": 0.000608
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 1,
+      "mean_r": 0.395209,
+      "std_r": 0.000749
+    },
+    {
+      "drug": "WIKI4",
+      "k": 1,
+      "mean_r": 0.4335,
+      "std_r": 0.000567
+    },
+    {
+      "drug": "WZ4003",
+      "k": 1,
+      "mean_r": 0.575196,
+      "std_r": 0.001031
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 1,
+      "mean_r": 0.788304,
+      "std_r": 0.00025
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 1,
+      "mean_r": 0.657077,
+      "std_r": 0.00122
+    },
+    {
+      "drug": "XAV939",
+      "k": 1,
+      "mean_r": 0.568559,
+      "std_r": 0.000451
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 1,
+      "mean_r": 0.823791,
+      "std_r": 0.000372
+    },
+    {
+      "drug": "ZM447439",
+      "k": 1,
+      "mean_r": 0.747497,
+      "std_r": 0.000377
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 1,
+      "mean_r": 0.811372,
+      "std_r": 0.000661
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 1,
+      "mean_r": 0.695665,
+      "std_r": 0.002188
+    },
+    {
+      "drug": "glutathione",
+      "k": 1,
+      "mean_r": 0.619884,
+      "std_r": 0.000575
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 3,
+      "mean_r": 0.755286,
+      "std_r": 0.00083
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 3,
+      "mean_r": 0.738561,
+      "std_r": 0.001854
+    },
+    {
+      "drug": "A-366",
+      "k": 3,
+      "mean_r": 0.739232,
+      "std_r": 0.003515
+    },
+    {
+      "drug": "ABT737",
+      "k": 3,
+      "mean_r": 0.467956,
+      "std_r": 0.001342
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 3,
+      "mean_r": 0.671367,
+      "std_r": 0.001022
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 3,
+      "mean_r": 0.646908,
+      "std_r": 0.001371
+    },
+    {
+      "drug": "AGK2",
+      "k": 3,
+      "mean_r": 0.63277,
+      "std_r": 0.001079
+    },
+    {
+      "drug": "AMG-319",
+      "k": 3,
+      "mean_r": 0.7387,
+      "std_r": 0.002613
+    },
+    {
+      "drug": "AT13148",
+      "k": 3,
+      "mean_r": 0.659231,
+      "std_r": 0.000895
+    },
+    {
+      "drug": "AZ6102",
+      "k": 3,
+      "mean_r": 0.619248,
+      "std_r": 0.001657
+    },
+    {
+      "drug": "AZ960",
+      "k": 3,
+      "mean_r": 0.723551,
+      "std_r": 0.002051
+    },
+    {
+      "drug": "AZD1208",
+      "k": 3,
+      "mean_r": 0.772449,
+      "std_r": 0.001244
+    },
+    {
+      "drug": "AZD1332",
+      "k": 3,
+      "mean_r": 0.518899,
+      "std_r": 0.002656
+    },
+    {
+      "drug": "AZD2014",
+      "k": 3,
+      "mean_r": 0.546025,
+      "std_r": 0.003391
+    },
+    {
+      "drug": "AZD3759",
+      "k": 3,
+      "mean_r": 0.462606,
+      "std_r": 0.001967
+    },
+    {
+      "drug": "AZD4547",
+      "k": 3,
+      "mean_r": 0.546259,
+      "std_r": 0.000924
+    },
+    {
+      "drug": "AZD5153",
+      "k": 3,
+      "mean_r": 0.669801,
+      "std_r": 0.001096
+    },
+    {
+      "drug": "AZD5363",
+      "k": 3,
+      "mean_r": 0.620472,
+      "std_r": 0.001643
+    },
+    {
+      "drug": "AZD5438",
+      "k": 3,
+      "mean_r": 0.81927,
+      "std_r": 0.001992
+    },
+    {
+      "drug": "AZD5582",
+      "k": 3,
+      "mean_r": 0.48531,
+      "std_r": 0.001098
+    },
+    {
+      "drug": "AZD5991",
+      "k": 3,
+      "mean_r": 0.663169,
+      "std_r": 0.001727
+    },
+    {
+      "drug": "AZD6482",
+      "k": 3,
+      "mean_r": 0.627116,
+      "std_r": 0.00438
+    },
+    {
+      "drug": "AZD6738",
+      "k": 3,
+      "mean_r": 0.742157,
+      "std_r": 0.001513
+    },
+    {
+      "drug": "AZD7762",
+      "k": 3,
+      "mean_r": 0.73144,
+      "std_r": 0.001134
+    },
+    {
+      "drug": "AZD8055",
+      "k": 3,
+      "mean_r": 0.560678,
+      "std_r": 0.001632
+    },
+    {
+      "drug": "AZD8186",
+      "k": 3,
+      "mean_r": 0.458622,
+      "std_r": 0.002027
+    },
+    {
+      "drug": "Acetalax",
+      "k": 3,
+      "mean_r": 0.152234,
+      "std_r": 0.001733
+    },
+    {
+      "drug": "Afatinib",
+      "k": 3,
+      "mean_r": 0.441477,
+      "std_r": 0.004002
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 3,
+      "mean_r": 0.610033,
+      "std_r": 0.001347
+    },
+    {
+      "drug": "Alisertib",
+      "k": 3,
+      "mean_r": 0.703598,
+      "std_r": 0.001073
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 3,
+      "mean_r": 0.593166,
+      "std_r": 0.001098
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 3,
+      "mean_r": 0.712494,
+      "std_r": 0.002032
+    },
+    {
+      "drug": "Axitinib",
+      "k": 3,
+      "mean_r": 0.743806,
+      "std_r": 0.000823
+    },
+    {
+      "drug": "BI-2536",
+      "k": 3,
+      "mean_r": 0.773652,
+      "std_r": 0.00089
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 3,
+      "mean_r": 0.670298,
+      "std_r": 0.001214
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 3,
+      "mean_r": 0.779665,
+      "std_r": 0.000809
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 3,
+      "mean_r": 0.506184,
+      "std_r": 0.001582
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 3,
+      "mean_r": 0.63307,
+      "std_r": 0.000664
+    },
+    {
+      "drug": "BX795",
+      "k": 3,
+      "mean_r": 0.744722,
+      "std_r": 0.00545
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 3,
+      "mean_r": 0.647068,
+      "std_r": 0.007429
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 3,
+      "mean_r": 0.622654,
+      "std_r": 0.001268
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 3,
+      "mean_r": 0.622281,
+      "std_r": 0.001967
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 3,
+      "mean_r": 0.621266,
+      "std_r": 0.00171
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 3,
+      "mean_r": 0.672334,
+      "std_r": 0.000922
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 3,
+      "mean_r": 0.696297,
+      "std_r": 0.001417
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 3,
+      "mean_r": 0.74622,
+      "std_r": 0.001534
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 3,
+      "mean_r": 0.738148,
+      "std_r": 0.002703
+    },
+    {
+      "drug": "CCT007093",
+      "k": 3,
+      "mean_r": 0.74356,
+      "std_r": 0.001935
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 3,
+      "mean_r": 0.671892,
+      "std_r": 0.006632
+    },
+    {
+      "drug": "CPI-637",
+      "k": 3,
+      "mean_r": 0.723436,
+      "std_r": 0.001609
+    },
+    {
+      "drug": "CZC24832",
+      "k": 3,
+      "mean_r": 0.773684,
+      "std_r": 0.000936
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 3,
+      "mean_r": 0.725907,
+      "std_r": 0.001117
+    },
+    {
+      "drug": "Carmustine",
+      "k": 3,
+      "mean_r": 0.771225,
+      "std_r": 0.001405
+    },
+    {
+      "drug": "Cediranib",
+      "k": 3,
+      "mean_r": 0.546583,
+      "std_r": 0.002086
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 3,
+      "mean_r": 0.792738,
+      "std_r": 0.000968
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 3,
+      "mean_r": 0.777899,
+      "std_r": 0.00101
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 3,
+      "mean_r": 0.765243,
+      "std_r": 0.000849
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 3,
+      "mean_r": 0.75951,
+      "std_r": 0.001303
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 3,
+      "mean_r": 0.498598,
+      "std_r": 0.002777
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 3,
+      "mean_r": 0.682779,
+      "std_r": 0.001278
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 3,
+      "mean_r": 0.82093,
+      "std_r": 0.000639
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 3,
+      "mean_r": 0.664797,
+      "std_r": 0.002781
+    },
+    {
+      "drug": "Daporinad",
+      "k": 3,
+      "mean_r": 0.331162,
+      "std_r": 0.005492
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 3,
+      "mean_r": 0.291151,
+      "std_r": 0.002348
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 3,
+      "mean_r": 0.176393,
+      "std_r": 0.002285
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 3,
+      "mean_r": 0.742827,
+      "std_r": 0.000699
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 3,
+      "mean_r": 0.775023,
+      "std_r": 0.000768
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 3,
+      "mean_r": 0.62741,
+      "std_r": 0.001714
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 3,
+      "mean_r": 0.537637,
+      "std_r": 0.001717
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 3,
+      "mean_r": 0.78754,
+      "std_r": 0.000952
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 3,
+      "mean_r": 0.793933,
+      "std_r": 0.000524
+    },
+    {
+      "drug": "Elephantin",
+      "k": 3,
+      "mean_r": 0.720635,
+      "std_r": 0.001533
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 3,
+      "mean_r": 0.696996,
+      "std_r": 0.00724
+    },
+    {
+      "drug": "Entinostat",
+      "k": 3,
+      "mean_r": 0.685814,
+      "std_r": 0.001092
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 3,
+      "mean_r": 0.608313,
+      "std_r": 0.000913
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 3,
+      "mean_r": 0.776232,
+      "std_r": 0.000534
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 3,
+      "mean_r": 0.440691,
+      "std_r": 0.001413
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 3,
+      "mean_r": 0.614956,
+      "std_r": 0.001593
+    },
+    {
+      "drug": "Foretinib",
+      "k": 3,
+      "mean_r": 0.651051,
+      "std_r": 0.001036
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 3,
+      "mean_r": 0.76275,
+      "std_r": 0.001518
+    },
+    {
+      "drug": "GDC0810",
+      "k": 3,
+      "mean_r": 0.676511,
+      "std_r": 0.002484
+    },
+    {
+      "drug": "GNE-317",
+      "k": 3,
+      "mean_r": 0.537742,
+      "std_r": 0.00205
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 3,
+      "mean_r": 0.648277,
+      "std_r": 0.002745
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 3,
+      "mean_r": 0.669569,
+      "std_r": 0.00179
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 3,
+      "mean_r": 0.622224,
+      "std_r": 0.001707
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 3,
+      "mean_r": 0.701267,
+      "std_r": 0.000897
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 3,
+      "mean_r": 0.698426,
+      "std_r": 0.002649
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 3,
+      "mean_r": 0.648855,
+      "std_r": 0.00495
+    },
+    {
+      "drug": "GSK2801",
+      "k": 3,
+      "mean_r": 0.713205,
+      "std_r": 0.002016
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 3,
+      "mean_r": 0.791852,
+      "std_r": 0.002263
+    },
+    {
+      "drug": "GSK343",
+      "k": 3,
+      "mean_r": 0.792448,
+      "std_r": 0.000924
+    },
+    {
+      "drug": "GSK591",
+      "k": 3,
+      "mean_r": 0.656785,
+      "std_r": 0.002198
+    },
+    {
+      "drug": "GW441756",
+      "k": 3,
+      "mean_r": 0.623735,
+      "std_r": 0.002307
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 3,
+      "mean_r": 0.654201,
+      "std_r": 0.002867
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 3,
+      "mean_r": 0.454826,
+      "std_r": 0.001297
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 3,
+      "mean_r": 0.692439,
+      "std_r": 0.001631
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 3,
+      "mean_r": 0.716156,
+      "std_r": 0.001447
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 3,
+      "mean_r": 0.783733,
+      "std_r": 0.001387
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 3,
+      "mean_r": 0.762619,
+      "std_r": 0.001893
+    },
+    {
+      "drug": "IOX2",
+      "k": 3,
+      "mean_r": 0.730511,
+      "std_r": 0.005215
+    },
+    {
+      "drug": "IWP-2",
+      "k": 3,
+      "mean_r": 0.710974,
+      "std_r": 0.002278
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 3,
+      "mean_r": 0.496063,
+      "std_r": 0.002171
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 3,
+      "mean_r": 0.595228,
+      "std_r": 0.002011
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 3,
+      "mean_r": 0.757946,
+      "std_r": 0.000667
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 3,
+      "mean_r": 0.723468,
+      "std_r": 0.001093
+    },
+    {
+      "drug": "JQ1",
+      "k": 3,
+      "mean_r": 0.701539,
+      "std_r": 0.001101
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 3,
+      "mean_r": 0.730398,
+      "std_r": 0.001774
+    },
+    {
+      "drug": "KU-55933",
+      "k": 3,
+      "mean_r": 0.727211,
+      "std_r": 0.001694
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 3,
+      "mean_r": 0.609765,
+      "std_r": 0.002308
+    },
+    {
+      "drug": "LCL161",
+      "k": 3,
+      "mean_r": 0.576077,
+      "std_r": 0.002305
+    },
+    {
+      "drug": "LGK974",
+      "k": 3,
+      "mean_r": 0.57368,
+      "std_r": 0.001832
+    },
+    {
+      "drug": "LJI308",
+      "k": 3,
+      "mean_r": 0.723745,
+      "std_r": 0.000805
+    },
+    {
+      "drug": "LMP744",
+      "k": 3,
+      "mean_r": 0.726755,
+      "std_r": 0.001071
+    },
+    {
+      "drug": "LY2109761",
+      "k": 3,
+      "mean_r": 0.65555,
+      "std_r": 0.001057
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 3,
+      "mean_r": 0.514727,
+      "std_r": 0.001813
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 3,
+      "mean_r": 0.673339,
+      "std_r": 0.00216
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 3,
+      "mean_r": 0.772423,
+      "std_r": 0.00053
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 3,
+      "mean_r": 0.762147,
+      "std_r": 0.001038
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 3,
+      "mean_r": 0.573921,
+      "std_r": 0.001458
+    },
+    {
+      "drug": "Luminespib",
+      "k": 3,
+      "mean_r": 0.706813,
+      "std_r": 0.000944
+    },
+    {
+      "drug": "MG-132",
+      "k": 3,
+      "mean_r": 0.520039,
+      "std_r": 0.002356
+    },
+    {
+      "drug": "MIM1",
+      "k": 3,
+      "mean_r": 0.653277,
+      "std_r": 0.00226
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 3,
+      "mean_r": 0.794991,
+      "std_r": 0.000653
+    },
+    {
+      "drug": "MK-1775",
+      "k": 3,
+      "mean_r": 0.761172,
+      "std_r": 0.000709
+    },
+    {
+      "drug": "MK-2206",
+      "k": 3,
+      "mean_r": 0.695551,
+      "std_r": 0.000966
+    },
+    {
+      "drug": "MK-8776",
+      "k": 3,
+      "mean_r": 0.699959,
+      "std_r": 0.002061
+    },
+    {
+      "drug": "ML323",
+      "k": 3,
+      "mean_r": 0.627929,
+      "std_r": 0.001814
+    },
+    {
+      "drug": "MN-64",
+      "k": 3,
+      "mean_r": 0.615403,
+      "std_r": 0.001839
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 3,
+      "mean_r": 0.304595,
+      "std_r": 0.002582
+    },
+    {
+      "drug": "Mirin",
+      "k": 3,
+      "mean_r": 0.770496,
+      "std_r": 0.000807
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 3,
+      "mean_r": 0.725535,
+      "std_r": 0.001214
+    },
+    {
+      "drug": "Motesanib",
+      "k": 3,
+      "mean_r": 0.760429,
+      "std_r": 0.001472
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 3,
+      "mean_r": 0.699602,
+      "std_r": 0.000832
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 3,
+      "mean_r": 0.512714,
+      "std_r": 0.002598
+    },
+    {
+      "drug": "NU7441",
+      "k": 3,
+      "mean_r": 0.747389,
+      "std_r": 0.001142
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 3,
+      "mean_r": 0.658183,
+      "std_r": 0.002075
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 3,
+      "mean_r": 0.401,
+      "std_r": 0.001914
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 3,
+      "mean_r": 0.737524,
+      "std_r": 0.001978
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 3,
+      "mean_r": 0.662859,
+      "std_r": 0.002317
+    },
+    {
+      "drug": "Niraparib",
+      "k": 3,
+      "mean_r": 0.769564,
+      "std_r": 0.001115
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 3,
+      "mean_r": 0.655872,
+      "std_r": 0.001258
+    },
+    {
+      "drug": "OF-1",
+      "k": 3,
+      "mean_r": 0.371166,
+      "std_r": 0.003702
+    },
+    {
+      "drug": "OSI-027",
+      "k": 3,
+      "mean_r": 0.416393,
+      "std_r": 0.002281
+    },
+    {
+      "drug": "OTX015",
+      "k": 3,
+      "mean_r": 0.673058,
+      "std_r": 0.001036
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 3,
+      "mean_r": 0.605392,
+      "std_r": 0.001946
+    },
+    {
+      "drug": "Olaparib",
+      "k": 3,
+      "mean_r": 0.774971,
+      "std_r": 0.001252
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 3,
+      "mean_r": 0.426447,
+      "std_r": 0.001517
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 3,
+      "mean_r": 0.816011,
+      "std_r": 0.000605
+    },
+    {
+      "drug": "P22077",
+      "k": 3,
+      "mean_r": 0.692002,
+      "std_r": 0.001692
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 3,
+      "mean_r": 0.753635,
+      "std_r": 0.001224
+    },
+    {
+      "drug": "PD0325901",
+      "k": 3,
+      "mean_r": 0.214712,
+      "std_r": 0.002654
+    },
+    {
+      "drug": "PD173074",
+      "k": 3,
+      "mean_r": 0.598537,
+      "std_r": 0.001851
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 3,
+      "mean_r": 0.599082,
+      "std_r": 0.009956
+    },
+    {
+      "drug": "PFI-1",
+      "k": 3,
+      "mean_r": 0.674991,
+      "std_r": 0.001627
+    },
+    {
+      "drug": "PFI3",
+      "k": 3,
+      "mean_r": 0.773074,
+      "std_r": 0.000988
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 3,
+      "mean_r": 0.547875,
+      "std_r": 0.002897
+    },
+    {
+      "drug": "POMHEX",
+      "k": 3,
+      "mean_r": 0.534691,
+      "std_r": 0.001458
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 3,
+      "mean_r": 0.65115,
+      "std_r": 0.002032
+    },
+    {
+      "drug": "PRT062607",
+      "k": 3,
+      "mean_r": 0.722025,
+      "std_r": 0.001053
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 3,
+      "mean_r": 0.777036,
+      "std_r": 0.001303
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 3,
+      "mean_r": 0.762338,
+      "std_r": 0.000534
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 3,
+      "mean_r": 0.705825,
+      "std_r": 0.000841
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 3,
+      "mean_r": 0.729371,
+      "std_r": 0.001278
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 3,
+      "mean_r": 0.574853,
+      "std_r": 0.002255
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 3,
+      "mean_r": 0.756824,
+      "std_r": 0.005114
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 3,
+      "mean_r": 0.77993,
+      "std_r": 0.001068
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 3,
+      "mean_r": 0.66967,
+      "std_r": 0.002126
+    },
+    {
+      "drug": "RO-3306",
+      "k": 3,
+      "mean_r": 0.825588,
+      "std_r": 0.000912
+    },
+    {
+      "drug": "RVX-208",
+      "k": 3,
+      "mean_r": 0.738403,
+      "std_r": 0.002055
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 3,
+      "mean_r": 0.607127,
+      "std_r": 0.001044
+    },
+    {
+      "drug": "Refametinib",
+      "k": 3,
+      "mean_r": 0.233003,
+      "std_r": 0.001766
+    },
+    {
+      "drug": "Remodelin",
+      "k": 3,
+      "mean_r": 0.420155,
+      "std_r": 0.004002
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 3,
+      "mean_r": 0.790509,
+      "std_r": 0.000886
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 3,
+      "mean_r": 0.586156,
+      "std_r": 0.001763
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 3,
+      "mean_r": 0.742773,
+      "std_r": 0.001104
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 3,
+      "mean_r": 0.683237,
+      "std_r": 0.002304
+    },
+    {
+      "drug": "SB216763",
+      "k": 3,
+      "mean_r": 0.68647,
+      "std_r": 0.000878
+    },
+    {
+      "drug": "SB505124",
+      "k": 3,
+      "mean_r": 0.352271,
+      "std_r": 0.009636
+    },
+    {
+      "drug": "SB590885",
+      "k": 3,
+      "mean_r": 0.614517,
+      "std_r": 0.000867
+    },
+    {
+      "drug": "SCH772984",
+      "k": 3,
+      "mean_r": 0.344901,
+      "std_r": 0.002897
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 3,
+      "mean_r": 0.660981,
+      "std_r": 0.002066
+    },
+    {
+      "drug": "SGC0946",
+      "k": 3,
+      "mean_r": 0.622472,
+      "std_r": 0.001014
+    },
+    {
+      "drug": "SL0101",
+      "k": 3,
+      "mean_r": 0.611148,
+      "std_r": 0.008882
+    },
+    {
+      "drug": "SN-38",
+      "k": 3,
+      "mean_r": 0.606812,
+      "std_r": 0.001759
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 3,
+      "mean_r": 0.680461,
+      "std_r": 0.00093
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 3,
+      "mean_r": 0.235223,
+      "std_r": 0.002095
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 3,
+      "mean_r": 0.537381,
+      "std_r": 0.005913
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 3,
+      "mean_r": 0.747222,
+      "std_r": 0.001052
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 3,
+      "mean_r": 0.300772,
+      "std_r": 0.001019
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 3,
+      "mean_r": 0.152907,
+      "std_r": 0.001919
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 3,
+      "mean_r": 0.765406,
+      "std_r": 0.001224
+    },
+    {
+      "drug": "Sinularin",
+      "k": 3,
+      "mean_r": 0.687238,
+      "std_r": 0.001879
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 3,
+      "mean_r": 0.726507,
+      "std_r": 0.000764
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 3,
+      "mean_r": 0.609239,
+      "std_r": 0.001454
+    },
+    {
+      "drug": "TW 37",
+      "k": 3,
+      "mean_r": 0.653759,
+      "std_r": 0.00287
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 3,
+      "mean_r": 0.692755,
+      "std_r": 0.001133
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 3,
+      "mean_r": 0.597479,
+      "std_r": 0.001806
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 3,
+      "mean_r": 0.444357,
+      "std_r": 0.002626
+    },
+    {
+      "drug": "Taselisib",
+      "k": 3,
+      "mean_r": 0.490085,
+      "std_r": 0.001635
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 3,
+      "mean_r": 0.713754,
+      "std_r": 0.001703
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 3,
+      "mean_r": 0.777638,
+      "std_r": 0.00079
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 3,
+      "mean_r": 0.582654,
+      "std_r": 0.000999
+    },
+    {
+      "drug": "Teniposide",
+      "k": 3,
+      "mean_r": 0.785037,
+      "std_r": 0.000924
+    },
+    {
+      "drug": "Topotecan",
+      "k": 3,
+      "mean_r": 0.66807,
+      "std_r": 0.000811
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 3,
+      "mean_r": 0.781155,
+      "std_r": 0.003878
+    },
+    {
+      "drug": "Trametinib",
+      "k": 3,
+      "mean_r": 0.213713,
+      "std_r": 0.001664
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 3,
+      "mean_r": 0.71521,
+      "std_r": 0.007499
+    },
+    {
+      "drug": "UMI-77",
+      "k": 3,
+      "mean_r": 0.476448,
+      "std_r": 0.001761
+    },
+    {
+      "drug": "UNC0379",
+      "k": 3,
+      "mean_r": 0.749127,
+      "std_r": 0.000946
+    },
+    {
+      "drug": "UNC0638",
+      "k": 3,
+      "mean_r": 0.794777,
+      "std_r": 0.00075
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 3,
+      "mean_r": 0.489612,
+      "std_r": 0.001266
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 3,
+      "mean_r": 0.613456,
+      "std_r": 0.001358
+    },
+    {
+      "drug": "VE-822",
+      "k": 3,
+      "mean_r": 0.727372,
+      "std_r": 0.001606
+    },
+    {
+      "drug": "VE821",
+      "k": 3,
+      "mean_r": 0.770564,
+      "std_r": 0.001393
+    },
+    {
+      "drug": "VX-11e",
+      "k": 3,
+      "mean_r": 0.510557,
+      "std_r": 0.002353
+    },
+    {
+      "drug": "Veliparib",
+      "k": 3,
+      "mean_r": 0.796393,
+      "std_r": 0.00157
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 3,
+      "mean_r": 0.597178,
+      "std_r": 0.000805
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 3,
+      "mean_r": 0.80672,
+      "std_r": 0.00066
+    },
+    {
+      "drug": "Vincristine",
+      "k": 3,
+      "mean_r": 0.784337,
+      "std_r": 0.001228
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 3,
+      "mean_r": 0.808431,
+      "std_r": 0.001222
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 3,
+      "mean_r": 0.75889,
+      "std_r": 0.001893
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 3,
+      "mean_r": 0.7594,
+      "std_r": 0.001363
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 3,
+      "mean_r": 0.395391,
+      "std_r": 0.002045
+    },
+    {
+      "drug": "WIKI4",
+      "k": 3,
+      "mean_r": 0.43442,
+      "std_r": 0.001731
+    },
+    {
+      "drug": "WZ4003",
+      "k": 3,
+      "mean_r": 0.575564,
+      "std_r": 0.002179
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 3,
+      "mean_r": 0.787977,
+      "std_r": 0.001327
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 3,
+      "mean_r": 0.65655,
+      "std_r": 0.002263
+    },
+    {
+      "drug": "XAV939",
+      "k": 3,
+      "mean_r": 0.569204,
+      "std_r": 0.000643
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 3,
+      "mean_r": 0.823673,
+      "std_r": 0.000463
+    },
+    {
+      "drug": "ZM447439",
+      "k": 3,
+      "mean_r": 0.747852,
+      "std_r": 0.00081
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 3,
+      "mean_r": 0.812011,
+      "std_r": 0.000882
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 3,
+      "mean_r": 0.696966,
+      "std_r": 0.001028
+    },
+    {
+      "drug": "glutathione",
+      "k": 3,
+      "mean_r": 0.618789,
+      "std_r": 0.002712
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 5,
+      "mean_r": 0.752132,
+      "std_r": 0.004987
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 5,
+      "mean_r": 0.737542,
+      "std_r": 0.004827
+    },
+    {
+      "drug": "A-366",
+      "k": 5,
+      "mean_r": 0.747127,
+      "std_r": 0.008076
+    },
+    {
+      "drug": "ABT737",
+      "k": 5,
+      "mean_r": 0.458182,
+      "std_r": 0.025175
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 5,
+      "mean_r": 0.659494,
+      "std_r": 0.029693
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 5,
+      "mean_r": 0.651474,
+      "std_r": 0.005828
+    },
+    {
+      "drug": "AGK2",
+      "k": 5,
+      "mean_r": 0.634861,
+      "std_r": 0.005776
+    },
+    {
+      "drug": "AMG-319",
+      "k": 5,
+      "mean_r": 0.738367,
+      "std_r": 0.003955
+    },
+    {
+      "drug": "AT13148",
+      "k": 5,
+      "mean_r": 0.651367,
+      "std_r": 0.012247
+    },
+    {
+      "drug": "AZ6102",
+      "k": 5,
+      "mean_r": 0.615641,
+      "std_r": 0.015115
+    },
+    {
+      "drug": "AZ960",
+      "k": 5,
+      "mean_r": 0.719975,
+      "std_r": 0.012054
+    },
+    {
+      "drug": "AZD1208",
+      "k": 5,
+      "mean_r": 0.771878,
+      "std_r": 0.010331
+    },
+    {
+      "drug": "AZD1332",
+      "k": 5,
+      "mean_r": 0.521281,
+      "std_r": 0.009373
+    },
+    {
+      "drug": "AZD2014",
+      "k": 5,
+      "mean_r": 0.553192,
+      "std_r": 0.01506
+    },
+    {
+      "drug": "AZD3759",
+      "k": 5,
+      "mean_r": 0.464812,
+      "std_r": 0.017634
+    },
+    {
+      "drug": "AZD4547",
+      "k": 5,
+      "mean_r": 0.542098,
+      "std_r": 0.015238
+    },
+    {
+      "drug": "AZD5153",
+      "k": 5,
+      "mean_r": 0.684524,
+      "std_r": 0.016382
+    },
+    {
+      "drug": "AZD5363",
+      "k": 5,
+      "mean_r": 0.625642,
+      "std_r": 0.017059
+    },
+    {
+      "drug": "AZD5438",
+      "k": 5,
+      "mean_r": 0.81608,
+      "std_r": 0.004482
+    },
+    {
+      "drug": "AZD5582",
+      "k": 5,
+      "mean_r": 0.484116,
+      "std_r": 0.006768
+    },
+    {
+      "drug": "AZD5991",
+      "k": 5,
+      "mean_r": 0.671424,
+      "std_r": 0.007756
+    },
+    {
+      "drug": "AZD6482",
+      "k": 5,
+      "mean_r": 0.63099,
+      "std_r": 0.018528
+    },
+    {
+      "drug": "AZD6738",
+      "k": 5,
+      "mean_r": 0.740695,
+      "std_r": 0.009293
+    },
+    {
+      "drug": "AZD7762",
+      "k": 5,
+      "mean_r": 0.729812,
+      "std_r": 0.022057
+    },
+    {
+      "drug": "AZD8055",
+      "k": 5,
+      "mean_r": 0.564563,
+      "std_r": 0.010634
+    },
+    {
+      "drug": "AZD8186",
+      "k": 5,
+      "mean_r": 0.457078,
+      "std_r": 0.015751
+    },
+    {
+      "drug": "Acetalax",
+      "k": 5,
+      "mean_r": 0.158842,
+      "std_r": 0.015253
+    },
+    {
+      "drug": "Afatinib",
+      "k": 5,
+      "mean_r": 0.43334,
+      "std_r": 0.008678
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 5,
+      "mean_r": 0.628721,
+      "std_r": 0.032148
+    },
+    {
+      "drug": "Alisertib",
+      "k": 5,
+      "mean_r": 0.703174,
+      "std_r": 0.009184
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 5,
+      "mean_r": 0.596084,
+      "std_r": 0.01111
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 5,
+      "mean_r": 0.710979,
+      "std_r": 0.009698
+    },
+    {
+      "drug": "Axitinib",
+      "k": 5,
+      "mean_r": 0.743881,
+      "std_r": 0.011587
+    },
+    {
+      "drug": "BI-2536",
+      "k": 5,
+      "mean_r": 0.771473,
+      "std_r": 0.010986
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 5,
+      "mean_r": 0.672929,
+      "std_r": 0.009809
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 5,
+      "mean_r": 0.780725,
+      "std_r": 0.006252
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 5,
+      "mean_r": 0.503235,
+      "std_r": 0.009133
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 5,
+      "mean_r": 0.630811,
+      "std_r": 0.007571
+    },
+    {
+      "drug": "BX795",
+      "k": 5,
+      "mean_r": 0.741227,
+      "std_r": 0.011912
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 5,
+      "mean_r": 0.648628,
+      "std_r": 0.01948
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 5,
+      "mean_r": 0.622764,
+      "std_r": 0.012104
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 5,
+      "mean_r": 0.629319,
+      "std_r": 0.011013
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 5,
+      "mean_r": 0.616754,
+      "std_r": 0.005056
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 5,
+      "mean_r": 0.662282,
+      "std_r": 0.015817
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 5,
+      "mean_r": 0.716981,
+      "std_r": 0.013765
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 5,
+      "mean_r": 0.739932,
+      "std_r": 0.020821
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 5,
+      "mean_r": 0.742077,
+      "std_r": 0.008855
+    },
+    {
+      "drug": "CCT007093",
+      "k": 5,
+      "mean_r": 0.741217,
+      "std_r": 0.007981
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 5,
+      "mean_r": 0.671006,
+      "std_r": 0.006306
+    },
+    {
+      "drug": "CPI-637",
+      "k": 5,
+      "mean_r": 0.728801,
+      "std_r": 0.004561
+    },
+    {
+      "drug": "CZC24832",
+      "k": 5,
+      "mean_r": 0.773169,
+      "std_r": 0.008676
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 5,
+      "mean_r": 0.732787,
+      "std_r": 0.036324
+    },
+    {
+      "drug": "Carmustine",
+      "k": 5,
+      "mean_r": 0.768703,
+      "std_r": 0.006
+    },
+    {
+      "drug": "Cediranib",
+      "k": 5,
+      "mean_r": 0.539883,
+      "std_r": 0.01332
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 5,
+      "mean_r": 0.789399,
+      "std_r": 0.011354
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 5,
+      "mean_r": 0.774926,
+      "std_r": 0.008252
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 5,
+      "mean_r": 0.762934,
+      "std_r": 0.009461
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 5,
+      "mean_r": 0.761863,
+      "std_r": 0.00989
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 5,
+      "mean_r": 0.497146,
+      "std_r": 0.01065
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 5,
+      "mean_r": 0.68311,
+      "std_r": 0.007289
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 5,
+      "mean_r": 0.806407,
+      "std_r": 0.014991
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 5,
+      "mean_r": 0.666243,
+      "std_r": 0.01872
+    },
+    {
+      "drug": "Daporinad",
+      "k": 5,
+      "mean_r": 0.350928,
+      "std_r": 0.039254
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 5,
+      "mean_r": 0.291258,
+      "std_r": 0.011798
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 5,
+      "mean_r": 0.197933,
+      "std_r": 0.012983
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 5,
+      "mean_r": 0.739607,
+      "std_r": 0.007825
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 5,
+      "mean_r": 0.776001,
+      "std_r": 0.009422
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 5,
+      "mean_r": 0.627711,
+      "std_r": 0.018375
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 5,
+      "mean_r": 0.540503,
+      "std_r": 0.021358
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 5,
+      "mean_r": 0.787352,
+      "std_r": 0.007402
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 5,
+      "mean_r": 0.786486,
+      "std_r": 0.010734
+    },
+    {
+      "drug": "Elephantin",
+      "k": 5,
+      "mean_r": 0.725737,
+      "std_r": 0.00568
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 5,
+      "mean_r": 0.695769,
+      "std_r": 0.006496
+    },
+    {
+      "drug": "Entinostat",
+      "k": 5,
+      "mean_r": 0.677813,
+      "std_r": 0.01076
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 5,
+      "mean_r": 0.602366,
+      "std_r": 0.005725
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 5,
+      "mean_r": 0.776243,
+      "std_r": 0.012743
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 5,
+      "mean_r": 0.444894,
+      "std_r": 0.026355
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 5,
+      "mean_r": 0.609052,
+      "std_r": 0.006312
+    },
+    {
+      "drug": "Foretinib",
+      "k": 5,
+      "mean_r": 0.650023,
+      "std_r": 0.006902
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 5,
+      "mean_r": 0.767872,
+      "std_r": 0.006477
+    },
+    {
+      "drug": "GDC0810",
+      "k": 5,
+      "mean_r": 0.663022,
+      "std_r": 0.018986
+    },
+    {
+      "drug": "GNE-317",
+      "k": 5,
+      "mean_r": 0.538337,
+      "std_r": 0.016641
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 5,
+      "mean_r": 0.645149,
+      "std_r": 0.005419
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 5,
+      "mean_r": 0.664863,
+      "std_r": 0.010936
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 5,
+      "mean_r": 0.63628,
+      "std_r": 0.01828
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 5,
+      "mean_r": 0.700156,
+      "std_r": 0.008071
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 5,
+      "mean_r": 0.686998,
+      "std_r": 0.015735
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 5,
+      "mean_r": 0.646745,
+      "std_r": 0.010729
+    },
+    {
+      "drug": "GSK2801",
+      "k": 5,
+      "mean_r": 0.714441,
+      "std_r": 0.004461
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 5,
+      "mean_r": 0.782221,
+      "std_r": 0.016849
+    },
+    {
+      "drug": "GSK343",
+      "k": 5,
+      "mean_r": 0.773885,
+      "std_r": 0.02995
+    },
+    {
+      "drug": "GSK591",
+      "k": 5,
+      "mean_r": 0.655844,
+      "std_r": 0.007282
+    },
+    {
+      "drug": "GW441756",
+      "k": 5,
+      "mean_r": 0.62303,
+      "std_r": 0.014806
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 5,
+      "mean_r": 0.658534,
+      "std_r": 0.012054
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 5,
+      "mean_r": 0.454402,
+      "std_r": 0.015283
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 5,
+      "mean_r": 0.697511,
+      "std_r": 0.01681
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 5,
+      "mean_r": 0.726333,
+      "std_r": 0.018725
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 5,
+      "mean_r": 0.781461,
+      "std_r": 0.004981
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 5,
+      "mean_r": 0.760582,
+      "std_r": 0.005205
+    },
+    {
+      "drug": "IOX2",
+      "k": 5,
+      "mean_r": 0.738497,
+      "std_r": 0.011556
+    },
+    {
+      "drug": "IWP-2",
+      "k": 5,
+      "mean_r": 0.701397,
+      "std_r": 0.00587
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 5,
+      "mean_r": 0.511346,
+      "std_r": 0.031613
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 5,
+      "mean_r": 0.594165,
+      "std_r": 0.015635
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 5,
+      "mean_r": 0.766867,
+      "std_r": 0.019409
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 5,
+      "mean_r": 0.719249,
+      "std_r": 0.013982
+    },
+    {
+      "drug": "JQ1",
+      "k": 5,
+      "mean_r": 0.706242,
+      "std_r": 0.014096
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 5,
+      "mean_r": 0.726645,
+      "std_r": 0.009172
+    },
+    {
+      "drug": "KU-55933",
+      "k": 5,
+      "mean_r": 0.728225,
+      "std_r": 0.006658
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 5,
+      "mean_r": 0.609396,
+      "std_r": 0.005919
+    },
+    {
+      "drug": "LCL161",
+      "k": 5,
+      "mean_r": 0.571655,
+      "std_r": 0.014333
+    },
+    {
+      "drug": "LGK974",
+      "k": 5,
+      "mean_r": 0.574191,
+      "std_r": 0.008541
+    },
+    {
+      "drug": "LJI308",
+      "k": 5,
+      "mean_r": 0.718063,
+      "std_r": 0.01719
+    },
+    {
+      "drug": "LMP744",
+      "k": 5,
+      "mean_r": 0.738971,
+      "std_r": 0.020222
+    },
+    {
+      "drug": "LY2109761",
+      "k": 5,
+      "mean_r": 0.66161,
+      "std_r": 0.012434
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 5,
+      "mean_r": 0.516349,
+      "std_r": 0.01856
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 5,
+      "mean_r": 0.665401,
+      "std_r": 0.022634
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 5,
+      "mean_r": 0.762192,
+      "std_r": 0.01555
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 5,
+      "mean_r": 0.758756,
+      "std_r": 0.004652
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 5,
+      "mean_r": 0.569298,
+      "std_r": 0.007286
+    },
+    {
+      "drug": "Luminespib",
+      "k": 5,
+      "mean_r": 0.704784,
+      "std_r": 0.00947
+    },
+    {
+      "drug": "MG-132",
+      "k": 5,
+      "mean_r": 0.516041,
+      "std_r": 0.010634
+    },
+    {
+      "drug": "MIM1",
+      "k": 5,
+      "mean_r": 0.648945,
+      "std_r": 0.011142
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 5,
+      "mean_r": 0.795024,
+      "std_r": 0.005282
+    },
+    {
+      "drug": "MK-1775",
+      "k": 5,
+      "mean_r": 0.761866,
+      "std_r": 0.004012
+    },
+    {
+      "drug": "MK-2206",
+      "k": 5,
+      "mean_r": 0.69884,
+      "std_r": 0.010582
+    },
+    {
+      "drug": "MK-8776",
+      "k": 5,
+      "mean_r": 0.69792,
+      "std_r": 0.00402
+    },
+    {
+      "drug": "ML323",
+      "k": 5,
+      "mean_r": 0.622019,
+      "std_r": 0.016849
+    },
+    {
+      "drug": "MN-64",
+      "k": 5,
+      "mean_r": 0.611015,
+      "std_r": 0.007575
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 5,
+      "mean_r": 0.305552,
+      "std_r": 0.015575
+    },
+    {
+      "drug": "Mirin",
+      "k": 5,
+      "mean_r": 0.771003,
+      "std_r": 0.003868
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 5,
+      "mean_r": 0.733228,
+      "std_r": 0.010468
+    },
+    {
+      "drug": "Motesanib",
+      "k": 5,
+      "mean_r": 0.751788,
+      "std_r": 0.011807
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 5,
+      "mean_r": 0.699961,
+      "std_r": 0.00924
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 5,
+      "mean_r": 0.50395,
+      "std_r": 0.009254
+    },
+    {
+      "drug": "NU7441",
+      "k": 5,
+      "mean_r": 0.734832,
+      "std_r": 0.030518
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 5,
+      "mean_r": 0.650104,
+      "std_r": 0.010902
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 5,
+      "mean_r": 0.404736,
+      "std_r": 0.020091
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 5,
+      "mean_r": 0.7366,
+      "std_r": 0.005973
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 5,
+      "mean_r": 0.661863,
+      "std_r": 0.007278
+    },
+    {
+      "drug": "Niraparib",
+      "k": 5,
+      "mean_r": 0.763907,
+      "std_r": 0.009326
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 5,
+      "mean_r": 0.654105,
+      "std_r": 0.005688
+    },
+    {
+      "drug": "OF-1",
+      "k": 5,
+      "mean_r": 0.38699,
+      "std_r": 0.019261
+    },
+    {
+      "drug": "OSI-027",
+      "k": 5,
+      "mean_r": 0.425637,
+      "std_r": 0.02409
+    },
+    {
+      "drug": "OTX015",
+      "k": 5,
+      "mean_r": 0.68326,
+      "std_r": 0.018188
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 5,
+      "mean_r": 0.6039,
+      "std_r": 0.006882
+    },
+    {
+      "drug": "Olaparib",
+      "k": 5,
+      "mean_r": 0.773187,
+      "std_r": 0.013962
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 5,
+      "mean_r": 0.42373,
+      "std_r": 0.033692
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 5,
+      "mean_r": 0.816049,
+      "std_r": 0.005634
+    },
+    {
+      "drug": "P22077",
+      "k": 5,
+      "mean_r": 0.668623,
+      "std_r": 0.053323
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 5,
+      "mean_r": 0.746249,
+      "std_r": 0.015624
+    },
+    {
+      "drug": "PD0325901",
+      "k": 5,
+      "mean_r": 0.272266,
+      "std_r": 0.059026
+    },
+    {
+      "drug": "PD173074",
+      "k": 5,
+      "mean_r": 0.598853,
+      "std_r": 0.009984
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 5,
+      "mean_r": 0.607827,
+      "std_r": 0.013557
+    },
+    {
+      "drug": "PFI-1",
+      "k": 5,
+      "mean_r": 0.673275,
+      "std_r": 0.004682
+    },
+    {
+      "drug": "PFI3",
+      "k": 5,
+      "mean_r": 0.775448,
+      "std_r": 0.010418
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 5,
+      "mean_r": 0.547,
+      "std_r": 0.007253
+    },
+    {
+      "drug": "POMHEX",
+      "k": 5,
+      "mean_r": 0.534488,
+      "std_r": 0.006452
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 5,
+      "mean_r": 0.652635,
+      "std_r": 0.011751
+    },
+    {
+      "drug": "PRT062607",
+      "k": 5,
+      "mean_r": 0.722969,
+      "std_r": 0.009253
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 5,
+      "mean_r": 0.775981,
+      "std_r": 0.009738
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 5,
+      "mean_r": 0.753645,
+      "std_r": 0.009814
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 5,
+      "mean_r": 0.703812,
+      "std_r": 0.011091
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 5,
+      "mean_r": 0.726805,
+      "std_r": 0.013528
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 5,
+      "mean_r": 0.580817,
+      "std_r": 0.015626
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 5,
+      "mean_r": 0.757606,
+      "std_r": 0.008522
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 5,
+      "mean_r": 0.787546,
+      "std_r": 0.009309
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 5,
+      "mean_r": 0.672043,
+      "std_r": 0.0108
+    },
+    {
+      "drug": "RO-3306",
+      "k": 5,
+      "mean_r": 0.824323,
+      "std_r": 0.004524
+    },
+    {
+      "drug": "RVX-208",
+      "k": 5,
+      "mean_r": 0.738471,
+      "std_r": 0.006642
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 5,
+      "mean_r": 0.608748,
+      "std_r": 0.006625
+    },
+    {
+      "drug": "Refametinib",
+      "k": 5,
+      "mean_r": 0.289043,
+      "std_r": 0.076581
+    },
+    {
+      "drug": "Remodelin",
+      "k": 5,
+      "mean_r": 0.428069,
+      "std_r": 0.023717
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 5,
+      "mean_r": 0.78661,
+      "std_r": 0.004457
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 5,
+      "mean_r": 0.585903,
+      "std_r": 0.005106
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 5,
+      "mean_r": 0.742166,
+      "std_r": 0.007878
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 5,
+      "mean_r": 0.684029,
+      "std_r": 0.006603
+    },
+    {
+      "drug": "SB216763",
+      "k": 5,
+      "mean_r": 0.67137,
+      "std_r": 0.023332
+    },
+    {
+      "drug": "SB505124",
+      "k": 5,
+      "mean_r": 0.346206,
+      "std_r": 0.039172
+    },
+    {
+      "drug": "SB590885",
+      "k": 5,
+      "mean_r": 0.614177,
+      "std_r": 0.017594
+    },
+    {
+      "drug": "SCH772984",
+      "k": 5,
+      "mean_r": 0.385832,
+      "std_r": 0.055528
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 5,
+      "mean_r": 0.663156,
+      "std_r": 0.006872
+    },
+    {
+      "drug": "SGC0946",
+      "k": 5,
+      "mean_r": 0.620643,
+      "std_r": 0.007663
+    },
+    {
+      "drug": "SL0101",
+      "k": 5,
+      "mean_r": 0.614494,
+      "std_r": 0.017214
+    },
+    {
+      "drug": "SN-38",
+      "k": 5,
+      "mean_r": 0.606772,
+      "std_r": 0.017604
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 5,
+      "mean_r": 0.681154,
+      "std_r": 0.009949
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 5,
+      "mean_r": 0.247582,
+      "std_r": 0.037622
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 5,
+      "mean_r": 0.515767,
+      "std_r": 0.031015
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 5,
+      "mean_r": 0.745827,
+      "std_r": 0.004542
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 5,
+      "mean_r": 0.34104,
+      "std_r": 0.045595
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 5,
+      "mean_r": 0.157632,
+      "std_r": 0.005347
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 5,
+      "mean_r": 0.75965,
+      "std_r": 0.004117
+    },
+    {
+      "drug": "Sinularin",
+      "k": 5,
+      "mean_r": 0.688664,
+      "std_r": 0.005042
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 5,
+      "mean_r": 0.724677,
+      "std_r": 0.007854
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 5,
+      "mean_r": 0.612888,
+      "std_r": 0.016694
+    },
+    {
+      "drug": "TW 37",
+      "k": 5,
+      "mean_r": 0.649536,
+      "std_r": 0.013591
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 5,
+      "mean_r": 0.678759,
+      "std_r": 0.04139
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 5,
+      "mean_r": 0.603342,
+      "std_r": 0.015872
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 5,
+      "mean_r": 0.440737,
+      "std_r": 0.010194
+    },
+    {
+      "drug": "Taselisib",
+      "k": 5,
+      "mean_r": 0.513663,
+      "std_r": 0.022496
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 5,
+      "mean_r": 0.717859,
+      "std_r": 0.006367
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 5,
+      "mean_r": 0.771853,
+      "std_r": 0.009637
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 5,
+      "mean_r": 0.577452,
+      "std_r": 0.016758
+    },
+    {
+      "drug": "Teniposide",
+      "k": 5,
+      "mean_r": 0.794213,
+      "std_r": 0.010801
+    },
+    {
+      "drug": "Topotecan",
+      "k": 5,
+      "mean_r": 0.681991,
+      "std_r": 0.021338
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 5,
+      "mean_r": 0.780672,
+      "std_r": 0.013234
+    },
+    {
+      "drug": "Trametinib",
+      "k": 5,
+      "mean_r": 0.292824,
+      "std_r": 0.074495
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 5,
+      "mean_r": 0.715619,
+      "std_r": 0.014523
+    },
+    {
+      "drug": "UMI-77",
+      "k": 5,
+      "mean_r": 0.47937,
+      "std_r": 0.006851
+    },
+    {
+      "drug": "UNC0379",
+      "k": 5,
+      "mean_r": 0.752282,
+      "std_r": 0.005127
+    },
+    {
+      "drug": "UNC0638",
+      "k": 5,
+      "mean_r": 0.793135,
+      "std_r": 0.00585
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 5,
+      "mean_r": 0.503374,
+      "std_r": 0.024343
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 5,
+      "mean_r": 0.624109,
+      "std_r": 0.016485
+    },
+    {
+      "drug": "VE-822",
+      "k": 5,
+      "mean_r": 0.721216,
+      "std_r": 0.007283
+    },
+    {
+      "drug": "VE821",
+      "k": 5,
+      "mean_r": 0.76951,
+      "std_r": 0.004089
+    },
+    {
+      "drug": "VX-11e",
+      "k": 5,
+      "mean_r": 0.516373,
+      "std_r": 0.019958
+    },
+    {
+      "drug": "Veliparib",
+      "k": 5,
+      "mean_r": 0.790463,
+      "std_r": 0.009039
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 5,
+      "mean_r": 0.599004,
+      "std_r": 0.006588
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 5,
+      "mean_r": 0.813439,
+      "std_r": 0.008008
+    },
+    {
+      "drug": "Vincristine",
+      "k": 5,
+      "mean_r": 0.798052,
+      "std_r": 0.008611
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 5,
+      "mean_r": 0.806149,
+      "std_r": 0.005066
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 5,
+      "mean_r": 0.755988,
+      "std_r": 0.006349
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 5,
+      "mean_r": 0.75584,
+      "std_r": 0.008329
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 5,
+      "mean_r": 0.4016,
+      "std_r": 0.011195
+    },
+    {
+      "drug": "WIKI4",
+      "k": 5,
+      "mean_r": 0.421214,
+      "std_r": 0.018946
+    },
+    {
+      "drug": "WZ4003",
+      "k": 5,
+      "mean_r": 0.569325,
+      "std_r": 0.048433
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 5,
+      "mean_r": 0.789088,
+      "std_r": 0.015029
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 5,
+      "mean_r": 0.658235,
+      "std_r": 0.008252
+    },
+    {
+      "drug": "XAV939",
+      "k": 5,
+      "mean_r": 0.571265,
+      "std_r": 0.007544
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 5,
+      "mean_r": 0.82239,
+      "std_r": 0.006947
+    },
+    {
+      "drug": "ZM447439",
+      "k": 5,
+      "mean_r": 0.737928,
+      "std_r": 0.008623
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 5,
+      "mean_r": 0.806758,
+      "std_r": 0.008265
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 5,
+      "mean_r": 0.691367,
+      "std_r": 0.011011
+    },
+    {
+      "drug": "glutathione",
+      "k": 5,
+      "mean_r": 0.620929,
+      "std_r": 0.008114
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 10,
+      "mean_r": 0.745267,
+      "std_r": 0.013385
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 10,
+      "mean_r": 0.736122,
+      "std_r": 0.003883
+    },
+    {
+      "drug": "A-366",
+      "k": 10,
+      "mean_r": 0.74151,
+      "std_r": 0.010096
+    },
+    {
+      "drug": "ABT737",
+      "k": 10,
+      "mean_r": 0.496249,
+      "std_r": 0.043861
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 10,
+      "mean_r": 0.666969,
+      "std_r": 0.008694
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 10,
+      "mean_r": 0.654334,
+      "std_r": 0.042169
+    },
+    {
+      "drug": "AGK2",
+      "k": 10,
+      "mean_r": 0.623733,
+      "std_r": 0.019174
+    },
+    {
+      "drug": "AMG-319",
+      "k": 10,
+      "mean_r": 0.739537,
+      "std_r": 0.005718
+    },
+    {
+      "drug": "AT13148",
+      "k": 10,
+      "mean_r": 0.65333,
+      "std_r": 0.016069
+    },
+    {
+      "drug": "AZ6102",
+      "k": 10,
+      "mean_r": 0.615844,
+      "std_r": 0.018765
+    },
+    {
+      "drug": "AZ960",
+      "k": 10,
+      "mean_r": 0.713466,
+      "std_r": 0.02995
+    },
+    {
+      "drug": "AZD1208",
+      "k": 10,
+      "mean_r": 0.762519,
+      "std_r": 0.023016
+    },
+    {
+      "drug": "AZD1332",
+      "k": 10,
+      "mean_r": 0.512554,
+      "std_r": 0.043482
+    },
+    {
+      "drug": "AZD2014",
+      "k": 10,
+      "mean_r": 0.589065,
+      "std_r": 0.024909
+    },
+    {
+      "drug": "AZD3759",
+      "k": 10,
+      "mean_r": 0.473614,
+      "std_r": 0.039285
+    },
+    {
+      "drug": "AZD4547",
+      "k": 10,
+      "mean_r": 0.535253,
+      "std_r": 0.065486
+    },
+    {
+      "drug": "AZD5153",
+      "k": 10,
+      "mean_r": 0.703859,
+      "std_r": 0.033478
+    },
+    {
+      "drug": "AZD5363",
+      "k": 10,
+      "mean_r": 0.652297,
+      "std_r": 0.060785
+    },
+    {
+      "drug": "AZD5438",
+      "k": 10,
+      "mean_r": 0.817513,
+      "std_r": 0.013008
+    },
+    {
+      "drug": "AZD5582",
+      "k": 10,
+      "mean_r": 0.463773,
+      "std_r": 0.030943
+    },
+    {
+      "drug": "AZD5991",
+      "k": 10,
+      "mean_r": 0.673423,
+      "std_r": 0.01381
+    },
+    {
+      "drug": "AZD6482",
+      "k": 10,
+      "mean_r": 0.607389,
+      "std_r": 0.037316
+    },
+    {
+      "drug": "AZD6738",
+      "k": 10,
+      "mean_r": 0.74059,
+      "std_r": 0.022909
+    },
+    {
+      "drug": "AZD7762",
+      "k": 10,
+      "mean_r": 0.741426,
+      "std_r": 0.026103
+    },
+    {
+      "drug": "AZD8055",
+      "k": 10,
+      "mean_r": 0.574768,
+      "std_r": 0.02377
+    },
+    {
+      "drug": "AZD8186",
+      "k": 10,
+      "mean_r": 0.478706,
+      "std_r": 0.032938
+    },
+    {
+      "drug": "Acetalax",
+      "k": 10,
+      "mean_r": 0.174373,
+      "std_r": 0.024481
+    },
+    {
+      "drug": "Afatinib",
+      "k": 10,
+      "mean_r": 0.456846,
+      "std_r": 0.066007
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 10,
+      "mean_r": 0.641151,
+      "std_r": 0.053103
+    },
+    {
+      "drug": "Alisertib",
+      "k": 10,
+      "mean_r": 0.700868,
+      "std_r": 0.01813
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 10,
+      "mean_r": 0.589101,
+      "std_r": 0.028368
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 10,
+      "mean_r": 0.702778,
+      "std_r": 0.027082
+    },
+    {
+      "drug": "Axitinib",
+      "k": 10,
+      "mean_r": 0.743123,
+      "std_r": 0.036056
+    },
+    {
+      "drug": "BI-2536",
+      "k": 10,
+      "mean_r": 0.773811,
+      "std_r": 0.011223
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 10,
+      "mean_r": 0.652723,
+      "std_r": 0.04391
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 10,
+      "mean_r": 0.763046,
+      "std_r": 0.029071
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 10,
+      "mean_r": 0.514599,
+      "std_r": 0.022892
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 10,
+      "mean_r": 0.636899,
+      "std_r": 0.01512
+    },
+    {
+      "drug": "BX795",
+      "k": 10,
+      "mean_r": 0.735229,
+      "std_r": 0.028984
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 10,
+      "mean_r": 0.631461,
+      "std_r": 0.029212
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 10,
+      "mean_r": 0.63043,
+      "std_r": 0.02332
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 10,
+      "mean_r": 0.635149,
+      "std_r": 0.025637
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 10,
+      "mean_r": 0.602857,
+      "std_r": 0.012986
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 10,
+      "mean_r": 0.674966,
+      "std_r": 0.04728
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 10,
+      "mean_r": 0.734161,
+      "std_r": 0.029704
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 10,
+      "mean_r": 0.754477,
+      "std_r": 0.025716
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 10,
+      "mean_r": 0.72632,
+      "std_r": 0.020264
+    },
+    {
+      "drug": "CCT007093",
+      "k": 10,
+      "mean_r": 0.741116,
+      "std_r": 0.015326
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 10,
+      "mean_r": 0.667891,
+      "std_r": 0.022554
+    },
+    {
+      "drug": "CPI-637",
+      "k": 10,
+      "mean_r": 0.728689,
+      "std_r": 0.021045
+    },
+    {
+      "drug": "CZC24832",
+      "k": 10,
+      "mean_r": 0.766199,
+      "std_r": 0.015395
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 10,
+      "mean_r": 0.767557,
+      "std_r": 0.040666
+    },
+    {
+      "drug": "Carmustine",
+      "k": 10,
+      "mean_r": 0.771023,
+      "std_r": 0.004497
+    },
+    {
+      "drug": "Cediranib",
+      "k": 10,
+      "mean_r": 0.541786,
+      "std_r": 0.030907
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 10,
+      "mean_r": 0.813712,
+      "std_r": 0.028851
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 10,
+      "mean_r": 0.775778,
+      "std_r": 0.018271
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 10,
+      "mean_r": 0.765157,
+      "std_r": 0.012081
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 10,
+      "mean_r": 0.761719,
+      "std_r": 0.028053
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 10,
+      "mean_r": 0.502927,
+      "std_r": 0.028347
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 10,
+      "mean_r": 0.682591,
+      "std_r": 0.017019
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 10,
+      "mean_r": 0.800515,
+      "std_r": 0.022359
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 10,
+      "mean_r": 0.664045,
+      "std_r": 0.03017
+    },
+    {
+      "drug": "Daporinad",
+      "k": 10,
+      "mean_r": 0.331938,
+      "std_r": 0.050046
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 10,
+      "mean_r": 0.306325,
+      "std_r": 0.019241
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 10,
+      "mean_r": 0.234847,
+      "std_r": 0.031981
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 10,
+      "mean_r": 0.738046,
+      "std_r": 0.012821
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 10,
+      "mean_r": 0.780112,
+      "std_r": 0.012219
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 10,
+      "mean_r": 0.626639,
+      "std_r": 0.033149
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 10,
+      "mean_r": 0.552781,
+      "std_r": 0.020217
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 10,
+      "mean_r": 0.779103,
+      "std_r": 0.023144
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 10,
+      "mean_r": 0.800945,
+      "std_r": 0.019635
+    },
+    {
+      "drug": "Elephantin",
+      "k": 10,
+      "mean_r": 0.725153,
+      "std_r": 0.012093
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 10,
+      "mean_r": 0.692556,
+      "std_r": 0.024538
+    },
+    {
+      "drug": "Entinostat",
+      "k": 10,
+      "mean_r": 0.681418,
+      "std_r": 0.016577
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 10,
+      "mean_r": 0.603146,
+      "std_r": 0.034546
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 10,
+      "mean_r": 0.774227,
+      "std_r": 0.018757
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 10,
+      "mean_r": 0.4695,
+      "std_r": 0.027031
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 10,
+      "mean_r": 0.614477,
+      "std_r": 0.007265
+    },
+    {
+      "drug": "Foretinib",
+      "k": 10,
+      "mean_r": 0.638722,
+      "std_r": 0.022712
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 10,
+      "mean_r": 0.769388,
+      "std_r": 0.019638
+    },
+    {
+      "drug": "GDC0810",
+      "k": 10,
+      "mean_r": 0.662077,
+      "std_r": 0.027183
+    },
+    {
+      "drug": "GNE-317",
+      "k": 10,
+      "mean_r": 0.556599,
+      "std_r": 0.042979
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 10,
+      "mean_r": 0.652328,
+      "std_r": 0.010678
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 10,
+      "mean_r": 0.655208,
+      "std_r": 0.026866
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 10,
+      "mean_r": 0.660293,
+      "std_r": 0.04252
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 10,
+      "mean_r": 0.69241,
+      "std_r": 0.021394
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 10,
+      "mean_r": 0.687251,
+      "std_r": 0.019064
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 10,
+      "mean_r": 0.647159,
+      "std_r": 0.033982
+    },
+    {
+      "drug": "GSK2801",
+      "k": 10,
+      "mean_r": 0.725342,
+      "std_r": 0.012333
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 10,
+      "mean_r": 0.805189,
+      "std_r": 0.011293
+    },
+    {
+      "drug": "GSK343",
+      "k": 10,
+      "mean_r": 0.781935,
+      "std_r": 0.016933
+    },
+    {
+      "drug": "GSK591",
+      "k": 10,
+      "mean_r": 0.650838,
+      "std_r": 0.019499
+    },
+    {
+      "drug": "GW441756",
+      "k": 10,
+      "mean_r": 0.591056,
+      "std_r": 0.068439
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 10,
+      "mean_r": 0.664487,
+      "std_r": 0.017443
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 10,
+      "mean_r": 0.479119,
+      "std_r": 0.064537
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 10,
+      "mean_r": 0.697636,
+      "std_r": 0.055829
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 10,
+      "mean_r": 0.749864,
+      "std_r": 0.036629
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 10,
+      "mean_r": 0.777527,
+      "std_r": 0.007783
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 10,
+      "mean_r": 0.761704,
+      "std_r": 0.011511
+    },
+    {
+      "drug": "IOX2",
+      "k": 10,
+      "mean_r": 0.747976,
+      "std_r": 0.021942
+    },
+    {
+      "drug": "IWP-2",
+      "k": 10,
+      "mean_r": 0.718719,
+      "std_r": 0.013388
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 10,
+      "mean_r": 0.477266,
+      "std_r": 0.046033
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 10,
+      "mean_r": 0.665692,
+      "std_r": 0.04415
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 10,
+      "mean_r": 0.783203,
+      "std_r": 0.026483
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 10,
+      "mean_r": 0.723614,
+      "std_r": 0.022371
+    },
+    {
+      "drug": "JQ1",
+      "k": 10,
+      "mean_r": 0.714638,
+      "std_r": 0.030252
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 10,
+      "mean_r": 0.725388,
+      "std_r": 0.007088
+    },
+    {
+      "drug": "KU-55933",
+      "k": 10,
+      "mean_r": 0.72615,
+      "std_r": 0.01717
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 10,
+      "mean_r": 0.620372,
+      "std_r": 0.014507
+    },
+    {
+      "drug": "LCL161",
+      "k": 10,
+      "mean_r": 0.568695,
+      "std_r": 0.019355
+    },
+    {
+      "drug": "LGK974",
+      "k": 10,
+      "mean_r": 0.592147,
+      "std_r": 0.020664
+    },
+    {
+      "drug": "LJI308",
+      "k": 10,
+      "mean_r": 0.723983,
+      "std_r": 0.023647
+    },
+    {
+      "drug": "LMP744",
+      "k": 10,
+      "mean_r": 0.756747,
+      "std_r": 0.069985
+    },
+    {
+      "drug": "LY2109761",
+      "k": 10,
+      "mean_r": 0.62658,
+      "std_r": 0.081481
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 10,
+      "mean_r": 0.512966,
+      "std_r": 0.037692
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 10,
+      "mean_r": 0.66395,
+      "std_r": 0.014273
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 10,
+      "mean_r": 0.775912,
+      "std_r": 0.007966
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 10,
+      "mean_r": 0.757978,
+      "std_r": 0.008666
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 10,
+      "mean_r": 0.576407,
+      "std_r": 0.01979
+    },
+    {
+      "drug": "Luminespib",
+      "k": 10,
+      "mean_r": 0.701604,
+      "std_r": 0.010034
+    },
+    {
+      "drug": "MG-132",
+      "k": 10,
+      "mean_r": 0.515453,
+      "std_r": 0.011563
+    },
+    {
+      "drug": "MIM1",
+      "k": 10,
+      "mean_r": 0.65282,
+      "std_r": 0.013327
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 10,
+      "mean_r": 0.793116,
+      "std_r": 0.008077
+    },
+    {
+      "drug": "MK-1775",
+      "k": 10,
+      "mean_r": 0.766308,
+      "std_r": 0.010873
+    },
+    {
+      "drug": "MK-2206",
+      "k": 10,
+      "mean_r": 0.708875,
+      "std_r": 0.0525
+    },
+    {
+      "drug": "MK-8776",
+      "k": 10,
+      "mean_r": 0.700752,
+      "std_r": 0.012123
+    },
+    {
+      "drug": "ML323",
+      "k": 10,
+      "mean_r": 0.637411,
+      "std_r": 0.029124
+    },
+    {
+      "drug": "MN-64",
+      "k": 10,
+      "mean_r": 0.607171,
+      "std_r": 0.027647
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 10,
+      "mean_r": 0.311084,
+      "std_r": 0.052684
+    },
+    {
+      "drug": "Mirin",
+      "k": 10,
+      "mean_r": 0.762778,
+      "std_r": 0.008691
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 10,
+      "mean_r": 0.734536,
+      "std_r": 0.026229
+    },
+    {
+      "drug": "Motesanib",
+      "k": 10,
+      "mean_r": 0.758124,
+      "std_r": 0.011238
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 10,
+      "mean_r": 0.704007,
+      "std_r": 0.025572
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 10,
+      "mean_r": 0.504032,
+      "std_r": 0.019247
+    },
+    {
+      "drug": "NU7441",
+      "k": 10,
+      "mean_r": 0.732571,
+      "std_r": 0.01146
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 10,
+      "mean_r": 0.659513,
+      "std_r": 0.012825
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 10,
+      "mean_r": 0.462203,
+      "std_r": 0.058184
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 10,
+      "mean_r": 0.744458,
+      "std_r": 0.008493
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 10,
+      "mean_r": 0.651654,
+      "std_r": 0.006787
+    },
+    {
+      "drug": "Niraparib",
+      "k": 10,
+      "mean_r": 0.765448,
+      "std_r": 0.011648
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 10,
+      "mean_r": 0.640576,
+      "std_r": 0.049906
+    },
+    {
+      "drug": "OF-1",
+      "k": 10,
+      "mean_r": 0.406025,
+      "std_r": 0.040379
+    },
+    {
+      "drug": "OSI-027",
+      "k": 10,
+      "mean_r": 0.422513,
+      "std_r": 0.033932
+    },
+    {
+      "drug": "OTX015",
+      "k": 10,
+      "mean_r": 0.712298,
+      "std_r": 0.061732
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 10,
+      "mean_r": 0.601591,
+      "std_r": 0.013446
+    },
+    {
+      "drug": "Olaparib",
+      "k": 10,
+      "mean_r": 0.782514,
+      "std_r": 0.02311
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 10,
+      "mean_r": 0.481506,
+      "std_r": 0.068168
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 10,
+      "mean_r": 0.806229,
+      "std_r": 0.019781
+    },
+    {
+      "drug": "P22077",
+      "k": 10,
+      "mean_r": 0.681302,
+      "std_r": 0.019844
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 10,
+      "mean_r": 0.743884,
+      "std_r": 0.013096
+    },
+    {
+      "drug": "PD0325901",
+      "k": 10,
+      "mean_r": 0.423227,
+      "std_r": 0.128026
+    },
+    {
+      "drug": "PD173074",
+      "k": 10,
+      "mean_r": 0.594972,
+      "std_r": 0.013222
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 10,
+      "mean_r": 0.614428,
+      "std_r": 0.025206
+    },
+    {
+      "drug": "PFI-1",
+      "k": 10,
+      "mean_r": 0.677044,
+      "std_r": 0.010089
+    },
+    {
+      "drug": "PFI3",
+      "k": 10,
+      "mean_r": 0.775867,
+      "std_r": 0.010515
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 10,
+      "mean_r": 0.541291,
+      "std_r": 0.033816
+    },
+    {
+      "drug": "POMHEX",
+      "k": 10,
+      "mean_r": 0.537486,
+      "std_r": 0.010645
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 10,
+      "mean_r": 0.654444,
+      "std_r": 0.019172
+    },
+    {
+      "drug": "PRT062607",
+      "k": 10,
+      "mean_r": 0.717743,
+      "std_r": 0.011041
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 10,
+      "mean_r": 0.757669,
+      "std_r": 0.033736
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 10,
+      "mean_r": 0.749244,
+      "std_r": 0.009855
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 10,
+      "mean_r": 0.69708,
+      "std_r": 0.031079
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 10,
+      "mean_r": 0.731473,
+      "std_r": 0.015084
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 10,
+      "mean_r": 0.616469,
+      "std_r": 0.050434
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 10,
+      "mean_r": 0.751718,
+      "std_r": 0.013898
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 10,
+      "mean_r": 0.813242,
+      "std_r": 0.026992
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 10,
+      "mean_r": 0.668349,
+      "std_r": 0.021404
+    },
+    {
+      "drug": "RO-3306",
+      "k": 10,
+      "mean_r": 0.806778,
+      "std_r": 0.020898
+    },
+    {
+      "drug": "RVX-208",
+      "k": 10,
+      "mean_r": 0.733896,
+      "std_r": 0.01256
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 10,
+      "mean_r": 0.63102,
+      "std_r": 0.027686
+    },
+    {
+      "drug": "Refametinib",
+      "k": 10,
+      "mean_r": 0.387747,
+      "std_r": 0.149602
+    },
+    {
+      "drug": "Remodelin",
+      "k": 10,
+      "mean_r": 0.475419,
+      "std_r": 0.025849
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 10,
+      "mean_r": 0.768147,
+      "std_r": 0.044826
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 10,
+      "mean_r": 0.587588,
+      "std_r": 0.00675
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 10,
+      "mean_r": 0.738875,
+      "std_r": 0.01354
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 10,
+      "mean_r": 0.687589,
+      "std_r": 0.007981
+    },
+    {
+      "drug": "SB216763",
+      "k": 10,
+      "mean_r": 0.665582,
+      "std_r": 0.039677
+    },
+    {
+      "drug": "SB505124",
+      "k": 10,
+      "mean_r": 0.339602,
+      "std_r": 0.04632
+    },
+    {
+      "drug": "SB590885",
+      "k": 10,
+      "mean_r": 0.624579,
+      "std_r": 0.034418
+    },
+    {
+      "drug": "SCH772984",
+      "k": 10,
+      "mean_r": 0.502437,
+      "std_r": 0.140679
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 10,
+      "mean_r": 0.668193,
+      "std_r": 0.01286
+    },
+    {
+      "drug": "SGC0946",
+      "k": 10,
+      "mean_r": 0.614809,
+      "std_r": 0.02014
+    },
+    {
+      "drug": "SL0101",
+      "k": 10,
+      "mean_r": 0.617256,
+      "std_r": 0.024257
+    },
+    {
+      "drug": "SN-38",
+      "k": 10,
+      "mean_r": 0.633872,
+      "std_r": 0.042861
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 10,
+      "mean_r": 0.666405,
+      "std_r": 0.030156
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 10,
+      "mean_r": 0.315076,
+      "std_r": 0.076698
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 10,
+      "mean_r": 0.516048,
+      "std_r": 0.041856
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 10,
+      "mean_r": 0.745079,
+      "std_r": 0.006253
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 10,
+      "mean_r": 0.493121,
+      "std_r": 0.09012
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 10,
+      "mean_r": 0.161204,
+      "std_r": 0.013841
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 10,
+      "mean_r": 0.761371,
+      "std_r": 0.012374
+    },
+    {
+      "drug": "Sinularin",
+      "k": 10,
+      "mean_r": 0.69084,
+      "std_r": 0.010163
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 10,
+      "mean_r": 0.723845,
+      "std_r": 0.010554
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 10,
+      "mean_r": 0.608755,
+      "std_r": 0.012395
+    },
+    {
+      "drug": "TW 37",
+      "k": 10,
+      "mean_r": 0.657227,
+      "std_r": 0.008152
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 10,
+      "mean_r": 0.704754,
+      "std_r": 0.040545
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 10,
+      "mean_r": 0.586977,
+      "std_r": 0.029338
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 10,
+      "mean_r": 0.436813,
+      "std_r": 0.015662
+    },
+    {
+      "drug": "Taselisib",
+      "k": 10,
+      "mean_r": 0.519932,
+      "std_r": 0.059577
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 10,
+      "mean_r": 0.701281,
+      "std_r": 0.034054
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 10,
+      "mean_r": 0.774474,
+      "std_r": 0.01129
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 10,
+      "mean_r": 0.582946,
+      "std_r": 0.007046
+    },
+    {
+      "drug": "Teniposide",
+      "k": 10,
+      "mean_r": 0.823671,
+      "std_r": 0.016958
+    },
+    {
+      "drug": "Topotecan",
+      "k": 10,
+      "mean_r": 0.729453,
+      "std_r": 0.079824
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 10,
+      "mean_r": 0.786346,
+      "std_r": 0.034768
+    },
+    {
+      "drug": "Trametinib",
+      "k": 10,
+      "mean_r": 0.434516,
+      "std_r": 0.126894
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 10,
+      "mean_r": 0.727152,
+      "std_r": 0.013139
+    },
+    {
+      "drug": "UMI-77",
+      "k": 10,
+      "mean_r": 0.47958,
+      "std_r": 0.021905
+    },
+    {
+      "drug": "UNC0379",
+      "k": 10,
+      "mean_r": 0.739321,
+      "std_r": 0.01979
+    },
+    {
+      "drug": "UNC0638",
+      "k": 10,
+      "mean_r": 0.794376,
+      "std_r": 0.014483
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 10,
+      "mean_r": 0.548838,
+      "std_r": 0.088009
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 10,
+      "mean_r": 0.664073,
+      "std_r": 0.049949
+    },
+    {
+      "drug": "VE-822",
+      "k": 10,
+      "mean_r": 0.716516,
+      "std_r": 0.023964
+    },
+    {
+      "drug": "VE821",
+      "k": 10,
+      "mean_r": 0.755349,
+      "std_r": 0.01601
+    },
+    {
+      "drug": "VX-11e",
+      "k": 10,
+      "mean_r": 0.57282,
+      "std_r": 0.100984
+    },
+    {
+      "drug": "Veliparib",
+      "k": 10,
+      "mean_r": 0.793374,
+      "std_r": 0.012391
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 10,
+      "mean_r": 0.621225,
+      "std_r": 0.040262
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 10,
+      "mean_r": 0.81998,
+      "std_r": 0.019448
+    },
+    {
+      "drug": "Vincristine",
+      "k": 10,
+      "mean_r": 0.79615,
+      "std_r": 0.029704
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 10,
+      "mean_r": 0.79563,
+      "std_r": 0.02038
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 10,
+      "mean_r": 0.755411,
+      "std_r": 0.006286
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 10,
+      "mean_r": 0.758011,
+      "std_r": 0.017072
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 10,
+      "mean_r": 0.400639,
+      "std_r": 0.035965
+    },
+    {
+      "drug": "WIKI4",
+      "k": 10,
+      "mean_r": 0.431831,
+      "std_r": 0.017939
+    },
+    {
+      "drug": "WZ4003",
+      "k": 10,
+      "mean_r": 0.559593,
+      "std_r": 0.043463
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 10,
+      "mean_r": 0.786255,
+      "std_r": 0.016766
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 10,
+      "mean_r": 0.65797,
+      "std_r": 0.022786
+    },
+    {
+      "drug": "XAV939",
+      "k": 10,
+      "mean_r": 0.563252,
+      "std_r": 0.022291
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 10,
+      "mean_r": 0.8203,
+      "std_r": 0.012806
+    },
+    {
+      "drug": "ZM447439",
+      "k": 10,
+      "mean_r": 0.725295,
+      "std_r": 0.065009
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 10,
+      "mean_r": 0.811718,
+      "std_r": 0.029795
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 10,
+      "mean_r": 0.700155,
+      "std_r": 0.01794
+    },
+    {
+      "drug": "glutathione",
+      "k": 10,
+      "mean_r": 0.625152,
+      "std_r": 0.014744
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 20,
+      "mean_r": 0.749005,
+      "std_r": 0.026966
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 20,
+      "mean_r": 0.718626,
+      "std_r": 0.033409
+    },
+    {
+      "drug": "A-366",
+      "k": 20,
+      "mean_r": 0.739073,
+      "std_r": 0.011539
+    },
+    {
+      "drug": "ABT737",
+      "k": 20,
+      "mean_r": 0.602917,
+      "std_r": 0.112543
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 20,
+      "mean_r": 0.6467,
+      "std_r": 0.022028
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 20,
+      "mean_r": 0.643531,
+      "std_r": 0.053635
+    },
+    {
+      "drug": "AGK2",
+      "k": 20,
+      "mean_r": 0.622961,
+      "std_r": 0.014811
+    },
+    {
+      "drug": "AMG-319",
+      "k": 20,
+      "mean_r": 0.728853,
+      "std_r": 0.018874
+    },
+    {
+      "drug": "AT13148",
+      "k": 20,
+      "mean_r": 0.625083,
+      "std_r": 0.05356
+    },
+    {
+      "drug": "AZ6102",
+      "k": 20,
+      "mean_r": 0.594746,
+      "std_r": 0.039517
+    },
+    {
+      "drug": "AZ960",
+      "k": 20,
+      "mean_r": 0.703881,
+      "std_r": 0.049011
+    },
+    {
+      "drug": "AZD1208",
+      "k": 20,
+      "mean_r": 0.764729,
+      "std_r": 0.030779
+    },
+    {
+      "drug": "AZD1332",
+      "k": 20,
+      "mean_r": 0.510256,
+      "std_r": 0.065379
+    },
+    {
+      "drug": "AZD2014",
+      "k": 20,
+      "mean_r": 0.588493,
+      "std_r": 0.047881
+    },
+    {
+      "drug": "AZD3759",
+      "k": 20,
+      "mean_r": 0.541629,
+      "std_r": 0.099679
+    },
+    {
+      "drug": "AZD4547",
+      "k": 20,
+      "mean_r": 0.562094,
+      "std_r": 0.05173
+    },
+    {
+      "drug": "AZD5153",
+      "k": 20,
+      "mean_r": 0.730212,
+      "std_r": 0.054406
+    },
+    {
+      "drug": "AZD5363",
+      "k": 20,
+      "mean_r": 0.780447,
+      "std_r": 0.006434
+    },
+    {
+      "drug": "AZD5438",
+      "k": 20,
+      "mean_r": 0.805453,
+      "std_r": 0.016862
+    },
+    {
+      "drug": "AZD5582",
+      "k": 20,
+      "mean_r": 0.486879,
+      "std_r": 0.020268
+    },
+    {
+      "drug": "AZD5991",
+      "k": 20,
+      "mean_r": 0.678968,
+      "std_r": 0.015997
+    },
+    {
+      "drug": "AZD6482",
+      "k": 20,
+      "mean_r": 0.639148,
+      "std_r": 0.044955
+    },
+    {
+      "drug": "AZD6738",
+      "k": 20,
+      "mean_r": 0.733974,
+      "std_r": 0.045091
+    },
+    {
+      "drug": "AZD7762",
+      "k": 20,
+      "mean_r": 0.757418,
+      "std_r": 0.030645
+    },
+    {
+      "drug": "AZD8055",
+      "k": 20,
+      "mean_r": 0.638761,
+      "std_r": 0.052803
+    },
+    {
+      "drug": "AZD8186",
+      "k": 20,
+      "mean_r": 0.551949,
+      "std_r": 0.065083
+    },
+    {
+      "drug": "Acetalax",
+      "k": 20,
+      "mean_r": 0.169472,
+      "std_r": 0.036136
+    },
+    {
+      "drug": "Afatinib",
+      "k": 20,
+      "mean_r": 0.527026,
+      "std_r": 0.081222
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 20,
+      "mean_r": 0.771177,
+      "std_r": 0.023113
+    },
+    {
+      "drug": "Alisertib",
+      "k": 20,
+      "mean_r": 0.72311,
+      "std_r": 0.025025
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 20,
+      "mean_r": 0.659993,
+      "std_r": 0.077125
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 20,
+      "mean_r": 0.705698,
+      "std_r": 0.025879
+    },
+    {
+      "drug": "Axitinib",
+      "k": 20,
+      "mean_r": 0.741317,
+      "std_r": 0.022423
+    },
+    {
+      "drug": "BI-2536",
+      "k": 20,
+      "mean_r": 0.753461,
+      "std_r": 0.046433
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 20,
+      "mean_r": 0.664681,
+      "std_r": 0.033444
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 20,
+      "mean_r": 0.751273,
+      "std_r": 0.061629
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 20,
+      "mean_r": 0.518085,
+      "std_r": 0.034523
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 20,
+      "mean_r": 0.666287,
+      "std_r": 0.038757
+    },
+    {
+      "drug": "BX795",
+      "k": 20,
+      "mean_r": 0.734434,
+      "std_r": 0.033664
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 20,
+      "mean_r": 0.641295,
+      "std_r": 0.043217
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 20,
+      "mean_r": 0.627019,
+      "std_r": 0.044767
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 20,
+      "mean_r": 0.637164,
+      "std_r": 0.031632
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 20,
+      "mean_r": 0.607078,
+      "std_r": 0.010338
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 20,
+      "mean_r": 0.679485,
+      "std_r": 0.048428
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 20,
+      "mean_r": 0.80228,
+      "std_r": 0.026169
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 20,
+      "mean_r": 0.739424,
+      "std_r": 0.053946
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 20,
+      "mean_r": 0.697249,
+      "std_r": 0.051817
+    },
+    {
+      "drug": "CCT007093",
+      "k": 20,
+      "mean_r": 0.740715,
+      "std_r": 0.049415
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 20,
+      "mean_r": 0.655336,
+      "std_r": 0.033963
+    },
+    {
+      "drug": "CPI-637",
+      "k": 20,
+      "mean_r": 0.732919,
+      "std_r": 0.026509
+    },
+    {
+      "drug": "CZC24832",
+      "k": 20,
+      "mean_r": 0.760145,
+      "std_r": 0.030116
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 20,
+      "mean_r": 0.823519,
+      "std_r": 0.053925
+    },
+    {
+      "drug": "Carmustine",
+      "k": 20,
+      "mean_r": 0.770364,
+      "std_r": 0.011936
+    },
+    {
+      "drug": "Cediranib",
+      "k": 20,
+      "mean_r": 0.54755,
+      "std_r": 0.051291
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 20,
+      "mean_r": 0.855401,
+      "std_r": 0.01382
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 20,
+      "mean_r": 0.75344,
+      "std_r": 0.044206
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 20,
+      "mean_r": 0.76644,
+      "std_r": 0.011589
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 20,
+      "mean_r": 0.784037,
+      "std_r": 0.03559
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 20,
+      "mean_r": 0.538524,
+      "std_r": 0.050024
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 20,
+      "mean_r": 0.675063,
+      "std_r": 0.040891
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 20,
+      "mean_r": 0.788987,
+      "std_r": 0.029234
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 20,
+      "mean_r": 0.726924,
+      "std_r": 0.044731
+    },
+    {
+      "drug": "Daporinad",
+      "k": 20,
+      "mean_r": 0.360828,
+      "std_r": 0.090063
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 20,
+      "mean_r": 0.329531,
+      "std_r": 0.048126
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 20,
+      "mean_r": 0.236862,
+      "std_r": 0.081578
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 20,
+      "mean_r": 0.734034,
+      "std_r": 0.020631
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 20,
+      "mean_r": 0.765892,
+      "std_r": 0.019488
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 20,
+      "mean_r": 0.622294,
+      "std_r": 0.05513
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 20,
+      "mean_r": 0.591654,
+      "std_r": 0.032223
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 20,
+      "mean_r": 0.802822,
+      "std_r": 0.015768
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 20,
+      "mean_r": 0.810164,
+      "std_r": 0.019209
+    },
+    {
+      "drug": "Elephantin",
+      "k": 20,
+      "mean_r": 0.725749,
+      "std_r": 0.030712
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 20,
+      "mean_r": 0.681972,
+      "std_r": 0.02927
+    },
+    {
+      "drug": "Entinostat",
+      "k": 20,
+      "mean_r": 0.692825,
+      "std_r": 0.023322
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 20,
+      "mean_r": 0.589693,
+      "std_r": 0.038683
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 20,
+      "mean_r": 0.781004,
+      "std_r": 0.023148
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 20,
+      "mean_r": 0.511998,
+      "std_r": 0.083797
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 20,
+      "mean_r": 0.610945,
+      "std_r": 0.011726
+    },
+    {
+      "drug": "Foretinib",
+      "k": 20,
+      "mean_r": 0.668028,
+      "std_r": 0.034599
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 20,
+      "mean_r": 0.752705,
+      "std_r": 0.01944
+    },
+    {
+      "drug": "GDC0810",
+      "k": 20,
+      "mean_r": 0.677031,
+      "std_r": 0.021153
+    },
+    {
+      "drug": "GNE-317",
+      "k": 20,
+      "mean_r": 0.592865,
+      "std_r": 0.068553
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 20,
+      "mean_r": 0.641716,
+      "std_r": 0.018004
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 20,
+      "mean_r": 0.663312,
+      "std_r": 0.024877
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 20,
+      "mean_r": 0.737601,
+      "std_r": 0.045029
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 20,
+      "mean_r": 0.697399,
+      "std_r": 0.020707
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 20,
+      "mean_r": 0.677743,
+      "std_r": 0.026726
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 20,
+      "mean_r": 0.651845,
+      "std_r": 0.032945
+    },
+    {
+      "drug": "GSK2801",
+      "k": 20,
+      "mean_r": 0.722658,
+      "std_r": 0.019332
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 20,
+      "mean_r": 0.819047,
+      "std_r": 0.009065
+    },
+    {
+      "drug": "GSK343",
+      "k": 20,
+      "mean_r": 0.787138,
+      "std_r": 0.060896
+    },
+    {
+      "drug": "GSK591",
+      "k": 20,
+      "mean_r": 0.667841,
+      "std_r": 0.02659
+    },
+    {
+      "drug": "GW441756",
+      "k": 20,
+      "mean_r": 0.596381,
+      "std_r": 0.136625
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 20,
+      "mean_r": 0.68139,
+      "std_r": 0.024686
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 20,
+      "mean_r": 0.56034,
+      "std_r": 0.068292
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 20,
+      "mean_r": 0.720255,
+      "std_r": 0.039827
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 20,
+      "mean_r": 0.821191,
+      "std_r": 0.04285
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 20,
+      "mean_r": 0.781457,
+      "std_r": 0.014573
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 20,
+      "mean_r": 0.780105,
+      "std_r": 0.008634
+    },
+    {
+      "drug": "IOX2",
+      "k": 20,
+      "mean_r": 0.738142,
+      "std_r": 0.047833
+    },
+    {
+      "drug": "IWP-2",
+      "k": 20,
+      "mean_r": 0.693187,
+      "std_r": 0.049554
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 20,
+      "mean_r": 0.584521,
+      "std_r": 0.110404
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 20,
+      "mean_r": 0.703373,
+      "std_r": 0.090925
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 20,
+      "mean_r": 0.797579,
+      "std_r": 0.040631
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 20,
+      "mean_r": 0.745267,
+      "std_r": 0.033204
+    },
+    {
+      "drug": "JQ1",
+      "k": 20,
+      "mean_r": 0.734419,
+      "std_r": 0.043601
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 20,
+      "mean_r": 0.728833,
+      "std_r": 0.013812
+    },
+    {
+      "drug": "KU-55933",
+      "k": 20,
+      "mean_r": 0.717739,
+      "std_r": 0.027156
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 20,
+      "mean_r": 0.62078,
+      "std_r": 0.027226
+    },
+    {
+      "drug": "LCL161",
+      "k": 20,
+      "mean_r": 0.577002,
+      "std_r": 0.021086
+    },
+    {
+      "drug": "LGK974",
+      "k": 20,
+      "mean_r": 0.616624,
+      "std_r": 0.043979
+    },
+    {
+      "drug": "LJI308",
+      "k": 20,
+      "mean_r": 0.686368,
+      "std_r": 0.045246
+    },
+    {
+      "drug": "LMP744",
+      "k": 20,
+      "mean_r": 0.799742,
+      "std_r": 0.048673
+    },
+    {
+      "drug": "LY2109761",
+      "k": 20,
+      "mean_r": 0.66228,
+      "std_r": 0.043547
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 20,
+      "mean_r": 0.608315,
+      "std_r": 0.089688
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 20,
+      "mean_r": 0.667385,
+      "std_r": 0.021272
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 20,
+      "mean_r": 0.773904,
+      "std_r": 0.018588
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 20,
+      "mean_r": 0.747639,
+      "std_r": 0.024393
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 20,
+      "mean_r": 0.591922,
+      "std_r": 0.049707
+    },
+    {
+      "drug": "Luminespib",
+      "k": 20,
+      "mean_r": 0.693484,
+      "std_r": 0.012882
+    },
+    {
+      "drug": "MG-132",
+      "k": 20,
+      "mean_r": 0.511153,
+      "std_r": 0.013482
+    },
+    {
+      "drug": "MIM1",
+      "k": 20,
+      "mean_r": 0.664283,
+      "std_r": 0.010786
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 20,
+      "mean_r": 0.786863,
+      "std_r": 0.019265
+    },
+    {
+      "drug": "MK-1775",
+      "k": 20,
+      "mean_r": 0.770714,
+      "std_r": 0.021512
+    },
+    {
+      "drug": "MK-2206",
+      "k": 20,
+      "mean_r": 0.790998,
+      "std_r": 0.029328
+    },
+    {
+      "drug": "MK-8776",
+      "k": 20,
+      "mean_r": 0.710218,
+      "std_r": 0.026558
+    },
+    {
+      "drug": "ML323",
+      "k": 20,
+      "mean_r": 0.634271,
+      "std_r": 0.043959
+    },
+    {
+      "drug": "MN-64",
+      "k": 20,
+      "mean_r": 0.607075,
+      "std_r": 0.023832
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 20,
+      "mean_r": 0.347694,
+      "std_r": 0.038273
+    },
+    {
+      "drug": "Mirin",
+      "k": 20,
+      "mean_r": 0.752306,
+      "std_r": 0.01247
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 20,
+      "mean_r": 0.787867,
+      "std_r": 0.040889
+    },
+    {
+      "drug": "Motesanib",
+      "k": 20,
+      "mean_r": 0.763357,
+      "std_r": 0.022576
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 20,
+      "mean_r": 0.682769,
+      "std_r": 0.043522
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 20,
+      "mean_r": 0.498144,
+      "std_r": 0.04265
+    },
+    {
+      "drug": "NU7441",
+      "k": 20,
+      "mean_r": 0.725185,
+      "std_r": 0.023208
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 20,
+      "mean_r": 0.678622,
+      "std_r": 0.036846
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 20,
+      "mean_r": 0.554286,
+      "std_r": 0.063546
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 20,
+      "mean_r": 0.7391,
+      "std_r": 0.015332
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 20,
+      "mean_r": 0.650568,
+      "std_r": 0.017766
+    },
+    {
+      "drug": "Niraparib",
+      "k": 20,
+      "mean_r": 0.771631,
+      "std_r": 0.031024
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 20,
+      "mean_r": 0.652461,
+      "std_r": 0.013828
+    },
+    {
+      "drug": "OF-1",
+      "k": 20,
+      "mean_r": 0.449568,
+      "std_r": 0.082241
+    },
+    {
+      "drug": "OSI-027",
+      "k": 20,
+      "mean_r": 0.403205,
+      "std_r": 0.038051
+    },
+    {
+      "drug": "OTX015",
+      "k": 20,
+      "mean_r": 0.755328,
+      "std_r": 0.072262
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 20,
+      "mean_r": 0.598584,
+      "std_r": 0.020598
+    },
+    {
+      "drug": "Olaparib",
+      "k": 20,
+      "mean_r": 0.786766,
+      "std_r": 0.028368
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 20,
+      "mean_r": 0.56995,
+      "std_r": 0.103639
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 20,
+      "mean_r": 0.793659,
+      "std_r": 0.026886
+    },
+    {
+      "drug": "P22077",
+      "k": 20,
+      "mean_r": 0.665269,
+      "std_r": 0.055869
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 20,
+      "mean_r": 0.752963,
+      "std_r": 0.011837
+    },
+    {
+      "drug": "PD0325901",
+      "k": 20,
+      "mean_r": 0.595627,
+      "std_r": 0.13428
+    },
+    {
+      "drug": "PD173074",
+      "k": 20,
+      "mean_r": 0.6191,
+      "std_r": 0.050118
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 20,
+      "mean_r": 0.601547,
+      "std_r": 0.056067
+    },
+    {
+      "drug": "PFI-1",
+      "k": 20,
+      "mean_r": 0.693797,
+      "std_r": 0.023927
+    },
+    {
+      "drug": "PFI3",
+      "k": 20,
+      "mean_r": 0.764403,
+      "std_r": 0.030302
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 20,
+      "mean_r": 0.575462,
+      "std_r": 0.045851
+    },
+    {
+      "drug": "POMHEX",
+      "k": 20,
+      "mean_r": 0.52216,
+      "std_r": 0.020407
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 20,
+      "mean_r": 0.655907,
+      "std_r": 0.030023
+    },
+    {
+      "drug": "PRT062607",
+      "k": 20,
+      "mean_r": 0.714483,
+      "std_r": 0.022126
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 20,
+      "mean_r": 0.766323,
+      "std_r": 0.077882
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 20,
+      "mean_r": 0.743545,
+      "std_r": 0.016729
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 20,
+      "mean_r": 0.698433,
+      "std_r": 0.030198
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 20,
+      "mean_r": 0.735801,
+      "std_r": 0.028582
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 20,
+      "mean_r": 0.706354,
+      "std_r": 0.079121
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 20,
+      "mean_r": 0.739723,
+      "std_r": 0.015555
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 20,
+      "mean_r": 0.844981,
+      "std_r": 0.037681
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 20,
+      "mean_r": 0.659447,
+      "std_r": 0.023969
+    },
+    {
+      "drug": "RO-3306",
+      "k": 20,
+      "mean_r": 0.808896,
+      "std_r": 0.012297
+    },
+    {
+      "drug": "RVX-208",
+      "k": 20,
+      "mean_r": 0.749519,
+      "std_r": 0.017133
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 20,
+      "mean_r": 0.651171,
+      "std_r": 0.043487
+    },
+    {
+      "drug": "Refametinib",
+      "k": 20,
+      "mean_r": 0.669685,
+      "std_r": 0.019263
+    },
+    {
+      "drug": "Remodelin",
+      "k": 20,
+      "mean_r": 0.541524,
+      "std_r": 0.042387
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 20,
+      "mean_r": 0.779521,
+      "std_r": 0.010247
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 20,
+      "mean_r": 0.586356,
+      "std_r": 0.0344
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 20,
+      "mean_r": 0.730059,
+      "std_r": 0.036635
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 20,
+      "mean_r": 0.678165,
+      "std_r": 0.009455
+    },
+    {
+      "drug": "SB216763",
+      "k": 20,
+      "mean_r": 0.650944,
+      "std_r": 0.100609
+    },
+    {
+      "drug": "SB505124",
+      "k": 20,
+      "mean_r": 0.300992,
+      "std_r": 0.107503
+    },
+    {
+      "drug": "SB590885",
+      "k": 20,
+      "mean_r": 0.641872,
+      "std_r": 0.044159
+    },
+    {
+      "drug": "SCH772984",
+      "k": 20,
+      "mean_r": 0.603114,
+      "std_r": 0.188317
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 20,
+      "mean_r": 0.683324,
+      "std_r": 0.025408
+    },
+    {
+      "drug": "SGC0946",
+      "k": 20,
+      "mean_r": 0.61738,
+      "std_r": 0.012022
+    },
+    {
+      "drug": "SL0101",
+      "k": 20,
+      "mean_r": 0.603606,
+      "std_r": 0.036793
+    },
+    {
+      "drug": "SN-38",
+      "k": 20,
+      "mean_r": 0.652995,
+      "std_r": 0.051619
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 20,
+      "mean_r": 0.669075,
+      "std_r": 0.019341
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 20,
+      "mean_r": 0.41606,
+      "std_r": 0.106399
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 20,
+      "mean_r": 0.552614,
+      "std_r": 0.028885
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 20,
+      "mean_r": 0.73561,
+      "std_r": 0.020828
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 20,
+      "mean_r": 0.658556,
+      "std_r": 0.024164
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 20,
+      "mean_r": 0.161836,
+      "std_r": 0.011039
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 20,
+      "mean_r": 0.748276,
+      "std_r": 0.029464
+    },
+    {
+      "drug": "Sinularin",
+      "k": 20,
+      "mean_r": 0.688487,
+      "std_r": 0.020284
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 20,
+      "mean_r": 0.687642,
+      "std_r": 0.043685
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 20,
+      "mean_r": 0.61274,
+      "std_r": 0.025128
+    },
+    {
+      "drug": "TW 37",
+      "k": 20,
+      "mean_r": 0.648879,
+      "std_r": 0.016427
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 20,
+      "mean_r": 0.728033,
+      "std_r": 0.037404
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 20,
+      "mean_r": 0.589828,
+      "std_r": 0.077044
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 20,
+      "mean_r": 0.439264,
+      "std_r": 0.045991
+    },
+    {
+      "drug": "Taselisib",
+      "k": 20,
+      "mean_r": 0.658772,
+      "std_r": 0.01737
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 20,
+      "mean_r": 0.726952,
+      "std_r": 0.012641
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 20,
+      "mean_r": 0.78116,
+      "std_r": 0.024515
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 20,
+      "mean_r": 0.591394,
+      "std_r": 0.029388
+    },
+    {
+      "drug": "Teniposide",
+      "k": 20,
+      "mean_r": 0.820749,
+      "std_r": 0.044438
+    },
+    {
+      "drug": "Topotecan",
+      "k": 20,
+      "mean_r": 0.792292,
+      "std_r": 0.048369
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 20,
+      "mean_r": 0.809918,
+      "std_r": 0.04797
+    },
+    {
+      "drug": "Trametinib",
+      "k": 20,
+      "mean_r": 0.592616,
+      "std_r": 0.139451
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 20,
+      "mean_r": 0.702996,
+      "std_r": 0.03
+    },
+    {
+      "drug": "UMI-77",
+      "k": 20,
+      "mean_r": 0.486378,
+      "std_r": 0.01383
+    },
+    {
+      "drug": "UNC0379",
+      "k": 20,
+      "mean_r": 0.751807,
+      "std_r": 0.009087
+    },
+    {
+      "drug": "UNC0638",
+      "k": 20,
+      "mean_r": 0.794864,
+      "std_r": 0.018768
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 20,
+      "mean_r": 0.534504,
+      "std_r": 0.105471
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 20,
+      "mean_r": 0.701722,
+      "std_r": 0.081617
+    },
+    {
+      "drug": "VE-822",
+      "k": 20,
+      "mean_r": 0.733553,
+      "std_r": 0.017061
+    },
+    {
+      "drug": "VE821",
+      "k": 20,
+      "mean_r": 0.773516,
+      "std_r": 0.043983
+    },
+    {
+      "drug": "VX-11e",
+      "k": 20,
+      "mean_r": 0.691503,
+      "std_r": 0.109438
+    },
+    {
+      "drug": "Veliparib",
+      "k": 20,
+      "mean_r": 0.787867,
+      "std_r": 0.041351
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 20,
+      "mean_r": 0.642191,
+      "std_r": 0.059819
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 20,
+      "mean_r": 0.86099,
+      "std_r": 0.024044
+    },
+    {
+      "drug": "Vincristine",
+      "k": 20,
+      "mean_r": 0.855088,
+      "std_r": 0.031524
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 20,
+      "mean_r": 0.780323,
+      "std_r": 0.054514
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 20,
+      "mean_r": 0.755677,
+      "std_r": 0.014437
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 20,
+      "mean_r": 0.736064,
+      "std_r": 0.037083
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 20,
+      "mean_r": 0.432673,
+      "std_r": 0.078611
+    },
+    {
+      "drug": "WIKI4",
+      "k": 20,
+      "mean_r": 0.416533,
+      "std_r": 0.033925
+    },
+    {
+      "drug": "WZ4003",
+      "k": 20,
+      "mean_r": 0.581243,
+      "std_r": 0.055417
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 20,
+      "mean_r": 0.792105,
+      "std_r": 0.021353
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 20,
+      "mean_r": 0.666673,
+      "std_r": 0.036005
+    },
+    {
+      "drug": "XAV939",
+      "k": 20,
+      "mean_r": 0.554932,
+      "std_r": 0.086435
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 20,
+      "mean_r": 0.809751,
+      "std_r": 0.044979
+    },
+    {
+      "drug": "ZM447439",
+      "k": 20,
+      "mean_r": 0.749864,
+      "std_r": 0.019815
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 20,
+      "mean_r": 0.817545,
+      "std_r": 0.015778
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 20,
+      "mean_r": 0.712712,
+      "std_r": 0.017483
+    },
+    {
+      "drug": "glutathione",
+      "k": 20,
+      "mean_r": 0.62654,
+      "std_r": 0.010002
+    },
+    {
+      "drug": "5-Fluorouracil",
+      "k": 50,
+      "mean_r": 0.759865,
+      "std_r": 0.022647
+    },
+    {
+      "drug": "5-azacytidine",
+      "k": 50,
+      "mean_r": 0.715294,
+      "std_r": 0.02515
+    },
+    {
+      "drug": "A-366",
+      "k": 50,
+      "mean_r": 0.70809,
+      "std_r": 0.073434
+    },
+    {
+      "drug": "ABT737",
+      "k": 50,
+      "mean_r": 0.755262,
+      "std_r": 0.038078
+    },
+    {
+      "drug": "AGI-5198",
+      "k": 50,
+      "mean_r": 0.665437,
+      "std_r": 0.030859
+    },
+    {
+      "drug": "AGI-6780",
+      "k": 50,
+      "mean_r": 0.661729,
+      "std_r": 0.093275
+    },
+    {
+      "drug": "AGK2",
+      "k": 50,
+      "mean_r": 0.598998,
+      "std_r": 0.041071
+    },
+    {
+      "drug": "AMG-319",
+      "k": 50,
+      "mean_r": 0.730209,
+      "std_r": 0.039307
+    },
+    {
+      "drug": "AT13148",
+      "k": 50,
+      "mean_r": 0.606481,
+      "std_r": 0.095133
+    },
+    {
+      "drug": "AZ6102",
+      "k": 50,
+      "mean_r": 0.595059,
+      "std_r": 0.05268
+    },
+    {
+      "drug": "AZ960",
+      "k": 50,
+      "mean_r": 0.689714,
+      "std_r": 0.066165
+    },
+    {
+      "drug": "AZD1208",
+      "k": 50,
+      "mean_r": 0.784059,
+      "std_r": 0.017363
+    },
+    {
+      "drug": "AZD1332",
+      "k": 50,
+      "mean_r": 0.570546,
+      "std_r": 0.052846
+    },
+    {
+      "drug": "AZD2014",
+      "k": 50,
+      "mean_r": 0.607303,
+      "std_r": 0.072197
+    },
+    {
+      "drug": "AZD3759",
+      "k": 50,
+      "mean_r": 0.713911,
+      "std_r": 0.040042
+    },
+    {
+      "drug": "AZD4547",
+      "k": 50,
+      "mean_r": 0.478386,
+      "std_r": 0.153677
+    },
+    {
+      "drug": "AZD5153",
+      "k": 50,
+      "mean_r": 0.827509,
+      "std_r": 0.060245
+    },
+    {
+      "drug": "AZD5363",
+      "k": 50,
+      "mean_r": 0.856795,
+      "std_r": 0.006368
+    },
+    {
+      "drug": "AZD5438",
+      "k": 50,
+      "mean_r": 0.814988,
+      "std_r": 0.018411
+    },
+    {
+      "drug": "AZD5582",
+      "k": 50,
+      "mean_r": 0.470717,
+      "std_r": 0.036738
+    },
+    {
+      "drug": "AZD5991",
+      "k": 50,
+      "mean_r": 0.661362,
+      "std_r": 0.036242
+    },
+    {
+      "drug": "AZD6482",
+      "k": 50,
+      "mean_r": 0.71807,
+      "std_r": 0.084059
+    },
+    {
+      "drug": "AZD6738",
+      "k": 50,
+      "mean_r": 0.82958,
+      "std_r": 0.007426
+    },
+    {
+      "drug": "AZD7762",
+      "k": 50,
+      "mean_r": 0.823797,
+      "std_r": 0.018203
+    },
+    {
+      "drug": "AZD8055",
+      "k": 50,
+      "mean_r": 0.689433,
+      "std_r": 0.070349
+    },
+    {
+      "drug": "AZD8186",
+      "k": 50,
+      "mean_r": 0.623266,
+      "std_r": 0.07787
+    },
+    {
+      "drug": "Acetalax",
+      "k": 50,
+      "mean_r": 0.206103,
+      "std_r": 0.046329
+    },
+    {
+      "drug": "Afatinib",
+      "k": 50,
+      "mean_r": 0.681817,
+      "std_r": 0.102091
+    },
+    {
+      "drug": "Afuresertib",
+      "k": 50,
+      "mean_r": 0.864035,
+      "std_r": 0.005254
+    },
+    {
+      "drug": "Alisertib",
+      "k": 50,
+      "mean_r": 0.77427,
+      "std_r": 0.044142
+    },
+    {
+      "drug": "Alpelisib",
+      "k": 50,
+      "mean_r": 0.736695,
+      "std_r": 0.069653
+    },
+    {
+      "drug": "Avagacestat",
+      "k": 50,
+      "mean_r": 0.704692,
+      "std_r": 0.039063
+    },
+    {
+      "drug": "Axitinib",
+      "k": 50,
+      "mean_r": 0.754945,
+      "std_r": 0.049705
+    },
+    {
+      "drug": "BI-2536",
+      "k": 50,
+      "mean_r": 0.791543,
+      "std_r": 0.034542
+    },
+    {
+      "drug": "BIBR-1532",
+      "k": 50,
+      "mean_r": 0.693355,
+      "std_r": 0.02976
+    },
+    {
+      "drug": "BMS-345541",
+      "k": 50,
+      "mean_r": 0.712129,
+      "std_r": 0.096568
+    },
+    {
+      "drug": "BMS-536924",
+      "k": 50,
+      "mean_r": 0.593219,
+      "std_r": 0.049497
+    },
+    {
+      "drug": "BMS-754807",
+      "k": 50,
+      "mean_r": 0.704876,
+      "std_r": 0.028111
+    },
+    {
+      "drug": "BX795",
+      "k": 50,
+      "mean_r": 0.724975,
+      "std_r": 0.074194
+    },
+    {
+      "drug": "Bicalutamide",
+      "k": 50,
+      "mean_r": 0.616326,
+      "std_r": 0.069882
+    },
+    {
+      "drug": "Bleomycin",
+      "k": 50,
+      "mean_r": 0.660501,
+      "std_r": 0.054439
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "k": 50,
+      "mean_r": 0.674601,
+      "std_r": 0.043517
+    },
+    {
+      "drug": "Bortezomib",
+      "k": 50,
+      "mean_r": 0.608521,
+      "std_r": 0.02516
+    },
+    {
+      "drug": "Bosutinib",
+      "k": 50,
+      "mean_r": 0.66413,
+      "std_r": 0.088712
+    },
+    {
+      "drug": "Bromosporine",
+      "k": 50,
+      "mean_r": 0.817275,
+      "std_r": 0.06492
+    },
+    {
+      "drug": "Buparlisib",
+      "k": 50,
+      "mean_r": 0.761471,
+      "std_r": 0.064272
+    },
+    {
+      "drug": "CCT-018159",
+      "k": 50,
+      "mean_r": 0.667547,
+      "std_r": 0.141382
+    },
+    {
+      "drug": "CCT007093",
+      "k": 50,
+      "mean_r": 0.740013,
+      "std_r": 0.04067
+    },
+    {
+      "drug": "CHIR-99021",
+      "k": 50,
+      "mean_r": 0.630927,
+      "std_r": 0.040623
+    },
+    {
+      "drug": "CPI-637",
+      "k": 50,
+      "mean_r": 0.728542,
+      "std_r": 0.031777
+    },
+    {
+      "drug": "CZC24832",
+      "k": 50,
+      "mean_r": 0.78238,
+      "std_r": 0.029663
+    },
+    {
+      "drug": "Camptothecin",
+      "k": 50,
+      "mean_r": 0.879173,
+      "std_r": 0.019595
+    },
+    {
+      "drug": "Carmustine",
+      "k": 50,
+      "mean_r": 0.770811,
+      "std_r": 0.015608
+    },
+    {
+      "drug": "Cediranib",
+      "k": 50,
+      "mean_r": 0.564887,
+      "std_r": 0.039919
+    },
+    {
+      "drug": "Cisplatin",
+      "k": 50,
+      "mean_r": 0.842939,
+      "std_r": 0.059799
+    },
+    {
+      "drug": "Crizotinib",
+      "k": 50,
+      "mean_r": 0.793533,
+      "std_r": 0.040929
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "k": 50,
+      "mean_r": 0.768259,
+      "std_r": 0.0251
+    },
+    {
+      "drug": "Cytarabine",
+      "k": 50,
+      "mean_r": 0.808017,
+      "std_r": 0.024584
+    },
+    {
+      "drug": "Dabrafenib",
+      "k": 50,
+      "mean_r": 0.596624,
+      "std_r": 0.084751
+    },
+    {
+      "drug": "Dacarbazine",
+      "k": 50,
+      "mean_r": 0.670712,
+      "std_r": 0.032777
+    },
+    {
+      "drug": "Dactinomycin",
+      "k": 50,
+      "mean_r": 0.758752,
+      "std_r": 0.090847
+    },
+    {
+      "drug": "Dactolisib",
+      "k": 50,
+      "mean_r": 0.766036,
+      "std_r": 0.073325
+    },
+    {
+      "drug": "Daporinad",
+      "k": 50,
+      "mean_r": 0.379574,
+      "std_r": 0.075756
+    },
+    {
+      "drug": "Dasatinib",
+      "k": 50,
+      "mean_r": 0.387085,
+      "std_r": 0.065969
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "k": 50,
+      "mean_r": 0.386429,
+      "std_r": 0.191086
+    },
+    {
+      "drug": "Dinaciclib",
+      "k": 50,
+      "mean_r": 0.719864,
+      "std_r": 0.05067
+    },
+    {
+      "drug": "Docetaxel",
+      "k": 50,
+      "mean_r": 0.822684,
+      "std_r": 0.083809
+    },
+    {
+      "drug": "Doramapimod",
+      "k": 50,
+      "mean_r": 0.656283,
+      "std_r": 0.088246
+    },
+    {
+      "drug": "EHT-1864",
+      "k": 50,
+      "mean_r": 0.647929,
+      "std_r": 0.039409
+    },
+    {
+      "drug": "EPZ004777",
+      "k": 50,
+      "mean_r": 0.813132,
+      "std_r": 0.018138
+    },
+    {
+      "drug": "EPZ5676",
+      "k": 50,
+      "mean_r": 0.822965,
+      "std_r": 0.042481
+    },
+    {
+      "drug": "Elephantin",
+      "k": 50,
+      "mean_r": 0.738052,
+      "std_r": 0.036297
+    },
+    {
+      "drug": "Elesclomol",
+      "k": 50,
+      "mean_r": 0.643338,
+      "std_r": 0.087719
+    },
+    {
+      "drug": "Entinostat",
+      "k": 50,
+      "mean_r": 0.682284,
+      "std_r": 0.0532
+    },
+    {
+      "drug": "Entospletinib",
+      "k": 50,
+      "mean_r": 0.628809,
+      "std_r": 0.040202
+    },
+    {
+      "drug": "Epirubicin",
+      "k": 50,
+      "mean_r": 0.792195,
+      "std_r": 0.047922
+    },
+    {
+      "drug": "Erlotinib",
+      "k": 50,
+      "mean_r": 0.677581,
+      "std_r": 0.062658
+    },
+    {
+      "drug": "Fludarabine",
+      "k": 50,
+      "mean_r": 0.632202,
+      "std_r": 0.027711
+    },
+    {
+      "drug": "Foretinib",
+      "k": 50,
+      "mean_r": 0.674824,
+      "std_r": 0.056344
+    },
+    {
+      "drug": "Fulvestrant",
+      "k": 50,
+      "mean_r": 0.792205,
+      "std_r": 0.033627
+    },
+    {
+      "drug": "GDC0810",
+      "k": 50,
+      "mean_r": 0.625444,
+      "std_r": 0.109201
+    },
+    {
+      "drug": "GNE-317",
+      "k": 50,
+      "mean_r": 0.698049,
+      "std_r": 0.069186
+    },
+    {
+      "drug": "GSK-LSD1",
+      "k": 50,
+      "mean_r": 0.683163,
+      "std_r": 0.032786
+    },
+    {
+      "drug": "GSK1904529A",
+      "k": 50,
+      "mean_r": 0.665603,
+      "std_r": 0.022246
+    },
+    {
+      "drug": "GSK2110183B",
+      "k": 50,
+      "mean_r": 0.687156,
+      "std_r": 0.119741
+    },
+    {
+      "drug": "GSK2578215A",
+      "k": 50,
+      "mean_r": 0.709375,
+      "std_r": 0.021818
+    },
+    {
+      "drug": "GSK2606414",
+      "k": 50,
+      "mean_r": 0.655119,
+      "std_r": 0.050142
+    },
+    {
+      "drug": "GSK269962A",
+      "k": 50,
+      "mean_r": 0.683719,
+      "std_r": 0.066428
+    },
+    {
+      "drug": "GSK2801",
+      "k": 50,
+      "mean_r": 0.73893,
+      "std_r": 0.028885
+    },
+    {
+      "drug": "GSK2830371",
+      "k": 50,
+      "mean_r": 0.826817,
+      "std_r": 0.01544
+    },
+    {
+      "drug": "GSK343",
+      "k": 50,
+      "mean_r": 0.800638,
+      "std_r": 0.07699
+    },
+    {
+      "drug": "GSK591",
+      "k": 50,
+      "mean_r": 0.630615,
+      "std_r": 0.075221
+    },
+    {
+      "drug": "GW441756",
+      "k": 50,
+      "mean_r": 0.643673,
+      "std_r": 0.030568
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "k": 50,
+      "mean_r": 0.687689,
+      "std_r": 0.047448
+    },
+    {
+      "drug": "Gefitinib",
+      "k": 50,
+      "mean_r": 0.692483,
+      "std_r": 0.122021
+    },
+    {
+      "drug": "Gemcitabine",
+      "k": 50,
+      "mean_r": 0.820427,
+      "std_r": 0.008563
+    },
+    {
+      "drug": "I-BET-762",
+      "k": 50,
+      "mean_r": 0.885025,
+      "std_r": 0.012798
+    },
+    {
+      "drug": "I-BRD9",
+      "k": 50,
+      "mean_r": 0.776754,
+      "std_r": 0.015831
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "k": 50,
+      "mean_r": 0.786991,
+      "std_r": 0.013683
+    },
+    {
+      "drug": "IOX2",
+      "k": 50,
+      "mean_r": 0.745053,
+      "std_r": 0.042716
+    },
+    {
+      "drug": "IWP-2",
+      "k": 50,
+      "mean_r": 0.717948,
+      "std_r": 0.058176
+    },
+    {
+      "drug": "Ibrutinib",
+      "k": 50,
+      "mean_r": 0.749448,
+      "std_r": 0.02404
+    },
+    {
+      "drug": "Ipatasertib",
+      "k": 50,
+      "mean_r": 0.815728,
+      "std_r": 0.093276
+    },
+    {
+      "drug": "Irinotecan",
+      "k": 50,
+      "mean_r": 0.844827,
+      "std_r": 0.032645
+    },
+    {
+      "drug": "JNK Inhibitor VIII",
+      "k": 50,
+      "mean_r": 0.759868,
+      "std_r": 0.033422
+    },
+    {
+      "drug": "JQ1",
+      "k": 50,
+      "mean_r": 0.803183,
+      "std_r": 0.046077
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "k": 50,
+      "mean_r": 0.705936,
+      "std_r": 0.025323
+    },
+    {
+      "drug": "KU-55933",
+      "k": 50,
+      "mean_r": 0.692175,
+      "std_r": 0.027621
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "k": 50,
+      "mean_r": 0.632542,
+      "std_r": 0.039477
+    },
+    {
+      "drug": "LCL161",
+      "k": 50,
+      "mean_r": 0.568876,
+      "std_r": 0.076422
+    },
+    {
+      "drug": "LGK974",
+      "k": 50,
+      "mean_r": 0.663622,
+      "std_r": 0.094301
+    },
+    {
+      "drug": "LJI308",
+      "k": 50,
+      "mean_r": 0.7273,
+      "std_r": 0.034815
+    },
+    {
+      "drug": "LMP744",
+      "k": 50,
+      "mean_r": 0.83632,
+      "std_r": 0.061277
+    },
+    {
+      "drug": "LY2109761",
+      "k": 50,
+      "mean_r": 0.651296,
+      "std_r": 0.109935
+    },
+    {
+      "drug": "Lapatinib",
+      "k": 50,
+      "mean_r": 0.764686,
+      "std_r": 0.03395
+    },
+    {
+      "drug": "Leflunomide",
+      "k": 50,
+      "mean_r": 0.636531,
+      "std_r": 0.038497
+    },
+    {
+      "drug": "Lenalidomide",
+      "k": 50,
+      "mean_r": 0.77632,
+      "std_r": 0.032951
+    },
+    {
+      "drug": "Lestaurtinib",
+      "k": 50,
+      "mean_r": 0.738217,
+      "std_r": 0.023334
+    },
+    {
+      "drug": "Linsitinib",
+      "k": 50,
+      "mean_r": 0.641103,
+      "std_r": 0.071294
+    },
+    {
+      "drug": "Luminespib",
+      "k": 50,
+      "mean_r": 0.660052,
+      "std_r": 0.086514
+    },
+    {
+      "drug": "MG-132",
+      "k": 50,
+      "mean_r": 0.503808,
+      "std_r": 0.028885
+    },
+    {
+      "drug": "MIM1",
+      "k": 50,
+      "mean_r": 0.647109,
+      "std_r": 0.034445
+    },
+    {
+      "drug": "MIRA-1",
+      "k": 50,
+      "mean_r": 0.784664,
+      "std_r": 0.043177
+    },
+    {
+      "drug": "MK-1775",
+      "k": 50,
+      "mean_r": 0.799257,
+      "std_r": 0.038557
+    },
+    {
+      "drug": "MK-2206",
+      "k": 50,
+      "mean_r": 0.837554,
+      "std_r": 0.056923
+    },
+    {
+      "drug": "MK-8776",
+      "k": 50,
+      "mean_r": 0.755492,
+      "std_r": 0.04522
+    },
+    {
+      "drug": "ML323",
+      "k": 50,
+      "mean_r": 0.710456,
+      "std_r": 0.042966
+    },
+    {
+      "drug": "MN-64",
+      "k": 50,
+      "mean_r": 0.644597,
+      "std_r": 0.028995
+    },
+    {
+      "drug": "Methotrexate",
+      "k": 50,
+      "mean_r": 0.324777,
+      "std_r": 0.08122
+    },
+    {
+      "drug": "Mirin",
+      "k": 50,
+      "mean_r": 0.719684,
+      "std_r": 0.077881
+    },
+    {
+      "drug": "Mitoxantrone",
+      "k": 50,
+      "mean_r": 0.792212,
+      "std_r": 0.065432
+    },
+    {
+      "drug": "Motesanib",
+      "k": 50,
+      "mean_r": 0.77562,
+      "std_r": 0.021557
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "k": 50,
+      "mean_r": 0.693394,
+      "std_r": 0.047565
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "k": 50,
+      "mean_r": 0.516358,
+      "std_r": 0.025325
+    },
+    {
+      "drug": "NU7441",
+      "k": 50,
+      "mean_r": 0.729232,
+      "std_r": 0.019374
+    },
+    {
+      "drug": "NVP-ADW742",
+      "k": 50,
+      "mean_r": 0.690128,
+      "std_r": 0.044981
+    },
+    {
+      "drug": "Navitoclax",
+      "k": 50,
+      "mean_r": 0.675558,
+      "std_r": 0.044079
+    },
+    {
+      "drug": "Nelarabine",
+      "k": 50,
+      "mean_r": 0.744821,
+      "std_r": 0.025663
+    },
+    {
+      "drug": "Nilotinib",
+      "k": 50,
+      "mean_r": 0.656155,
+      "std_r": 0.034698
+    },
+    {
+      "drug": "Niraparib",
+      "k": 50,
+      "mean_r": 0.788628,
+      "std_r": 0.034146
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "k": 50,
+      "mean_r": 0.664983,
+      "std_r": 0.011145
+    },
+    {
+      "drug": "OF-1",
+      "k": 50,
+      "mean_r": 0.61395,
+      "std_r": 0.034586
+    },
+    {
+      "drug": "OSI-027",
+      "k": 50,
+      "mean_r": 0.46079,
+      "std_r": 0.050425
+    },
+    {
+      "drug": "OTX015",
+      "k": 50,
+      "mean_r": 0.86395,
+      "std_r": 0.012092
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "k": 50,
+      "mean_r": 0.593828,
+      "std_r": 0.031384
+    },
+    {
+      "drug": "Olaparib",
+      "k": 50,
+      "mean_r": 0.840521,
+      "std_r": 0.019039
+    },
+    {
+      "drug": "Osimertinib",
+      "k": 50,
+      "mean_r": 0.745165,
+      "std_r": 0.025012
+    },
+    {
+      "drug": "Oxaliplatin",
+      "k": 50,
+      "mean_r": 0.79287,
+      "std_r": 0.062563
+    },
+    {
+      "drug": "P22077",
+      "k": 50,
+      "mean_r": 0.6935,
+      "std_r": 0.025933
+    },
+    {
+      "drug": "PCI-34051",
+      "k": 50,
+      "mean_r": 0.73828,
+      "std_r": 0.037015
+    },
+    {
+      "drug": "PD0325901",
+      "k": 50,
+      "mean_r": 0.810025,
+      "std_r": 0.005055
+    },
+    {
+      "drug": "PD173074",
+      "k": 50,
+      "mean_r": 0.628989,
+      "std_r": 0.062057
+    },
+    {
+      "drug": "PF-4708671",
+      "k": 50,
+      "mean_r": 0.662081,
+      "std_r": 0.071485
+    },
+    {
+      "drug": "PFI-1",
+      "k": 50,
+      "mean_r": 0.708353,
+      "std_r": 0.037696
+    },
+    {
+      "drug": "PFI3",
+      "k": 50,
+      "mean_r": 0.778213,
+      "std_r": 0.038312
+    },
+    {
+      "drug": "PLX-4720",
+      "k": 50,
+      "mean_r": 0.647377,
+      "std_r": 0.081015
+    },
+    {
+      "drug": "POMHEX",
+      "k": 50,
+      "mean_r": 0.534387,
+      "std_r": 0.037173
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "k": 50,
+      "mean_r": 0.67315,
+      "std_r": 0.033128
+    },
+    {
+      "drug": "PRT062607",
+      "k": 50,
+      "mean_r": 0.728118,
+      "std_r": 0.042299
+    },
+    {
+      "drug": "Paclitaxel",
+      "k": 50,
+      "mean_r": 0.710211,
+      "std_r": 0.10455
+    },
+    {
+      "drug": "Palbociclib",
+      "k": 50,
+      "mean_r": 0.743144,
+      "std_r": 0.033331
+    },
+    {
+      "drug": "Pevonedistat",
+      "k": 50,
+      "mean_r": 0.680733,
+      "std_r": 0.042898
+    },
+    {
+      "drug": "Picolinici-acid",
+      "k": 50,
+      "mean_r": 0.740936,
+      "std_r": 0.036589
+    },
+    {
+      "drug": "Pictilisib",
+      "k": 50,
+      "mean_r": 0.819307,
+      "std_r": 0.014564
+    },
+    {
+      "drug": "Piperlongumine",
+      "k": 50,
+      "mean_r": 0.721112,
+      "std_r": 0.050375
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "k": 50,
+      "mean_r": 0.837782,
+      "std_r": 0.061392
+    },
+    {
+      "drug": "Pyridostatin",
+      "k": 50,
+      "mean_r": 0.654088,
+      "std_r": 0.026394
+    },
+    {
+      "drug": "RO-3306",
+      "k": 50,
+      "mean_r": 0.775869,
+      "std_r": 0.041656
+    },
+    {
+      "drug": "RVX-208",
+      "k": 50,
+      "mean_r": 0.796099,
+      "std_r": 0.038031
+    },
+    {
+      "drug": "Rapamycin",
+      "k": 50,
+      "mean_r": 0.68953,
+      "std_r": 0.067447
+    },
+    {
+      "drug": "Refametinib",
+      "k": 50,
+      "mean_r": 0.827349,
+      "std_r": 0.003182
+    },
+    {
+      "drug": "Remodelin",
+      "k": 50,
+      "mean_r": 0.601908,
+      "std_r": 0.086144
+    },
+    {
+      "drug": "Ribociclib",
+      "k": 50,
+      "mean_r": 0.791672,
+      "std_r": 0.032855
+    },
+    {
+      "drug": "Romidepsin",
+      "k": 50,
+      "mean_r": 0.607933,
+      "std_r": 0.026253
+    },
+    {
+      "drug": "Rucaparib",
+      "k": 50,
+      "mean_r": 0.744475,
+      "std_r": 0.042736
+    },
+    {
+      "drug": "Ruxolitinib",
+      "k": 50,
+      "mean_r": 0.64845,
+      "std_r": 0.046765
+    },
+    {
+      "drug": "SB216763",
+      "k": 50,
+      "mean_r": 0.65398,
+      "std_r": 0.039969
+    },
+    {
+      "drug": "SB505124",
+      "k": 50,
+      "mean_r": 0.342962,
+      "std_r": 0.16192
+    },
+    {
+      "drug": "SB590885",
+      "k": 50,
+      "mean_r": 0.660342,
+      "std_r": 0.065806
+    },
+    {
+      "drug": "SCH772984",
+      "k": 50,
+      "mean_r": 0.861312,
+      "std_r": 0.023582
+    },
+    {
+      "drug": "SGC-CBP30",
+      "k": 50,
+      "mean_r": 0.66319,
+      "std_r": 0.032081
+    },
+    {
+      "drug": "SGC0946",
+      "k": 50,
+      "mean_r": 0.607499,
+      "std_r": 0.036424
+    },
+    {
+      "drug": "SL0101",
+      "k": 50,
+      "mean_r": 0.605095,
+      "std_r": 0.059628
+    },
+    {
+      "drug": "SN-38",
+      "k": 50,
+      "mean_r": 0.736991,
+      "std_r": 0.047129
+    },
+    {
+      "drug": "Sabutoclax",
+      "k": 50,
+      "mean_r": 0.64343,
+      "std_r": 0.059426
+    },
+    {
+      "drug": "Sapitinib",
+      "k": 50,
+      "mean_r": 0.650026,
+      "std_r": 0.01217
+    },
+    {
+      "drug": "Savolitinib",
+      "k": 50,
+      "mean_r": 0.543319,
+      "std_r": 0.066413
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "k": 50,
+      "mean_r": 0.730002,
+      "std_r": 0.025122
+    },
+    {
+      "drug": "Selumetinib",
+      "k": 50,
+      "mean_r": 0.756103,
+      "std_r": 0.173027
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "k": 50,
+      "mean_r": 0.1963,
+      "std_r": 0.047492
+    },
+    {
+      "drug": "Serdemetan",
+      "k": 50,
+      "mean_r": 0.733676,
+      "std_r": 0.046958
+    },
+    {
+      "drug": "Sinularin",
+      "k": 50,
+      "mean_r": 0.679089,
+      "std_r": 0.029627
+    },
+    {
+      "drug": "Sorafenib",
+      "k": 50,
+      "mean_r": 0.699714,
+      "std_r": 0.055512
+    },
+    {
+      "drug": "Staurosporine",
+      "k": 50,
+      "mean_r": 0.59383,
+      "std_r": 0.042331
+    },
+    {
+      "drug": "TW 37",
+      "k": 50,
+      "mean_r": 0.644439,
+      "std_r": 0.03904
+    },
+    {
+      "drug": "Talazoparib",
+      "k": 50,
+      "mean_r": 0.81602,
+      "std_r": 0.011687
+    },
+    {
+      "drug": "Tamoxifen",
+      "k": 50,
+      "mean_r": 0.646157,
+      "std_r": 0.06478
+    },
+    {
+      "drug": "Tanespimycin",
+      "k": 50,
+      "mean_r": 0.471981,
+      "std_r": 0.051428
+    },
+    {
+      "drug": "Taselisib",
+      "k": 50,
+      "mean_r": 0.745861,
+      "std_r": 0.01692
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "k": 50,
+      "mean_r": 0.702745,
+      "std_r": 0.060895
+    },
+    {
+      "drug": "Temozolomide",
+      "k": 50,
+      "mean_r": 0.75432,
+      "std_r": 0.033799
+    },
+    {
+      "drug": "Temsirolimus",
+      "k": 50,
+      "mean_r": 0.662726,
+      "std_r": 0.076152
+    },
+    {
+      "drug": "Teniposide",
+      "k": 50,
+      "mean_r": 0.849479,
+      "std_r": 0.053459
+    },
+    {
+      "drug": "Topotecan",
+      "k": 50,
+      "mean_r": 0.808497,
+      "std_r": 0.087314
+    },
+    {
+      "drug": "Tozasertib",
+      "k": 50,
+      "mean_r": 0.84885,
+      "std_r": 0.077863
+    },
+    {
+      "drug": "Trametinib",
+      "k": 50,
+      "mean_r": 0.827776,
+      "std_r": 0.00303
+    },
+    {
+      "drug": "Tretinoin",
+      "k": 50,
+      "mean_r": 0.694933,
+      "std_r": 0.032778
+    },
+    {
+      "drug": "UMI-77",
+      "k": 50,
+      "mean_r": 0.484122,
+      "std_r": 0.052801
+    },
+    {
+      "drug": "UNC0379",
+      "k": 50,
+      "mean_r": 0.753193,
+      "std_r": 0.01832
+    },
+    {
+      "drug": "UNC0638",
+      "k": 50,
+      "mean_r": 0.794599,
+      "std_r": 0.040571
+    },
+    {
+      "drug": "Ulixertinib",
+      "k": 50,
+      "mean_r": 0.820712,
+      "std_r": 0.041078
+    },
+    {
+      "drug": "Uprosertib",
+      "k": 50,
+      "mean_r": 0.834841,
+      "std_r": 0.014684
+    },
+    {
+      "drug": "VE-822",
+      "k": 50,
+      "mean_r": 0.716437,
+      "std_r": 0.032582
+    },
+    {
+      "drug": "VE821",
+      "k": 50,
+      "mean_r": 0.768523,
+      "std_r": 0.051778
+    },
+    {
+      "drug": "VX-11e",
+      "k": 50,
+      "mean_r": 0.792608,
+      "std_r": 0.118991
+    },
+    {
+      "drug": "Veliparib",
+      "k": 50,
+      "mean_r": 0.790559,
+      "std_r": 0.051053
+    },
+    {
+      "drug": "Venetoclax",
+      "k": 50,
+      "mean_r": 0.686556,
+      "std_r": 0.05823
+    },
+    {
+      "drug": "Vinblastine",
+      "k": 50,
+      "mean_r": 0.873377,
+      "std_r": 0.04287
+    },
+    {
+      "drug": "Vincristine",
+      "k": 50,
+      "mean_r": 0.886936,
+      "std_r": 0.019762
+    },
+    {
+      "drug": "Vinorelbine",
+      "k": 50,
+      "mean_r": 0.825272,
+      "std_r": 0.10511
+    },
+    {
+      "drug": "Vismodegib",
+      "k": 50,
+      "mean_r": 0.786369,
+      "std_r": 0.020078
+    },
+    {
+      "drug": "Vorinostat",
+      "k": 50,
+      "mean_r": 0.77255,
+      "std_r": 0.024451
+    },
+    {
+      "drug": "WEHI-539",
+      "k": 50,
+      "mean_r": 0.515395,
+      "std_r": 0.085054
+    },
+    {
+      "drug": "WIKI4",
+      "k": 50,
+      "mean_r": 0.429168,
+      "std_r": 0.034575
+    },
+    {
+      "drug": "WZ4003",
+      "k": 50,
+      "mean_r": 0.627305,
+      "std_r": 0.069509
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "k": 50,
+      "mean_r": 0.781983,
+      "std_r": 0.049101
+    },
+    {
+      "drug": "Wnt-C59",
+      "k": 50,
+      "mean_r": 0.689921,
+      "std_r": 0.068859
+    },
+    {
+      "drug": "XAV939",
+      "k": 50,
+      "mean_r": 0.585081,
+      "std_r": 0.06015
+    },
+    {
+      "drug": "YK-4-279",
+      "k": 50,
+      "mean_r": 0.782346,
+      "std_r": 0.082307
+    },
+    {
+      "drug": "ZM447439",
+      "k": 50,
+      "mean_r": 0.748918,
+      "std_r": 0.042854
+    },
+    {
+      "drug": "Zoledronate",
+      "k": 50,
+      "mean_r": 0.819308,
+      "std_r": 0.021657
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "k": 50,
+      "mean_r": 0.708766,
+      "std_r": 0.024261
+    },
+    {
+      "drug": "glutathione",
+      "k": 50,
+      "mean_r": 0.600734,
+      "std_r": 0.033695
+    }
+  ]
+}

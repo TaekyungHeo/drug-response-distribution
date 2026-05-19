@@ -1,0 +1,44 @@
+\subsection*{Supplementary Note 3 | Methods and robustness}
+
+\subsubsection*{$K$-shot blend calibration}
+
+\begin{table}[htbp]
+\centering
+\caption{\textbf{CV-selected blend weight and per-drug $r$ by $K$.} $w = 0$ corresponds to cell-mean prior only and $w = 1$ to matching only. Permuted-drug control at $K = 50$ yields $r = 0.561$.}
+\label{tab:kshot_curve}
+\begin{tabular}{cccc}
+\toprule
+$K$ & CV blend weight ($w$) & Per-drug $r$ & $\Delta$ vs.\ prior \\
+\midrule
+0  & ---  & 0.645 & --- \\
+1  & 0.1  & 0.645 & $0.000$ \\
+3  & 0.0  & 0.645 & $0.000$ \\
+5  & 0.1  & 0.646 & $+0.001$ \\
+10 & 0.2  & 0.653 & $+0.008$ \\
+20 & 0.3  & 0.670 & $+0.025$ \\
+50 & 0.5--0.6 & \textbf{0.701} & $\mathbf{\KFiftyLift}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Cell representation alternatives}
+
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Cell representation alternatives all yield per-drug $r \approx 0.645$.} Ridge, no drug features, 10-fold drug-blind PASO CV on GDSC2.}
+\label{tab:cell_repr}
+\begin{tabular}{lcc}
+\toprule
+Cell representation & Dimensions & Per-drug $r$ \\
+\midrule
+RNA PCA(550) + mutation PCA(200) [baseline] & 750 & 0.645 \\
+RNA PCA(1000) + mutation PCA(200) & 1,200 & 0.645 \\
+KEGG pathway scores & 1,284 & 0.645 \\
+RNA PCA(550) + pathway features & 1,834 & 0.645 \\
+RNA PCA(100) & 100 & 0.645 \\
+Pathway PCA(200) & 200 & 0.645 \\
+Mutations PCA(200) only & 200 & 0.645 \\
+\bottomrule
+\end{tabular}
+\end{table}
+

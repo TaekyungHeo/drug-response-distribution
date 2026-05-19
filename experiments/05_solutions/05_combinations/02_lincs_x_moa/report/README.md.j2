@@ -1,0 +1,64 @@
+# 02 — LINCS x within-MoA 2×2 factorial
+
+## Research question
+
+Do LINCS drug features and within-MoA training combine to improve both global r
+and per-drug r simultaneously?
+
+## Background
+
+LINCS does not improve per-drug r (04_external_signatures/01_lincs, Δ=+0.001).
+Within-MoA training improves per-drug r but does not necessarily improve global r
+(02_training_distribution/01_within_moa). A 2×2 factorial
+(with/without LINCS × all-drug/within-MoA) tests whether both interventions
+interact or are on independent axes.
+
+## Experimental design
+
+- **Model**: Ridge(alpha=1.0), cell features = RNA PCA(550) + mutation PCA(200)
+- **Drug features**: LINCS PCA({{ results.lincs_pca.n_components }}) capturing {{ "%.1f" | format(results.lincs_pca.variance_explained * 100) }}% of variance (when used)
+- **CV**: PASO {{ results.n_folds }}-fold drug-blind CV for all-drug conditions; leave-one-drug-out within MoA for within-MoA conditions
+- **Restriction**: all conditions evaluated on LINCS-covered drugs only for fair comparison
+- **Focus MoAs**: classes with sufficient LINCS coverage and high within-MoA ceiling
+
+## Results
+
+{% for m in results.per_moa %}
+{% if not m.get("excluded") %}
+### {{ m.moa }} ({{ m.n_drugs_lincs }}/{{ m.n_drugs_total }} drugs LINCS-covered)
+
+#### 2×2 factorial: global r / per-drug r
+
+| | no LINCS | + LINCS |
+|---|:---:|:---:|
+| **all-drug** | global={{ "%.4f" | format(m.factorial.all_drug_no_lincs.global_r) }}, pdr={{ "%.4f" | format(m.factorial.all_drug_no_lincs.per_drug_r) }} | global={{ "%.4f" | format(m.factorial.all_drug_lincs.global_r) }}, pdr={{ "%.4f" | format(m.factorial.all_drug_lincs.per_drug_r) }} |
+| **within-MoA** | global={{ "%.4f" | format(m.factorial.within_moa_no_lincs.global_r) }}, pdr={{ "%.4f" | format(m.factorial.within_moa_no_lincs.per_drug_r) }} | global={{ "%.4f" | format(m.factorial.within_moa_lincs.global_r) }}, pdr={{ "%.4f" | format(m.factorial.within_moa_lincs.per_drug_r) }} |
+
+LINCS effect on global r: {{ "%.4f" | format(m.factorial.all_drug_lincs.global_r - m.factorial.all_drug_no_lincs.global_r) }}.
+Within-MoA effect on per-drug r: {{ "%.4f" | format(m.factorial.within_moa_no_lincs.per_drug_r - m.factorial.all_drug_no_lincs.per_drug_r) }}.
+
+{% elif m.get("excluded") %}
+### {{ m.moa }} — excluded
+
+{{ m.n_drugs_lincs }}/{{ m.n_drugs_total }} LINCS-covered drugs ({{ m.reason }}).
+
+{% endif %}
+{% endfor %}
+
+## Per-drug detail
+
+| Drug | MoA | all-drug r | +LINCS r | within-MoA r | +LINCS+MoA r |
+|------|-----|:----------:|:--------:|:------------:|:------------:|
+{% for d in results.per_drug %}
+| {{ d.drug }} | {{ d.moa }} | {{ "%.4f" | format(d.all_drug_no_lincs_r) if d.all_drug_no_lincs_r is not none else "—" }} | {{ "%.4f" | format(d.all_drug_lincs_r) if d.all_drug_lincs_r is not none else "—" }} | {{ "%.4f" | format(d.within_moa_no_lincs_r) if d.within_moa_no_lincs_r is not none else "—" }} | {{ "%.4f" | format(d.within_moa_lincs_r) if d.within_moa_lincs_r is not none else "—" }} |
+{% endfor %}
+
+## Interpretation
+
+The original hypothesis was that LINCS and within-MoA training would be orthogonal:
+LINCS improving global r while within-MoA improves per-drug r. In practice, LINCS
+does not improve global r on these small MoA subsets, consistent with the 01_lincs
+finding (Δ=-0.058 on the full 104-drug subset). The combination shows that
+within-MoA training is the dominant intervention for per-drug r, while LINCS adds
+noise rather than complementary signal in this Ridge setup.
+

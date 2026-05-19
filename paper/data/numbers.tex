@@ -1,0 +1,73 @@
+% Canonical numbers from paper/data/metrics.json - do not edit manually.
+% Regenerate: python scripts/extract_ssot.py && python scripts/generate_paper_numbers.py
+%
+\newcommand{\RidgeNoDrugR}{0.645}% Ridge no-drug per-drug Pearson r (5-fold drug-blind CV; stage1_ridge.drug_blind.per_drug_r_mean=0.6453)
+\newcommand{\RnaOnlyOmicsR}{0.651}% RNA-only per-drug r from stage2 modality ablation (different splits; rna_only=0.6512)
+\newcommand{\DrugMeanRange}{15.5}% Range of drug mean IC50 values in GDSC2 (max-min ln uM; variance_decomposition.json ic50_range)
+\newcommand{\WithinDrugSD}{1.5}% Average within-drug SD in GDSC2 (sqrt of within_drug_var=2.225; variance_decomposition.json)
+\newcommand{\ZscoredGlobalR}{0.363}% Ridge z-scored targets global r (01_global_vs_perdrug per_drug_zscore.global_r_mean=0.36254)
+\newcommand{\ZscoredPerDrugR}{0.616}% Ridge z-scored targets per-drug r (01_global_vs_perdrug per_drug_zscore.per_drug_r_mean=0.61644)
+\newcommand{\PasoBestFoldDelta}{+0.20}% PASO best-fold selection delta above paso_style_mean (0.7506-0.5505=0.2001)
+\newcommand{\RidgeDrugBlindGlobalR}{0.344}% Ridge no-drug global Pearson r (5-fold drug-blind CV; 03_baselines global_r_mean=0.34432)
+\newcommand{\RidgeMorganDelta}{+0.001}% Ridge Morgan FP - no-drug delta (10-fold PASO)
+\newcommand{\LincsNoDrugGlobalR}{0.301}% Baseline global r on 104-drug LINCS-covered subset
+\newcommand{\LincsWithLincsGlobalR}{0.243}% With-LINCS global r on same subset
+\newcommand{\LincsGlobalRDelta}{-0.058}% LINCS global r change (negative)
+\newcommand{\LincsPerDrugDelta}{+0.001}% LINCS per-drug r change (null; Ridge regression)
+\newcommand{\TransformerLincsPerDrugDelta}{-0.005}% LINCS per-drug r change in Transformer (partC_metrics.json lincs_pca64 delta=-0.0047)
+\newcommand{\CellBlindR}{0.438}% Cell-blind 5-fold CV per-drug r (mean over folds)
+\newcommand{\CellMeanR}{0.645}% Cell-mean prior per-drug r (K=0)
+\newcommand{\KFiftyR}{0.701}% Response matching K=50 blended per-drug r
+\newcommand{\KFiftyLift}{+0.056}% K=50 lift vs cell-mean prior
+\newcommand{\ErkMapkAllDrug}{0.427}% ERK MAPK all-drug per-drug r
+\newcommand{\ErkMapkMoaR}{0.723}% ERK MAPK MoA-stratified per-drug r
+\newcommand{\ErkMapkProfileConcordance}{0.565}% ERK MAPK within-class profile concordance (mean)
+\newcommand{\ErkMapkProfileConcordanceStd}{0.231}% ERK MAPK within-class profile concordance (sd)
+\newcommand{\EgfrProfileConcordance}{0.697}% EGFR within-class profile concordance (mean)
+\newcommand{\EgfrAllDrug}{0.425}% EGFR all-drug per-drug r
+\newcommand{\EgfrMoaR}{0.799}% EGFR MoA-stratified per-drug r
+\newcommand{\EgfrMoaDelta}{+0.375}% EGFR MoA delta (raw delta 0.374525; consistent with experiment report)
+\newcommand{\ErkMapkMoaDelta}{+0.296}% ERK MAPK MoA delta (0.723 - 0.427)
+\newcommand{\DrugMeanOracleR}{0.837}% Drug-mean oracle global r (5-fold drug-blind, baseline_dissociation.json predictor_2a; mean_global_r=0.83745)
+\newcommand{\BeatAmlKoneCellR}{0.356}% BeatAML K=1 cell-specific matching per-drug r
+\newcommand{\BeatAmlKonePotencyR}{0.298}% BeatAML K=1 mean-potency matching per-drug r
+\newcommand{\BeatAmlKoneDelta}{+0.059}% BeatAML K=1 cell-specific minus mean-potency
+\newcommand{\PasoFairMean}{0.509}% PASO fair 10-fold mean
+\newcommand{\PasoInflation}{+0.042}% PASO test-set snooping inflation
+\newcommand{\PasoBestFold}{0.751}% PASO best-fold test r (replication; published 0.745)
+% Measurement ceiling
+\newcommand{\MeasurementCeiling}{0.754}% Replicate-pair measurement ceiling (mean per-drug r)
+\newcommand{\MeasurementCeilingSd}{0.124}% Replicate-pair measurement ceiling (SD over 9 drug pairs)
+% MoA one-hot control
+\newcommand{\MoaOnehotPerDrugR}{0.645}% MoA one-hot per-drug r (null vs baseline)
+\newcommand{\MoaOnehotGlobalRDelta}{+0.041}% MoA one-hot global r delta
+% MoA class breakdown (within-MoA training)
+\newcommand{\MitosisAllDrugR}{0.772}% Mitosis all-drug per-drug r
+\newcommand{\GenomeIntegrityAllDrugR}{0.742}% Genome integrity all-drug per-drug r
+\newcommand{\ApoptosisAllDrugR}{0.524}% Apoptosis regulation all-drug per-drug r
+\newcommand{\ApoptosisWithinMoaR}{0.515}% Apoptosis regulation within-MoA per-drug r
+\newcommand{\ApoptosisProfileConcordance}{0.331}% Apoptosis within-class profile concordance
+% CTRPv2 MoA validation
+\newcommand{\CtrpvTwoEgfrMoaDelta}{+0.371}% CTRPv2 EGFR inhibitor within-MoA delta
+\newcommand{\CtrpvTwoEgfrAllDrugR}{0.336}% CTRPv2 EGFR inhibitor all-drug per-drug r
+\newcommand{\CtrpvTwoEgfrWithinMoaR}{0.707}% CTRPv2 EGFR inhibitor within-MoA per-drug r
+\newcommand{\CtrpvTwoRafDelta}{-0.004}% CTRPv2 RAF inhibitor within-MoA delta (null)
+% K-shot and combination results
+\newcommand{\KTwentyR}{0.670}% K=20 blended per-drug r
+\newcommand{\EgfrComboKTwentyR}{0.801}% EGFR within-MoA + K=20 combined per-drug r
+\newcommand{\ErkMapkKshotKFiftyR}{0.813}% ERK MAPK K-shot only K=50 per-drug r
+% External validation — drug feature null
+\newcommand{\CtrpvTwoDrugNullDelta}{+0.005}% CTRPv2 Morgan FP delta (null)
+\newcommand{\BeatAmlDrugNullDelta}{+0.001}% BeatAML Morgan FP delta (null)
+\newcommand{\PrismDrugNullDelta}{+0.017}% PRISM Morgan FP delta (marginal)
+\newcommand{\PrismBaseR}{0.117}% PRISM baseline per-drug r (no drug features)
+\newcommand{\PrismFpR}{0.134}% PRISM per-drug r with Morgan fingerprints
+% External validation — K-shot matching
+\newcommand{\CtrpvTwoKZeroR}{0.411}% CTRPv2 K=0 per-drug r
+\newcommand{\CtrpvTwoKFiftyR}{0.463}% CTRPv2 K=50 per-drug r
+\newcommand{\CtrpvTwoKShotLift}{+0.051}% CTRPv2 K=50 vs K=0 lift
+\newcommand{\BeatAmlMorganFpR}{0.454}% BeatAML Morgan FP per-drug r
+\newcommand{\BeatAmlMorganFpDelta}{+0.001}% BeatAML Morgan FP delta vs no drug features
+\newcommand{\BeatAmlKZeroR}{0.453}% BeatAML K=0 per-drug Pearson r
+\newcommand{\BeatAmlKFiftyR}{0.521}% BeatAML K=50 per-drug Pearson r
+\newcommand{\BeatAmlKShotLift}{+0.067}% BeatAML K=50 vs K=0 lift

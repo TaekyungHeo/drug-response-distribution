@@ -1,0 +1,22 @@
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\suppfigcaptions
+
+\section*{Supplementary Information}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{sfig1_top_features.pdf}
+\caption{\textbf{Top-correlated features reflect lineage rather than chemical structure.} Top 10 most correlated features with IC$_{50}$ for five targeted drugs. Orange bars indicate known molecular targets when present in the top 10. Only Navitoclax places its target (\textit{BCL2}) in the top 10 (3rd). For the remaining four drugs, the known target ranks far below: \textit{EGFR} ranks 29,348th for Afatinib, \textit{BRAF} mutation ranks 9,944th for Dabrafenib. Lineage and cell-state markers dominate instead.}
+\label{fig:efig1}
+\end{figure}
+
+\clearpage
+
+\input{sections/supplementary/s01_formal_decomposition}
+\input{sections/supplementary/s02_supporting_results}
+\input{sections/supplementary/s03_methods_robustness}

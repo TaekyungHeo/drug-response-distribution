@@ -1,0 +1,2139 @@
+Uninstalled 1 package in 0.51ms
+Installed 1 package in 1ms
+2026-05-08 02:01:08,554 INFO SMOKE MODE: small subsets, fewer folds
+2026-05-08 02:01:08,555 INFO === CTRPv2 ===
+2026-05-08 02:01:10,599 INFO CTRPv2: 545 drugs, 838 cells, 364849 pairs
+2026-05-08 02:01:10,655 INFO CTRPv2 after filter: 545 drugs, 812 cells
+2026-05-08 02:01:10,668 INFO CTRPv2: 30 drugs, 812 cells
+2026-05-08 02:01:17,797 INFO Fetching SMILES for 18 drugs (1934 cached)
+2026-05-08 02:01:19,642 WARNING No SMILES found for drug (using zeros): 16-beta-bromoandrosterone
+2026-05-08 02:01:21,655 WARNING No SMILES found for drug (using zeros): 1S,3R-RSL-3
+2026-05-08 02:01:23,817 WARNING No SMILES found for drug (using zeros): 968
+2026-05-08 02:01:25,900 WARNING No SMILES found for drug (using zeros): AA-COCF3
+2026-05-08 02:01:27,359 INFO Saved cache after 10 new fetches
+2026-05-08 02:01:30,419 WARNING No SMILES for drug (using zeros): 16-beta-bromoandrosterone
+2026-05-08 02:01:30,419 WARNING No SMILES for drug (using zeros): 1S,3R-RSL-3
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:01:30,423 WARNING No SMILES for drug (using zeros): 968
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:01:30,424 WARNING No SMILES for drug (using zeros): AA-COCF3
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+[02:01:30] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:01:30,664 INFO   CTRPv2 [no_drug] fold 1/5 done (6 test drugs)
+2026-05-08 02:01:30,908 INFO   CTRPv2 [no_drug] fold 2/5 done (6 test drugs)
+2026-05-08 02:01:31,058 INFO   CTRPv2 [no_drug] fold 3/5 done (6 test drugs)
+2026-05-08 02:01:31,205 INFO   CTRPv2 [no_drug] fold 4/5 done (6 test drugs)
+2026-05-08 02:01:31,352 INFO   CTRPv2 [no_drug] fold 5/5 done (6 test drugs)
+2026-05-08 02:01:47,374 INFO   CTRPv2 [morgan_fp] fold 1/5 done (6 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 8.050387378943924e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:01:48,540 INFO   CTRPv2 [morgan_fp] fold 2/5 done (6 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 7.204499752333504e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:01:49,702 INFO   CTRPv2 [morgan_fp] fold 3/5 done (6 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 9.509888343472994e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:01:50,862 INFO   CTRPv2 [morgan_fp] fold 4/5 done (6 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 8.003812723700321e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:01:52,010 INFO   CTRPv2 [morgan_fp] fold 5/5 done (6 test drugs)
+2026-05-08 02:01:52,062 INFO CTRPv2: no_drug=0.3611  morgan=0.3688  Δ=0.0077
+2026-05-08 02:01:52,063 INFO === BeatAML ===
+2026-05-08 02:01:52,197 INFO BeatAML response: 155 drugs, 520 patients, 53539 pairs
+2026-05-08 02:01:54,230 INFO BeatAML expression: 520 patients × 5000 genes
+2026-05-08 02:01:54,235 INFO BeatAML: 20 drugs, 520 patients
+2026-05-08 02:01:54,930 INFO Fetching SMILES for 13 drugs (1952 cached)
+2026-05-08 02:01:57,623 WARNING No SMILES found for drug (using zeros): AT-101
+2026-05-08 02:02:00,909 INFO Saved cache after 10 new fetches
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:02:01,997 WARNING No SMILES for drug (using zeros): AT-101
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:01] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+[02:02:02] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:02:02,032 INFO   BeatAML [no_drug] fold 1/3 done (7 test drugs)
+2026-05-08 02:02:02,067 INFO   BeatAML [no_drug] fold 2/3 done (7 test drugs)
+2026-05-08 02:02:02,103 INFO   BeatAML [no_drug] fold 3/3 done (6 test drugs)
+2026-05-08 02:02:02,495 INFO   BeatAML [morgan_fp] fold 1/3 done (7 test drugs)
+2026-05-08 02:02:02,897 INFO   BeatAML [morgan_fp] fold 2/3 done (7 test drugs)
+2026-05-08 02:02:03,284 INFO   BeatAML [morgan_fp] fold 3/3 done (6 test drugs)
+2026-05-08 02:02:03,293 INFO BeatAML: no_drug=0.3709  morgan=0.3829  Δ=0.0119
+2026-05-08 02:02:03,299 INFO === PRISM ===
+2026-05-08 02:02:04,571 INFO Loaded PRISM from prism_drug_response.parquet: (353211, 3)
+2026-05-08 02:02:04,582 INFO PRISM raw: 1415 drugs, 477 cells, 353211 pairs
+2026-05-08 02:02:04,715 INFO After filtering: 1079 drugs, 477 cells, 347626 pairs
+2026-05-08 02:02:04,725 INFO PRISM: 30 drugs, 477 cells
+2026-05-08 02:02:07,476 INFO Fetching SMILES for 0 drugs (1965 cached)
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+[02:02:07] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:02:07,552 INFO   PRISM [no_drug] fold 1/3 done (10 test drugs)
+2026-05-08 02:02:07,622 INFO   PRISM [no_drug] fold 2/3 done (10 test drugs)
+2026-05-08 02:02:07,688 INFO   PRISM [no_drug] fold 3/3 done (10 test drugs)
+2026-05-08 02:02:08,218 INFO   PRISM [morgan_fp] fold 1/3 done (10 test drugs)
+2026-05-08 02:02:08,716 INFO   PRISM [morgan_fp] fold 2/3 done (10 test drugs)
+2026-05-08 02:02:09,173 INFO   PRISM [morgan_fp] fold 3/3 done (10 test drugs)
+2026-05-08 02:02:09,190 INFO PRISM: no_drug=0.0760  morgan=0.0735  Δ=-0.0025
+2026-05-08 02:02:09,191 INFO Gate: FAIL — check deltas
+2026-05-08 02:02:09,191 INFO Saved: /home/spark/multi-onco/experiments/06_external_validation/01_drug_feature_null/results/run_20260508_020108/results.json
+Uninstalled 1 package in 0.48ms
+Installed 1 package in 1ms
+2026-05-08 02:02:10,414 INFO === CTRPv2 ===
+2026-05-08 02:02:12,394 INFO CTRPv2: 545 drugs, 838 cells, 364849 pairs
+2026-05-08 02:02:12,453 INFO CTRPv2 after filter: 545 drugs, 812 cells
+2026-05-08 02:02:12,462 INFO CTRPv2: 545 drugs, 812 cells
+2026-05-08 02:02:38,770 INFO Fetching SMILES for 363 drugs (1965 cached)
+2026-05-08 02:02:41,512 WARNING No SMILES found for drug (using zeros): BRD-A02303741:carboplatin (1:1 mol/mol)
+2026-05-08 02:02:43,547 WARNING No SMILES found for drug (using zeros): BRD-A02303741:navitoclax (2:1 mol/mol)
+2026-05-08 02:02:46,119 WARNING No SMILES found for drug (using zeros): BRD-A86708339
+2026-05-08 02:02:47,768 INFO Saved cache after 10 new fetches
+2026-05-08 02:02:49,402 WARNING No SMILES found for drug (using zeros): BRD-K03536150
+2026-05-08 02:02:51,207 WARNING No SMILES found for drug (using zeros): BRD-K03911514
+2026-05-08 02:02:53,324 WARNING No SMILES found for drug (using zeros): BRD-K07442505
+2026-05-08 02:02:56,249 WARNING No SMILES found for drug (using zeros): BRD-K13185470
+2026-05-08 02:02:56,984 INFO Saved cache after 20 new fetches
+2026-05-08 02:02:58,998 WARNING No SMILES found for drug (using zeros): BRD-K16130065
+2026-05-08 02:03:01,884 WARNING No SMILES found for drug (using zeros): BRD-K20514654
+2026-05-08 02:03:04,204 WARNING No SMILES found for drug (using zeros): BRD-K27188169
+2026-05-08 02:03:06,260 WARNING No SMILES found for drug (using zeros): BRD-K27188169:navitoclax (2:1 mol/mol)
+2026-05-08 02:03:06,642 INFO Saved cache after 30 new fetches
+2026-05-08 02:03:09,475 WARNING No SMILES found for drug (using zeros): BRD-K29313308
+2026-05-08 02:03:11,698 INFO Saved cache after 40 new fetches
+2026-05-08 02:03:13,761 WARNING No SMILES found for drug (using zeros): BRD-K35604418
+2026-05-08 02:03:16,731 INFO Saved cache after 50 new fetches
+2026-05-08 02:03:20,718 WARNING No SMILES found for drug (using zeros): BRD-K55473186
+2026-05-08 02:03:22,384 WARNING No SMILES found for drug (using zeros): BRD-K58730230
+2026-05-08 02:03:24,412 WARNING No SMILES found for drug (using zeros): BRD-K63431240
+2026-05-08 02:03:24,414 INFO Saved cache after 60 new fetches
+2026-05-08 02:03:26,028 WARNING No SMILES found for drug (using zeros): BRD-K64610608
+2026-05-08 02:03:28,485 WARNING No SMILES found for drug (using zeros): BRD-K70511574
+2026-05-08 02:03:31,674 WARNING No SMILES found for drug (using zeros): BRD-K79669418
+2026-05-08 02:03:32,041 INFO Saved cache after 70 new fetches
+2026-05-08 02:03:34,799 WARNING No SMILES found for drug (using zeros): BRD-K88742110
+2026-05-08 02:03:37,175 INFO Saved cache after 80 new fetches
+2026-05-08 02:03:39,157 WARNING No SMILES found for drug (using zeros): BRD-K99584050
+2026-05-08 02:03:41,195 WARNING No SMILES found for drug (using zeros): BRD1812
+2026-05-08 02:03:44,507 WARNING No SMILES found for drug (using zeros): BRD8958
+2026-05-08 02:03:44,864 INFO Saved cache after 90 new fetches
+2026-05-08 02:03:47,707 WARNING No SMILES found for drug (using zeros): BRD9876:MK-1775 (4:1 mol/mol)
+2026-05-08 02:03:52,087 WARNING No SMILES found for drug (using zeros): CBB-1007
+2026-05-08 02:03:52,089 INFO Saved cache after 100 new fetches
+2026-05-08 02:03:56,268 INFO Saved cache after 110 new fetches
+2026-05-08 02:04:00,048 INFO Saved cache after 120 new fetches
+2026-05-08 02:04:04,693 INFO Saved cache after 130 new fetches
+2026-05-08 02:04:07,527 WARNING No SMILES found for drug (using zeros): ISOX
+2026-05-08 02:04:09,835 WARNING No SMILES found for drug (using zeros): ISOX:bortezomib (250:1 mol/mol)
+2026-05-08 02:04:12,464 WARNING No SMILES found for drug (using zeros): JQ-1:MK-0752 (1:1 mol/mol)
+2026-05-08 02:04:14,409 WARNING No SMILES found for drug (using zeros): JQ-1:UNC0638 (2:1 mol/mol)
+2026-05-08 02:04:16,469 WARNING No SMILES found for drug (using zeros): JQ-1:carboplatin (1:1 mol/mol)
+2026-05-08 02:04:16,471 INFO Saved cache after 140 new fetches
+2026-05-08 02:04:18,438 WARNING No SMILES found for drug (using zeros): JQ-1:navitoclax (2:1 mol/mol)
+2026-05-08 02:04:20,374 WARNING No SMILES found for drug (using zeros): JQ-1:vorinostat (2:1 mol/mol)
+2026-05-08 02:04:23,308 INFO Saved cache after 150 new fetches
+2026-05-08 02:04:27,060 INFO Saved cache after 160 new fetches
+2026-05-08 02:04:31,009 INFO Saved cache after 170 new fetches
+2026-05-08 02:04:33,750 WARNING No SMILES found for drug (using zeros): ML334 diastereomer
+2026-05-08 02:04:36,424 INFO Saved cache after 180 new fetches
+2026-05-08 02:04:40,482 INFO Saved cache after 190 new fetches
+2026-05-08 02:04:44,446 INFO Saved cache after 200 new fetches
+2026-05-08 02:04:49,414 WARNING No SMILES found for drug (using zeros): QW-BI-011
+2026-05-08 02:04:49,806 INFO Saved cache after 210 new fetches
+2026-05-08 02:04:54,475 WARNING No SMILES found for drug (using zeros): SMER-3
+2026-05-08 02:04:54,838 INFO Saved cache after 220 new fetches
+2026-05-08 02:04:56,936 WARNING No SMILES found for drug (using zeros): SNX-2112:bortezomib (250:1 mol/mol)
+2026-05-08 02:04:58,626 WARNING No SMILES found for drug (using zeros): SR-II-138A
+2026-05-08 02:05:01,772 INFO Saved cache after 230 new fetches
+2026-05-08 02:05:04,363 WARNING No SMILES found for drug (using zeros): UNC0638:navitoclax (1:1 mol/mol)
+2026-05-08 02:05:06,092 WARNING No SMILES found for drug (using zeros): VAF-347
+2026-05-08 02:05:08,619 INFO Saved cache after 240 new fetches
+2026-05-08 02:05:10,362 WARNING No SMILES found for drug (using zeros): YL54
+2026-05-08 02:05:12,306 WARNING No SMILES found for drug (using zeros): alisertib:navitoclax (2:1 mol/mol)
+2026-05-08 02:05:15,308 INFO Saved cache after 250 new fetches
+2026-05-08 02:05:18,396 WARNING No SMILES found for drug (using zeros): carboplatin:UNC0638 (2:1 mol/mol)
+2026-05-08 02:05:20,344 WARNING No SMILES found for drug (using zeros): carboplatin:etoposide (40:17 mol/mol)
+2026-05-08 02:05:23,093 WARNING No SMILES found for drug (using zeros): compound 1B
+2026-05-08 02:05:25,100 WARNING No SMILES found for drug (using zeros): crizotinib:PLX-4032 (2:1 mol/mol)
+2026-05-08 02:05:25,102 INFO Saved cache after 260 new fetches
+2026-05-08 02:05:29,583 WARNING No SMILES found for drug (using zeros): decitabine:carboplatin (1:1 mol/mol)
+2026-05-08 02:05:31,489 WARNING No SMILES found for drug (using zeros): decitabine:navitoclax (2:1 mol/mol)
+2026-05-08 02:05:33,918 WARNING No SMILES found for drug (using zeros): docetaxel:tanespimycin (2:1 mol/mol)
+2026-05-08 02:05:33,921 INFO Saved cache after 270 new fetches
+2026-05-08 02:05:35,863 WARNING No SMILES found for drug (using zeros): doxorubicin:navitoclax (2:1 mol/mol)
+2026-05-08 02:05:39,161 WARNING No SMILES found for drug (using zeros): erlotinib:PLX-4032 (2:1 mol/mol)
+2026-05-08 02:05:41,257 INFO Saved cache after 280 new fetches
+2026-05-08 02:05:45,226 INFO Saved cache after 290 new fetches
+2026-05-08 02:05:48,813 WARNING No SMILES found for drug (using zeros): navitoclax:MST-312 (1:1 mol/mol)
+2026-05-08 02:05:50,844 WARNING No SMILES found for drug (using zeros): navitoclax:PLX-4032 (1:1 mol/mol)
+2026-05-08 02:05:52,904 WARNING No SMILES found for drug (using zeros): navitoclax:birinapant (1:1 mol/mol)
+2026-05-08 02:05:54,963 WARNING No SMILES found for drug (using zeros): navitoclax:gemcitabine (1:1 mol/mol)
+2026-05-08 02:05:56,911 WARNING No SMILES found for drug (using zeros): navitoclax:piperlongumine (1:1 mol/mol)
+2026-05-08 02:06:00,055 WARNING No SMILES found for drug (using zeros): navitoclax:pluripotin (1:1 mol/mol)
+2026-05-08 02:06:00,058 INFO Saved cache after 300 new fetches
+2026-05-08 02:06:02,056 WARNING No SMILES found for drug (using zeros): navitoclax:sorafenib (1:1 mol/mol)
+2026-05-08 02:06:05,439 INFO Saved cache after 310 new fetches
+2026-05-08 02:06:09,054 WARNING No SMILES found for drug (using zeros): piperlongumine:MST-312 (1:1 mol/mol)
+2026-05-08 02:06:10,913 INFO Saved cache after 320 new fetches
+2026-05-08 02:06:13,730 WARNING No SMILES found for drug (using zeros): salermide:PLX-4032 (12:1 mol/mol)
+2026-05-08 02:06:15,658 WARNING No SMILES found for drug (using zeros): selumetinib:BRD-A02303741 (4:1 mol/mol)
+2026-05-08 02:06:17,644 WARNING No SMILES found for drug (using zeros): selumetinib:GDC-0941 (4:1 mol/mol)
+2026-05-08 02:06:19,662 WARNING No SMILES found for drug (using zeros): selumetinib:JQ-1 (4:1 mol/mol)
+2026-05-08 02:06:21,974 WARNING No SMILES found for drug (using zeros): selumetinib:MK-2206 (8:1 mol/mol)
+2026-05-08 02:06:24,018 WARNING No SMILES found for drug (using zeros): selumetinib:PLX-4032 (8:1 mol/mol)
+2026-05-08 02:06:25,976 WARNING No SMILES found for drug (using zeros): selumetinib:UNC0638 (4:1 mol/mol)
+2026-05-08 02:06:27,910 WARNING No SMILES found for drug (using zeros): selumetinib:decitabine (4:1 mol/mol)
+2026-05-08 02:06:27,912 INFO Saved cache after 330 new fetches
+2026-05-08 02:06:29,841 WARNING No SMILES found for drug (using zeros): selumetinib:navitoclax (8:1 mol/mol)
+2026-05-08 02:06:31,772 WARNING No SMILES found for drug (using zeros): selumetinib:piperlongumine (8:1 mol/mol)
+2026-05-08 02:06:33,714 WARNING No SMILES found for drug (using zeros): selumetinib:tretinoin (2:1 mol/mol)
+2026-05-08 02:06:35,800 WARNING No SMILES found for drug (using zeros): selumetinib:vorinostat (8:1 mol/mol)
+2026-05-08 02:06:38,089 WARNING No SMILES found for drug (using zeros): serdemetan:SCH-529074 (1:1 mol/mol)
+2026-05-08 02:06:40,918 WARNING No SMILES found for drug (using zeros): sirolimus:bortezomib (250:1 mol/mol)
+2026-05-08 02:06:41,326 INFO Saved cache after 340 new fetches
+2026-05-08 02:06:45,573 WARNING No SMILES found for drug (using zeros): tanespimycin:bortezomib (250:1 mol/mol)
+2026-05-08 02:06:47,590 WARNING No SMILES found for drug (using zeros): tanespimycin:gemcitabine (1:1 mol/mol)
+2026-05-08 02:06:50,125 WARNING No SMILES found for drug (using zeros): tipifarnib-P1
+2026-05-08 02:06:50,128 INFO Saved cache after 350 new fetches
+2026-05-08 02:06:52,078 WARNING No SMILES found for drug (using zeros): tipifarnib-P2
+2026-05-08 02:06:54,374 WARNING No SMILES found for drug (using zeros): tretinoin:carboplatin (2:1 mol/mol)
+2026-05-08 02:06:56,380 WARNING No SMILES found for drug (using zeros): tretinoin:navitoclax (4:1 mol/mol)
+2026-05-08 02:06:58,666 INFO Saved cache after 360 new fetches
+2026-05-08 02:07:00,608 WARNING No SMILES found for drug (using zeros): vorinostat:carboplatin (1:1 mol/mol)
+2026-05-08 02:07:02,595 WARNING No SMILES found for drug (using zeros): vorinostat:navitoclax (4:1 mol/mol)
+2026-05-08 02:07:03,372 WARNING No SMILES for drug (using zeros): 16-beta-bromoandrosterone
+2026-05-08 02:07:03,372 WARNING No SMILES for drug (using zeros): 1S,3R-RSL-3
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,376 WARNING No SMILES for drug (using zeros): 968
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,377 WARNING No SMILES for drug (using zeros): AA-COCF3
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,397 WARNING No SMILES for drug (using zeros): BRD-A02303741:carboplatin (1:1 mol/mol)
+2026-05-08 02:07:03,397 WARNING No SMILES for drug (using zeros): BRD-A02303741:navitoclax (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,398 WARNING No SMILES for drug (using zeros): BRD-A86708339
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,401 WARNING No SMILES for drug (using zeros): BRD-K03536150
+2026-05-08 02:07:03,401 WARNING No SMILES for drug (using zeros): BRD-K03911514
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,402 WARNING No SMILES for drug (using zeros): BRD-K07442505
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,404 WARNING No SMILES for drug (using zeros): BRD-K13185470
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,406 WARNING No SMILES for drug (using zeros): BRD-K16130065
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,408 WARNING No SMILES for drug (using zeros): BRD-K20514654
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,409 WARNING No SMILES for drug (using zeros): BRD-K27188169
+2026-05-08 02:07:03,409 WARNING No SMILES for drug (using zeros): BRD-K27188169:navitoclax (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,412 WARNING No SMILES for drug (using zeros): BRD-K29313308
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,417 WARNING No SMILES for drug (using zeros): BRD-K35604418
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,427 WARNING No SMILES for drug (using zeros): BRD-K55473186
+2026-05-08 02:07:03,427 WARNING No SMILES for drug (using zeros): BRD-K58730230
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,428 WARNING No SMILES for drug (using zeros): BRD-K63431240
+2026-05-08 02:07:03,428 WARNING No SMILES for drug (using zeros): BRD-K64610608
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,429 WARNING No SMILES for drug (using zeros): BRD-K70511574
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,432 WARNING No SMILES for drug (using zeros): BRD-K79669418
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,435 WARNING No SMILES for drug (using zeros): BRD-K88742110
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,440 WARNING No SMILES for drug (using zeros): BRD-K99584050
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,441 WARNING No SMILES for drug (using zeros): BRD1812
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,444 WARNING No SMILES for drug (using zeros): BRD8958
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,445 WARNING No SMILES for drug (using zeros): BRD9876:MK-1775 (4:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,450 WARNING No SMILES for drug (using zeros): CBB-1007
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,481 WARNING No SMILES for drug (using zeros): ISOX
+2026-05-08 02:07:03,481 WARNING No SMILES for drug (using zeros): ISOX:bortezomib (250:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,483 WARNING No SMILES for drug (using zeros): JQ-1:MK-0752 (1:1 mol/mol)
+2026-05-08 02:07:03,483 WARNING No SMILES for drug (using zeros): JQ-1:UNC0638 (2:1 mol/mol)
+2026-05-08 02:07:03,483 WARNING No SMILES for drug (using zeros): JQ-1:carboplatin (1:1 mol/mol)
+2026-05-08 02:07:03,483 WARNING No SMILES for drug (using zeros): JQ-1:navitoclax (2:1 mol/mol)
+2026-05-08 02:07:03,483 WARNING No SMILES for drug (using zeros): JQ-1:vorinostat (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,511 WARNING No SMILES for drug (using zeros): ML334 diastereomer
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,542 WARNING No SMILES for drug (using zeros): QW-BI-011
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,553 WARNING No SMILES for drug (using zeros): SMER-3
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,555 WARNING No SMILES for drug (using zeros): SNX-2112:bortezomib (250:1 mol/mol)
+2026-05-08 02:07:03,555 WARNING No SMILES for drug (using zeros): SR-II-138A
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,565 WARNING No SMILES for drug (using zeros): UNC0638:navitoclax (1:1 mol/mol)
+2026-05-08 02:07:03,565 WARNING No SMILES for drug (using zeros): VAF-347
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,571 WARNING No SMILES for drug (using zeros): YL54
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,575 WARNING No SMILES for drug (using zeros): alisertib:navitoclax (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,593 WARNING No SMILES for drug (using zeros): carboplatin:UNC0638 (2:1 mol/mol)
+2026-05-08 02:07:03,593 WARNING No SMILES for drug (using zeros): carboplatin:etoposide (40:17 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,599 WARNING No SMILES for drug (using zeros): compound 1B
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,599 WARNING No SMILES for drug (using zeros): crizotinib:PLX-4032 (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,608 WARNING No SMILES for drug (using zeros): decitabine:carboplatin (1:1 mol/mol)
+2026-05-08 02:07:03,608 WARNING No SMILES for drug (using zeros): decitabine:navitoclax (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,610 WARNING No SMILES for drug (using zeros): docetaxel:tanespimycin (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,611 WARNING No SMILES for drug (using zeros): doxorubicin:navitoclax (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,615 WARNING No SMILES for drug (using zeros): erlotinib:PLX-4032 (2:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:MST-312 (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:PLX-4032 (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:birinapant (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:gemcitabine (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:piperlongumine (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:pluripotin (1:1 mol/mol)
+2026-05-08 02:07:03,644 WARNING No SMILES for drug (using zeros): navitoclax:sorafenib (1:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,664 WARNING No SMILES for drug (using zeros): piperlongumine:MST-312 (1:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,672 WARNING No SMILES for drug (using zeros): salermide:PLX-4032 (12:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:BRD-A02303741 (4:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:GDC-0941 (4:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:JQ-1 (4:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:MK-2206 (8:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:PLX-4032 (8:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:UNC0638 (4:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:decitabine (4:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:navitoclax (8:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:piperlongumine (8:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:tretinoin (2:1 mol/mol)
+2026-05-08 02:07:03,673 WARNING No SMILES for drug (using zeros): selumetinib:vorinostat (8:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,675 WARNING No SMILES for drug (using zeros): serdemetan:SCH-529074 (1:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,678 WARNING No SMILES for drug (using zeros): sirolimus:bortezomib (250:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,687 WARNING No SMILES for drug (using zeros): tanespimycin:bortezomib (250:1 mol/mol)
+2026-05-08 02:07:03,687 WARNING No SMILES for drug (using zeros): tanespimycin:gemcitabine (1:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,691 WARNING No SMILES for drug (using zeros): tipifarnib-P1
+2026-05-08 02:07:03,691 WARNING No SMILES for drug (using zeros): tipifarnib-P2
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,695 WARNING No SMILES for drug (using zeros): tretinoin:carboplatin (2:1 mol/mol)
+2026-05-08 02:07:03,695 WARNING No SMILES for drug (using zeros): tretinoin:navitoclax (4:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:03,702 WARNING No SMILES for drug (using zeros): vorinostat:carboplatin (1:1 mol/mol)
+2026-05-08 02:07:03,702 WARNING No SMILES for drug (using zeros): vorinostat:navitoclax (4:1 mol/mol)
+[02:07:03] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:07:06,502 INFO   CTRPv2 [no_drug] fold 1/10 done (55 test drugs)
+2026-05-08 02:07:09,207 INFO   CTRPv2 [no_drug] fold 2/10 done (55 test drugs)
+2026-05-08 02:07:11,891 INFO   CTRPv2 [no_drug] fold 3/10 done (55 test drugs)
+2026-05-08 02:07:14,589 INFO   CTRPv2 [no_drug] fold 4/10 done (55 test drugs)
+2026-05-08 02:07:17,291 INFO   CTRPv2 [no_drug] fold 5/10 done (55 test drugs)
+2026-05-08 02:07:19,971 INFO   CTRPv2 [no_drug] fold 6/10 done (54 test drugs)
+2026-05-08 02:07:22,654 INFO   CTRPv2 [no_drug] fold 7/10 done (54 test drugs)
+2026-05-08 02:07:25,352 INFO   CTRPv2 [no_drug] fold 8/10 done (54 test drugs)
+2026-05-08 02:07:28,024 INFO   CTRPv2 [no_drug] fold 9/10 done (54 test drugs)
+2026-05-08 02:07:30,702 INFO   CTRPv2 [no_drug] fold 10/10 done (54 test drugs)
+2026-05-08 02:11:38,306 INFO   CTRPv2 [morgan_fp] fold 1/10 done (55 test drugs)
+2026-05-08 02:15:45,147 INFO   CTRPv2 [morgan_fp] fold 2/10 done (55 test drugs)
+2026-05-08 02:19:51,066 INFO   CTRPv2 [morgan_fp] fold 3/10 done (55 test drugs)
+2026-05-08 02:23:57,228 INFO   CTRPv2 [morgan_fp] fold 4/10 done (55 test drugs)
+2026-05-08 02:28:03,220 INFO   CTRPv2 [morgan_fp] fold 5/10 done (55 test drugs)
+2026-05-08 02:32:07,153 INFO   CTRPv2 [morgan_fp] fold 6/10 done (54 test drugs)
+2026-05-08 02:36:12,772 INFO   CTRPv2 [morgan_fp] fold 7/10 done (54 test drugs)
+2026-05-08 02:40:18,121 INFO   CTRPv2 [morgan_fp] fold 8/10 done (54 test drugs)
+2026-05-08 02:44:22,731 INFO   CTRPv2 [morgan_fp] fold 9/10 done (54 test drugs)
+2026-05-08 02:48:27,445 INFO   CTRPv2 [morgan_fp] fold 10/10 done (54 test drugs)
+2026-05-08 02:48:28,556 INFO CTRPv2: no_drug=0.4117  morgan=0.4166  Δ=0.0049
+2026-05-08 02:48:28,559 INFO === BeatAML ===
+2026-05-08 02:48:28,694 INFO BeatAML response: 155 drugs, 520 patients, 53539 pairs
+2026-05-08 02:48:30,741 INFO BeatAML expression: 520 patients × 5000 genes
+2026-05-08 02:48:30,746 INFO BeatAML: 155 drugs, 520 patients
+2026-05-08 02:48:34,154 INFO Fetching SMILES for 89 drugs (2328 cached)
+2026-05-08 02:48:36,474 WARNING No SMILES found for drug (using zeros): Baiclein
+2026-05-08 02:48:40,335 INFO Saved cache after 10 new fetches
+2026-05-08 02:48:45,088 INFO Saved cache after 20 new fetches
+2026-05-08 02:48:49,988 INFO Saved cache after 30 new fetches
+2026-05-08 02:48:55,260 INFO Saved cache after 40 new fetches
+2026-05-08 02:49:00,566 INFO Saved cache after 50 new fetches
+2026-05-08 02:49:05,319 INFO Saved cache after 60 new fetches
+2026-05-08 02:49:10,085 INFO Saved cache after 70 new fetches
+2026-05-08 02:49:14,065 INFO Saved cache after 80 new fetches
+2026-05-08 02:49:17,032 WARNING No SMILES found for drug (using zeros): Vargetef
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:49:20,640 WARNING No SMILES for drug (using zeros): AT-101
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:49:20,649 WARNING No SMILES for drug (using zeros): Baiclein
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:49:20,737 WARNING No SMILES for drug (using zeros): Vargetef
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+[02:49:20] DEPRECATION WARNING: please use MorganGenerator
+2026-05-08 02:49:21,041 INFO   BeatAML [no_drug] fold 1/5 done (31 test drugs)
+2026-05-08 02:49:21,271 INFO   BeatAML [no_drug] fold 2/5 done (31 test drugs)
+2026-05-08 02:49:21,497 INFO   BeatAML [no_drug] fold 3/5 done (31 test drugs)
+2026-05-08 02:49:21,728 INFO   BeatAML [no_drug] fold 4/5 done (31 test drugs)
+2026-05-08 02:49:21,959 INFO   BeatAML [no_drug] fold 5/5 done (31 test drugs)
+2026-05-08 02:49:51,800 INFO   BeatAML [morgan_fp] fold 1/5 done (31 test drugs)
+2026-05-08 02:50:21,602 INFO   BeatAML [morgan_fp] fold 2/5 done (31 test drugs)
+2026-05-08 02:50:51,505 INFO   BeatAML [morgan_fp] fold 3/5 done (31 test drugs)
+2026-05-08 02:51:22,014 INFO   BeatAML [morgan_fp] fold 4/5 done (31 test drugs)
+2026-05-08 02:51:52,945 INFO   BeatAML [morgan_fp] fold 5/5 done (31 test drugs)
+2026-05-08 02:51:53,042 INFO BeatAML: no_drug=0.4532  morgan=0.4543  Δ=0.0011
+2026-05-08 02:51:53,043 INFO === PRISM ===
+2026-05-08 02:51:54,357 INFO Loaded PRISM from prism_drug_response.parquet: (353211, 3)
+2026-05-08 02:51:54,368 INFO PRISM raw: 1415 drugs, 477 cells, 353211 pairs
+2026-05-08 02:51:54,500 INFO After filtering: 1079 drugs, 477 cells, 347626 pairs
+2026-05-08 02:51:54,509 INFO PRISM: 1079 drugs, 477 cells
+2026-05-08 02:52:16,845 INFO Fetching SMILES for 0 drugs (2417 cached)
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:16] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+[02:52:17] DEPRECATION WARNING: please use MorganGenerator
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3260658349167898e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:19,925 INFO   PRISM [no_drug] fold 1/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4237080847578909e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:22,214 INFO   PRISM [no_drug] fold 2/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3742994298127087e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:24,499 INFO   PRISM [no_drug] fold 3/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.1907859587267922e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:26,788 INFO   PRISM [no_drug] fold 4/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3739543724966552e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:29,070 INFO   PRISM [no_drug] fold 5/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.2863164755572143e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:31,357 INFO   PRISM [no_drug] fold 6/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4850757956708094e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:33,646 INFO   PRISM [no_drug] fold 7/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3290526013065573e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:35,927 INFO   PRISM [no_drug] fold 8/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.1081612072416647e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:38,222 INFO   PRISM [no_drug] fold 9/10 done (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3518493879871585e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:52:40,527 INFO   PRISM [no_drug] fold 10/10 done (107 test drugs)
+2026-05-08 02:56:34,112 INFO   PRISM [morgan_fp] fold 1/10 done (108 test drugs)
+2026-05-08 03:00:24,740 INFO   PRISM [morgan_fp] fold 2/10 done (108 test drugs)
+2026-05-08 03:04:13,608 INFO   PRISM [morgan_fp] fold 3/10 done (108 test drugs)
+2026-05-08 03:08:03,085 INFO   PRISM [morgan_fp] fold 4/10 done (108 test drugs)
+2026-05-08 03:11:51,728 INFO   PRISM [morgan_fp] fold 5/10 done (108 test drugs)
+2026-05-08 03:15:41,109 INFO   PRISM [morgan_fp] fold 6/10 done (108 test drugs)
+2026-05-08 03:19:30,562 INFO   PRISM [morgan_fp] fold 7/10 done (108 test drugs)
+2026-05-08 03:23:19,223 INFO   PRISM [morgan_fp] fold 8/10 done (108 test drugs)
+2026-05-08 03:27:09,329 INFO   PRISM [morgan_fp] fold 9/10 done (108 test drugs)
+2026-05-08 03:31:00,783 INFO   PRISM [morgan_fp] fold 10/10 done (107 test drugs)
+2026-05-08 03:31:02,442 INFO PRISM: no_drug=0.1173  morgan=0.1338  Δ=0.0165
+2026-05-08 03:31:02,445 INFO Gate: FAIL — check deltas
+2026-05-08 03:31:02,446 INFO Saved: /home/spark/multi-onco/experiments/06_external_validation/01_drug_feature_null/results/run_20260508_020210/results.json

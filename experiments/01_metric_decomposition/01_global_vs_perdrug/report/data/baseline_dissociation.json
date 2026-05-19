@@ -1,0 +1,21 @@
+{
+  "predictor_2a": {
+    "mean_global_r": 0.83745,
+    "std_global_r": 0.00226,
+    "mean_per_drug_r": 0.0,
+    "per_drug_r_policy": "undefined constant prediction — imputed 0.0"
+  },
+  "step1_vs_2a_validation": {
+    "theoretical_ceiling": 0.825173,
+    "empirical_global_r_2a": 0.83745,
+    "abs_diff": 0.01228,
+    "threshold": 0.02,
+    "status": "PASS"
+  },
+  "predictor_2b": {
+    "mean_original_global_r": 0.49246,
+    "mean_resid_global_r": 0.38197,
+    "mean_resid_per_drug_r": 0.64576,
+    "operation": "y_resid(c,d) = y(c,d) - mean_{c' in test_d}(y(c',d))"
+  }
+}

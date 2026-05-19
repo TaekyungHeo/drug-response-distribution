@@ -1,0 +1,46 @@
+{
+  "condition": "C_concat",
+  "summary": {
+    "C_concat": {
+      "per_drug_r_mean": 0.65,
+      "per_drug_r_std": 0.0248,
+      "delta_vs_A": null
+    }
+  },
+  "fold_results": {
+    "C_concat": [
+      {
+        "per_drug_r": 0.6035002841404008
+      },
+      {
+        "per_drug_r": 0.6223528855861085
+      },
+      {
+        "per_drug_r": 0.6533539887624041
+      },
+      {
+        "per_drug_r": 0.6419830175241635
+      },
+      {
+        "per_drug_r": 0.6698212178054648
+      },
+      {
+        "per_drug_r": 0.6590584226969165
+      },
+      {
+        "per_drug_r": 0.623790617411977
+      },
+      {
+        "per_drug_r": 0.6714376721406733
+      },
+      {
+        "per_drug_r": 0.6766127089910513
+      },
+      {
+        "per_drug_r": 0.6784730150471008
+      }
+    ]
+  },
+  "pred_corr_ab": [],
+  "mean_pred_corr_ab": null
+}

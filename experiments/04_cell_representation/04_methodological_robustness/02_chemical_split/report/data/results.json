@@ -1,0 +1,110 @@
+{
+  "random": {
+    "per_drug_r_mean": 0.6453267305466059,
+    "per_drug_r_std": 0.02457873947978517
+  },
+  "tanimoto": {
+    "per_drug_r_mean": 0.6598977554411009,
+    "per_drug_r_std": 0.0630063576956856,
+    "delta_vs_random": 0.01457102489449491
+  },
+  "cluster_sizes": [
+    13,
+    23,
+    25,
+    21,
+    64,
+    8,
+    4,
+    24,
+    3,
+    48
+  ],
+  "verdict": "Tanimoto split \u0394=0.015 \u2264 0.05 \u2014 chemical similarity leakage is negligible.",
+  "fold_results": {
+    "random": [
+      {
+        "per_drug_r": 0.6005864288857922
+      },
+      {
+        "per_drug_r": 0.6131265617772189
+      },
+      {
+        "per_drug_r": 0.6512088836018397
+      },
+      {
+        "per_drug_r": 0.6370569594163964
+      },
+      {
+        "per_drug_r": 0.6608871424436233
+      },
+      {
+        "per_drug_r": 0.6487811505322015
+      },
+      {
+        "per_drug_r": 0.6244667065912404
+      },
+      {
+        "per_drug_r": 0.67000245986933
+      },
+      {
+        "per_drug_r": 0.6719124154104688
+      },
+      {
+        "per_drug_r": 0.6752385969379483
+      }
+    ],
+    "tanimoto": [
+      {
+        "per_drug_r": 0.562390884196934,
+        "n_train_drugs": 218,
+        "n_test_drugs": 13
+      },
+      {
+        "per_drug_r": 0.6090234665400376,
+        "n_train_drugs": 208,
+        "n_test_drugs": 23
+      },
+      {
+        "per_drug_r": 0.6513037108047677,
+        "n_train_drugs": 206,
+        "n_test_drugs": 25
+      },
+      {
+        "per_drug_r": 0.6373159440236128,
+        "n_train_drugs": 210,
+        "n_test_drugs": 21
+      },
+      {
+        "per_drug_r": 0.6341003480303343,
+        "n_train_drugs": 167,
+        "n_test_drugs": 64
+      },
+      {
+        "per_drug_r": 0.7157061598010941,
+        "n_train_drugs": 223,
+        "n_test_drugs": 8
+      },
+      {
+        "per_drug_r": 0.6759556065861445,
+        "n_train_drugs": 227,
+        "n_test_drugs": 4
+      },
+      {
+        "per_drug_r": 0.6870987501122358,
+        "n_train_drugs": 207,
+        "n_test_drugs": 24
+      },
+      {
+        "per_drug_r": 0.8041240450728216,
+        "n_train_drugs": 229,
+        "n_test_drugs": 2
+      },
+      {
+        "per_drug_r": 0.6219586392430257,
+        "n_train_drugs": 184,
+        "n_test_drugs": 47
+      }
+    ]
+  }
+}

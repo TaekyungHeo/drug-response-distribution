@@ -1,0 +1,13 @@
+{
+  "n_pairs": 180614,
+  "n_drugs": 286,
+  "n_cells": 713,
+  "ic50_range": { "min": -5.1849, "max": 10.3032, "mean": 3.1563, "std": 2.7611 },
+  "total_var": 7.623427,
+  "between_drug_var": 5.190769,
+  "within_drug_var": 2.225137,
+  "between_drug_var_fraction": 0.680911,
+  "within_drug_var_fraction": 0.291876,
+  "global_r_ceiling_from_between": 0.825173,
+  "criterion": "PASS"
+}

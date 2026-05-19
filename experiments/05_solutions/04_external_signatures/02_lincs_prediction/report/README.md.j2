@@ -1,0 +1,68 @@
+# 02 — Can LINCS signatures be predicted from drug structure?
+
+## Research question
+
+Can Morgan fingerprints predict LINCS L1000 transcriptional signatures? This
+closes the structure–function–prediction triangle.
+
+## Background
+
+LINCS does not improve per-drug r (01_lincs, Δ=+0.001) and neither does Morgan FP
+(03_drug_feature_null). But are these failures for the same reason? One possibility:
+Morgan FP encodes the same functional information as LINCS, and both fail for
+identical structural reasons. Another possibility: LINCS contains functional
+information that chemical structure does not encode, and they fail for different
+reasons — LINCS because it is a drug-level constant that cannot rank cells, Morgan
+FP because it cannot even access the functional signal LINCS captures.
+If Morgan FP cannot predict LINCS signatures (R² ≈ 0), the second explanation
+holds — chemical structure and transcriptional function are decoupled. This
+closes the explanatory triangle: structure → drug response, LINCS → drug
+response, and structure → LINCS.
+
+## Experimental design
+
+- **Drugs**: {{ results.n_drugs }} (overlap between GDSC2 and LINCS L1000)
+- **Input**: Morgan fingerprints ({{ results.morgan_fp_dim }}-dim)
+- **Target**: LINCS L1000 consensus signatures, PCA-reduced to {{ results.lincs_pca_dim }} dimensions
+- **Model**: Ridge regression (alpha selected per fold from {0.01, 0.1, 1, 10, 100, 1000})
+- **Evaluation**: leave-one-drug-out cross-validation
+- **Gate**: R² ≤ 0.1 (structure cannot predict transcriptional effect)
+
+## Results
+
+| Condition | R² | Mean cosine similarity |
+|-----------|:---:|:---:|
+| Real (Morgan FP → LINCS) | {{ "%.4f" | format(results.overall_r2) }} | {{ "%.4f" | format(results.mean_cosine_sim) }} |
+| Permuted control | {{ "%.4f" | format(results.permuted_r2) }} | {{ "%.4f" | format(results.permuted_cosine_sim) }} |
+
+- **Best alpha (mode across folds)**: {{ results.best_alpha }}
+- **Gate (R² ≤ 0.1)**: {% if results.gate_pass %}**PASS** — structure cannot predict transcriptional effect{% else %}**FAIL** — structure predicts transcriptional effect (R² > 0.1){% endif %}
+
+### Per-component R² (first 10 of {{ results.lincs_pca_dim }})
+
+{% for pc in results.per_component[:10] %}| PC{{ pc.pc }} | {{ "%.4f" | format(pc.r2) }} |
+{% endfor %}
+
+## Interpretation
+
+{% if results.gate_pass -%}
+Morgan fingerprints cannot predict LINCS transcriptional signatures (R² =
+{{ "%.4f" | format(results.overall_r2) }}, at or below chance). The permuted
+control yields R² = {{ "%.4f" | format(results.permuted_r2) }}, confirming the
+real condition is no better than random.
+
+This closes the explanatory triangle:
+- Structure does not help per-drug r (03_drug_feature_null)
+- LINCS does not help per-drug r either (01_lincs, Δ=+0.001)
+- Structure cannot predict LINCS (this experiment)
+
+Conclusion: LINCS captures functional information that chemical structure does
+not encode. The paths to per-drug r improvement remain within-MoA training and
+direct observation (K-shot).
+{% else -%}
+Unexpectedly, Morgan fingerprints predict some LINCS variance (R² =
+{{ "%.4f" | format(results.overall_r2) }}). This suggests partial structural
+encoding of transcriptional effect. Investigate which PCA components are
+predictable and whether they correspond to mechanism-related variation.
+{% endif %}
+

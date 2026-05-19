@@ -1,0 +1,21 @@
+{
+  "no_drug": 0.03909840740187194,
+  "morgan_fp": 0.04148684497266115,
+  "delta_morgan_vs_no_drug": 0.0023884375707892078,
+  "n_train_pairs": 180614,
+  "n_test_pairs": 347562,
+  "n_train_drugs": 286,
+  "n_test_drugs": 1078,
+  "n_train_cells": 713,
+  "n_test_cells": 477,
+  "drug_overlap_count": 25,
+  "drug_overlap_pct_prism": 2.3191094619666046,
+  "train_dataset": "gdsc2",
+  "test_dataset": "prism_repurposing",
+  "pca_variance_preserved": {
+    "gdsc2_train_rna": 0.9579,
+    "gdsc2_train_mut": 0.6813,
+    "prism_test_rna": 0.8335,
+    "prism_test_mut": 0.5729
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "measurement_ceiling": 0.754,
+  "per_moa": [
+    {
+      "moa": "EGFR signaling",
+      "n_drugs": 7,
+      "conditions": {
+        "all_drug_baseline": {
+          "per_drug_r": 0.425061
+        },
+        "within_moa_only": {
+          "per_drug_r": 0.799251
+        },
+        "kshot_only": {
+          "k_curve": [
+            {
+              "k": 0,
+              "per_drug_r": 0.42484,
+              "optimal_w": 0.0
+            },
+            {
+              "k": 5,
+              "per_drug_r": 0.462567,
+              "optimal_w": 0.24
+            },
+            {
+              "k": 10,
+              "per_drug_r": 0.509647,
+              "optimal_w": 0.38
+            },
+            {
+              "k": 20,
+              "per_drug_r": 0.601166,
+              "optimal_w": 0.53
+            },
+            {
+              "k": 50,
+              "per_drug_r": 0.759358,
+              "optimal_w": 0.87
+            }
+          ]
+        },
+        "combined": {
+          "k_curve": [
+            {
+              "k": 0,
+              "per_drug_r": 0.799365,
+              "optimal_w": 0.0
+            },
+            {
+              "k": 5,
+              "per_drug_r": 0.800431,
+              "optimal_w": 0.39
+            },
+            {
+              "k": 10,
+              "per_drug_r": 0.79994,
+              "optimal_w": 0.48
+            },
+            {
+              "k": 20,
+              "per_drug_r": 0.801102,
+              "optimal_w": 0.46
+            },
+            {
+              "k": 50,
+              "per_drug_r": 0.79985,
+              "optimal_w": 0.54
+            }
+          ]
+        }
+      }
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "n_drugs": 11,
+      "conditions": {
+        "all_drug_baseline": {
+          "per_drug_r": 0.427306
+        },
+        "within_moa_only": {
+          "per_drug_r": 0.723271
+        },
+        "kshot_only": {
+          "k_curve": [
+            {
+              "k": 0,
+              "per_drug_r": 0.426911,
+              "optimal_w": 0.0
+            },
+            {
+              "k": 5,
+              "per_drug_r": 0.600023,
+              "optimal_w": 0.37
+            },
+            {
+              "k": 10,
+              "per_drug_r": 0.658426,
+              "optimal_w": 0.43
+            },
+            {
+              "k": 20,
+              "per_drug_r": 0.732838,
+              "optimal_w": 0.59
+            },
+            {
+              "k": 50,
+              "per_drug_r": 0.813498,
+              "optimal_w": 0.71
+            }
+          ]
+        },
+        "combined": {
+          "k_curve": [
+            {
+              "k": 0,
+              "per_drug_r": 0.722928,
+              "optimal_w": 0.0
+            },
+            {
+              "k": 5,
+              "per_drug_r": 0.782334,
+              "optimal_w": 0.72
+            },
+            {
+              "k": 10,
+              "per_drug_r": 0.78728,
+              "optimal_w": 0.79
+            },
+            {
+              "k": 20,
+              "per_drug_r": 0.792079,
+              "optimal_w": 0.82
+            },
+            {
+              "k": 50,
+              "per_drug_r": 0.80389,
+              "optimal_w": 0.84
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "per_drug": [
+    {
+      "drug": "AZD3759",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.461834,
+      "within_moa_r": 0.765326,
+      "kshot_r": 0.748191,
+      "combined_r": 0.762988,
+      "max_k": 50
+    },
+    {
+      "drug": "Afatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.440727,
+      "within_moa_r": 0.827867,
+      "kshot_r": 0.750635,
+      "combined_r": 0.8274,
+      "max_k": 50
+    },
+    {
+      "drug": "Erlotinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.440506,
+      "within_moa_r": 0.737942,
+      "kshot_r": 0.701315,
+      "combined_r": 0.737111,
+      "max_k": 50
+    },
+    {
+      "drug": "Gefitinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.454997,
+      "within_moa_r": 0.834014,
+      "kshot_r": 0.756112,
+      "combined_r": 0.835561,
+      "max_k": 50
+    },
+    {
+      "drug": "Lapatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.515057,
+      "within_moa_r": 0.780668,
+      "kshot_r": 0.757544,
+      "combined_r": 0.786512,
+      "max_k": 50
+    },
+    {
+      "drug": "Osimertinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.426422,
+      "within_moa_r": 0.82337,
+      "kshot_r": 0.779235,
+      "combined_r": 0.821423,
+      "max_k": 50
+    },
+    {
+      "drug": "Sapitinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.234341,
+      "within_moa_r": 0.826369,
+      "kshot_r": 0.822477,
+      "combined_r": 0.827953,
+      "max_k": 50
+    },
+    {
+      "drug": "Dabrafenib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.498106,
+      "within_moa_r": 0.647002,
+      "kshot_r": 0.640104,
+      "combined_r": 0.75916,
+      "max_k": 50
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.730371,
+      "within_moa_r": 0.283472,
+      "kshot_r": 0.739778,
+      "combined_r": 0.406476,
+      "max_k": 50
+    },
+    {
+      "drug": "PD0325901",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.214534,
+      "within_moa_r": 0.868154,
+      "kshot_r": 0.937478,
+      "combined_r": 0.940856,
+      "max_k": 50
+    },
+    {
+      "drug": "PLX-4720",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.548737,
+      "within_moa_r": 0.51096,
+      "kshot_r": 0.640101,
+      "combined_r": 0.708707,
+      "max_k": 50
+    },
+    {
+      "drug": "Refametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.232415,
+      "within_moa_r": 0.838322,
+      "kshot_r": 0.92378,
+      "combined_r": 0.924168,
+      "max_k": 50
+    },
+    {
+      "drug": "SB590885",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.614298,
+      "within_moa_r": 0.565007,
+      "kshot_r": 0.656674,
+      "combined_r": 0.685616,
+      "max_k": 50
+    },
+    {
+      "drug": "SCH772984",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.345306,
+      "within_moa_r": 0.881341,
+      "kshot_r": 0.916604,
+      "combined_r": 0.915674,
+      "max_k": 50
+    },
+    {
+      "drug": "Selumetinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.300002,
+      "within_moa_r": 0.860316,
+      "kshot_r": 0.864635,
+      "combined_r": 0.894801,
+      "max_k": 50
+    },
+    {
+      "drug": "Trametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.2127,
+      "within_moa_r": 0.860932,
+      "kshot_r": 0.955227,
+      "combined_r": 0.955227,
+      "max_k": 50
+    },
+    {
+      "drug": "Ulixertinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.489129,
+      "within_moa_r": 0.816675,
+      "kshot_r": 0.840567,
+      "combined_r": 0.824557,
+      "max_k": 50
+    },
+    {
+      "drug": "VX-11e",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.510425,
+      "within_moa_r": 0.820032,
+      "kshot_r": 0.833525,
+      "combined_r": 0.827548,
+      "max_k": 50
+    }
+  ]
+}

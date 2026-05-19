@@ -1,0 +1,19 @@
+{
+  "experiment": "paso_decomposition",
+  "run_dir": "experiments/02_reproductions/01_paso/02_decomposition/results/run_20260519_000000",
+  "git_hash": "55d32a9",
+  "completed_at": "2026-05-19T00:00:00Z",
+  "model": "OmniCancerV1",
+  "drug_features": "Morgan FP (2048-bit)",
+  "omics": [
+    "rna",
+    "mutations"
+  ],
+  "paso_splits": "external/PASO/data/10_fold_data/drug_blind/",
+  "n_epochs": 2,
+  "batch_size": 512,
+  "lr": 0.001,
+  "total_pairs": 141004,
+  "cells": 687,
+  "drugs": 233
+}

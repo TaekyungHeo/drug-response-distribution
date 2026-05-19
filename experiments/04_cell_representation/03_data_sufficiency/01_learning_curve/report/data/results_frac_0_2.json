@@ -1,0 +1,51 @@
+{
+  "frac_0_2": {
+    "fraction": 0.2,
+    "key": "frac_0_2",
+    "folds": [
+      {
+        "per_drug_r": 0.42649549069823633,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.44430807926232124,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.4635179193584978,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.49152657150657886,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.4649795764327748,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.4335411899479308,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.4607104056686303,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.5066127033030926,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.46962183011161784,
+        "n_train_cells": 137
+      },
+      {
+        "per_drug_r": 0.471759196621512,
+        "n_train_cells": 137
+      }
+    ],
+    "per_drug_r_mean": 0.4633072962911193,
+    "per_drug_r_std": 0.02322644789055588,
+    "n_train_cells_mean": 137.0
+  }
+}

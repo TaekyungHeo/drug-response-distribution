@@ -1,0 +1,24 @@
+{
+  "ctrpv2": {
+    "no_drug_r": 0.41166686503414684,
+    "morgan_fp_r": 0.41656141203969965,
+    "delta": 0.004894547005552807,
+    "n_drugs": 545
+  },
+  "beataml": {
+    "no_drug_r": 0.4531587334152259,
+    "morgan_fp_r": 0.4542968416205512,
+    "delta": 0.0011381082053252833,
+    "n_drugs": 155
+  },
+  "prism": {
+    "no_drug_r": 0.117251112871055,
+    "morgan_fp_r": 0.1337536381206581,
+    "delta": 0.016502525249603106,
+    "n_drugs": 1079
+  },
+  "gate": {
+    "pass": false,
+    "criterion": "|delta| < 0.01 in all datasets"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    {
+      "seed": 0,
+      "oracle": {
+        "global_r": 0.8264656432516456,
+        "per_drug_r": NaN
+      },
+      "fair": {
+        "global_r": 0.8522365093231201,
+        "per_drug_r": 0.6379076838493347
+      },
+      "snooping": {
+        "global_r": 0.8518593311309814,
+        "per_drug_r": NaN
+      },
+      "snooping_delta": -0.0003771781921386719
+    }
+  ],
+  "summary": {
+    "oracle_global_r_mean": 0.8264656432516456,
+    "fair_global_r_mean": 0.8522365093231201,
+    "fair_per_drug_r_mean": 0.6379076838493347,
+    "snooping_global_r_mean": 0.8518593311309814,
+    "snooping_delta_mean": -0.0003771781921386719,
+    "deepcdr_reported": 0.9211,
+    "total_inflation_vs_fair_perdrug": 0.2831923161506653
+  }
+}

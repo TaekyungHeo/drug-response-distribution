@@ -1,0 +1,10 @@
+{
+    "n_in": 2113,
+    "n_hidden1": 864,
+    "n_hidden2": 400,
+    "n_hidden3": 180,
+    "n_hidden4": 100,
+    "drop_rate": 0.1,
+    "learning_rate": 0.001,
+    "batch_size": 512
+}

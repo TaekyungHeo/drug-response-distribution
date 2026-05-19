@@ -1,0 +1,26 @@
+[
+  {
+    "fold": 1,
+    "condition": "mlp_mse_no_drug",
+    "best_epoch": 184,
+    "val_per_drug_r_at_best": 0.6268543355845774,
+    "test_per_drug_r": 0.6128692033194582,
+    "total_train_time_h": 0.34629438609277713
+  },
+  {
+    "fold": 1,
+    "condition": "mlp_mse_morgan",
+    "best_epoch": 188,
+    "val_per_drug_r_at_best": 0.6524822563120498,
+    "test_per_drug_r": 0.6199868259039492,
+    "total_train_time_h": 0.3641286919305599
+  },
+  {
+    "fold": 1,
+    "condition": "mlp_ranknet_morgan",
+    "best_epoch": 137,
+    "val_per_drug_r_at_best": 0.6761224809525371,
+    "test_per_drug_r": 0.6248106810134612,
+    "total_train_time_h": 2.2646229290449993
+  }
+]

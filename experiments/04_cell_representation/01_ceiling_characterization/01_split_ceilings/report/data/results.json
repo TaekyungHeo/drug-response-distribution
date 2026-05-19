@@ -1,0 +1,118 @@
+{
+  "drug_blind": {
+    "folds": [
+      {
+        "per_drug_r": 0.6005864288857922,
+        "global_r": 0.3514766991138458,
+        "n_drugs": 24,
+        "cell_mean_cheat_per_drug_r": 0.6005886016365715,
+        "cell_mean_cheat_global_r": 0.35147714614868164
+      },
+      {
+        "per_drug_r": 0.6131265617772189,
+        "global_r": 0.4237879812717438,
+        "n_drugs": 24,
+        "cell_mean_cheat_per_drug_r": 0.6131288367783453,
+        "cell_mean_cheat_global_r": 0.42379114031791687
+      },
+      {
+        "per_drug_r": 0.6512088836018397,
+        "global_r": 0.32713934779167175,
+        "n_drugs": 24,
+        "cell_mean_cheat_per_drug_r": 0.6512095118286738,
+        "cell_mean_cheat_global_r": 0.32713964581489563
+      },
+      {
+        "per_drug_r": 0.6370569594163964,
+        "global_r": 0.30138227343559265,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6370534825707133,
+        "cell_mean_cheat_global_r": 0.30137911438941956
+      },
+      {
+        "per_drug_r": 0.6608871424436233,
+        "global_r": 0.3311256766319275,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6608842225226251,
+        "cell_mean_cheat_global_r": 0.33112478256225586
+      },
+      {
+        "per_drug_r": 0.6487811505322015,
+        "global_r": 0.28325337171554565,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6487844909005533,
+        "cell_mean_cheat_global_r": 0.28325456380844116
+      },
+      {
+        "per_drug_r": 0.6244667065912404,
+        "global_r": 0.3467292785644531,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6244659062683411,
+        "cell_mean_cheat_global_r": 0.3467283546924591
+      },
+      {
+        "per_drug_r": 0.67000245986933,
+        "global_r": 0.3214368522167206,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6700034181524829,
+        "cell_mean_cheat_global_r": 0.32143762707710266
+      },
+      {
+        "per_drug_r": 0.6719124154104688,
+        "global_r": 0.3620983958244324,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6719110289837964,
+        "cell_mean_cheat_global_r": 0.3620968461036682
+      },
+      {
+        "per_drug_r": 0.6752385969379483,
+        "global_r": 0.35136285424232483,
+        "n_drugs": 23,
+        "cell_mean_cheat_per_drug_r": 0.6752376475507049,
+        "cell_mean_cheat_global_r": 0.35136136412620544
+      }
+    ],
+    "per_drug_r_mean": 0.6453267305466059,
+    "per_drug_r_std": 0.02457873947978517,
+    "global_r_mean": 0.3399792730808258,
+    "cell_mean_cheat_per_drug_r_mean": 0.6453267147192807,
+    "cell_mean_cheat_per_drug_r_std": 0.024577938751252998
+  },
+  "cell_blind": {
+    "folds": [
+      {
+        "per_drug_r": 0.39532981069519646,
+        "global_r": 0.19196279346942902,
+        "n_drugs": 231
+      },
+      {
+        "per_drug_r": 0.4605355506620146,
+        "global_r": 0.23320043087005615,
+        "n_drugs": 231
+      },
+      {
+        "per_drug_r": 0.4163682321162087,
+        "global_r": 0.21892164647579193,
+        "n_drugs": 231
+      },
+      {
+        "per_drug_r": 0.4688675226769609,
+        "global_r": 0.24057906866073608,
+        "n_drugs": 231
+      },
+      {
+        "per_drug_r": 0.4508947274609966,
+        "global_r": 0.22921088337898254,
+        "n_drugs": 231
+      }
+    ],
+    "per_drug_r_mean": 0.4383991687222755,
+    "per_drug_r_std": 0.027981460844237863,
+    "global_r_mean": 0.22277496457099916
+  },
+  "drug_mean_cheat_predictor": {
+    "global_r": 0.8448318243026733,
+    "per_drug_r": NaN,
+    "note": "drug-mean from training; per_drug_r~0 expected (constant per drug)"
+  }
+}

@@ -1,0 +1,381 @@
+bcr_patient_barcode,drug,response,project,predict,predict0,predict1,measure_of_response
+TCGA-05-4384,Cisplatin,0,TCGA-LUAD,0,0.825123,0.174877,Clinical Progressive Disease
+TCGA-05-4390,Cisplatin,1,TCGA-LUAD,1,0.001018,0.998982,Complete Response
+TCGA-29-A5NZ,Adriamycin,1,TCGA-OV,1,0.385661,0.614339,Partial Response
+TCGA-2G-AAFE,Cisplatin,1,TCGA-TGCT,1,0.012467,0.987533,Complete Response
+TCGA-2G-AAFH,Cisplatin,1,TCGA-TGCT,1,0.000778,0.999222,Complete Response
+TCGA-2G-AAFH,Etoposide,1,TCGA-TGCT,1,0.038619,0.961381,Complete Response
+TCGA-2G-AAFO,Cisplatin,1,TCGA-TGCT,1,0.00082,0.99918,Complete Response
+TCGA-2G-AAGE,Bleomycin,1,TCGA-TGCT,1,0.009731,0.990269,Complete Response
+TCGA-2G-AAGV,Cisplatin,1,TCGA-TGCT,1,0.044467,0.955533,Complete Response
+TCGA-2G-AAHA,Bleomycin,1,TCGA-TGCT,1,0.001067,0.998933,Partial Response
+TCGA-2G-AAKM,Cisplatin,1,TCGA-TGCT,1,0.001073,0.998927,Partial Response
+TCGA-2Y-A9H8,SOM 230,1,TCGA-LIHC,1,0.000475,0.999525,Stable Disease
+TCGA-33-AASI,Taxotere,1,TCGA-LUSC,1,0.012363,0.987637,Stable Disease
+TCGA-3A-A9I9,Oxaliplatin,1,TCGA-PAAD,0,0.636527,0.363473,Stable Disease
+TCGA-3A-A9IX,5-Fluorouracil,1,TCGA-PAAD,1,0.365079,0.634921,Complete Response
+TCGA-3B-A9HV,Adriamycin,0,TCGA-SARC,0,0.997715,0.002285,Clinical Progressive Disease
+TCGA-3B-A9HV,Taxotere,0,TCGA-SARC,0,0.998791,0.001209,Clinical Progressive Disease
+TCGA-3B-A9I0,Taxotere,0,TCGA-SARC,0,0.626617,0.373383,Clinical Progressive Disease
+TCGA-3H-AB3M,Temsirolimus,1,TCGA-MESO,1,0.133385,0.866615,Stable Disease
+TCGA-3H-AB3O,Cisplatin,1,TCGA-MESO,1,0.029306,0.970694,Partial Response
+TCGA-3M-AB47,Epirubicin,1,TCGA-STAD,1,0.061181,0.938819,Stable Disease
+TCGA-3U-A98J,Carboplatin,0,TCGA-MESO,0,0.80928,0.19072,Clinical Progressive Disease
+TCGA-43-A475,Cisplatin,1,TCGA-LUSC,1,0.014275,0.985725,Complete Response
+TCGA-50-5933,Taxol,1,TCGA-LUAD,1,0.41976,0.58024,Complete Response
+TCGA-50-5936,Taxol,0,TCGA-LUAD,1,0.386431,0.613569,Clinical Progressive Disease
+TCGA-55-A48X,Carboplatin,1,TCGA-LUAD,1,0.053471,0.946529,Complete Response
+TCGA-55-A48Y,Carboplatin,1,TCGA-LUAD,1,0.035702,0.964298,Complete Response
+TCGA-56-7579,Tarceva,0,TCGA-LUSC,0,0.889436,0.110564,Clinical Progressive Disease
+TCGA-56-8629,Gemcitabine,1,TCGA-LUSC,1,0.014576,0.985424,Complete Response
+TCGA-56-A4BW,Taxol,1,TCGA-LUSC,1,0.033774,0.966226,Complete Response
+TCGA-56-A62T,Carboplatin,1,TCGA-LUSC,1,0.040199,0.959801,Complete Response
+TCGA-58-A46K,Vinorelbine,1,TCGA-LUSC,1,0.012285,0.987715,Complete Response
+TCGA-5S-A9Q8,Carboplatin,1,TCGA-UCEC,1,0.007461,0.992539,Complete Response
+TCGA-62-A46U,Carboplatin,1,TCGA-LUAD,1,0.381042,0.618958,Complete Response
+TCGA-62-A46U,Vinorelbine,1,TCGA-LUAD,1,0.156082,0.843918,Complete Response
+TCGA-73-7498,Pemetrexed,1,TCGA-LUAD,1,0.235135,0.764865,Complete Response
+TCGA-73-A9RS,Taxotere,0,TCGA-LUAD,0,0.951191,0.048809,Clinical Progressive Disease
+TCGA-85-7697,Etoposide,1,TCGA-LUSC,1,0.284309,0.715691,Complete Response
+TCGA-85-A512,Cisplatin,1,TCGA-LUSC,1,0.00087,0.99913,Complete Response
+TCGA-86-7711,Etoposide,1,TCGA-LUAD,1,0.070655,0.929345,Complete Response
+TCGA-86-7954,Taxol,1,TCGA-LUAD,1,0.076429,0.923571,Complete Response
+TCGA-86-7955,Etoposide,1,TCGA-LUAD,1,0.009628,0.990372,Complete Response
+TCGA-86-8075,Cisplatin,1,TCGA-LUAD,1,0.004408,0.995592,Complete Response
+TCGA-86-8075,Etoposide,1,TCGA-LUAD,1,0.263494,0.736506,Complete Response
+TCGA-86-A4P8,Alimta,1,TCGA-LUAD,1,0.428149,0.571851,Complete Response
+TCGA-86-A4P8,Cisplatin,1,TCGA-LUAD,1,0.415357,0.584643,Complete Response
+TCGA-93-A4JN,Carboplatin,1,TCGA-LUAD,1,0.178089,0.821911,Stable Disease
+TCGA-95-A4VK,Alimta,1,TCGA-LUAD,1,0.352101,0.647899,Stable Disease
+TCGA-A2-A0CK,Adriamycin,1,TCGA-BRCA,1,0.022404,0.977596,Complete Response
+TCGA-A2-A0CK,Cytoxan,1,TCGA-BRCA,1,0.02204,0.97796,Complete Response
+TCGA-A2-A0CL,Gemcitabine,1,TCGA-BRCA,0,0.736601,0.263399,Complete Response
+TCGA-A2-A3XS,Adriamycin,1,TCGA-BRCA,1,0.028049,0.971951,Complete Response
+TCGA-A2-A3XW,Cytoxan,1,TCGA-BRCA,1,0.005581,0.994419,Complete Response
+TCGA-A2-A3XY,Cytoxan,1,TCGA-BRCA,1,0.090556,0.909444,Complete Response
+TCGA-A2-A3XZ,Carboplatin,1,TCGA-BRCA,1,0.156756,0.843244,Complete Response
+TCGA-A2-A4S2,Adriamycin,1,TCGA-BRCA,1,0.196468,0.803532,Complete Response
+TCGA-A5-AB3J,Carboplatin,1,TCGA-UCEC,1,0.013642,0.986358,Complete Response
+TCGA-A5-AB3J,Taxol,1,TCGA-UCEC,1,0.002859,0.997141,Complete Response
+TCGA-A6-2671,Irinotecan,0,TCGA-COAD,0,0.950501,0.049499,Clinical Progressive Disease
+TCGA-A6-A566,5-Fluorouracil,0,TCGA-COAD,0,0.951079,0.048921,Clinical Progressive Disease
+TCGA-A6-A5ZU,5-Fluorouracil,1,TCGA-COAD,0,0.666837,0.333163,Complete Response
+TCGA-A7-A5ZV,Adriamycin,1,TCGA-BRCA,1,0.05588,0.94412,Complete Response
+TCGA-A7-A5ZV,Taxol,1,TCGA-BRCA,1,0.117862,0.882138,Complete Response
+TCGA-A7-A5ZX,Tamoxifen,1,TCGA-BRCA,1,0.276964,0.723036,Complete Response
+TCGA-A7-A6VW,Taxol,1,TCGA-BRCA,1,0.035066,0.964934,Complete Response
+TCGA-A8-A06R,Tamoxifen,1,TCGA-BRCA,1,0.11227,0.88773,Complete Response
+TCGA-A8-A07I,Exemestane,0,TCGA-BRCA,1,0.234151,0.765849,Clinical Progressive Disease
+TCGA-A8-A08G,Epirubicin,1,TCGA-BRCA,1,0.100285,0.899715,Complete Response
+TCGA-A8-A095,Adriamycin,1,TCGA-BRCA,1,0.189067,0.810933,Complete Response
+TCGA-A8-A097,Taxotere,1,TCGA-BRCA,1,0.018921,0.981079,Complete Response
+TCGA-A8-A09D,Tamoxifen,1,TCGA-BRCA,1,0.470144,0.529856,Complete Response
+TCGA-A8-A09M,Taxol,1,TCGA-BRCA,1,0.002439,0.997561,Complete Response
+TCGA-A8-A0AB,Adriamycin,1,TCGA-BRCA,1,0.01427,0.98573,Complete Response
+TCGA-AA-3548,Irinotecan,1,TCGA-COAD,1,0.021031,0.978969,Complete Response
+TCGA-AA-3678,Leucovorin,1,TCGA-COAD,0,0.796434,0.203566,Complete Response
+TCGA-AA-3870,Oxaliplatin,1,TCGA-COAD,0,0.777879,0.222121,Complete Response
+TCGA-AA-3994,Capecitabine,1,TCGA-COAD,0,0.976397,0.023603,Complete Response
+TCGA-AA-A00F,Oxaliplatin,1,TCGA-COAD,0,0.776224,0.223776,Partial Response
+TCGA-AA-A01K,5-Fluorouracil,1,TCGA-COAD,1,0.108724,0.891276,Complete Response
+TCGA-AA-A01R,5-Fluorouracil,1,TCGA-COAD,1,0.080925,0.919075,Partial Response
+TCGA-AA-A02F,Leucovorin,1,TCGA-COAD,0,0.526661,0.473339,Partial Response
+TCGA-AA-A02K,5-Fluorouracil,0,TCGA-COAD,0,0.976887,0.023113,Clinical Progressive Disease
+TCGA-AA-A02K,Leucovorin,0,TCGA-COAD,0,0.983059,0.016941,Clinical Progressive Disease
+TCGA-AC-A2FK,Adriamycin,1,TCGA-BRCA,1,0.072707,0.927293,Complete Response
+TCGA-AC-A2QJ,Cytoxan,0,TCGA-BRCA,0,0.589462,0.410538,Clinical Progressive Disease
+TCGA-AC-A3TM,Cytoxan,1,TCGA-BRCA,1,0.001332,0.998668,Complete Response
+TCGA-AC-A3TM,Taxotere,1,TCGA-BRCA,1,0.000563,0.999437,Complete Response
+TCGA-AC-A3W5,Cytoxan,1,TCGA-BRCA,1,0.012738,0.987262,Complete Response
+TCGA-AC-A3W5,Taxotere,1,TCGA-BRCA,1,0.322883,0.677117,Complete Response
+TCGA-AC-A3YI,5-Fluorouracil,1,TCGA-BRCA,1,0.305009,0.694991,Complete Response
+TCGA-AC-A3YI,Methotrexate,1,TCGA-BRCA,1,0.420349,0.579651,Complete Response
+TCGA-AD-6965,Oxaliplatin,1,TCGA-COAD,1,0.212093,0.787907,Complete Response
+TCGA-AG-3600,5-Fluorouracil,1,TCGA-READ,1,0.378313,0.621687,Complete Response
+TCGA-AG-3611,Leucovorin,1,TCGA-READ,0,0.94031,0.05969,Complete Response
+TCGA-AG-3612,Leucovorin,1,TCGA-READ,1,0.208484,0.791516,Complete Response
+TCGA-AG-4005,Leucovorin,1,TCGA-READ,0,0.891786,0.108214,Complete Response
+TCGA-AG-4008,Leucovorin,1,TCGA-READ,0,0.9385,0.0615,Complete Response
+TCGA-AG-A00H,5-Fluorouracil,1,TCGA-READ,0,0.633798,0.366202,Complete Response
+TCGA-AG-A01L,5-Fluorouracil,1,TCGA-READ,0,0.901978,0.098022,Complete Response
+TCGA-AG-A02G,5-Fluorouracil,1,TCGA-READ,1,0.032634,0.967366,Partial Response
+TCGA-AJ-A3BF,Taxol,1,TCGA-UCEC,1,0.044581,0.955419,Complete Response
+TCGA-AJ-A3EK,Carboplatin,1,TCGA-UCEC,1,0.007007,0.992993,Complete Response
+TCGA-AJ-A3EK,Taxol,1,TCGA-UCEC,1,0.002724,0.997276,Complete Response
+TCGA-AJ-A3I9,Taxol,0,TCGA-UCEC,0,0.897597,0.102403,Clinical Progressive Disease
+TCGA-AJ-A3NH,Taxol,1,TCGA-UCEC,1,0.038269,0.961731,Complete Response
+TCGA-AJ-A3QS,Taxol,1,TCGA-UCEC,1,0.019679,0.980321,Complete Response
+TCGA-AQ-A54O,Taxol,1,TCGA-BRCA,1,0.001425,0.998575,Complete Response
+TCGA-AX-A2H5,Carboplatin,1,TCGA-UCEC,1,0.018706,0.981294,Complete Response
+TCGA-AX-A2H5,Taxol,1,TCGA-UCEC,1,0.07459,0.92541,Complete Response
+TCGA-AZ-6600,CPT-11,0,TCGA-COAD,0,0.930108,0.069892,Clinical Progressive Disease
+TCGA-B5-A1MS,Gemcitabine,0,TCGA-UCEC,0,0.517467,0.482533,Clinical Progressive Disease
+TCGA-B6-A402,Adriamycin,1,TCGA-BRCA,1,0.019764,0.980236,Partial Response
+TCGA-B6-A402,Cytoxan,1,TCGA-BRCA,1,0.016499,0.983501,Partial Response
+TCGA-B9-4114,Votrient,1,TCGA-KIRP,1,0.274888,0.725112,Stable Disease
+TCGA-BA-A6DA,Cisplatin,1,TCGA-HNSC,1,0.396101,0.603899,Complete Response
+TCGA-BA-A6DI,Cisplatin,1,TCGA-HNSC,1,0.090634,0.909366,Complete Response
+TCGA-BA-A6DL,Carboplatin,1,TCGA-HNSC,1,0.214474,0.785526,Complete Response
+TCGA-BA-A6DL,Lapatinib,1,TCGA-HNSC,1,0.315004,0.684996,Complete Response
+TCGA-BG-A0VZ,Cisplatin,1,TCGA-UCEC,1,0.001348,0.998652,Complete Response
+TCGA-BH-A0AV,Cytoxan,1,TCGA-BRCA,1,0.001195,0.998805,Complete Response
+TCGA-BH-A0AZ,Taxol,1,TCGA-BRCA,1,0.142698,0.857302,Complete Response
+TCGA-BH-A0BS,Adriamycin,1,TCGA-BRCA,1,0.023334,0.976666,Complete Response
+TCGA-BH-A0C1,Adriamycin,0,TCGA-BRCA,1,0.20897,0.79103,Clinical Progressive Disease
+TCGA-BH-A0DI,Taxol,1,TCGA-BRCA,1,0.00907,0.99093,Complete Response
+TCGA-BH-A0DL,Taxotere,1,TCGA-BRCA,1,0.03716,0.96284,Complete Response
+TCGA-BH-A0DV,Adriamycin,1,TCGA-BRCA,1,0.296374,0.703626,Complete Response
+TCGA-BH-A0E9,Taxotere,1,TCGA-BRCA,1,0.01457,0.98543,Complete Response
+TCGA-BH-A0EA,Taxotere,1,TCGA-BRCA,1,0.053075,0.946925,Complete Response
+TCGA-BH-A0H5,Cytoxan,1,TCGA-BRCA,1,0.003515,0.996485,Complete Response
+TCGA-BH-A0H5,Taxotere,1,TCGA-BRCA,1,0.027358,0.972642,Complete Response
+TCGA-BH-A0W7,Tamoxifen,1,TCGA-BRCA,1,0.034716,0.965284,Complete Response
+TCGA-BH-A18F,Taxotere,1,TCGA-BRCA,1,0.196785,0.803215,Complete Response
+TCGA-BH-A202,Carboplatin,1,TCGA-BRCA,1,0.007056,0.992944,Complete Response
+TCGA-BH-A5IZ,Cytoxan,1,TCGA-BRCA,1,0.094131,0.905869,Complete Response
+TCGA-BJ-A2N7,SYNTHROID,1,TCGA-THCA,1,0.044851,0.955149,Stable Disease
+TCGA-BR-6458,Etoposide,1,TCGA-STAD,1,0.073226,0.926774,Complete Response
+TCGA-BR-6706,Etoposide,1,TCGA-STAD,1,0.007922,0.992078,Complete Response
+TCGA-BR-6709,5-Fluorouracil,1,TCGA-STAD,1,0.483254,0.516746,Partial Response
+TCGA-BR-6710,5-Fluorouracil,1,TCGA-STAD,1,0.444709,0.555291,Complete Response
+TCGA-BR-8291,Etoposide,1,TCGA-STAD,1,0.157288,0.842712,Complete Response
+TCGA-BR-8362,Cisplatin,0,TCGA-STAD,0,0.504395,0.495605,Clinical Progressive Disease
+TCGA-BR-8371,5-Fluorouracil,0,TCGA-STAD,0,0.776103,0.223897,Clinical Progressive Disease
+TCGA-BR-8381,Leucovorin,1,TCGA-STAD,1,0.072955,0.927045,Complete Response
+TCGA-BR-8682,Oxaliplatin,1,TCGA-STAD,1,0.288339,0.711661,Complete Response
+TCGA-BR-8690,5-Fluorouracil,1,TCGA-STAD,1,0.01297,0.98703,Complete Response
+TCGA-BR-A44T,Leucovorin,1,TCGA-STAD,1,0.210315,0.789685,Complete Response
+TCGA-BR-A4IU,Dexamethasone,1,TCGA-STAD,1,0.128499,0.871501,Complete Response
+TCGA-BR-A4J2,Cisplatin,1,TCGA-STAD,1,0.283562,0.716438,Complete Response
+TCGA-C8-A131,Cytoxan,1,TCGA-BRCA,1,0.126121,0.873879,Complete Response
+TCGA-C8-A135,Cytoxan,1,TCGA-BRCA,1,0.002559,0.997441,Complete Response
+TCGA-C8-A26Z,Tamoxifen,1,TCGA-BRCA,1,0.342172,0.657828,Complete Response
+TCGA-C8-A27A,Cytoxan,1,TCGA-BRCA,1,0.007601,0.992399,Complete Response
+TCGA-C8-A3M8,Tamoxifen,1,TCGA-BRCA,1,0.328144,0.671856,Complete Response
+TCGA-C8-A8HP,Cytoxan,1,TCGA-BRCA,1,0.000917,0.999083,Complete Response
+TCGA-CA-5254,Leucovorin,1,TCGA-COAD,0,0.792777,0.207223,Complete Response
+TCGA-CA-5796,Leucovorin,1,TCGA-COAD,0,0.948359,0.051641,Complete Response
+TCGA-CD-8524,Epirubicin,0,TCGA-STAD,0,0.920897,0.079103,Clinical Progressive Disease
+TCGA-CD-8525,Cisplatin,1,TCGA-STAD,1,0.002603,0.997397,Complete Response
+TCGA-CD-8529,Capecitabine,1,TCGA-STAD,1,0.168829,0.831171,Complete Response
+TCGA-CD-8530,Cisplatin,1,TCGA-STAD,1,0.137276,0.862724,Complete Response
+TCGA-CD-8536,Capecitabine,1,TCGA-STAD,1,0.485064,0.514936,Complete Response
+TCGA-CD-8536,Epirubicin,1,TCGA-STAD,0,0.76371,0.23629,Complete Response
+TCGA-CD-A487,Cisplatin,1,TCGA-STAD,1,0.001567,0.998433,Complete Response
+TCGA-CD-A48A,Capecitabine,1,TCGA-STAD,1,0.369118,0.630882,Complete Response
+TCGA-CD-A4MH,5-Fluorouracil,1,TCGA-STAD,1,0.277622,0.722378,Complete Response
+TCGA-CD-A4MJ,Epirubicin,1,TCGA-STAD,1,0.324485,0.675515,Complete Response
+TCGA-CK-4950,Oxaliplatin,1,TCGA-COAD,0,0.575898,0.424102,Complete Response
+TCGA-CN-6996,Vorinostat,0,TCGA-HNSC,0,0.884207,0.115793,Clinical Progressive Disease
+TCGA-CN-A498,Carboplatin,1,TCGA-HNSC,0,0.912602,0.087398,Complete Response
+TCGA-CN-A498,erbitux,0,TCGA-HNSC,0,0.90123,0.09877,Clinical Progressive Disease
+TCGA-CN-A63T,Cisplatin,1,TCGA-HNSC,1,0.012494,0.987506,Complete Response
+TCGA-CR-5247,Taxol,1,TCGA-HNSC,0,0.624955,0.375045,Complete Response
+TCGA-CR-5248,Carboplatin,1,TCGA-HNSC,0,0.599103,0.400897,Complete Response
+TCGA-CR-7383,Carboplatin,1,TCGA-HNSC,0,0.881749,0.118251,Partial Response
+TCGA-CR-7383,Taxol,1,TCGA-HNSC,0,0.780987,0.219013,Partial Response
+TCGA-D1-A3DA,Taxol,1,TCGA-UCEC,1,0.00739,0.99261,Complete Response
+TCGA-D1-A3JQ,Adriamycin,1,TCGA-UCEC,1,0.018199,0.981801,Complete Response
+TCGA-D3-A1Q9,Lupron,0,TCGA-SKCM,0,0.996694,0.003306,Clinical Progressive Disease
+TCGA-D3-A51G,GP100,1,TCGA-SKCM,1,0.19219,0.80781,Complete Response
+TCGA-D3-A51H,Cisplatin,1,TCGA-SKCM,1,0.00198,0.99802,Complete Response
+TCGA-D7-6520,Taxotere,0,TCGA-STAD,0,0.966359,0.033641,Clinical Progressive Disease
+TCGA-DB-A64P,Temodar,1,TCGA-LGG,1,0.107204,0.892796,Stable Disease
+TCGA-DB-A64X,Temodar,1,TCGA-LGG,1,0.249669,0.750331,Stable Disease
+TCGA-DD-A4NS,ABT-888,0,TCGA-LIHC,0,0.505257,0.494743,Clinical Progressive Disease
+TCGA-DK-A1A7,Cisplatin,1,TCGA-BLCA,1,0.006855,0.993145,Stable Disease
+TCGA-DK-A3IU,Carboplatin,0,TCGA-BLCA,0,0.801279,0.198721,Clinical Progressive Disease
+TCGA-DK-A3IV,Cisplatin,0,TCGA-BLCA,0,0.885045,0.114955,Clinical Progressive Disease
+TCGA-DK-AA6W,Gemcitabine,1,TCGA-BLCA,1,0.019321,0.980679,Stable Disease
+TCGA-DS-A7WH,Cisplatin,1,TCGA-CESC,0,0.886725,0.113275,Complete Response
+TCGA-DU-8163,Temodar,1,TCGA-LGG,1,0.271152,0.728848,Stable Disease
+TCGA-DU-A76L,Temodar,1,TCGA-LGG,0,0.947025,0.052975,Stable Disease
+TCGA-DU-A7TA,Temodar,1,TCGA-LGG,1,0.322269,0.677731,Stable Disease
+TCGA-DU-A7TB,Temodar,1,TCGA-LGG,1,0.32266,0.67734,Stable Disease
+TCGA-DX-A3U7,Dacarbazine,0,TCGA-SARC,0,0.763245,0.236755,Clinical Progressive Disease
+TCGA-DX-A3U7,Taxotere,1,TCGA-SARC,0,0.976884,0.023116,Partial Response
+TCGA-DX-A7EQ,Sorafenib,0,TCGA-SARC,0,0.997678,0.002322,Clinical Progressive Disease
+TCGA-DX-A8BU,Ifosfamide,0,TCGA-SARC,0,0.98017,0.01983,Clinical Progressive Disease
+TCGA-DX-AB2E,Ifosfamide,1,TCGA-SARC,1,0.239497,0.760503,Partial Response
+TCGA-E1-A7YJ,Temodar,0,TCGA-LGG,1,0.456328,0.543672,Clinical Progressive Disease
+TCGA-E1-A7YV,Gleevec,0,TCGA-LGG,0,0.988068,0.011932,Clinical Progressive Disease
+TCGA-E1-A7YV,Gleevec,1,TCGA-LGG,0,0.986082,0.013918,Stable Disease
+TCGA-E1-A7YY,Lomustine,1,TCGA-LGG,1,0.464367,0.535633,Stable Disease
+TCGA-E1-A7YY,Temodar,0,TCGA-LGG,1,0.212406,0.787594,Clinical Progressive Disease
+TCGA-E1-A7Z2,Temodar,0,TCGA-LGG,1,0.27644,0.72356,Clinical Progressive Disease
+TCGA-E1-A7Z4,Temodar,0,TCGA-LGG,1,0.299148,0.700852,Clinical Progressive Disease
+TCGA-E2-A1IE,Faslodex,0,TCGA-BRCA,0,0.91382,0.08618,Clinical Progressive Disease
+TCGA-E6-A8L9,Carboplatin,1,TCGA-UCEC,1,0.002982,0.997018,Complete Response
+TCGA-E9-A1N6,Adriamycin,1,TCGA-BRCA,1,0.040482,0.959518,Stable Disease
+TCGA-E9-A1N6,Cytoxan,1,TCGA-BRCA,1,0.038279,0.961721,Stable Disease
+TCGA-E9-A1NC,5-Fluorouracil,1,TCGA-BRCA,1,0.228608,0.771392,Complete Response
+TCGA-E9-A1NG,Tamoxifen,1,TCGA-BRCA,1,0.376309,0.623691,Complete Response
+TCGA-E9-A1R2,Taxotere,1,TCGA-BRCA,1,0.018824,0.981176,Complete Response
+TCGA-E9-A3HO,5-Fluorouracil,1,TCGA-BRCA,1,0.020007,0.979993,Complete Response
+TCGA-E9-A3X8,5-Fluorouracil,1,TCGA-BRCA,1,0.022153,0.977847,Complete Response
+TCGA-EB-A57M,Ciclosporin,1,TCGA-SKCM,1,0.028764,0.971236,Complete Response
+TCGA-EB-A6QY,Carboplatin,1,TCGA-SKCM,1,0.187138,0.812862,Complete Response
+TCGA-EE-A2GS,Dabrafenib,0,TCGA-SKCM,0,0.921249,0.078751,Clinical Progressive Disease
+TCGA-EO-A1Y5,Taxol,1,TCGA-UCEC,1,0.02998,0.97002,Complete Response
+TCGA-EO-A2CG,Carboplatin,1,TCGA-UCEC,1,0.176995,0.823005,Complete Response
+TCGA-EO-A3AV,Taxol,1,TCGA-UCEC,1,0.066447,0.933553,Complete Response
+TCGA-EO-A3B1,Carboplatin,1,TCGA-UCEC,1,0.061691,0.938309,Complete Response
+TCGA-EO-A3KU,Carboplatin,1,TCGA-UCEC,1,0.09841,0.90159,Complete Response
+TCGA-EQ-A4SO,Oxaliplatin,1,TCGA-STAD,1,0.063725,0.936275,Complete Response
+TCGA-EW-A3U0,Taxotere,1,TCGA-BRCA,1,0.002294,0.997706,Complete Response
+TCGA-EX-A449,Taxol,1,TCGA-CESC,0,0.541354,0.458646,Complete Response
+TCGA-EY-A3QX,Carboplatin,1,TCGA-UCEC,1,0.036984,0.963016,Complete Response
+TCGA-F5-6571,Mitomycin,0,TCGA-READ,1,0.270423,0.729577,Clinical Progressive Disease
+TCGA-F5-6702,5-Fluorouracil,0,TCGA-READ,0,0.742169,0.257831,Clinical Progressive Disease
+TCGA-F5-6864,5-Fluorouracil,1,TCGA-READ,1,0.300345,0.699655,Complete Response
+TCGA-F7-A50J,Cisplatin,1,TCGA-HNSC,1,0.278425,0.721575,Complete Response
+TCGA-FB-A4P6,5-Fluorouracil,1,TCGA-PAAD,1,0.418619,0.581381,Complete Response
+TCGA-FD-A43S,Cisplatin,1,TCGA-BLCA,1,0.225704,0.774296,Complete Response
+TCGA-FD-A43U,Gemcitabine,1,TCGA-BLCA,1,0.0387,0.9613,Complete Response
+TCGA-FI-A2D4,Carboplatinum,1,TCGA-UCEC,1,0.031181,0.968819,Partial Response
+TCGA-FI-A2D5,Carboplatinum,0,TCGA-UCEC,0,0.951338,0.048662,Clinical Progressive Disease
+TCGA-FJ-A871,Vinblastine,0,TCGA-BLCA,0,0.980528,0.019472,Clinical Progressive Disease
+TCGA-FP-7829,5-Fluorouracil,1,TCGA-STAD,0,0.825308,0.174692,Complete Response
+TCGA-FU-A3WB,Cisplatin,1,TCGA-CESC,1,0.011765,0.988235,Complete Response
+TCGA-G2-A2EF,Adriamycin,1,TCGA-BLCA,1,0.021477,0.978523,Partial Response
+TCGA-G2-AA3F,Vinblastine,1,TCGA-BLCA,1,0.012547,0.987453,Partial Response
+TCGA-G7-A8LD,Afinitor,1,TCGA-KIRP,0,0.611887,0.388113,Stable Disease
+TCGA-G7-A8LD,Sutent,0,TCGA-KIRP,0,0.530812,0.469188,Clinical Progressive Disease
+TCGA-G9-A9S0,Casodex,0,TCGA-PRAD,0,0.920174,0.079826,Clinical Progressive Disease
+TCGA-GC-A3YS,Cisplatin,1,TCGA-BLCA,1,0.000479,0.999521,Complete Response
+TCGA-GM-A2DA,Cytoxan,1,TCGA-BRCA,1,0.014557,0.985443,Complete Response
+TCGA-GM-A2DA,Methotrexate,1,TCGA-BRCA,1,0.372856,0.627144,Complete Response
+TCGA-GM-A2DA,Tamoxifen,0,TCGA-BRCA,1,0.366517,0.633483,Clinical Progressive Disease
+TCGA-GM-A2DA,Vinorelbine,0,TCGA-BRCA,1,0.033847,0.966153,Clinical Progressive Disease
+TCGA-GM-A2DF,Epirubicin,1,TCGA-BRCA,1,0.017587,0.982413,Complete Response
+TCGA-GM-A2DI,Epirubicin,1,TCGA-BRCA,1,0.178658,0.821342,Complete Response
+TCGA-GM-A2DM,Arimidex,1,TCGA-BRCA,1,0.344709,0.655291,Complete Response
+TCGA-GM-A3XL,5-Fluorouracil,1,TCGA-BRCA,1,0.047344,0.952656,Complete Response
+TCGA-GM-A5PV,Taxotere,1,TCGA-BRCA,1,0.006939,0.993061,Complete Response
+TCGA-GV-A3JW,Gemzar,1,TCGA-BLCA,1,0.312385,0.687615,Partial Response
+TCGA-HL-7533,Taxotere,1,TCGA-HNSC,1,0.026821,0.973179,Complete Response
+TCGA-HT-7604,Temodar,1,TCGA-LGG,1,0.426555,0.573445,Partial Response
+TCGA-HT-7884,Temodar,1,TCGA-LGG,1,0.38442,0.61558,Stable Disease
+TCGA-HT-8564,Temodar,0,TCGA-LGG,1,0.418062,0.581938,Clinical Progressive Disease
+TCGA-HU-8249,Capecitabine,1,TCGA-STAD,1,0.059021,0.940979,Complete Response
+TCGA-HU-8602,Capecitabine,1,TCGA-STAD,0,0.540931,0.459069,Complete Response
+TCGA-HU-A4GX,Taxol,0,TCGA-STAD,1,0.025985,0.974015,Clinical Progressive Disease
+TCGA-HV-AA8V,Cisplatin,0,TCGA-PAAD,0,0.54461,0.45539,Clinical Progressive Disease
+TCGA-HV-AA8V,Gemcitabine,0,TCGA-PAAD,1,0.432605,0.567395,Clinical Progressive Disease
+TCGA-HW-A5KL,Temodar,1,TCGA-LGG,1,0.258395,0.741605,Stable Disease
+TCGA-HZ-7920,5-Fluorouracil,1,TCGA-PAAD,1,0.201584,0.798416,Complete Response
+TCGA-HZ-7924,Gemcitabine,1,TCGA-PAAD,1,0.352515,0.647485,Complete Response
+TCGA-HZ-A49G,Gemcitabine,0,TCGA-PAAD,1,0.287595,0.712405,Clinical Progressive Disease
+TCGA-HZ-A77O,Gemcitabine,0,TCGA-PAAD,0,0.913137,0.086863,Clinical Progressive Disease
+TCGA-IB-7645,5-Fluorouracil,1,TCGA-PAAD,0,0.521731,0.478269,Complete Response
+TCGA-IB-7645,Leucovorin,0,TCGA-PAAD,1,0.468764,0.531236,Clinical Progressive Disease
+TCGA-IB-7651,Gemcitabine,0,TCGA-PAAD,0,0.794774,0.205226,Clinical Progressive Disease
+TCGA-IB-7891,5-Fluorouracil,1,TCGA-PAAD,1,0.35566,0.64434,Stable Disease
+TCGA-IB-8126,Gemcitabine,0,TCGA-PAAD,1,0.385495,0.614505,Clinical Progressive Disease
+TCGA-IB-A5SO,Gemcitabine,0,TCGA-PAAD,1,0.398649,0.601351,Clinical Progressive Disease
+TCGA-IB-A7LX,CPT-11,0,TCGA-PAAD,0,0.949572,0.050428,Clinical Progressive Disease
+TCGA-IB-AAUQ,Irinotecan,0,TCGA-PAAD,0,0.829893,0.170107,Clinical Progressive Disease
+TCGA-IC-A6RF,Carboplatin,1,TCGA-ESCA,1,0.214749,0.785251,Complete Response
+TCGA-IG-A3I8,5-Fluorouracil,1,TCGA-ESCA,1,0.306909,0.693091,Complete Response
+TCGA-IQ-A61J,Cisplatin,1,TCGA-HNSC,1,0.295982,0.704018,Complete Response
+TCGA-IS-A3KA,Megace,0,TCGA-SARC,0,0.992418,0.007582,Clinical Progressive Disease
+TCGA-J9-A52B,Zoladex,1,TCGA-PRAD,1,0.023478,0.976522,Partial Response
+TCGA-JV-A5VE,Gemcitabine,1,TCGA-SARC,0,0.842276,0.157724,Complete Response
+TCGA-JY-A93D,5-Fluorouracil,1,TCGA-ESCA,1,0.387439,0.612561,Complete Response
+TCGA-KB-A6F7,5-Fluorouracil,1,TCGA-STAD,0,0.79179,0.20821,Complete Response
+TCGA-KS-A4I3,cytomel,1,TCGA-THCA,1,0.058802,0.941198,Complete Response
+TCGA-KS-A4I9,cytomel,1,TCGA-THCA,1,0.0588,0.9412,Complete Response
+TCGA-KS-A4IB,cytomel,1,TCGA-THCA,1,0.069208,0.930792,Complete Response
+TCGA-L1-A7W4,Gemcitabine,0,TCGA-PAAD,0,0.706425,0.293575,Clinical Progressive Disease
+TCGA-L9-A7SV,Cisplatin,1,TCGA-LUAD,1,0.292774,0.707226,Complete Response
+TCGA-LB-A8F3,Gemzar,1,TCGA-PAAD,0,0.808226,0.191774,Complete Response
+TCGA-LN-A49O,Capecitabine,0,TCGA-ESCA,1,0.242206,0.757794,Clinical Progressive Disease
+TCGA-LN-A49R,Capecitabine,1,TCGA-ESCA,1,0.371515,0.628485,Complete Response
+TCGA-LN-A49R,Cisplatin,1,TCGA-ESCA,1,0.062752,0.937248,Complete Response
+TCGA-LN-A7HZ,Cisplatin,1,TCGA-ESCA,1,0.001393,0.998607,Complete Response
+TCGA-LP-A4AU,Cisplatin,1,TCGA-CESC,1,0.036137,0.963863,Complete Response
+TCGA-MP-A4T9,Gemcitabine,1,TCGA-LUAD,1,0.308591,0.691409,Complete Response
+TCGA-MS-A51U,Adriamycin,1,TCGA-BRCA,1,0.017938,0.982062,Stable Disease
+TCGA-MX-A666,Leucovorin,1,TCGA-STAD,0,0.643545,0.356455,Complete Response
+TCGA-MY-A5BF,Cisplatin,1,TCGA-CESC,1,0.01082,0.98918,Complete Response
+TCGA-N5-A4RT,Carboplatin,1,TCGA-UCS,1,0.077658,0.922342,Complete Response
+TCGA-N5-A4RT,Cisplatin,1,TCGA-UCS,1,0.004459,0.995541,Complete Response
+TCGA-N5-A4RU,Cisplatin,1,TCGA-UCS,1,0.125146,0.874854,Complete Response
+TCGA-N5-A4RV,Taxol,1,TCGA-UCS,1,0.098239,0.901761,Complete Response
+TCGA-N6-A4VC,Carboplatin,0,TCGA-UCS,1,0.101134,0.898866,Clinical Progressive Disease
+TCGA-N7-A59B,Carboplatin,1,TCGA-UCS,1,0.066923,0.933077,Complete Response
+TCGA-N8-A4PN,Carboplatin,1,TCGA-UCS,1,0.218275,0.781725,Complete Response
+TCGA-N8-A56S,Carboplatin,1,TCGA-UCS,1,0.180518,0.819482,Stable Disease
+TCGA-NA-A4QW,Taxol,1,TCGA-UCS,1,0.067273,0.932727,Complete Response
+TCGA-NC-A5HG,Cisplatin,1,TCGA-LUSC,1,0.018575,0.981425,Complete Response
+TCGA-NC-A5HI,Cisplatin,1,TCGA-LUSC,1,0.006506,0.993494,Complete Response
+TCGA-NC-A5HP,Vinorelbine,0,TCGA-LUSC,0,0.531443,0.468557,Clinical Progressive Disease
+TCGA-NC-A5HQ,Vinorelbine,1,TCGA-LUSC,1,0.000418,0.999582,Complete Response
+TCGA-NC-A5HT,Carboplatin,0,TCGA-LUSC,1,0.411063,0.588937,Clinical Progressive Disease
+TCGA-NC-A5HT,Taxol,1,TCGA-LUSC,1,0.42503,0.57497,Partial Response
+TCGA-NG-A4VW,Cytoxan,1,TCGA-UCS,1,0.009367,0.990633,Complete Response
+TCGA-OL-A5RU,Cytoxan,1,TCGA-BRCA,1,0.003044,0.996956,Complete Response
+TCGA-OL-A5RW,Taxol,1,TCGA-BRCA,1,0.061208,0.938792,Complete Response
+TCGA-P3-A6SW,Cisplatin,1,TCGA-HNSC,1,0.004345,0.995655,Complete Response
+TCGA-Q1-A5R3,Cisplatin,1,TCGA-CESC,1,0.010345,0.989655,Partial Response
+TCGA-QH-A65X,Vincristine,1,TCGA-LGG,1,0.014709,0.985291,Stable Disease
+TCGA-QK-A6II,Carboplatin,0,TCGA-HNSC,0,0.952431,0.047569,Clinical Progressive Disease
+TCGA-QK-A8Z9,Carboplatin,1,TCGA-HNSC,0,0.657288,0.342712,Complete Response
+TCGA-QS-A5YQ,Cisplatin,1,TCGA-UCEC,1,0.000314,0.999686,Complete Response
+TCGA-QS-A5YQ,Taxol,1,TCGA-UCEC,1,0.000644,0.999356,Complete Response
+TCGA-RN-AAAQ,Adriamycin,1,TCGA-SARC,1,0.006394,0.993606,Partial Response
+TCGA-RN-AAAQ,Ifosfamide,1,TCGA-SARC,1,0.000799,0.999201,Partial Response
+TCGA-RN-AAAQ,Ifosfamide,1,TCGA-SARC,1,0.001749,0.998251,Partial Response
+TCGA-S3-AA10,Taxotere,1,TCGA-BRCA,1,0.020573,0.979427,Complete Response
+TCGA-S3-AA14,Cytoxan,1,TCGA-BRCA,1,0.027239,0.972761,Complete Response
+TCGA-S9-A6U0,Teniposide,0,TCGA-LGG,1,0.34988,0.65012,Clinical Progressive Disease
+TCGA-S9-A6U8,Temodar,0,TCGA-LGG,1,0.276602,0.723398,Clinical Progressive Disease
+TCGA-S9-A6WG,Temodar,1,TCGA-LGG,1,0.396141,0.603859,Stable Disease
+TCGA-S9-A6WN,Temodar,1,TCGA-LGG,1,0.249813,0.750187,Stable Disease
+TCGA-S9-A7R7,Carmustine,0,TCGA-LGG,1,0.450553,0.549447,Clinical Progressive Disease
+TCGA-S9-A7R7,Temodar,1,TCGA-LGG,1,0.269987,0.730013,Stable Disease
+TCGA-SC-A6LM,Gemcitabine,0,TCGA-MESO,1,0.400606,0.599394,Clinical Progressive Disease
+TCGA-SC-AA5Z,Pemetrexed,1,TCGA-MESO,1,0.051543,0.948457,Stable Disease
+TCGA-SH-A7BC,Pemetrexed,1,TCGA-MESO,1,0.100958,0.899042,Partial Response
+TCGA-SH-A9CU,Cisplatin,1,TCGA-MESO,1,0.003717,0.996283,Partial Response
+TCGA-T2-A6WX,Taxol,0,TCGA-HNSC,1,0.476871,0.523129,Clinical Progressive Disease
+TCGA-T2-A6WZ,px-866,1,TCGA-HNSC,1,0.025953,0.974047,Stable Disease
+TCGA-UF-A7JC,Cisplatin,1,TCGA-HNSC,0,0.601072,0.398928,Complete Response
+TCGA-UF-A7JF,Cisplatin,1,TCGA-HNSC,1,0.222078,0.777922,Complete Response
+TCGA-UY-A8OB,Cisplatin,1,TCGA-BLCA,1,0.001943,0.998057,Complete Response
+TCGA-UY-A8OB,Gemcitabine,1,TCGA-BLCA,1,0.028949,0.971051,Complete Response
+TCGA-V5-AASV,Carboplatin,1,TCGA-ESCA,1,0.025096,0.974904,Partial Response
+TCGA-VM-A8CF,Temodar,1,TCGA-LGG,1,0.398646,0.601354,Stable Disease
+TCGA-VQ-A8DU,5-Fluorouracil,0,TCGA-STAD,0,0.946391,0.053609,Clinical Progressive Disease
+TCGA-VQ-A91D,5-Fluorouracil,0,TCGA-STAD,1,0.395995,0.604005,Clinical Progressive Disease
+TCGA-VQ-A91S,5-Fluorouracil,1,TCGA-STAD,1,0.02144,0.97856,Complete Response
+TCGA-VQ-AA68,5-Fluorouracil,1,TCGA-STAD,0,0.581515,0.418485,Complete Response
+TCGA-VQ-AA6K,5-Fluorouracil,0,TCGA-STAD,0,0.980858,0.019142,Clinical Progressive Disease
+TCGA-VS-A8EJ,Fluoruracil,0,TCGA-CESC,0,0.690962,0.309038,Clinical Progressive Disease
+TCGA-VS-A9UM,Taxol,1,TCGA-CESC,1,0.438409,0.561591,Complete Response
+TCGA-VS-A9UY,Cisplatin,0,TCGA-CESC,1,0.026309,0.973691,Clinical Progressive Disease
+TCGA-VS-A9V5,Carboplatin,0,TCGA-CESC,0,0.974961,0.025039,Clinical Progressive Disease
+TCGA-W3-AA1O,Cisplatin,0,TCGA-SKCM,0,0.998766,0.001234,Clinical Progressive Disease
+TCGA-W3-AA21,Taxol,0,TCGA-SKCM,0,0.771125,0.228875,Clinical Progressive Disease
+TCGA-W3-AA21,Temodar,0,TCGA-SKCM,1,0.249008,0.750992,Clinical Progressive Disease
+TCGA-W5-AA2H,Gemcitabine,1,TCGA-CHOL,1,0.004418,0.995582,Complete Response
+TCGA-WE-A8ZR,Vemurafenib,0,TCGA-SKCM,0,0.995267,0.004733,Clinical Progressive Disease
+TCGA-X7-A8M6,Adriamycin,0,TCGA-THYM,1,0.122728,0.877272,Clinical Progressive Disease
+TCGA-X7-A8M6,Cytoxan,0,TCGA-THYM,1,0.089494,0.910506,Clinical Progressive Disease
+TCGA-XD-AAUG,Taxol,0,TCGA-PAAD,1,0.349694,0.650306,Clinical Progressive Disease
+TCGA-XE-AAOJ,Etoposide,1,TCGA-TGCT,1,0.077909,0.922091,Partial Response
+TCGA-XF-A9SH,Adriamycin,0,TCGA-BLCA,1,0.444721,0.555279,Clinical Progressive Disease
+TCGA-XF-A9SV,Gemcitabine,0,TCGA-BLCA,0,0.893957,0.106043,Clinical Progressive Disease
+TCGA-XF-A9SY,Carboplatin,0,TCGA-BLCA,0,0.977842,0.022158,Clinical Progressive Disease
+TCGA-XF-A9T4,Gemcitabine,1,TCGA-BLCA,1,0.382104,0.617896,Partial Response
+TCGA-XF-AAMG,Cisplatin,1,TCGA-BLCA,1,0.000762,0.999238,Complete Response
+TCGA-XF-AAMJ,Platinum,1,TCGA-BLCA,1,0.00925,0.99075,Complete Response
+TCGA-XF-AAN0,Cisplatin,1,TCGA-BLCA,0,0.700589,0.299411,Partial Response
+TCGA-XF-AAN0,Gemcitabine,1,TCGA-BLCA,0,0.59295,0.40705,Partial Response
+TCGA-XF-AAN7,Taxol,1,TCGA-BLCA,0,0.527249,0.472751,Stable Disease
+TCGA-XJ-A9DI,Nilutamide,1,TCGA-PRAD,1,0.092291,0.907709,Partial Response
+TCGA-YL-A8HL,Lupron,1,TCGA-PRAD,1,0.007184,0.992816,Complete Response
+TCGA-YU-AA61,Bleomycin,1,TCGA-TGCT,1,0.001678,0.998322,Complete Response
+TCGA-Z5-AAPL,Cytoxan,1,TCGA-PAAD,1,0.00031,0.99969,Complete Response
+TCGA-Z7-A8R6,Taxol,1,TCGA-BRCA,1,0.014251,0.985749,Complete Response
+TCGA-ZF-AA58,Cisplatin,1,TCGA-BLCA,1,0.096314,0.903686,Complete Response

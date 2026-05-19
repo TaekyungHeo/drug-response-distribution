@@ -1,0 +1,10 @@
+{
+  "model": "OmniCancerV1",
+  "n_folds": 5,
+  "splits": {
+    "drug_blind": { "mean_global_r": 0.49870, "mean_per_drug_r": 0.64496, "mean_gap": 0.14626, "gap_95ci": [0.08002, 0.21348], "gap_ttest_p": 0.022665 },
+    "mixed_set":  { "mean_global_r": 0.89092, "mean_per_drug_r": 0.72847, "mean_gap": -0.16245, "gap_95ci": [-0.16622, -0.15869], "gap_ttest_p": 0.0 },
+    "cell_blind": { "mean_global_r": 0.83908, "mean_per_drug_r": 0.51756, "mean_gap": -0.32152, "gap_95ci": [-0.34571, -0.29967], "gap_ttest_p": 0.000014 }
+  },
+  "interpretation": "Gap sign flips by split: drug_blind (unseen drugs) shows positive gap; mixed_set/cell_blind (seen drugs) show negative gap due to global_r inflation from drug-mean memorisation."
+}

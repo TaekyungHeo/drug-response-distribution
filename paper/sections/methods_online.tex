@@ -1,0 +1,41 @@
+\section*{Methods}
+
+\subsection*{Data}
+
+We used GDSC2\cite{iorio2016landscape} (233 drugs with valid Morgan fingerprints, 687 cancer cell lines with matched RNA and mutation profiles) with RNA-seq gene expression (19,193 protein-coding genes) and somatic mutation profiles (12,301 genes) from the Cancer Cell Line Encyclopedia\cite{ghandi2019next}. The response variable was ln(IC$_{50}$) in $\mu$M. For LINCS experiments, Harmonizome\cite{rouillard2016harmonizome} consensus perturbation profiles (104 GDSC2 drugs matched by name) were PCA-reduced to 64 dimensions. Cross-dataset validation used CTRPv2\cite{seashoreludlow2015} (545 compounds, 812 cell lines, AUC, 66 drugs overlapping GDSC2), BeatAML\cite{bottomly2022integrative} (155 drugs, 520 patients, \textit{ex vivo} AUC, drugs with $\geq 20$ patients), and PRISM Repurposing\cite{corsello2020prism} (1,079 drugs).
+
+\subsection*{Evaluation}
+
+All experiments used $k$-fold drug-blind CV (default $k = 5$, $k = 10$ for PASO splits). For ridge regression, the test fold was held out and the remaining $k-1$ folds were used for training. No validation fold is required. For the Transformer encoder, 10\% of training drugs in each fold were held out as a drug-blind validation set for epoch selection, with the remaining $\sim$90\% used for training. The test fold was evaluated once after model selection. We report global Pearson $r$ (across all test pairs) and per-drug Pearson $r$ (correlation within each test drug across cell lines with $\geq 5$ observations, averaged over drugs). Per-drug $r$ is invariant to additive and multiplicative per-drug transformations of the target.
+
+\subsection*{Models}
+
+The primary model was ridge regression ($\alpha = 1.0$) with RNA PCA-550 + mutation PCA-200 cell features, with drug features appended when specified.
+
+A Transformer encoder\cite{vaswani2017attention} was used for representation ablation experiments. The architecture consists of 4 pre-norm layers (LayerNorm before attention and feedforward), 256-dim hidden size, 8 attention heads, feedforward dimension 1024. Each input modality is projected to 256 dimensions (RNA: Linear($n_{\rm genes} \to 256$), mutations: Linear($n_{\rm mut} \to 256$), drug: Linear($d_{\rm drug} \to 256$)) and summed with a learnable modality-type embedding before self-attention across the three tokens. During training, each omics token is independently zeroed with probability 0.3 (modality dropout). The prediction head mean-pools token outputs, applies LayerNorm, and maps to a scalar (Linear(256, 1)). Total parameters: 11.7M (dominated by the RNA projection). Training used AdamW (lr $= 10^{-3}$, weight decay $10^{-4}$, cosine schedule, $\eta_{\rm min} = 10^{-5}$, with 10-epoch linear warmup), gradient clipping at max norm 1.0, 200 epochs, batch size 256. Drug feature dimensions tested were Morgan FP (2048), LINCS PCA-64, drug-target PCA-256, MoA one-hot (24), and zero-vector (no-drug baseline).
+
+\subsection*{Permuted-MoA control}
+
+To distinguish class-identity information from dimensionality-reduction effects, we constructed a permuted-MoA condition by randomly shuffling drug-to-pathway assignments across all drugs (fixed seed 42) while preserving class-size distribution. The same 10-fold protocol was applied. If the MoA gain reflects class identity, permuted labels should perform at or below the no-drug baseline.
+
+\subsection*{Response profile matching}
+
+Response profile matching extends the collaborative filtering principle\cite{suphavilai2018predicting,zhang2018hybrid} to the drug-blind cold-start setting. Given $K$ observed IC$_{50}$ values for a new drug, we compute Pearson $r$ between the $K$-cell response vector and each training drug's response on the same cells, select the top $N = 5$ training drugs by correlation magnitude, and predict remaining cells as a weighted average of selected training drug profiles, with negative correlations zero-weighted. The blended estimator uses a CV-optimal convex combination of the cell-mean prior and the matched prediction. The blend weight $w$, selected by inner CV per fold, dominates the $K$-dependent sensitivity. At small $K$ the weight collapses to the prior. No model training is required.
+
+\subsection*{MoA-stratified training}
+
+Three conditions. \textit{MoA one-hot}: an $n_{\rm MoA}$-dimensional one-hot vector (GDSC2 Target Pathway, 24 classes) concatenated with cell features in all-drug CV. \textit{MoA-weighted}: all-drug training with same-MoA samples weighted $20\times$ relative to other drugs (weight selected by grid search over $\{1, 2, 5, 10, 20\}$ on validation folds). \textit{Within-MoA CV}: leave-one-drug-out using only same-MoA training drugs, with RNA PCA-550 + mutation PCA-200 features fitted on all training cell lines, ridge ($\alpha = 1.0$), mean and s.d.\ reported over drugs within each class.
+
+\subsection*{PASO reproduction}
+
+PASO's published 10-fold split files were used. PASO-style evaluation retained the checkpoint maximizing test-set Pearson $r$ per epoch (200 epochs, no validation holdout). Fair evaluation held out 10\% of training data as a validation set and selected the checkpoint maximizing validation $r$. The test fold was evaluated once.
+
+\subsection*{Statistical analysis}
+
+Pearson correlations were computed on held-out test folds only. Per-drug $r$ is reported as mean $\pm$ s.d.\ across drugs. Condition differences were assessed by paired Wilcoxon signed-rank test (two-sided unless stated otherwise). $P$ values are exact where sample size permits. Effect sizes are absolute $\Delta r$. Seed sensitivity was assessed over 10 random fold assignments. No multiple-testing correction was applied to exploratory secondary analyses (MoA class comparisons beyond ERK MAPK and EGFR, omics ablation variants). Confirmatory analyses (drug representation null, MoA feature vs.\ distribution dissociation) used pre-specified primary comparisons.
+
+Biomarker associations used binary non-synonymous mutation status from DepMap 24Q4 somatic mutation calls (synonymous variants excluded). Group comparisons (mutant vs.\ wild-type) used a one-sided Mann--Whitney U test with the alternative hypothesis that mutant IC$_{50}$ $<$ wild-type, and pooled Cohen's $d$ as effect size.
+
+\subsection*{Computational protocol}
+
+The headline drug representation ablation and MoA experiments used 10-fold drug-blind CV with 200 epochs (Transformer encoder) or no iterative training (ridge). Exploratory Transformer-encoder ablations (drug feature real/random/zero and PRISM) used reduced configurations (3--5 folds, 15--50 epochs) for computational efficiency. All headline numbers reported in the main text use the full protocol. ChemBERTa\cite{chithrananda2020chemberta} pre-trained SMILES embeddings (768-dim) were evaluated at raw dimensionality and PCA-reduced to 64 and 128 dimensions. For scaffold-stratified evaluation, drugs were partitioned into 5 folds using Bemis--Murcko scaffold clustering\cite{bemis1996properties} (219 unique scaffolds). All experiments were run on an NVIDIA DGX Spark workstation. Ridge regression completed in under one minute per fold, Transformer training in approximately 2 hours per 10-fold run.

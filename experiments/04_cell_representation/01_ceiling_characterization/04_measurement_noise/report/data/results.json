@@ -1,0 +1,51 @@
+{
+  "n_replicated_pairs": 6288,
+  "n_drugs_evaluated": 9,
+  "per_drug_replicate_r": {
+    "mean": 0.7538332051008634,
+    "std": 0.12417552179848575,
+    "median": 0.7884588496698914,
+    "per_drug": {
+      "Acetalax": {
+        "r": 0.9273472095683717,
+        "n_cells": 717
+      },
+      "Dactinomycin": {
+        "r": 0.7251744579714386,
+        "n_cells": 699
+      },
+      "Docetaxel": {
+        "r": 0.8296415536779573,
+        "n_cells": 669
+      },
+      "Fulvestrant": {
+        "r": 0.6533046708120536,
+        "n_cells": 715
+      },
+      "GSK343": {
+        "r": 0.5665525945991214,
+        "n_cells": 669
+      },
+      "Oxaliplatin": {
+        "r": 0.8824539591967838,
+        "n_cells": 717
+      },
+      "Selumetinib": {
+        "r": 0.8372376498392334,
+        "n_cells": 699
+      },
+      "Ulixertinib": {
+        "r": 0.5743279005729203,
+        "n_cells": 735
+      },
+      "Uprosertib": {
+        "r": 0.7884588496698914,
+        "n_cells": 668
+      }
+    }
+  },
+  "overall_replicate_r": 0.879847173777221,
+  "mean_abs_difference": 1.3947845617048344,
+  "ridge_ceiling_fraction": 0.8370551943457728,
+  "interpretation": "Ridge captures 75\u201390% of the noise ceiling \u2014 modest room for improvement."
+}

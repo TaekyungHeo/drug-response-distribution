@@ -1,0 +1,522 @@
+[
+  {
+    "fold": 0,
+    "overall": {
+      "mean": 0.6005864288857922,
+      "n_drugs": 24
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.579201659639272,
+        "n_drugs": 24,
+        "n_pairs": 1022
+      },
+      "CNS": {
+        "mean": 0.5854183617201354,
+        "n_drugs": 24,
+        "n_pairs": 749
+      },
+      "Colorectal": {
+        "mean": 0.5082007506123165,
+        "n_drugs": 24,
+        "n_pairs": 936
+      },
+      "Hematologic": {
+        "mean": 0.49021402064725556,
+        "n_drugs": 24,
+        "n_pairs": 2267
+      },
+      "Lung": {
+        "mean": 0.5599845494109013,
+        "n_drugs": 24,
+        "n_pairs": 2687
+      },
+      "Skin": {
+        "mean": 0.41212850121074784,
+        "n_drugs": 24,
+        "n_pairs": 711
+      },
+      "Other": {
+        "mean": 0.5501243938818028,
+        "n_drugs": 24,
+        "n_pairs": 6048
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6124688007131661,
+      "n_drugs": 11
+    },
+    "lincs_uncovered": {
+      "mean": 0.5905321142626296,
+      "n_drugs": 13
+    }
+  },
+  {
+    "fold": 1,
+    "overall": {
+      "mean": 0.6131265617772189,
+      "n_drugs": 24
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5582621942875584,
+        "n_drugs": 24,
+        "n_pairs": 999
+      },
+      "CNS": {
+        "mean": 0.6385404371138933,
+        "n_drugs": 24,
+        "n_pairs": 757
+      },
+      "Colorectal": {
+        "mean": 0.5217386335587993,
+        "n_drugs": 24,
+        "n_pairs": 899
+      },
+      "Hematologic": {
+        "mean": 0.5212187616431821,
+        "n_drugs": 24,
+        "n_pairs": 2279
+      },
+      "Lung": {
+        "mean": 0.5535019433474102,
+        "n_drugs": 24,
+        "n_pairs": 2694
+      },
+      "Skin": {
+        "mean": 0.48453360696045783,
+        "n_drugs": 24,
+        "n_pairs": 743
+      },
+      "Other": {
+        "mean": 0.5616445989393574,
+        "n_drugs": 24,
+        "n_pairs": 5961
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6028214815701063,
+      "n_drugs": 12
+    },
+    "lincs_uncovered": {
+      "mean": 0.6234316419843315,
+      "n_drugs": 12
+    }
+  },
+  {
+    "fold": 2,
+    "overall": {
+      "mean": 0.6512088836018397,
+      "n_drugs": 24
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.6185620617900814,
+        "n_drugs": 24,
+        "n_pairs": 1009
+      },
+      "CNS": {
+        "mean": 0.6608114876084522,
+        "n_drugs": 24,
+        "n_pairs": 795
+      },
+      "Colorectal": {
+        "mean": 0.5938246211500368,
+        "n_drugs": 24,
+        "n_pairs": 980
+      },
+      "Hematologic": {
+        "mean": 0.567443790617791,
+        "n_drugs": 24,
+        "n_pairs": 2398
+      },
+      "Lung": {
+        "mean": 0.6085803224247354,
+        "n_drugs": 24,
+        "n_pairs": 2858
+      },
+      "Skin": {
+        "mean": 0.49433573383085555,
+        "n_drugs": 24,
+        "n_pairs": 790
+      },
+      "Other": {
+        "mean": 0.6216372891749916,
+        "n_drugs": 24,
+        "n_pairs": 6259
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6347268991082623,
+      "n_drugs": 10
+    },
+    "lincs_uncovered": {
+      "mean": 0.6629817296686806,
+      "n_drugs": 14
+    }
+  },
+  {
+    "fold": 3,
+    "overall": {
+      "mean": 0.6370569594163964,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5546220215071911,
+        "n_drugs": 23,
+        "n_pairs": 956
+      },
+      "CNS": {
+        "mean": 0.6105036016657849,
+        "n_drugs": 23,
+        "n_pairs": 745
+      },
+      "Colorectal": {
+        "mean": 0.5247836584935428,
+        "n_drugs": 23,
+        "n_pairs": 894
+      },
+      "Hematologic": {
+        "mean": 0.4626346630603004,
+        "n_drugs": 23,
+        "n_pairs": 2223
+      },
+      "Lung": {
+        "mean": 0.5861706058583971,
+        "n_drugs": 23,
+        "n_pairs": 2665
+      },
+      "Skin": {
+        "mean": 0.4307352363048833,
+        "n_drugs": 23,
+        "n_pairs": 729
+      },
+      "Other": {
+        "mean": 0.5652262397228167,
+        "n_drugs": 23,
+        "n_pairs": 5919
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6296597067396941,
+      "n_drugs": 9
+    },
+    "lincs_uncovered": {
+      "mean": 0.6418123361371333,
+      "n_drugs": 14
+    }
+  },
+  {
+    "fold": 4,
+    "overall": {
+      "mean": 0.6608871424436233,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5763090875791613,
+        "n_drugs": 23,
+        "n_pairs": 929
+      },
+      "CNS": {
+        "mean": 0.6316399677960061,
+        "n_drugs": 23,
+        "n_pairs": 676
+      },
+      "Colorectal": {
+        "mean": 0.4839600659807424,
+        "n_drugs": 23,
+        "n_pairs": 834
+      },
+      "Hematologic": {
+        "mean": 0.5190698519990949,
+        "n_drugs": 23,
+        "n_pairs": 2045
+      },
+      "Lung": {
+        "mean": 0.590074877471244,
+        "n_drugs": 23,
+        "n_pairs": 2437
+      },
+      "Skin": {
+        "mean": 0.5625719090567356,
+        "n_drugs": 23,
+        "n_pairs": 660
+      },
+      "Other": {
+        "mean": 0.6083267005011344,
+        "n_drugs": 23,
+        "n_pairs": 5446
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6919839033633995,
+      "n_drugs": 7
+    },
+    "lincs_uncovered": {
+      "mean": 0.6472823095412212,
+      "n_drugs": 16
+    }
+  },
+  {
+    "fold": 5,
+    "overall": {
+      "mean": 0.6487811505322015,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5482544395188004,
+        "n_drugs": 23,
+        "n_pairs": 918
+      },
+      "CNS": {
+        "mean": 0.6670670979134494,
+        "n_drugs": 23,
+        "n_pairs": 680
+      },
+      "Colorectal": {
+        "mean": 0.5323186854716716,
+        "n_drugs": 23,
+        "n_pairs": 805
+      },
+      "Hematologic": {
+        "mean": 0.49838412808120536,
+        "n_drugs": 23,
+        "n_pairs": 2056
+      },
+      "Lung": {
+        "mean": 0.6140141397632505,
+        "n_drugs": 23,
+        "n_pairs": 2465
+      },
+      "Skin": {
+        "mean": 0.46249609003903636,
+        "n_drugs": 23,
+        "n_pairs": 683
+      },
+      "Other": {
+        "mean": 0.5961854126633613,
+        "n_drugs": 23,
+        "n_pairs": 5412
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6975371996165243,
+      "n_drugs": 9
+    },
+    "lincs_uncovered": {
+      "mean": 0.6174379761208509,
+      "n_drugs": 14
+    }
+  },
+  {
+    "fold": 6,
+    "overall": {
+      "mean": 0.6244667065912404,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.525790721842698,
+        "n_drugs": 23,
+        "n_pairs": 909
+      },
+      "CNS": {
+        "mean": 0.6552627419436647,
+        "n_drugs": 23,
+        "n_pairs": 725
+      },
+      "Colorectal": {
+        "mean": 0.4993512052080218,
+        "n_drugs": 23,
+        "n_pairs": 869
+      },
+      "Hematologic": {
+        "mean": 0.5411789097236908,
+        "n_drugs": 23,
+        "n_pairs": 2180
+      },
+      "Lung": {
+        "mean": 0.5893763569262941,
+        "n_drugs": 23,
+        "n_pairs": 2601
+      },
+      "Skin": {
+        "mean": 0.4202238024044678,
+        "n_drugs": 23,
+        "n_pairs": 721
+      },
+      "Other": {
+        "mean": 0.5659853862337428,
+        "n_drugs": 23,
+        "n_pairs": 5695
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6893088484413936,
+      "n_drugs": 13
+    },
+    "lincs_uncovered": {
+      "mean": 0.540171922186041,
+      "n_drugs": 10
+    }
+  },
+  {
+    "fold": 7,
+    "overall": {
+      "mean": 0.67000245986933,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5883608253104694,
+        "n_drugs": 23,
+        "n_pairs": 1014
+      },
+      "CNS": {
+        "mean": 0.656646053498121,
+        "n_drugs": 23,
+        "n_pairs": 785
+      },
+      "Colorectal": {
+        "mean": 0.6529251080367263,
+        "n_drugs": 23,
+        "n_pairs": 915
+      },
+      "Hematologic": {
+        "mean": 0.5494214322507871,
+        "n_drugs": 23,
+        "n_pairs": 2360
+      },
+      "Lung": {
+        "mean": 0.6094128819092365,
+        "n_drugs": 23,
+        "n_pairs": 2827
+      },
+      "Skin": {
+        "mean": 0.5657254930996971,
+        "n_drugs": 23,
+        "n_pairs": 773
+      },
+      "Other": {
+        "mean": 0.6344190987721067,
+        "n_drugs": 23,
+        "n_pairs": 6242
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6872368951498029,
+      "n_drugs": 10
+    },
+    "lincs_uncovered": {
+      "mean": 0.6567452019612742,
+      "n_drugs": 13
+    }
+  },
+  {
+    "fold": 8,
+    "overall": {
+      "mean": 0.6719124154104688,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5933879939020527,
+        "n_drugs": 23,
+        "n_pairs": 966
+      },
+      "CNS": {
+        "mean": 0.6463910799573419,
+        "n_drugs": 23,
+        "n_pairs": 734
+      },
+      "Colorectal": {
+        "mean": 0.6127234089780644,
+        "n_drugs": 23,
+        "n_pairs": 892
+      },
+      "Hematologic": {
+        "mean": 0.5562531823397416,
+        "n_drugs": 23,
+        "n_pairs": 2225
+      },
+      "Lung": {
+        "mean": 0.6252802577656142,
+        "n_drugs": 23,
+        "n_pairs": 2672
+      },
+      "Skin": {
+        "mean": 0.5021739959862739,
+        "n_drugs": 23,
+        "n_pairs": 722
+      },
+      "Other": {
+        "mean": 0.6298580529142443,
+        "n_drugs": 23,
+        "n_pairs": 5947
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.7109975109866246,
+      "n_drugs": 10
+    },
+    "lincs_uncovered": {
+      "mean": 0.6418469572749645,
+      "n_drugs": 13
+    }
+  },
+  {
+    "fold": 9,
+    "overall": {
+      "mean": 0.6752385969379483,
+      "n_drugs": 23
+    },
+    "by_lineage": {
+      "Breast": {
+        "mean": 0.5618364522312785,
+        "n_drugs": 23,
+        "n_pairs": 963
+      },
+      "CNS": {
+        "mean": 0.6811018648090384,
+        "n_drugs": 23,
+        "n_pairs": 745
+      },
+      "Colorectal": {
+        "mean": 0.6114778669764104,
+        "n_drugs": 23,
+        "n_pairs": 898
+      },
+      "Hematologic": {
+        "mean": 0.5291744711558091,
+        "n_drugs": 23,
+        "n_pairs": 2251
+      },
+      "Lung": {
+        "mean": 0.6443886738451505,
+        "n_drugs": 23,
+        "n_pairs": 2685
+      },
+      "Skin": {
+        "mean": 0.5015775207387873,
+        "n_drugs": 23,
+        "n_pairs": 730
+      },
+      "Other": {
+        "mean": 0.6159042396099796,
+        "n_drugs": 23,
+        "n_pairs": 5940
+      }
+    },
+    "lincs_covered": {
+      "mean": 0.6903357167987372,
+      "n_drugs": 13
+    },
+    "lincs_uncovered": {
+      "mean": 0.6556123411189227,
+      "n_drugs": 10
+    }
+  }
+]

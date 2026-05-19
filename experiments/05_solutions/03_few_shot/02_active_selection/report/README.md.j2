@@ -1,0 +1,54 @@
+# 02 — Which K cells to screen for maximum K-shot gain?
+
+## Research question
+
+Given a budget of K cells to screen for a new drug, which cell selection
+strategy maximizes the per-drug prediction gain from response matching?
+
+## Background
+
+K-shot response matching (01_response_matching) shows that observing K pilot
+IC₅₀ values substantially improves prediction. But the default strategy is
+random cell selection — any K cells. Some cells may be more informative than
+others: high-variance cells (that discriminate between drugs) or diverse cells
+(covering different sensitivity ranges) could yield better neighbor
+identification for the same budget K. If smart selection substantially
+outperforms random, it reduces the experimental cost of characterizing new drugs.
+
+## Experimental design
+
+- **CV**: PASO 10-fold drug-blind ({{ results.n_folds }} folds run)
+- **K values**: {{ results.k_values | join(", ") }}
+- **Strategies**: {{ results.strategies | join(", ") }}
+- **Response matching**: blend_weight=0.5, n_neighbors=5
+- **Leakage control**: cell selection uses training-drug data only (response variance, mean response, RNA PCA coordinates computed from training drugs within each fold)
+
+## Results
+
+| Strategy | K | mean r | std r | delta vs random | n drugs |
+|----------|--:|-------:|------:|----------------:|--------:|
+{% for row in results.strategy_by_k | sort(attribute='k,strategy') -%}
+| {{ row.strategy }} | {{ row.k }} | {{ "%.4f" | format(row.mean_r) }} | {{ "%.4f" | format(row.std_r) }} | {{ "%+.4f" | format(row.delta_vs_random) }} | {{ row.n_drugs }} |
+{% endfor %}
+
+### Random baseline by K
+
+| K | mean r |
+|--:|-------:|
+{% for k, v in results.overall.random_baseline_r_by_k.items() -%}
+| {{ k }} | {{ "%.4f" | format(v) }} |
+{% endfor %}
+
+## Interpretation
+
+{% set best = results.strategy_by_k | sort(attribute='delta_vs_random') | last -%}
+{% if best.delta_vs_random > 0.01 -%}
+**{{ best.strategy }}** at K={{ best.k }} achieves the largest gain over random
+(delta = {{ "%+.4f" | format(best.delta_vs_random) }}), suggesting targeted cell
+selection can meaningfully reduce the experimental cost of characterizing new drugs.
+{% else -%}
+No strategy achieves a substantial gain over random selection (best delta =
+{{ "%+.4f" | format(best.delta_vs_random) }}). Random cell selection is a
+reasonable default for K-shot screening.
+{% endif %}
+

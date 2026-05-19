@@ -1,0 +1,109 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drug-response"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "scipy>=1.12",
+    "requests>=2.31",
+    "tqdm>=4.66",
+    "pyyaml>=6.0",
+    "pyarrow>=15.0",
+    "rdkit>=2026.3.1",
+    "xgboost>=2.1.4",
+    "scienceplots>=2.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyright>=1.1",
+    "ruff>=0.9",
+    "mypy>=1.10",
+]
+viz = [
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scienceplots>=2.1",
+]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear (catches common bugs incl. mutable defaults)
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade (modernise syntax automatically)
+    "N",   # pep8-naming
+    "ANN", # flake8-annotations (type hint completeness)
+    "RUF", # ruff-specific rules
+]
+ignore = [
+    "ANN401",  # use of Any (common in ML code)
+    "E501",    # line too long (handled by formatter)
+    "N803",    # argument name lowercase (numpy: X, y convention)
+    "N806",    # variable lowercase (same)
+    "ANN002",  # missing *args annotation
+    "ANN003",  # missing **kwargs annotation
+    "RUF001",  # ambiguous unicode in strings (× is valid math)
+    "RUF002",  # ambiguous unicode in docstrings (× is valid math)
+    "RUF003",  # ambiguous unicode in comments (× is valid math)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ANN"]  # type annotations not required in test files
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.9"
+strict = false
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+ignore_missing_imports = true
+exclude = ["experiments/", "data/"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+# Shared utilities:
+#   src/evaluation/per_drug.py  — per_drug_r(), mean_per_drug_r(), per_moa_r()
+#   src/utils/ridge.py          — safe_fit_scaler(), compress_cell()
+#   src/utils/paso_folds.py     — load_paso_folds(), build_pair_index(), map_fold_indices()
+# New experiment scripts should import from src/ rather than copy these functions.
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cu130"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::RuntimeWarning"]
+
+[tool.pyright]
+pythonVersion = "3.9"
+typeCheckingMode = "basic"
+include = ["src", "tests"]
+exclude = ["data", "experiments/*/results"]

@@ -1,0 +1,46 @@
+{
+  "condition": "A_rna_mut_pca",
+  "summary": {
+    "A_rna_mut_pca": {
+      "per_drug_r_mean": 0.65,
+      "per_drug_r_std": 0.0248,
+      "delta_vs_A": 0.0
+    }
+  },
+  "fold_results": {
+    "A_rna_mut_pca": [
+      {
+        "per_drug_r": 0.6035002634646784
+      },
+      {
+        "per_drug_r": 0.6223529223946356
+      },
+      {
+        "per_drug_r": 0.6533539146742612
+      },
+      {
+        "per_drug_r": 0.6419830152918006
+      },
+      {
+        "per_drug_r": 0.669821195058432
+      },
+      {
+        "per_drug_r": 0.6590583184910518
+      },
+      {
+        "per_drug_r": 0.6237906235296424
+      },
+      {
+        "per_drug_r": 0.6714376416129312
+      },
+      {
+        "per_drug_r": 0.6766127758624522
+      },
+      {
+        "per_drug_r": 0.6784730067555159
+      }
+    ]
+  },
+  "pred_corr_ab": [],
+  "mean_pred_corr_ab": null
+}

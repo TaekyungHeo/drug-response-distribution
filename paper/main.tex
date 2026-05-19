@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{lineno}
+\usepackage{microtype}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[numbers,super,sort&compress]{natbib}
+\usepackage{setspace}
+
+% NCS-style figure captions: "Fig. X | Title."
+\DeclareCaptionLabelFormat{ncs}{\textbf{#1~#2~|}}
+\captionsetup[figure]{labelformat=ncs, labelsep=space, name=Fig.}
+\captionsetup[table]{labelformat=ncs, labelsep=space}
+
+% Extended Data figures: "Extended Data Fig. 1 |"
+\DeclareCaptionLabelFormat{extdata}{\textbf{Extended Data Fig.~#2~|}}
+\DeclareCaptionLabelFormat{extdatatab}{\textbf{Extended Data Table~#2~|}}
+\newcommand{\extdatafigcaptions}{%
+  \captionsetup[figure]{labelformat=extdata, labelsep=space, name={}}%
+  \captionsetup[table]{labelformat=extdatatab, labelsep=space, name={}}%
+}
+
+% Supplementary figures: "Supplementary Fig. 1 |"
+\DeclareCaptionLabelFormat{suppfig}{\textbf{Supplementary Fig.~#2~|}}
+% Supplementary tables: "Supplementary Table S1 |"
+\DeclareCaptionLabelFormat{supptab}{\textbf{Supplementary Table~#2~|}}
+\newcommand{\suppfigcaptions}{%
+  \captionsetup[figure]{labelformat=suppfig, labelsep=space, name={}}%
+  \captionsetup[table]{labelformat=supptab, labelsep=space, name={}}%
+}
+\setlength{\hfuzz}{18pt}
+
+\linenumbers
+
+\hypersetup{colorlinks=true,linkcolor=blue!70!black,citecolor=blue!70!black,urlcolor=blue!70!black}
+\graphicspath{{figures/}}
+
+
+% Auto-generated canonical numbers from SSOT (paper/data/metrics.json)
+% Regenerate: python scripts/extract_ssot.py && python scripts/generate_paper_numbers.py
+\input{data/numbers}
+
+\title{\Large\bfseries Training distribution determines the ceiling\\
+of drug-blind cancer sensitivity prediction}
+
+\author{Taekyung Heo\\[0.3em]
+\small\texttt{taekyung.cs@gmail.com}}
+
+\date{}
+
+\begin{document}
+\doublespacing
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/methods_online}
+
+\section*{Code availability}
+
+All source code is available at \url{https://github.com/TaekyungHeo/drug-response-distribution}.
+
+\input{sections/references}
+
+\clearpage
+\section*{Extended Data}
+\extdatafigcaptions
+\setcounter{figure}{0}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{edfig1_checkpoint_inflation.pdf}
+\caption{\textbf{Test-set checkpoint selection systematically inflates reported drug-blind performance.}
+\textbf{a}, Per-fold per-drug $r$ on PASO's 10-fold splits under fair evaluation with a validation holdout vs.\ the published protocol with test-set checkpoint selection. Per-drug $r$ is largely unaffected ($\Delta = +0.004$), because within-drug cell ranking is insensitive to the epoch that maximizes global $r$.
+\textbf{b}, Inflation decomposed on global $r$. Test-set snooping adds $\PasoInflation$ to the fair global $r$ mean. Best-fold reporting adds $+0.20$, together reaching \PasoBestFold\ and closely matching the published figure of 0.745.}
+\label{fig:paso}
+\end{figure}
+
+\clearpage
+
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{No drug representation improves within-drug cell ranking.} Ridge, 10-fold drug-blind CV, GDSC2. All conditions use $n = 233$ drugs except LINCS ($n = 104$, LINCS-covered subset only). A random 2048-dimensional vector produces the same $\Delta = +0.001$ as the real Morgan fingerprint, confirming that the small positive delta is a mechanical artifact of adding input dimensions under ridge regularization, not drug-specific signal.}
+\label{tab:drug_repr_sweep}
+\begin{tabular}{lcc}
+\toprule
+Drug representation & Per-drug $r$ & $\Delta$ vs.\ no drug \\
+\midrule
+No drug features & $0.645 \pm 0.025$ & --- \\
+Morgan fingerprint (ECFP4, 2048-bit) & $0.646 \pm 0.024$ & $+0.001$ \\
+Random vector (2048-dim) & $0.646 \pm 0.024$ & $+0.001$ \\
+Drug-target profile (binary, 5145 targets) & $0.646 \pm 0.024$ & $+0.001$ \\
+LINCS perturbation signature (PCA-64) & $0.665$ & $+0.001$ \\
+MoA one-hot (24 classes) & $0.645 \pm 0.025$ & $0.000$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{MoA as representation vs.\ distribution.} Per-drug $r$ by condition. B vs.\ A tests whether MoA one-hot improves cell ranking ($|\Delta| \leq 0.001$ uniformly). C vs.\ A tests whether MoA-weighted training improves cell ranking (large gains for signaling classes).}
+\label{tab:moa_crux}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+MoA class & A (no drug, uniform) & B (one-hot, uniform) & C (no drug, $20\times$) & $\Delta$(C$-$A) \\
+\midrule
+ERK MAPK signaling   & 0.427 & 0.428 & 0.673 & $+0.246$ \\
+EGFR signaling       & 0.425 & 0.425 & 0.655 & $+0.230$ \\
+Apoptosis regulation & 0.524 & 0.524 & 0.547 & $+0.023$ \\
+PI3K/MTOR signaling  & 0.610 & 0.610 & 0.703 & $+0.093$ \\
+Genome integrity     & 0.742 & 0.742 & 0.747 & $+0.005$ \\
+Overall              & 0.645 & 0.645 & 0.687 & $+0.042$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\clearpage
+
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{Drug-feature null and $K$-shot matching replicate across independent datasets.}
+\textbf{a}, Morgan FP vs.\ no drug features, reporting per-drug $r$ and $\Delta$. The null replicates in CTRPv2 and BeatAML. PRISM shows $\Delta = +0.017$, reflecting viability-based cytotoxicity rather than mechanism-specific sensitivity.
+\textbf{b}, $K$-shot matching generalizes to CTRPv2 but fails on PRISM due to drug-panel mismatch. BeatAML per-drug $r$ rises from $\BeatAmlKZeroR$ at $K=0$ to $\BeatAmlKFiftyR$ at $K=50$.}
+\label{tab:ext_validation}
+\begin{subtable}{\textwidth}
+\raggedright\textbf{a}\\[4pt]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Dataset & No drug $r$ & Morgan FP $r$ & $\Delta$ & $n_{\text{drugs}}$ \\
+\midrule
+GDSC2 (primary)  & 0.645 & 0.646 & $+0.001$ & 233 \\
+CTRPv2           & 0.412 & 0.417 & $+0.005$ & 545 \\
+BeatAML          & 0.453 & 0.454 & $+0.001$ & 155 \\
+PRISM            & 0.117 & 0.134 & $+0.017$ & 1079 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{1em}
+
+\begin{subtable}{\textwidth}
+\raggedright\textbf{b}\\[4pt]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+Dataset & $K=0$ & $K=1$ & $K=3$ & $K=10$ & $K=20$ & $K=50$ \\
+\midrule
+BeatAML & 0.453 & 0.454 & 0.385 & 0.433 & 0.465 & 0.521 \\
+CTRPv2 & 0.411 & 0.416 & 0.314 & 0.325 & 0.379 & 0.463 \\
+PRISM  & 0.112 & 0.112 & 0.022 & 0.004 & 0.001 & 0.006 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table}
+
+\clearpage
+\input{sections/supplementary}
+
+\end{document}

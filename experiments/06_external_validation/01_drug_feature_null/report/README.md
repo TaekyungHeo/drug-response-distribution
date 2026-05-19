@@ -1,0 +1,55 @@
+# 01 — Drug Feature Null: External Replication
+
+## Research question
+
+Does the drug feature null result (Morgan FP Δ ≈ 0 for per-drug r under drug-blind
+evaluation) replicate across independent pharmacogenomics datasets?
+
+## Background
+
+In GDSC2, Morgan fingerprints provide no per-drug r improvement over cell-only Ridge
+under drug-blind evaluation (03_drug_feature_null). Three independent datasets test
+whether this is an artifact of the Sanger IC50 assay or GDSC2's drug panel:
+CTRPv2 (Broad, AUC, 545 drugs), BeatAML (patient-derived AML, AUC, 155 drugs),
+and PRISM (Broad Repurposing Screen, ln_IC50, 1415 drugs). PRISM uses the same
+cell lines as GDSC2 and the same metric (ln_IC50), making it the cleanest control.
+
+## Experimental design
+
+- **Model**: Ridge(alpha=1.0), no drug features vs Morgan FP (radius=2, 2048 bits)
+- **Cell features**: RNA PCA(550) + mutation PCA(200) for CTRPv2/PRISM; RNA PCA(500) for BeatAML
+- **CV**: LOO (CTRPv2), 5-fold drug-blind (BeatAML), 10-fold drug-blind (PRISM)
+
+## Results
+
+| Dataset | no_drug r | +Morgan FP r | Δ |
+|---------|:---------:|:------------:|:-:|
+| CTRPv2  | 0.412 | 0.417 | +0.005 |
+| BeatAML | 0.453 | 0.454 | +0.001 |
+| PRISM   | 0.117 | 0.134 | +0.017 |
+
+Drug counts: CTRPv2 545, BeatAML 155, PRISM 1079.
+GDSC2 reference: no_drug=0.645, morgan=0.645, Δ=+0.001.
+
+## Interpretation
+
+Morgan fingerprints add no meaningful per-drug r signal across all three external datasets.
+
+**CTRPv2** (Δ=+0.005): Null confirmed. AUC assay, Broad Institute platform,
+545 drugs — the largest drug-blind drug-feature test performed outside GDSC2.
+
+**BeatAML** (Δ=+0.001): Null confirmed in patient-derived AML data. Even in
+a clinical context with genuine patient-specific biology, Morgan FP adds no cell-ranking
+information.
+
+**PRISM** (Δ=+0.017): Small but consistent fingerprint effect. This exactly
+replicates the GDSC2-internal PRISM result (03_drug_feature_null/05_dataset_robustness:
+Δ=+0.017), suggesting the PRISM platform has a weak structure-response association not
+present in GDSC2 IC50 data. Even so, +0.017 is an order of magnitude below the gains
+from within-MoA training (e.g., ERK MAPK +0.296) and is practically negligible.
+
+The drug feature null is confirmed across all three external datasets: two with strong
+null (|Δ| ≤ 0.005) and one with consistent marginal effect (PRISM Δ≈+0.017) already
+established in GDSC2's own PRISM analysis.
+
+

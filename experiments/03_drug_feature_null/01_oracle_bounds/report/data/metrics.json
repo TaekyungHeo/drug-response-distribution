@@ -1,0 +1,23 @@
+{
+  "oracle_global_r_mean": 0.8177404653433294,
+  "oracle_global_r_std": 0.06642044881874051,
+  "oracle_global_r_folds": [
+    0.765283804562471,
+    0.6460875853559748,
+    0.8411668374371937,
+    0.8587197464571976,
+    0.8434946931591667,
+    0.8891201490723055,
+    0.8013481380336929,
+    0.876381006636999,
+    0.827942401162356,
+    0.8278602915559368
+  ],
+  "profile_concordance_mean": NaN,
+  "profile_concordance_std": NaN,
+  "profile_concordance_n_pairs": 0,
+  "profile_concordance_by_pathway": {},
+  "tanimoto_concordance_mean": 0.7178489081937035,
+  "tanimoto_concordance_std": 0.11374588591947961,
+  "tanimoto_concordance_n_pairs": 14
+}

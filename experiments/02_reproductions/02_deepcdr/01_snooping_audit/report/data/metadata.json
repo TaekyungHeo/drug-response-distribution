@@ -1,0 +1,12 @@
+{
+  "experiment": "deepcdr_snooping_audit",
+  "git_hash": "55d32a9",
+  "completed_at": "2026-05-19T00:00:00Z",
+  "model": "OmniCancerV1",
+  "data": "GDSC2 (proxy for DeepCDR GDSC1; demonstrates protocol artifact)",
+  "n_seeds": 1,
+  "n_epochs": 2,
+  "test_frac": 0.05,
+  "deepcdr_reported_r": 0.9211,
+  "snooping_mechanism": "run_DeepCDR.py:278 passes test data as validation_data"
+}

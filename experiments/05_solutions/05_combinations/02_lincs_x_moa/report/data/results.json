@@ -1,0 +1,148 @@
+{
+  "per_moa": [
+    {
+      "moa": "ERK MAPK signaling",
+      "n_drugs_total": 11,
+      "n_drugs_lincs": 5,
+      "factorial": {
+        "all_drug_no_lincs": {
+          "global_r": 0.270894,
+          "per_drug_r": 0.363655
+        },
+        "all_drug_lincs": {
+          "global_r": -0.001538,
+          "per_drug_r": 0.371544
+        },
+        "within_moa_no_lincs": {
+          "global_r": 0.315984,
+          "per_drug_r": 0.720256
+        },
+        "within_moa_lincs": {
+          "global_r": 0.327495,
+          "per_drug_r": 0.721031
+        }
+      }
+    },
+    {
+      "moa": "EGFR signaling",
+      "n_drugs_total": 7,
+      "n_drugs_lincs": 4,
+      "factorial": {
+        "all_drug_no_lincs": {
+          "global_r": 0.431325,
+          "per_drug_r": 0.465058
+        },
+        "all_drug_lincs": {
+          "global_r": 0.392578,
+          "per_drug_r": 0.459238
+        },
+        "within_moa_no_lincs": {
+          "global_r": 0.571432,
+          "per_drug_r": 0.735837
+        },
+        "within_moa_lincs": {
+          "global_r": 0.632033,
+          "per_drug_r": 0.736902
+        }
+      }
+    }
+  ],
+  "per_drug": [
+    {
+      "drug": "Afatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.446861,
+      "within_moa_no_lincs_r": 0.673251,
+      "all_drug_lincs_r": 0.433949,
+      "within_moa_lincs_r": 0.672506
+    },
+    {
+      "drug": "Dabrafenib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.499022,
+      "within_moa_no_lincs_r": 0.607275,
+      "all_drug_lincs_r": 0.510358,
+      "within_moa_lincs_r": 0.607704
+    },
+    {
+      "drug": "Erlotinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.455853,
+      "within_moa_no_lincs_r": 0.720885,
+      "all_drug_lincs_r": 0.441302,
+      "within_moa_lincs_r": 0.720884
+    },
+    {
+      "drug": "Gefitinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.457621,
+      "within_moa_no_lincs_r": 0.799675,
+      "all_drug_lincs_r": 0.459282,
+      "within_moa_lincs_r": 0.800195
+    },
+    {
+      "drug": "Lapatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.499898,
+      "within_moa_no_lincs_r": 0.749538,
+      "all_drug_lincs_r": 0.50242,
+      "within_moa_lincs_r": 0.754024
+    },
+    {
+      "drug": "PLX-4720",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.533894,
+      "within_moa_no_lincs_r": 0.504372,
+      "all_drug_lincs_r": 0.549322,
+      "within_moa_lincs_r": 0.502097
+    },
+    {
+      "drug": "Refametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.254901,
+      "within_moa_no_lincs_r": 0.807263,
+      "all_drug_lincs_r": 0.254578,
+      "within_moa_lincs_r": 0.81025
+    },
+    {
+      "drug": "Selumetinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.306217,
+      "within_moa_no_lincs_r": 0.878985,
+      "all_drug_lincs_r": 0.317639,
+      "within_moa_lincs_r": 0.878786
+    },
+    {
+      "drug": "Trametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "has_lincs": true,
+      "all_drug_no_lincs_r": 0.224242,
+      "within_moa_no_lincs_r": 0.803386,
+      "all_drug_lincs_r": 0.225825,
+      "within_moa_lincs_r": 0.806317
+    }
+  ],
+  "lincs_pca": {
+    "n_components": 64,
+    "variance_explained": 0.9803
+  },
+  "n_folds": 10,
+  "smoke": false
+}

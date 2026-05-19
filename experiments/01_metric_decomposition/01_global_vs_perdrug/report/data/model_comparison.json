@@ -1,0 +1,13 @@
+{
+  "split": "PASO drug_blind",
+  "n_folds": 5,
+  "feature_set": "PCA(RNA,550)+PCA(mut,200)+MorganFP(2048) [Ridge/MLP]; raw [OmniCancerV1]",
+  "models": {
+    "Ridge":       { "mean_global_r": 0.42564, "std_global_r": 0.12109, "mean_per_drug_r": 0.63200, "std_per_drug_r": 0.02354, "mean_gap": 0.20636, "gap_95ci": [0.11102, 0.29105], "gap_ttest_p": 0.019521 },
+    "MLP-S":       { "mean_global_r": 0.47495, "std_global_r": 0.06352, "mean_per_drug_r": 0.61114, "std_per_drug_r": 0.01851, "mean_gap": 0.13619, "gap_95ci": [0.08120, 0.19011], "gap_ttest_p": 0.012631 },
+    "MLP-M":       { "mean_global_r": 0.45777, "std_global_r": 0.07283, "mean_per_drug_r": 0.58963, "std_per_drug_r": 0.02402, "mean_gap": 0.13186, "gap_95ci": [0.08535, 0.17688], "gap_ttest_p": 0.008180 },
+    "MLP-L":       { "mean_global_r": 0.47225, "std_global_r": 0.07185, "mean_per_drug_r": 0.58383, "std_per_drug_r": 0.03467, "mean_gap": 0.11158, "gap_95ci": [0.06166, 0.15331], "gap_ttest_p": 0.017097 },
+    "OmniCancerV1":{ "mean_global_r": 0.49246, "std_global_r": 0.08094, "mean_per_drug_r": 0.64576, "std_per_drug_r": 0.02750, "mean_gap": 0.15330, "gap_95ci": [0.06548, 0.22854], "gap_ttest_p": 0.031588 }
+  },
+  "decision": { "all_pass": true, "threshold": 0.10 }
+}

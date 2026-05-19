@@ -1,0 +1,13 @@
+{
+  "A_cell_specific": {
+    "mean": 0.3561,
+    "std": 0.1242,
+    "n": 155
+  },
+  "B_mean_potency": {
+    "mean": 0.2976,
+    "std": 0.1103,
+    "n": 155
+  },
+  "delta_A_minus_B": 0.0585
+}

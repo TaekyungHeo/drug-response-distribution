@@ -1,0 +1,31 @@
+\subsection*{Training distribution alignment outperforms drug encoding}
+
+If models transfer within but not across MoA classes\cite{herbert2026monotherapy}, is the failure \emph{representational}, reflecting missing MoA knowledge, or \emph{distributional}, reflecting MoA-mismatched training examples? We dissected this by channeling the same MoA information through two routes: as a drug feature (a 24-class one-hot label concatenated with cell features) or as a training distribution constraint ($20\times$ upweighting of same-MoA samples, or within-MoA leave-one-out CV).
+
+Under ridge regression, supplying MoA as a feature left per-drug $r$ unchanged while increasing global $r$ by $\MoaOnehotGlobalRDelta$ (Fig.~\ref{fig:moa}a, Extended Data Table~2). The global $r$ gain is expected because a drug-constant label shifts predicted means without altering relative cell sensitivities. In contrast, $20\times$ upweighting of same-MoA training samples produced large gains for targeted kinase inhibitors, raising ERK MAPK and EGFR per-drug $r$ well above their all-drug baselines (Extended Data Table~2). The same information produces qualitatively different outcomes depending on whether it enters through representation or distribution.
+
+The Transformer partially overcomes this limitation. MoA one-hot gave a marginally significant gain (one-sided Wilcoxon $P = 0.053$) that was abolished by a permuted-label control ($P = 0.014$ for the real-vs.-permuted difference), confirming that the Transformer exploits class identity rather than dimensionality reduction (Fig.~\ref{fig:moa}a). Yet this representational gain remains an order of magnitude smaller than the within-MoA training gains for targeted classes. Distribution alignment is the primary mechanism.
+
+Within-MoA leave-one-out produced the largest gains. ERK MAPK per-drug $r$ rose from $\ErkMapkAllDrug$ to $\ErkMapkMoaR$ across 11 drugs, and EGFR from $\EgfrAllDrug$ to $\EgfrMoaR$ across 7 drugs. Both values exceed the within-class profile concordances, indicating that supervised models extract a generalizable mapping beyond nearest-drug transfer (Fig.~\ref{fig:moa}b).
+
+The improvement was class-specific and graded by pathway specificity. PI3K/MTOR and RTK signaling showed smaller but positive gains, as expected for pharmacologically heterogeneous classes (Supplementary Table~\ref{tab:moa_per_drug_b}). Apoptosis regulation showed no improvement, a genuine biological limit attributable to within-class mechanistic heterogeneity. Cell-division classes were unaffected because all-drug training already captures the pan-cancer fragility signal for these pathways. CTRPv2 replication confirmed the EGFR pattern ($\Delta = \CtrpvTwoEgfrMoaDelta$ for 8 EGFR inhibitors).
+
+Pan-cancer training creates a dominant cell-fragility signal that suppresses the weaker, pathway-specific signals governing targeted kinase inhibitor response. The upweighting result supports this interpretation: gains emerge even when all training drugs are retained, ruling out the alternative that within-MoA training simply presents an easier problem with fewer samples. Consistent with this mechanism, the signals recovered by within-MoA training correspond to known oncogenic drivers\cite{lynch2004activating,davies2002mutations}. \textit{EGFR}-mutant cell lines are significantly more sensitive to all EGFR inhibitors tested (Fig.~\ref{fig:biomarker}a), and \textit{BRAF}/\textit{KRAS}-mutant cell lines show large sensitivity differences to ERK MAPK inhibitors (Cohen's $d > 0.8$, Fig.~\ref{fig:biomarker}b). Pan-cancer co-training dilutes these mutation-stratified signals because most training drugs target different oncogenic pathways.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig3_moa_ceiling.pdf}
+\caption{\textbf{Training distribution determines the prediction ceiling for targeted kinase inhibitors. Drug encoding does not.}
+\textbf{a}, MoA identity as a drug feature. Ridge global $r$ rises by $\MoaOnehotGlobalRDelta$; ridge per-drug $r$ is unchanged. The Transformer's marginal gain with real labels is abolished by label permutation (one-sided Wilcoxon $P = 0.014$).
+\textbf{b}, MoA identity as a training distribution. Per-drug $r$ for seven MoA classes under all-drug (gray) vs.\ within-MoA (blue) training. Orange lines, pairwise profile concordance (nearest-neighbor transfer baseline).}
+\label{fig:moa}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig4_driver_mutations.pdf}
+\caption{\textbf{Oncogenic driver mutations stratify sensitivity to matched inhibitors.}
+\textbf{a}, ln IC$_{50}$ distributions for four EGFR inhibitors in \textit{EGFR}-mutant ($n = 60$, orange) vs.\ wild-type (blue) cell lines. Mutant cells are significantly more sensitive (one-sided Mann--Whitney $P < 0.05$, Cohen's $d = 0.30$--$0.40$).
+\textbf{b}, ln IC$_{50}$ for four ERK MAPK inhibitors in \textit{BRAF}/\textit{KRAS}-mutant ($n \geq 227$ per drug, orange) vs.\ wild-type (blue) cell lines. Mutant cells are substantially more sensitive (Cohen's $d = 0.83$--$1.02$, $P < 10^{-25}$).}
+\label{fig:biomarker}
+\end{figure}

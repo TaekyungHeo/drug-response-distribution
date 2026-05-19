@@ -1,0 +1,107 @@
+\subsection*{Supplementary Note 2 | Supporting results}
+
+\subsubsection*{Baselines and performance ceilings}
+
+Table~\ref{tab:ceilings} contextualizes the per-drug $r$ achieved by our methods against fundamental baselines and ceilings.
+
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Per-drug $r$ in context of baselines and measurement ceiling.} Methods are ordered by value. Dagger indicates response matching, which uses $K$ pilot IC$_{50}$ measurements. All other methods are zero-shot.}
+\label{tab:ceilings}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Reference & Per-drug $r$ & Notes \\
+\midrule
+DummyDrugAvg (drug mean predictor) & 0.000 & Per-drug $r = 0$ by definition \\
+Profile concordance (nearest-drug transfer baseline) & 0.528 & Mean across all 22 MoA classes (7 shown in Table~\ref{tab:moa_per_drug_b}) \\
+Cell-mean prior (no observations) & 0.645 & 86\% of measurement ceiling \\
+Response matching$^\dagger$ ($K = 50$, blended, $N = 5$) & \textbf{0.701} & \textbf{$+0.056$ vs cell-mean, CV blend $w = 0.6$} \\
+Estimated within-assay replicate concordance & $\sim$0.754 & Within-protocol noise ceiling \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Table~\ref{tab:eval_settings} shows ridge regression performance across evaluation settings. The counterintuitive reversal (cell-blind per-drug $r <$ drug-blind) reflects that drug-blind retains all training cell lines, enabling strong cell-state ranking despite not knowing the drug identity.
+
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Ridge regression performance by evaluation setting.} No drug features. Mixed-set is trivially easy (both drug and cell seen in training) and reported for reference only.}
+\label{tab:eval_settings}
+\begin{tabular}{lccc}
+\toprule
+Evaluation setting & Global $r$ & Per-drug $r$ & Note \\
+\midrule
+Mixed-set (random pair splits) & $\approx$0.89 & --- & Trivial, drug and cell both in training \\
+Cell-blind & $\approx$0.22 & 0.438 & \\
+Drug-blind & $\approx$0.34 & 0.645 & Primary evaluation setting \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Per-drug performance by pathway}
+
+Drug-blind per-drug $r$ varies substantially across drug pathway classes (Fig.~\ref{fig:pathway}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{sfig2_perdrug_by_pathway.pdf}
+\caption{\textbf{Per-drug Pearson $r$ by GDSC2 pathway annotation.} Blue, $r > 0.65$. Yellow, $0.50$--$0.65$. Orange, $r < 0.50$. Dashed line, overall mean.}
+\label{fig:pathway}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{\textbf{Per-drug Pearson $r$ by GDSC2 Target Pathway under all-drug training.} Ridge, RNA PCA-550 + mutation PCA-200, 10-fold drug-blind CV.}
+\label{tab:moa_per_drug_a}
+\begin{tabular}{lcr}
+\toprule
+Target Pathway & Per-drug $r$ (mean $\pm$ s.d.) & $n$ \\
+\midrule
+Mitosis & $0.772 \pm 0.034$ & 7 \\
+Cell cycle & $0.767 \pm 0.036$ & 11 \\
+Genome integrity & $0.742 \pm 0.034$ & 13 \\
+Chromatin histone methylation & $0.731 \pm 0.063$ & 10 \\
+Chromatin other & $0.714 \pm 0.038$ & 10 \\
+DNA replication & $0.693 \pm 0.109$ & 20 \\
+Other, kinases & $0.648 \pm 0.120$ & 15 \\
+WNT signaling & $0.615 \pm 0.079$ & 9 \\
+PI3K/MTOR signaling & $0.610 \pm 0.088$ & 23 \\
+IGF1R signaling & $0.608 \pm 0.061$ & 5 \\
+RTK signaling & $0.605 \pm 0.116$ & 12 \\
+Apoptosis regulation & $0.524 \pm 0.143$ & 13 \\
+ERK MAPK signaling & $0.427 \pm 0.168$ & 11 \\
+EGFR signaling & $0.425 \pm 0.082$ & 7 \\
+\midrule
+Overall & $0.645$ & 233 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The mean per-drug $r$ delta (Morgan FP $-$ no drug) of $+0.001$ is uniformly near zero across all 233 drugs (97\% show $|\Delta| \leq 0.01$, range $[-0.014, +0.018]$). Grouped by pathway class, even the largest pathway mean ($+0.006$ for RTK signaling) is $9\times$ smaller than the $K$-shot gain at $K = 50$.
+
+\subsubsection*{Within-MoA training results and profile concordance}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{\textbf{Within-class profile concordance and within-MoA training results.} Profile concordance is estimated from pairwise per-drug profile correlations within each MoA class. Within-MoA $r$ uses leave-one-drug-out CV restricted to same-MoA drugs.}
+\label{tab:moa_per_drug_b}
+\begin{tabular}{lcccc}
+\toprule
+MoA class & $n$ & All-drug $r$ & Profile concordance & Within-MoA $r$ \\
+\midrule
+ERK MAPK signaling & 11 & 0.427 & $\ErkMapkProfileConcordance \pm \ErkMapkProfileConcordanceStd$ & $0.723$ \\
+EGFR signaling & 7 & 0.425 & $0.697 \pm 0.051$ & $0.799$ \\
+PI3K/MTOR signaling & 23 & 0.610 & $0.489 \pm 0.147$ & $0.702$ \\
+RTK signaling & 12 & 0.605 & $0.454 \pm 0.142$ & $0.640$ \\
+Apoptosis regulation & 13 & 0.524 & $0.331 \pm 0.164$ & $0.515$ ($\Delta = -0.009$) \\
+Genome integrity & 13 & 0.742 & $0.570 \pm 0.083$ & $0.730$ \\
+Mitosis & 7 & 0.772 & $0.713 \pm 0.090$ & $0.788$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For ERK MAPK and EGFR, within-MoA training recovers per-drug $r$ that substantially exceeds the nearest-neighbor transfer baseline. Apoptosis regulation is unchanged ($\Delta = -0.009$), reflecting a genuine biological limit.

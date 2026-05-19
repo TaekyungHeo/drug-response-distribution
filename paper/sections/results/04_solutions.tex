@@ -1,0 +1,27 @@
+\subsection*{Response profile matching improves within-drug ranking}
+
+MoA-stratified training requires knowing the drug class in advance. We next ask whether pilot IC$_{50}$ observations of the test drug, which require no class information, can close the gap independently.
+
+Given $K$ IC$_{50}$ observations for a new drug, response profile matching identifies training drugs with similar response patterns on the observed cells and transfers their sensitivity profiles. At low $K$, too few observations yield unreliable matches and the blended estimator defaults to the cell-mean prior. Above approximately 20 observations, correlation estimates stabilize and matching adds genuine value, reaching per-drug $r = \KFiftyR$ at $K = 50$ (Fig.~\ref{fig:kshot}). A permuted-drug control confirmed that incorrect pairing actively degrades performance, falling below the cell-mean prior.
+
+MoA-stratified training and response matching trade different resources. Within-MoA training requires the drug class label and a same-class training set, whereas response matching requires only pilot observations of the test drug itself. For EGFR, combining the two at $K = 20$ matched within-MoA training alone. For ERK MAPK, response matching alone at $K = 50$ exceeded within-MoA training without requiring class information. Direct observations of the test drug encode its specific response profile more precisely than proxy training on related drugs, and the advantage grows with the number of pilot observations.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig5_response_matching.pdf}
+\caption{\textbf{Pilot profiling consistently improves within-drug cell ranking above $K = 10$ observations.}
+Per-drug $r$ vs.\ $K$ pilot observations on GDSC2. The cell-mean prior ($K = 0$, dashed) achieves $r = \CellMeanR$ without any drug-specific information. Blended matching exceeds this at $K \geq 20$ and reaches $r = \KFiftyR$ at $K = 50$, against a replicate-pair ceiling of $\MeasurementCeiling$. A permuted $K = 50$ control (cross) confirms the gain requires correct cell--drug pairing, not response-scale alignment.}
+\label{fig:kshot}
+\end{figure}
+
+Response matching generalizes across independent datasets (Fig.~\ref{fig:kcurve}). On CTRPv2, 812 Broad cell lines absent from GDSC2 training identify informative matches through shared omics features. On patient-derived BeatAML\cite{bottomly2022integrative}, per-drug $r$ rises from $\BeatAmlKZeroR$ to $\BeatAmlKFiftyR$ at $K = 50$, confirming transfer to \textit{ex vivo} patient samples. PRISM's $K$-curve collapses because its pharmacologically diverse repurposing library lacks functional analogs among GDSC2's targeted/cytotoxic training drugs, defining the practical boundary of the approach (Fig.~\ref{fig:kcurve}c).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{fig6_generalization.pdf}
+\caption{\textbf{Response matching generalizes across independent cell lines and patient-derived samples but requires functional drug analogs in the training set.}
+\textbf{a}, CTRPv2 (out-of-distribution cells). Per-drug $r$ rises by $\CtrpvTwoKShotLift$ at $K = 50$ using 812 Broad cell lines absent from GDSC2 training.
+\textbf{b}, BeatAML (patient-derived). Per-drug $r$ rises from $\BeatAmlKZeroR$ to $\BeatAmlKFiftyR$ at $K = 50$ across 520 AML patients.
+\textbf{c}, PRISM (scope failure). The $K$-curve collapses at $K \geq 3$ because PRISM's repurposing library lacks functional analogs among GDSC2's training drugs. Transient dip at $K = 3$--$10$ in panels a and b reflects unreliable estimates from too few observations. Cell-mean prior (dashed line) is the $K = 0$ reference in each panel.}
+\label{fig:kcurve}
+\end{figure}

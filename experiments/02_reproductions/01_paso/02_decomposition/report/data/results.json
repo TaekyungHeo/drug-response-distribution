@@ -1,0 +1,15 @@
+{
+  "folds": [
+    {
+      "best_test_r": 0.426821231842041,
+      "best_test_epoch": 1,
+      "best_val_test_r": 0.40661197900772095,
+      "best_val_epoch": 2,
+      "best_val_r": 0.9066224098205566
+    }
+  ],
+  "paso_style_mean": 0.426821231842041,
+  "paso_style_std": 0.0,
+  "our_style_mean": 0.40661197900772095,
+  "our_style_std": 0.0
+}

@@ -1,0 +1,17 @@
+{
+  "fold": 2,
+  "results": {
+    "moa_permuted": [
+      {
+        "fold": 2,
+        "condition": "moa_permuted",
+        "best_epoch": 47,
+        "best_val_r": 0.6222759794635844,
+        "test_per_drug_r": 0.6433342109742474,
+        "n_train": 114527,
+        "n_val": 11388,
+        "n_test": 15089
+      }
+    ]
+  }
+}

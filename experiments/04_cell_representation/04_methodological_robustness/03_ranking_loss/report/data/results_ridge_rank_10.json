@@ -1,0 +1,72 @@
+{
+  "condition": "ridge_rank_10",
+  "summary": {
+    "ridge_rank_10": {
+      "per_drug_r_mean": 0.6479005345444613,
+      "per_drug_r_std": 0.023774945947253098,
+      "delta": null
+    }
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "ridge_rank_10": {
+        "per_drug_r": 0.60444506683335
+      }
+    },
+    {
+      "fold": 1,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6136996275624255
+      }
+    },
+    {
+      "fold": 2,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6520279607304975
+      }
+    },
+    {
+      "fold": 3,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6436973178585451
+      }
+    },
+    {
+      "fold": 4,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6649045582678564
+      }
+    },
+    {
+      "fold": 5,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6507635129843529
+      }
+    },
+    {
+      "fold": 6,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6300972149146006
+      }
+    },
+    {
+      "fold": 7,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6688474874772663
+      }
+    },
+    {
+      "fold": 8,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6730923417126482
+      }
+    },
+    {
+      "fold": 9,
+      "ridge_rank_10": {
+        "per_drug_r": 0.6774302571030717
+      }
+    }
+  ]
+}

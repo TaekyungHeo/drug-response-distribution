@@ -1,0 +1,47 @@
+# 02 — Within-MoA biological ceiling
+
+## Research question
+
+What is the within-MoA biological ceiling for per-drug r? Do drugs sharing a
+MoA class have correlated response profiles across cell lines, and by how much
+does this exceed the random (cross-MoA) baseline?
+
+## Background
+
+Within-MoA training can only improve per-drug r if drugs in the same class have
+correlated response profiles. If two drugs share a mechanism but their cell-line
+rankings are uncorrelated, no training distribution change can help — the
+biological signal is not there. This experiment establishes the theoretical
+ceiling per MoA class before running any training interventions: classes above
+the random baseline are candidates for improvement; classes at or below it are
+not.
+
+## Experimental design
+
+- **Metric**: pairwise Pearson r between response profiles (IC₅₀ across shared cell lines) for drug pairs within each MoA class
+- **Random baseline**: pairwise r for random drug pairs regardless of MoA ({{ results.random_baseline.n_pairs }} pairs)
+- **Inclusion criterion**: MoA groups with ≥3 drugs and ≥1 valid pair
+
+## Results
+
+**Random baseline**: mean r = {{ results.random_baseline.mean_r | fmt }}
+(std = {{ results.random_baseline.std_r | fmt }}, n = {{ results.random_baseline.n_pairs }} pairs)
+
+### Within-MoA concordance (sorted by mean r descending)
+
+| MoA | mean r | std r | min r | max r | n_drugs | n_pairs |
+|-----|:------:|:-----:|:-----:|:-----:|:-------:|:-------:|
+{% for m in results.per_moa | sort(attribute='mean_r', reverse=true) -%}
+| {{ m.moa }} | {{ m.mean_r | fmt }} | {{ m.std_r | fmt }} | {{ m.min_r | fmt }} | {{ m.max_r | fmt }} | {{ m.n_drugs }} | {{ m.n_pairs }} |
+{% endfor %}
+
+## Interpretation
+
+{% set above = results.per_moa | selectattr('mean_r', 'gt', results.random_baseline.mean_r) | list | length -%}
+{% set total = results.per_moa | length -%}
+**{{ above }}/{{ total }}** MoA groups have mean r above the random baseline
+({{ results.random_baseline.mean_r | fmt }}). Classes substantially above the random
+baseline have biological signal that MoA-stratified training can exploit.
+Classes at or below random gain nothing from within-MoA training — the ceiling
+is not training-distribution-limited but biologically limited.
+

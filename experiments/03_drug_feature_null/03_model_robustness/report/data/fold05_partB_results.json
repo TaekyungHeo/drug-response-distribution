@@ -1,0 +1,12 @@
+{
+  "fold": 5,
+  "results": {
+    "fold": 5,
+    "best_epoch": 37,
+    "best_val_r": 0.5962158732594005,
+    "test_per_drug_r": 0.6179850471375916,
+    "n_train": 115845,
+    "n_val": 12140,
+    "n_test": 13019
+  }
+}

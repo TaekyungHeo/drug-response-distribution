@@ -1,0 +1,97 @@
+# 01 — Oracle Bounds
+
+## Research question
+
+What are the theoretical ceilings for drug feature contributions? Before testing whether
+any drug representation helps, we need to know the maximum signal it could possibly recover.
+
+## Background
+
+The drug feature null series tests whether representations like Morgan fingerprints improve
+within-drug cell-line ranking (per-drug r) in the drug-blind setting. But a null result
+without a ceiling is uninterpretable: if the maximum achievable gain is also near zero, the
+null is unsurprising and uninformative. This experiment establishes two bounds that give
+meaning to the deltas reported across experiments 02–07.
+
+The first bound — the drug-mean oracle — measures the upper limit for global r, the
+metric inflated by between-drug potency differences. It shows how much of the commonly
+reported global r is explained by knowing each drug's mean effect, without any cell-level
+learning. The second bound — structural-similarity concordance — measures the maximum
+per-drug r achievable by the drug-similarity transfer mechanism: copying a test drug's
+response profile from the most structurally similar training drug. This upper-bounds what
+drug features can contribute via the similarity-transfer pathway specifically.
+
+## Experimental design
+
+**Drug-mean oracle (global r)**: For each test fold in PASO 10-fold drug-blind CV, every
+(cell, drug) pair in the test set is predicted as the true mean IC₅₀ of that drug
+(computed from test pairs). This oracle uses test labels and is unattainable in practice;
+its purpose is to show how much of global r is explained by between-drug potency alone.
+
+**Tanimoto concordance (per-drug r)**: For each pair of GDSC2 drugs with Tanimoto
+structural similarity ≥ 0.7 (Morgan FP, r=2), the Pearson r between their cell-line
+IC₅₀ profiles is computed. The mean across pairs is the ceiling for similarity-transfer:
+the best a perfect structural-similarity oracle could achieve for within-drug cell ranking.
+This bound does not constrain cell-feature-based prediction (which achieves per-drug r ≈
+0.645 independently); it only bounds the marginal contribution via the similarity pathway.
+
+**Profile concordance (per-drug r)**: For each pair of drugs annotated to the same
+pathway in GDSC2 metadata, Pearson r between their response profiles is computed.
+This provides a MoA-based alternative to the Tanimoto bound.
+
+## Results
+
+| Bound | Metric | Value | Interpretation |
+|-------|--------|:-----:|----------------|
+| Drug-mean oracle | global r | {{ metrics.oracle_global_r_mean | fmt }} ± {{ metrics.oracle_global_r_std | fmt }} | Ceiling for between-drug potency prediction |
+| Tanimoto concordance | per-drug r | {{ metrics.tanimoto_concordance_mean | fmt }} ± {{ metrics.tanimoto_concordance_std | fmt }} (n={{ metrics.tanimoto_concordance_n_pairs }} pairs) | Structural-similarity transfer ceiling |
+{% if metrics.profile_concordance_n_pairs > 0 -%}
+| Profile concordance | per-drug r | {{ metrics.profile_concordance_mean | fmt }} (n={{ metrics.profile_concordance_n_pairs }} pairs) | MoA-based transfer ceiling |
+{% else -%}
+| Profile concordance | per-drug r | — (n=0 pairs) | Insufficient pathway annotation coverage |
+{% endif %}
+
+### Drug-mean oracle
+
+A predictor that outputs each test drug's true mean IC₅₀ achieves global r =
+{{ metrics.oracle_global_r_mean | fmt }} (10-fold mean ± {{ metrics.oracle_global_r_std | fmt }}).
+This bound is unattainable — it uses test labels. Fold-level values range from
+{{ metrics.oracle_global_r_folds | min | fmt }} to {{ metrics.oracle_global_r_folds | max | fmt }},
+reflecting fold-to-fold variation in drug composition. Any model approaching this ceiling is
+predicting drug potency means, not cell-line sensitivity patterns.
+
+### Tanimoto concordance
+
+Among {{ metrics.tanimoto_concordance_n_pairs }} drug pairs with Tanimoto ≥ 0.7, per-drug r
+between response profiles averages {{ metrics.tanimoto_concordance_mean | fmt }} ±
+{{ metrics.tanimoto_concordance_std | fmt }}. This is the ceiling for what structural similarity
+transfer can contribute to within-drug cell ranking. The drug feature delta in
+02_representation_ablation (+0.001) represents approximately 0.1% of this ceiling — drug
+features extract essentially none of the similarity-transfer signal theoretically available.
+
+### Profile concordance
+
+{% if metrics.profile_concordance_n_pairs == 0 -%}
+No qualifying drug pairs were found for MoA-based concordance — the GDSC2 pathway
+annotations do not yield sufficient pairs with ≥ 5 shared cell lines. The Tanimoto
+concordance (n={{ metrics.tanimoto_concordance_n_pairs }} pairs) is the operative ceiling estimate.
+{% else -%}
+{{ metrics.profile_concordance_n_pairs }} drug pairs annotated to the same pathway were
+found. Per-drug r between response profiles averages {{ metrics.profile_concordance_mean | fmt }},
+consistent with the Tanimoto estimate.
+{% endif %}
+
+## Interpretation
+
+The two bounds serve different downstream purposes:
+
+1. **Drug-mean oracle (global r = {{ metrics.oracle_global_r_mean | fmt }})** contextualizes
+   the solutions section (experiments 05–06): improvements in global r from LINCS or MoA
+   signals are closing the gap toward this ceiling, not improving within-drug cell ranking.
+
+2. **Tanimoto concordance (per-drug r = {{ metrics.tanimoto_concordance_mean | fmt }})**
+   contextualizes the null results in experiments 02–04 and 07: the similarity-transfer
+   mechanism exists in the data (ceiling = {{ metrics.tanimoto_concordance_mean | fmt }}),
+   but drug representations extract essentially none of it (delta ≈ +0.001, or ~0.1% of
+   the ceiling). The null is not because the signal is absent — it is because drug
+   features in standard MSE-trained models fail to access it.

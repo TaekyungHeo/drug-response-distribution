@@ -1,0 +1,54 @@
+# 01 — LINCS L1000 signatures as drug features
+
+## Research question
+
+Do LINCS L1000 transcriptional signatures improve global r and/or per-drug r
+beyond the cell-only baseline? And do the two metrics respond differently?
+
+## Background
+
+All prior drug feature experiments (03_drug_feature_null) used structural
+features (Morgan fingerprints, ChemBERTa) that encode what a drug looks like
+chemically. LINCS L1000 is categorically different: it measures the actual
+cellular transcriptional response to each drug — the functional consequence of
+the drug's mechanism. If any drug feature can improve per-drug r, LINCS is the
+strongest candidate. Critically, LINCS is a drug-level constant (the same
+signature regardless of which cell is treated), so it can encode between-drug
+potency differences (global r) but cannot differentiate within-drug cell
+rankings (per-drug r). Testing both metrics dissects which axis LINCS addresses.
+
+## Experimental design
+
+- **Drugs**: {{ results.drug_overlap.n_overlap }} with LINCS coverage out of {{ results.drug_overlap.n_gdsc2 }} PASO drugs
+- **Drug features**: LINCS L1000 consensus signatures, LINCS PCA({{ results.lincs_pca.n_components }}) capturing {{ "%.1f" | format(results.lincs_pca.variance_explained * 100) }}% of variance
+- **Cell features**: RNA PCA(550) + mutation PCA(200)
+- **Model**: Ridge(alpha=1.0), PASO 10-fold drug-blind CV
+- **Control**: random vector drug features (same dimensionality as LINCS PCA)
+- **Evaluation**: all conditions evaluated on the same {{ results.comparison.no_drug.n_drugs }}-drug LINCS-covered subset
+
+## Results
+
+{% set c = results.comparison %}
+| Condition | global r | per-drug r | delta per-drug r |
+|-----------|:--------:|:----------:|:----------------:|
+| no_drug | {{ "%.4f" | format(c.no_drug.global_r) }} | {{ "%.4f" | format(c.no_drug.per_drug_r) }} | — |
+| lincs | {{ "%.4f" | format(c.lincs.global_r) }} | {{ "%.4f" | format(c.lincs.per_drug_r) }} | {{ "%.4f" | format(c.lincs.per_drug_r - c.no_drug.per_drug_r) }} |
+| random_vector | {{ "%.4f" | format(c.random_vector.global_r) }} | {{ "%.4f" | format(c.random_vector.per_drug_r) }} | {{ "%.4f" | format(c.random_vector.per_drug_r - c.no_drug.per_drug_r) }} |
+
+Global r delta (lincs vs no_drug): {{ "%.4f" | format(c.lincs.global_r - c.no_drug.global_r) }}.
+Per-drug r delta: {{ "%.4f" | format(c.lincs.per_drug_r - c.no_drug.per_drug_r) }}.
+Random control per-drug r delta: {{ "%.4f" | format(c.random_vector.per_drug_r - c.no_drug.per_drug_r) }}.
+
+## Interpretation
+
+LINCS signatures are a drug-level constant across cells. In principle, they
+could encode between-drug potency and mechanism — but empirically, global r
+*decreases* by {{ "%.3f" | format(c.lincs.global_r - c.no_drug.global_r) }} on the {{ c.no_drug.n_drugs }}-drug LINCS-covered subset. The most likely
+explanation is that LINCS PCA dimensions introduce noise that disrupts Ridge's
+existing between-drug signal without adding compensating information at this
+sample size. Per-drug r is unchanged ({{ "%+.3f" | format(c.lincs.per_drug_r - c.no_drug.per_drug_r) }}, matching the random vector
+control at {{ "%+.3f" | format(c.random_vector.per_drug_r - c.no_drug.per_drug_r) }}), confirming LINCS cannot inform within-drug cell ranking.
+The dissociation is asymmetric: LINCS helps neither global r nor per-drug r,
+but for different reasons — noise contamination on the global axis, and
+structural inability to differentiate cells on the per-drug axis.
+

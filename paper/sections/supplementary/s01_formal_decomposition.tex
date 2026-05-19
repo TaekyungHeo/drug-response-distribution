@@ -1,0 +1,53 @@
+\subsection*{Supplementary Note 1 | Formal decomposition of global Pearson $r$}
+
+Let $y_{d,c}$ denote the true log IC$_{50}$ for drug $d$ on cell line $c$, and $\hat{y}_{d,c}$ the model prediction.
+Decompose each as a sum of a drug-level mean and a within-drug residual:
+\begin{equation}
+y_{d,c} = \bar{y}_d + \epsilon_{d,c}, \qquad
+\hat{y}_{d,c} = \hat{\bar{y}}_d + \hat{\epsilon}_{d,c}
+\label{eq:decomp}
+\end{equation}
+where $\bar{y}_d = \frac{1}{|C_d|}\sum_c y_{d,c}$.
+
+\textbf{Covariance decomposition.}
+Expanding $\mathrm{Cov}(y,\hat{y})$:
+\begin{equation}
+\mathrm{Cov}(y,\hat{y})
+= \mathrm{Cov}(\bar{y}_d,\hat{\bar{y}}_d)
++ \underbrace{\mathrm{Cov}(\bar{y}_d,\hat{\epsilon}_{d,c}) + \mathrm{Cov}(\epsilon_{d,c},\hat{\bar{y}}_d)}_{\text{cross-terms}}
++ \mathrm{Cov}(\epsilon_{d,c},\hat{\epsilon}_{d,c})
+\end{equation}
+When drug-level means and within-drug residuals are approximately uncorrelated in the model's predictions (the assumption holds when the model cannot predict drug-specific deviations), the cross-terms vanish, giving:
+\begin{equation}
+\mathrm{Cov}(y,\hat{y})
+\approx \underbrace{\mathrm{Cov}(\bar{y}_d,\hat{\bar{y}}_d)}_{\alpha:\,\text{between-drug scale}}
++ \underbrace{\mathrm{Cov}(\epsilon_{d,c},\hat{\epsilon}_{d,c})}_{\beta:\,\text{within-drug ranking}}
+\label{eq:cov_decomp}
+\end{equation}
+
+\textbf{Variance decomposition.}
+$\mathrm{Var}(y) = \sigma^2_{\mathrm{between}} + \sigma^2_{\mathrm{within}}$ where $\sigma^2_{\mathrm{between}} = \mathrm{Var}(\bar{y}_d)$ and $\sigma^2_{\mathrm{within}} = \mathrm{Var}(\epsilon_{d,c})$.
+
+\textbf{Global Pearson $r$ as a weighted combination.}
+Let $\omega_{\mathrm{b}} = \sigma^{(y)}_{\mathrm{between}} \sigma^{(\hat{y})}_{\mathrm{between}} / (\sigma_y \sigma_{\hat{y}})$ and $\omega_{\mathrm{w}} = \sigma^{(y)}_{\mathrm{within}} \sigma^{(\hat{y})}_{\mathrm{within}} / (\sigma_y \sigma_{\hat{y}})$, with $\omega_{\mathrm{b}} + \omega_{\mathrm{w}} \leq 1$.
+Then:
+\begin{equation}
+r_{\mathrm{global}}
+\approx \omega_{\mathrm{b}}\,r_{\mathrm{between}} + \omega_{\mathrm{w}}\,r_{\mathrm{within}}
+\label{eq:global_r}
+\end{equation}
+where $r_{\mathrm{between}} = \mathrm{Cor}(\bar{y}_d,\hat{\bar{y}}_d)$ and $r_{\mathrm{within}} = \mathrm{Cor}(\epsilon_{d,c},\hat{\epsilon}_{d,c})$.
+
+\textbf{Why between-drug variance dominates in GDSC2.}
+Drug means $\bar{y}_d$ in GDSC2 span $[-5.2,\, +10.3]$\,ln\,$\mu$M (range 15.5 units), while within-drug standard deviations average $\sim$1.5\,ln\,$\mu$M.
+Consequently $\sigma^2_{\mathrm{between}} \gg \sigma^2_{\mathrm{within}}$, so $\omega_{\mathrm{b}} \gg \omega_{\mathrm{w}}$ and global $r$ is dominated by scale prediction accuracy.
+A model that predicts only drug means (DummyDrugAvg) achieves $r_{\mathrm{between}} = 1$ and $r_{\mathrm{within}} = 0$, yet obtains high global $r$, the trivial predictor phenomenon\cite{specgame2025}
+
+\textbf{Per-drug $r$ as an estimator of $r_{\mathrm{within}}$.}
+The per-drug $r$ defined in the main text (Pearson $r$ within each test drug, averaged across drugs) is a direct estimator of $r_{\mathrm{within}}$: by computing correlation within each drug independently, between-drug mean differences cancel.
+
+\textbf{Empirical consistency.}
+Equation~\ref{eq:global_r} predicts that a method improving $r_{\mathrm{between}}$ should increase global $r$ without changing per-drug $r$. A method improving $r_{\mathrm{within}}$ should increase per-drug $r$ with a smaller effect on global $r$, because $\omega_{\mathrm{w}} \ll \omega_{\mathrm{b}}$.
+LINCS signatures change global $r$ by $\LincsGlobalRDelta$ on the 104-drug LINCS-covered subset while per-drug $r$ changes by $\LincsPerDrugDelta$ (null), isolating the effect to between-drug scale prediction (here, a degradation rather than an improvement).
+Response matching at $K = 50$ increases per-drug $r$ by $\KFiftyLift$ over the cell-mean prior without a corresponding global $r$ increase, consistent with improving $r_{\mathrm{within}}$ only.
+These empirical results directly validate the decomposition.

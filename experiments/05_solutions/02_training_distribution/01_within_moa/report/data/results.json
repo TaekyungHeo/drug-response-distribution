@@ -1,0 +1,2009 @@
+{
+  "overall": {
+    "all_drug_mean_r": 0.643958,
+    "within_moa_mean_r": 0.664422,
+    "n_moa_classes": 21,
+    "n_drugs": 226
+  },
+  "per_moa": [
+    {
+      "moa": "EGFR signaling",
+      "all_drug_mean_r": 0.424841,
+      "within_moa_mean_r": 0.799365,
+      "delta": 0.374525,
+      "n_drugs": 7,
+      "drugs": [
+        "AZD3759",
+        "Afatinib",
+        "Erlotinib",
+        "Gefitinib",
+        "Lapatinib",
+        "Osimertinib",
+        "Sapitinib"
+      ]
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "all_drug_mean_r": 0.426911,
+      "within_moa_mean_r": 0.722928,
+      "delta": 0.296017,
+      "n_drugs": 11,
+      "drugs": [
+        "Dabrafenib",
+        "KRAS (G12C) Inhibitor-12",
+        "PD0325901",
+        "PLX-4720",
+        "Refametinib",
+        "SB590885",
+        "SCH772984",
+        "Selumetinib",
+        "Trametinib",
+        "Ulixertinib",
+        "VX-11e"
+      ]
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_mean_r": 0.610301,
+      "within_moa_mean_r": 0.701761,
+      "delta": 0.091459,
+      "n_drugs": 23,
+      "drugs": [
+        "AMG-319",
+        "AT13148",
+        "AZD2014",
+        "AZD6482",
+        "AZD8055",
+        "AZD8186",
+        "Afuresertib",
+        "Alpelisib",
+        "Buparlisib",
+        "CZC24832",
+        "Dactolisib",
+        "GNE-317",
+        "GSK2110183B",
+        "Ipatasertib",
+        "LJI308",
+        "MK-2206",
+        "OSI-027",
+        "PF-4708671",
+        "Pictilisib",
+        "Rapamycin",
+        "Taselisib",
+        "Temsirolimus",
+        "Uprosertib"
+      ]
+    },
+    {
+      "moa": "Chromatin other",
+      "all_drug_mean_r": 0.713807,
+      "within_moa_mean_r": 0.798039,
+      "delta": 0.084232,
+      "n_drugs": 10,
+      "drugs": [
+        "AZD5153",
+        "Bromosporine",
+        "GSK2801",
+        "I-BET-762",
+        "I-BRD9",
+        "JQ1",
+        "OTX015",
+        "PFI-1",
+        "PFI3",
+        "RVX-208"
+      ]
+    },
+    {
+      "moa": "IGF1R signaling",
+      "all_drug_mean_r": 0.608212,
+      "within_moa_mean_r": 0.664865,
+      "delta": 0.056653,
+      "n_drugs": 5,
+      "drugs": [
+        "BMS-536924",
+        "BMS-754807",
+        "GSK1904529A",
+        "Linsitinib",
+        "NVP-ADW742"
+      ]
+    },
+    {
+      "moa": "DNA replication",
+      "all_drug_mean_r": 0.693168,
+      "within_moa_mean_r": 0.735438,
+      "delta": 0.042271,
+      "n_drugs": 20,
+      "drugs": [
+        "Bleomycin",
+        "Bleomycin (50 uM)",
+        "Camptothecin",
+        "Cisplatin",
+        "Cyclophosphamide",
+        "Epirubicin",
+        "Fludarabine",
+        "Gemcitabine",
+        "Irinotecan",
+        "LMP744",
+        "Leflunomide",
+        "Methotrexate",
+        "Mitoxantrone",
+        "Nelarabine",
+        "Oxaliplatin",
+        "Pyridostatin",
+        "SN-38",
+        "Temozolomide",
+        "Teniposide",
+        "Topotecan"
+      ]
+    },
+    {
+      "moa": "RTK signaling",
+      "all_drug_mean_r": 0.605351,
+      "within_moa_mean_r": 0.640006,
+      "delta": 0.034655,
+      "n_drugs": 12,
+      "drugs": [
+        "AZD1332",
+        "AZD4547",
+        "Axitinib",
+        "Cediranib",
+        "Crizotinib",
+        "Foretinib",
+        "GW441756",
+        "Motesanib",
+        "PD173074",
+        "SB505124",
+        "Savolitinib",
+        "Staurosporine"
+      ]
+    },
+    {
+      "moa": "Mitosis",
+      "all_drug_mean_r": 0.771515,
+      "within_moa_mean_r": 0.788161,
+      "delta": 0.016646,
+      "n_drugs": 7,
+      "drugs": [
+        "Alisertib",
+        "Docetaxel",
+        "Paclitaxel",
+        "Tozasertib",
+        "Vinblastine",
+        "Vinorelbine",
+        "ZM447439"
+      ]
+    },
+    {
+      "moa": "Hormone-related",
+      "all_drug_mean_r": 0.670571,
+      "within_moa_mean_r": 0.686555,
+      "delta": 0.015985,
+      "n_drugs": 4,
+      "drugs": [
+        "Bicalutamide",
+        "Fulvestrant",
+        "GDC0810",
+        "Tamoxifen"
+      ]
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "all_drug_mean_r": 0.730962,
+      "within_moa_mean_r": 0.730707,
+      "delta": -0.000255,
+      "n_drugs": 10,
+      "drugs": [
+        "A-366",
+        "CPI-637",
+        "EPZ004777",
+        "EPZ5676",
+        "GSK-LSD1",
+        "GSK343",
+        "GSK591",
+        "SGC0946",
+        "UNC0379",
+        "UNC0638"
+      ]
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "all_drug_mean_r": 0.524102,
+      "within_moa_mean_r": 0.515061,
+      "delta": -0.009041,
+      "n_drugs": 13,
+      "drugs": [
+        "ABT737",
+        "AZD5582",
+        "AZD5991",
+        "LCL161",
+        "MIM1",
+        "Navitoclax",
+        "Obatoclax Mesylate",
+        "Sabutoclax",
+        "Sepantronium bromide",
+        "TW 37",
+        "UMI-77",
+        "Venetoclax",
+        "WEHI-539"
+      ]
+    },
+    {
+      "moa": "Genome integrity",
+      "all_drug_mean_r": 0.741948,
+      "within_moa_mean_r": 0.730075,
+      "delta": -0.011873,
+      "n_drugs": 13,
+      "drugs": [
+        "AZD6738",
+        "BIBR-1532",
+        "KU-55933",
+        "Mirin",
+        "NU7441",
+        "Niraparib",
+        "Olaparib",
+        "Rucaparib",
+        "Talazoparib",
+        "Telomerase Inhibitor IX",
+        "VE-822",
+        "VE821",
+        "Veliparib"
+      ]
+    },
+    {
+      "moa": "Cell cycle",
+      "all_drug_mean_r": 0.766894,
+      "within_moa_mean_r": 0.74791,
+      "delta": -0.018985,
+      "n_drugs": 11,
+      "drugs": [
+        "AZD5438",
+        "AZD7762",
+        "BI-2536",
+        "CCT007093",
+        "Dinaciclib",
+        "MK-1775",
+        "MK-8776",
+        "Palbociclib",
+        "RO-3306",
+        "Ribociclib",
+        "Wee1 Inhibitor"
+      ]
+    },
+    {
+      "moa": "WNT signaling",
+      "all_drug_mean_r": 0.615386,
+      "within_moa_mean_r": 0.592459,
+      "delta": -0.022928,
+      "n_drugs": 9,
+      "drugs": [
+        "AZ6102",
+        "CHIR-99021",
+        "IWP-2",
+        "LGK974",
+        "MN-64",
+        "SB216763",
+        "WIKI4",
+        "Wnt-C59",
+        "XAV939"
+      ]
+    },
+    {
+      "moa": "Other",
+      "all_drug_mean_r": 0.742602,
+      "within_moa_mean_r": 0.719586,
+      "delta": -0.023016,
+      "n_drugs": 19,
+      "drugs": [
+        "5-Fluorouracil",
+        "5-azacytidine",
+        "Avagacestat",
+        "BMS-345541",
+        "Cytarabine",
+        "Dacarbazine",
+        "Dactinomycin",
+        "GSK2830371",
+        "ICL-SIRT078",
+        "IOX2",
+        "LY2109761",
+        "Pevonedistat",
+        "Picolinici-acid",
+        "Piperlongumine",
+        "Tretinoin",
+        "Vismodegib",
+        "YK-4-279",
+        "Zoledronate",
+        "glutathione"
+      ]
+    },
+    {
+      "moa": "Unclassified",
+      "all_drug_mean_r": 0.561797,
+      "within_moa_mean_r": 0.537413,
+      "delta": -0.024385,
+      "n_drugs": 11,
+      "drugs": [
+        "Acetalax",
+        "Dihydrorotenone",
+        "Elephantin",
+        "Gallibiscoquinazole",
+        "L-Oxonoreleagnine",
+        "Mycophenolic acid",
+        "POMHEX",
+        "Podophyllotoxin bromide",
+        "Remodelin",
+        "Schweinfurthin A",
+        "Sinularin"
+      ]
+    },
+    {
+      "moa": "Other, kinases",
+      "all_drug_mean_r": 0.647605,
+      "within_moa_mean_r": 0.611232,
+      "delta": -0.036373,
+      "n_drugs": 15,
+      "drugs": [
+        "AZ960",
+        "AZD1208",
+        "AZD5363",
+        "BX795",
+        "Bosutinib",
+        "Dasatinib",
+        "Entospletinib",
+        "GSK2578215A",
+        "Ibrutinib",
+        "Lestaurtinib",
+        "PRT062607",
+        "Ruxolitinib",
+        "SL0101",
+        "Sorafenib",
+        "WZ4003"
+      ]
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "all_drug_mean_r": 0.646835,
+      "within_moa_mean_r": 0.58157,
+      "delta": -0.065265,
+      "n_drugs": 9,
+      "drugs": [
+        "Bortezomib",
+        "CCT-018159",
+        "Elesclomol",
+        "Lenalidomide",
+        "Luminespib",
+        "MG-132",
+        "ML323",
+        "P22077",
+        "Tanespimycin"
+      ]
+    },
+    {
+      "moa": "p53 pathway",
+      "all_drug_mean_r": 0.716724,
+      "within_moa_mean_r": 0.649101,
+      "delta": -0.067623,
+      "n_drugs": 4,
+      "drugs": [
+        "MIRA-1",
+        "Nutlin-3a (-)",
+        "PRIMA-1MET",
+        "Serdemetan"
+      ]
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "all_drug_mean_r": 0.635578,
+      "within_moa_mean_r": 0.520352,
+      "delta": -0.115226,
+      "n_drugs": 7,
+      "drugs": [
+        "AGK2",
+        "Entinostat",
+        "OF-1",
+        "PCI-34051",
+        "Romidepsin",
+        "SGC-CBP30",
+        "Vorinostat"
+      ]
+    },
+    {
+      "moa": "Metabolism",
+      "all_drug_mean_r": 0.592456,
+      "within_moa_mean_r": 0.206003,
+      "delta": -0.386453,
+      "n_drugs": 6,
+      "drugs": [
+        "AGI-5198",
+        "AGI-6780",
+        "Daporinad",
+        "GSK2606414",
+        "N-acetyl cysteine",
+        "alpha-lipoic acid"
+      ]
+    }
+  ],
+  "per_drug": [
+    {
+      "drug": "5-Fluorouracil",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.75549,
+      "within_moa_r": 0.696618
+    },
+    {
+      "drug": "5-azacytidine",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.738373,
+      "within_moa_r": 0.724461
+    },
+    {
+      "drug": "A-366",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.739595,
+      "within_moa_r": 0.755047
+    },
+    {
+      "drug": "ABT737",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.468109,
+      "within_moa_r": 0.689256
+    },
+    {
+      "drug": "AGI-5198",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.671027,
+      "within_moa_r": 0.264675
+    },
+    {
+      "drug": "AGI-6780",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.646991,
+      "within_moa_r": 0.217504
+    },
+    {
+      "drug": "AGK2",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.632073,
+      "within_moa_r": 0.451253
+    },
+    {
+      "drug": "AMG-319",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.73863,
+      "within_moa_r": 0.610782
+    },
+    {
+      "drug": "AT13148",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.658903,
+      "within_moa_r": 0.63
+    },
+    {
+      "drug": "AZ6102",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.619774,
+      "within_moa_r": 0.520735
+    },
+    {
+      "drug": "AZ960",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.7232,
+      "within_moa_r": 0.663837
+    },
+    {
+      "drug": "AZD1208",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.772649,
+      "within_moa_r": 0.709371
+    },
+    {
+      "drug": "AZD1332",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.518967,
+      "within_moa_r": 0.592323
+    },
+    {
+      "drug": "AZD2014",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.547516,
+      "within_moa_r": 0.689555
+    },
+    {
+      "drug": "AZD3759",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.461833,
+      "within_moa_r": 0.765326
+    },
+    {
+      "drug": "AZD4547",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.546708,
+      "within_moa_r": 0.702915
+    },
+    {
+      "drug": "AZD5153",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.669344,
+      "within_moa_r": 0.833919
+    },
+    {
+      "drug": "AZD5363",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.621064,
+      "within_moa_r": 0.532987
+    },
+    {
+      "drug": "AZD5438",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.818604,
+      "within_moa_r": 0.776362
+    },
+    {
+      "drug": "AZD5582",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.48573,
+      "within_moa_r": 0.418641
+    },
+    {
+      "drug": "AZD5991",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.663864,
+      "within_moa_r": 0.578688
+    },
+    {
+      "drug": "AZD6482",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.624164,
+      "within_moa_r": 0.806589
+    },
+    {
+      "drug": "AZD6738",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.741876,
+      "within_moa_r": 0.753929
+    },
+    {
+      "drug": "AZD7762",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.731505,
+      "within_moa_r": 0.733805
+    },
+    {
+      "drug": "AZD8055",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.560392,
+      "within_moa_r": 0.733118
+    },
+    {
+      "drug": "AZD8186",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.458314,
+      "within_moa_r": 0.677198
+    },
+    {
+      "drug": "Acetalax",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.151316,
+      "within_moa_r": 0.205108
+    },
+    {
+      "drug": "Afatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.440727,
+      "within_moa_r": 0.827867
+    },
+    {
+      "drug": "Afuresertib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.610426,
+      "within_moa_r": 0.800185
+    },
+    {
+      "drug": "Alisertib",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.704043,
+      "within_moa_r": 0.727102
+    },
+    {
+      "drug": "Alpelisib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.593119,
+      "within_moa_r": 0.68459
+    },
+    {
+      "drug": "Avagacestat",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.712179,
+      "within_moa_r": 0.683902
+    },
+    {
+      "drug": "Axitinib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.744179,
+      "within_moa_r": 0.75821
+    },
+    {
+      "drug": "BI-2536",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.77325,
+      "within_moa_r": 0.779066
+    },
+    {
+      "drug": "BIBR-1532",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.670301,
+      "within_moa_r": 0.682745
+    },
+    {
+      "drug": "BMS-345541",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.779754,
+      "within_moa_r": 0.762226
+    },
+    {
+      "drug": "BMS-536924",
+      "drug_id": null,
+      "moa": "IGF1R signaling",
+      "all_drug_r": 0.506588,
+      "within_moa_r": 0.65757
+    },
+    {
+      "drug": "BMS-754807",
+      "drug_id": null,
+      "moa": "IGF1R signaling",
+      "all_drug_r": 0.632817,
+      "within_moa_r": 0.702576
+    },
+    {
+      "drug": "BX795",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.740561,
+      "within_moa_r": 0.711277
+    },
+    {
+      "drug": "Bicalutamide",
+      "drug_id": null,
+      "moa": "Hormone-related",
+      "all_drug_r": 0.644619,
+      "within_moa_r": 0.730405
+    },
+    {
+      "drug": "Bleomycin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.622089,
+      "within_moa_r": 0.670161
+    },
+    {
+      "drug": "Bleomycin (50 uM)",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.623552,
+      "within_moa_r": 0.689103
+    },
+    {
+      "drug": "Bortezomib",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.620855,
+      "within_moa_r": 0.564414
+    },
+    {
+      "drug": "Bosutinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.672358,
+      "within_moa_r": 0.716538
+    },
+    {
+      "drug": "Bromosporine",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.695687,
+      "within_moa_r": 0.883056
+    },
+    {
+      "drug": "Buparlisib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.746513,
+      "within_moa_r": 0.754985
+    },
+    {
+      "drug": "CCT-018159",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.739397,
+      "within_moa_r": 0.775628
+    },
+    {
+      "drug": "CCT007093",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.743764,
+      "within_moa_r": 0.672624
+    },
+    {
+      "drug": "CHIR-99021",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.672532,
+      "within_moa_r": 0.554491
+    },
+    {
+      "drug": "CPI-637",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.723959,
+      "within_moa_r": 0.714445
+    },
+    {
+      "drug": "CZC24832",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.773551,
+      "within_moa_r": 0.615882
+    },
+    {
+      "drug": "Camptothecin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.726788,
+      "within_moa_r": 0.886793
+    },
+    {
+      "drug": "Cediranib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.546642,
+      "within_moa_r": 0.644791
+    },
+    {
+      "drug": "Cisplatin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.792631,
+      "within_moa_r": 0.855129
+    },
+    {
+      "drug": "Crizotinib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.778098,
+      "within_moa_r": 0.721444
+    },
+    {
+      "drug": "Cyclophosphamide",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.764535,
+      "within_moa_r": 0.665461
+    },
+    {
+      "drug": "Cytarabine",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.759456,
+      "within_moa_r": 0.742296
+    },
+    {
+      "drug": "Dabrafenib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.498105,
+      "within_moa_r": 0.647002
+    },
+    {
+      "drug": "Dacarbazine",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.682252,
+      "within_moa_r": 0.666024
+    },
+    {
+      "drug": "Dactinomycin",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.821194,
+      "within_moa_r": 0.803416
+    },
+    {
+      "drug": "Dactolisib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.664981,
+      "within_moa_r": 0.762115
+    },
+    {
+      "drug": "Daporinad",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.331168,
+      "within_moa_r": 0.027041
+    },
+    {
+      "drug": "Dasatinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.2924,
+      "within_moa_r": 0.371354
+    },
+    {
+      "drug": "Dihydrorotenone",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.176936,
+      "within_moa_r": 0.355741
+    },
+    {
+      "drug": "Dinaciclib",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.742598,
+      "within_moa_r": 0.686495
+    },
+    {
+      "drug": "Docetaxel",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.775022,
+      "within_moa_r": 0.80889
+    },
+    {
+      "drug": "EPZ004777",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.787707,
+      "within_moa_r": 0.806331
+    },
+    {
+      "drug": "EPZ5676",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.793764,
+      "within_moa_r": 0.821557
+    },
+    {
+      "drug": "Elephantin",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.721857,
+      "within_moa_r": 0.665731
+    },
+    {
+      "drug": "Elesclomol",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.698105,
+      "within_moa_r": 0.668254
+    },
+    {
+      "drug": "Entinostat",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.686299,
+      "within_moa_r": 0.682546
+    },
+    {
+      "drug": "Entospletinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.608049,
+      "within_moa_r": 0.6498
+    },
+    {
+      "drug": "Epirubicin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.776778,
+      "within_moa_r": 0.831157
+    },
+    {
+      "drug": "Erlotinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.440506,
+      "within_moa_r": 0.737942
+    },
+    {
+      "drug": "Fludarabine",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.61431,
+      "within_moa_r": 0.583749
+    },
+    {
+      "drug": "Foretinib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.650791,
+      "within_moa_r": 0.741868
+    },
+    {
+      "drug": "Fulvestrant",
+      "drug_id": null,
+      "moa": "Hormone-related",
+      "all_drug_r": 0.762572,
+      "within_moa_r": 0.61981
+    },
+    {
+      "drug": "GDC0810",
+      "drug_id": null,
+      "moa": "Hormone-related",
+      "all_drug_r": 0.677579,
+      "within_moa_r": 0.744075
+    },
+    {
+      "drug": "GNE-317",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.538077,
+      "within_moa_r": 0.742662
+    },
+    {
+      "drug": "GSK-LSD1",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.649243,
+      "within_moa_r": 0.644783
+    },
+    {
+      "drug": "GSK1904529A",
+      "drug_id": null,
+      "moa": "IGF1R signaling",
+      "all_drug_r": 0.669794,
+      "within_moa_r": 0.448355
+    },
+    {
+      "drug": "GSK2110183B",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.622587,
+      "within_moa_r": 0.75045
+    },
+    {
+      "drug": "GSK2578215A",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.701585,
+      "within_moa_r": 0.603699
+    },
+    {
+      "drug": "GSK2606414",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.698226,
+      "within_moa_r": 0.138489
+    },
+    {
+      "drug": "GSK2801",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.712941,
+      "within_moa_r": 0.628243
+    },
+    {
+      "drug": "GSK2830371",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.791859,
+      "within_moa_r": 0.783449
+    },
+    {
+      "drug": "GSK343",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.792037,
+      "within_moa_r": 0.793761
+    },
+    {
+      "drug": "GSK591",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.657217,
+      "within_moa_r": 0.65499
+    },
+    {
+      "drug": "GW441756",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.624438,
+      "within_moa_r": 0.637317
+    },
+    {
+      "drug": "Gallibiscoquinazole",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.654974,
+      "within_moa_r": 0.697033
+    },
+    {
+      "drug": "Gefitinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.454998,
+      "within_moa_r": 0.834014
+    },
+    {
+      "drug": "Gemcitabine",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.691996,
+      "within_moa_r": 0.833774
+    },
+    {
+      "drug": "I-BET-762",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.716099,
+      "within_moa_r": 0.905883
+    },
+    {
+      "drug": "I-BRD9",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.783101,
+      "within_moa_r": 0.746678
+    },
+    {
+      "drug": "ICL-SIRT078",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.762644,
+      "within_moa_r": 0.730508
+    },
+    {
+      "drug": "IOX2",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.729716,
+      "within_moa_r": 0.740815
+    },
+    {
+      "drug": "IWP-2",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.711034,
+      "within_moa_r": 0.715774
+    },
+    {
+      "drug": "Ibrutinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.496994,
+      "within_moa_r": 0.525929
+    },
+    {
+      "drug": "Ipatasertib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.595408,
+      "within_moa_r": 0.810796
+    },
+    {
+      "drug": "Irinotecan",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.757607,
+      "within_moa_r": 0.86853
+    },
+    {
+      "drug": "JQ1",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.701458,
+      "within_moa_r": 0.832401
+    },
+    {
+      "drug": "KRAS (G12C) Inhibitor-12",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.73037,
+      "within_moa_r": 0.283472
+    },
+    {
+      "drug": "KU-55933",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.727313,
+      "within_moa_r": 0.682604
+    },
+    {
+      "drug": "L-Oxonoreleagnine",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.609897,
+      "within_moa_r": 0.618566
+    },
+    {
+      "drug": "LCL161",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.576947,
+      "within_moa_r": 0.508036
+    },
+    {
+      "drug": "LGK974",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.574165,
+      "within_moa_r": 0.620749
+    },
+    {
+      "drug": "LJI308",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.724081,
+      "within_moa_r": 0.509789
+    },
+    {
+      "drug": "LMP744",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.726985,
+      "within_moa_r": 0.85295
+    },
+    {
+      "drug": "LY2109761",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.655542,
+      "within_moa_r": 0.712668
+    },
+    {
+      "drug": "Lapatinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.515057,
+      "within_moa_r": 0.780668
+    },
+    {
+      "drug": "Leflunomide",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.673066,
+      "within_moa_r": 0.608537
+    },
+    {
+      "drug": "Lenalidomide",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.772499,
+      "within_moa_r": 0.624295
+    },
+    {
+      "drug": "Lestaurtinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.762611,
+      "within_moa_r": 0.676385
+    },
+    {
+      "drug": "Linsitinib",
+      "drug_id": null,
+      "moa": "IGF1R signaling",
+      "all_drug_r": 0.573098,
+      "within_moa_r": 0.773538
+    },
+    {
+      "drug": "Luminespib",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.7065,
+      "within_moa_r": 0.675708
+    },
+    {
+      "drug": "MG-132",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.519852,
+      "within_moa_r": 0.443673
+    },
+    {
+      "drug": "MIM1",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.653218,
+      "within_moa_r": 0.584517
+    },
+    {
+      "drug": "MIRA-1",
+      "drug_id": null,
+      "moa": "p53 pathway",
+      "all_drug_r": 0.794935,
+      "within_moa_r": 0.732873
+    },
+    {
+      "drug": "MK-1775",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.761067,
+      "within_moa_r": 0.799436
+    },
+    {
+      "drug": "MK-2206",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.695531,
+      "within_moa_r": 0.856596
+    },
+    {
+      "drug": "MK-8776",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.699983,
+      "within_moa_r": 0.706355
+    },
+    {
+      "drug": "ML323",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.628093,
+      "within_moa_r": 0.474475
+    },
+    {
+      "drug": "MN-64",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.615081,
+      "within_moa_r": 0.618788
+    },
+    {
+      "drug": "Methotrexate",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.305331,
+      "within_moa_r": 0.278129
+    },
+    {
+      "drug": "Mirin",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.770434,
+      "within_moa_r": 0.71649
+    },
+    {
+      "drug": "Mitoxantrone",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.725874,
+      "within_moa_r": 0.83221
+    },
+    {
+      "drug": "Motesanib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.760359,
+      "within_moa_r": 0.742329
+    },
+    {
+      "drug": "Mycophenolic acid",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.699604,
+      "within_moa_r": 0.463604
+    },
+    {
+      "drug": "N-acetyl cysteine",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.511102,
+      "within_moa_r": 0.256931
+    },
+    {
+      "drug": "NU7441",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.747548,
+      "within_moa_r": 0.666883
+    },
+    {
+      "drug": "NVP-ADW742",
+      "drug_id": null,
+      "moa": "IGF1R signaling",
+      "all_drug_r": 0.658764,
+      "within_moa_r": 0.742285
+    },
+    {
+      "drug": "Navitoclax",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.401809,
+      "within_moa_r": 0.570433
+    },
+    {
+      "drug": "Nelarabine",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.73712,
+      "within_moa_r": 0.662353
+    },
+    {
+      "drug": "Niraparib",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.769392,
+      "within_moa_r": 0.789645
+    },
+    {
+      "drug": "Nutlin-3a (-)",
+      "drug_id": null,
+      "moa": "p53 pathway",
+      "all_drug_r": 0.655798,
+      "within_moa_r": 0.627508
+    },
+    {
+      "drug": "OF-1",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.370656,
+      "within_moa_r": 0.288173
+    },
+    {
+      "drug": "OSI-027",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.414536,
+      "within_moa_r": 0.509395
+    },
+    {
+      "drug": "OTX015",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.672989,
+      "within_moa_r": 0.890855
+    },
+    {
+      "drug": "Obatoclax Mesylate",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.606128,
+      "within_moa_r": 0.444664
+    },
+    {
+      "drug": "Olaparib",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.775407,
+      "within_moa_r": 0.81693
+    },
+    {
+      "drug": "Osimertinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.426421,
+      "within_moa_r": 0.82337
+    },
+    {
+      "drug": "Oxaliplatin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.816585,
+      "within_moa_r": 0.790082
+    },
+    {
+      "drug": "P22077",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.692332,
+      "within_moa_r": 0.56703
+    },
+    {
+      "drug": "PCI-34051",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.753623,
+      "within_moa_r": 0.572695
+    },
+    {
+      "drug": "PD0325901",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.214533,
+      "within_moa_r": 0.868154
+    },
+    {
+      "drug": "PD173074",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.599288,
+      "within_moa_r": 0.692099
+    },
+    {
+      "drug": "PF-4708671",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.601701,
+      "within_moa_r": 0.407114
+    },
+    {
+      "drug": "PFI-1",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.675296,
+      "within_moa_r": 0.773644
+    },
+    {
+      "drug": "PFI3",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.772696,
+      "within_moa_r": 0.655806
+    },
+    {
+      "drug": "PLX-4720",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.548736,
+      "within_moa_r": 0.51096
+    },
+    {
+      "drug": "POMHEX",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.533565,
+      "within_moa_r": 0.454503
+    },
+    {
+      "drug": "PRIMA-1MET",
+      "drug_id": null,
+      "moa": "p53 pathway",
+      "all_drug_r": 0.650888,
+      "within_moa_r": 0.583217
+    },
+    {
+      "drug": "PRT062607",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.721911,
+      "within_moa_r": 0.686987
+    },
+    {
+      "drug": "Paclitaxel",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.776955,
+      "within_moa_r": 0.766161
+    },
+    {
+      "drug": "Palbociclib",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.761899,
+      "within_moa_r": 0.721131
+    },
+    {
+      "drug": "Pevonedistat",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.70565,
+      "within_moa_r": 0.666438
+    },
+    {
+      "drug": "Picolinici-acid",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.72886,
+      "within_moa_r": 0.612847
+    },
+    {
+      "drug": "Pictilisib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.57578,
+      "within_moa_r": 0.823914
+    },
+    {
+      "drug": "Piperlongumine",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.758844,
+      "within_moa_r": 0.758482
+    },
+    {
+      "drug": "Podophyllotoxin bromide",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.77962,
+      "within_moa_r": 0.68351
+    },
+    {
+      "drug": "Pyridostatin",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.670568,
+      "within_moa_r": 0.599583
+    },
+    {
+      "drug": "RO-3306",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.825025,
+      "within_moa_r": 0.79723
+    },
+    {
+      "drug": "RVX-208",
+      "drug_id": null,
+      "moa": "Chromatin other",
+      "all_drug_r": 0.738459,
+      "within_moa_r": 0.829903
+    },
+    {
+      "drug": "Rapamycin",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.606523,
+      "within_moa_r": 0.724236
+    },
+    {
+      "drug": "Refametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.232415,
+      "within_moa_r": 0.838322
+    },
+    {
+      "drug": "Remodelin",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.41723,
+      "within_moa_r": 0.521129
+    },
+    {
+      "drug": "Ribociclib",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.789869,
+      "within_moa_r": 0.741143
+    },
+    {
+      "drug": "Romidepsin",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.586231,
+      "within_moa_r": 0.502981
+    },
+    {
+      "drug": "Rucaparib",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.74324,
+      "within_moa_r": 0.732654
+    },
+    {
+      "drug": "Ruxolitinib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.683396,
+      "within_moa_r": 0.657904
+    },
+    {
+      "drug": "SB216763",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.686867,
+      "within_moa_r": 0.625235
+    },
+    {
+      "drug": "SB505124",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.349327,
+      "within_moa_r": 0.374484
+    },
+    {
+      "drug": "SB590885",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.614299,
+      "within_moa_r": 0.565007
+    },
+    {
+      "drug": "SCH772984",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.345306,
+      "within_moa_r": 0.881341
+    },
+    {
+      "drug": "SGC-CBP30",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.660631,
+      "within_moa_r": 0.637129
+    },
+    {
+      "drug": "SGC0946",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.622236,
+      "within_moa_r": 0.641284
+    },
+    {
+      "drug": "SL0101",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.615724,
+      "within_moa_r": 0.568275
+    },
+    {
+      "drug": "SN-38",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.605421,
+      "within_moa_r": 0.748534
+    },
+    {
+      "drug": "Sabutoclax",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.679993,
+      "within_moa_r": 0.52134
+    },
+    {
+      "drug": "Sapitinib",
+      "drug_id": null,
+      "moa": "EGFR signaling",
+      "all_drug_r": 0.234342,
+      "within_moa_r": 0.826369
+    },
+    {
+      "drug": "Savolitinib",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.536335,
+      "within_moa_r": 0.520886
+    },
+    {
+      "drug": "Schweinfurthin A",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.747731,
+      "within_moa_r": 0.536983
+    },
+    {
+      "drug": "Selumetinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.300001,
+      "within_moa_r": 0.860316
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.154128,
+      "within_moa_r": 0.158475
+    },
+    {
+      "drug": "Serdemetan",
+      "drug_id": null,
+      "moa": "p53 pathway",
+      "all_drug_r": 0.765275,
+      "within_moa_r": 0.652805
+    },
+    {
+      "drug": "Sinularin",
+      "drug_id": null,
+      "moa": "Unclassified",
+      "all_drug_r": 0.687042,
+      "within_moa_r": 0.709632
+    },
+    {
+      "drug": "Sorafenib",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.726141,
+      "within_moa_r": 0.577709
+    },
+    {
+      "drug": "Staurosporine",
+      "drug_id": null,
+      "moa": "RTK signaling",
+      "all_drug_r": 0.609081,
+      "within_moa_r": 0.551409
+    },
+    {
+      "drug": "TW 37",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.653988,
+      "within_moa_r": 0.545396
+    },
+    {
+      "drug": "Talazoparib",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.692931,
+      "within_moa_r": 0.732466
+    },
+    {
+      "drug": "Tamoxifen",
+      "drug_id": null,
+      "moa": "Hormone-related",
+      "all_drug_r": 0.597512,
+      "within_moa_r": 0.651932
+    },
+    {
+      "drug": "Tanespimycin",
+      "drug_id": null,
+      "moa": "Protein stability and degradation",
+      "all_drug_r": 0.443883,
+      "within_moa_r": 0.440657
+    },
+    {
+      "drug": "Taselisib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.489752,
+      "within_moa_r": 0.732317
+    },
+    {
+      "drug": "Telomerase Inhibitor IX",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.713241,
+      "within_moa_r": 0.657119
+    },
+    {
+      "drug": "Temozolomide",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.777746,
+      "within_moa_r": 0.707551
+    },
+    {
+      "drug": "Temsirolimus",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.583011,
+      "within_moa_r": 0.699515
+    },
+    {
+      "drug": "Teniposide",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.785157,
+      "within_moa_r": 0.87623
+    },
+    {
+      "drug": "Topotecan",
+      "drug_id": null,
+      "moa": "DNA replication",
+      "all_drug_r": 0.669217,
+      "within_moa_r": 0.868752
+    },
+    {
+      "drug": "Tozasertib",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.781677,
+      "within_moa_r": 0.813366
+    },
+    {
+      "drug": "Trametinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.2127,
+      "within_moa_r": 0.860932
+    },
+    {
+      "drug": "Tretinoin",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.714953,
+      "within_moa_r": 0.694855
+    },
+    {
+      "drug": "UMI-77",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.477293,
+      "within_moa_r": 0.501635
+    },
+    {
+      "drug": "UNC0379",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.748894,
+      "within_moa_r": 0.702953
+    },
+    {
+      "drug": "UNC0638",
+      "drug_id": null,
+      "moa": "Chromatin histone methylation",
+      "all_drug_r": 0.79497,
+      "within_moa_r": 0.771919
+    },
+    {
+      "drug": "Ulixertinib",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.489129,
+      "within_moa_r": 0.816675
+    },
+    {
+      "drug": "Uprosertib",
+      "drug_id": null,
+      "moa": "PI3K/MTOR signaling",
+      "all_drug_r": 0.613437,
+      "within_moa_r": 0.808716
+    },
+    {
+      "drug": "VE-822",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.726583,
+      "within_moa_r": 0.734003
+    },
+    {
+      "drug": "VE821",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.771209,
+      "within_moa_r": 0.755399
+    },
+    {
+      "drug": "VX-11e",
+      "drug_id": null,
+      "moa": "ERK MAPK signaling",
+      "all_drug_r": 0.510427,
+      "within_moa_r": 0.820032
+    },
+    {
+      "drug": "Veliparib",
+      "drug_id": null,
+      "moa": "Genome integrity",
+      "all_drug_r": 0.795843,
+      "within_moa_r": 0.770105
+    },
+    {
+      "drug": "Venetoclax",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.597186,
+      "within_moa_r": 0.672711
+    },
+    {
+      "drug": "Vinblastine",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.806897,
+      "within_moa_r": 0.860419
+    },
+    {
+      "drug": "Vinorelbine",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.808322,
+      "within_moa_r": 0.835876
+    },
+    {
+      "drug": "Vismodegib",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.757783,
+      "within_moa_r": 0.727478
+    },
+    {
+      "drug": "Vorinostat",
+      "drug_id": null,
+      "moa": "Chromatin histone acetylation",
+      "all_drug_r": 0.759534,
+      "within_moa_r": 0.507688
+    },
+    {
+      "drug": "WEHI-539",
+      "drug_id": null,
+      "moa": "Apoptosis regulation",
+      "all_drug_r": 0.394932,
+      "within_moa_r": 0.502005
+    },
+    {
+      "drug": "WIKI4",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.433672,
+      "within_moa_r": 0.459494
+    },
+    {
+      "drug": "WZ4003",
+      "drug_id": null,
+      "moa": "Other, kinases",
+      "all_drug_r": 0.575436,
+      "within_moa_r": 0.516433
+    },
+    {
+      "drug": "Wee1 Inhibitor",
+      "drug_id": null,
+      "moa": "Cell cycle",
+      "all_drug_r": 0.788274,
+      "within_moa_r": 0.813361
+    },
+    {
+      "drug": "Wnt-C59",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.656962,
+      "within_moa_r": 0.650518
+    },
+    {
+      "drug": "XAV939",
+      "drug_id": null,
+      "moa": "WNT signaling",
+      "all_drug_r": 0.568388,
+      "within_moa_r": 0.566344
+    },
+    {
+      "drug": "YK-4-279",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.823847,
+      "within_moa_r": 0.782476
+    },
+    {
+      "drug": "ZM447439",
+      "drug_id": null,
+      "moa": "Mitosis",
+      "all_drug_r": 0.74769,
+      "within_moa_r": 0.705316
+    },
+    {
+      "drug": "Zoledronate",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.811435,
+      "within_moa_r": 0.806399
+    },
+    {
+      "drug": "alpha-lipoic acid",
+      "drug_id": null,
+      "moa": "Metabolism",
+      "all_drug_r": 0.696221,
+      "within_moa_r": 0.331379
+    },
+    {
+      "drug": "glutathione",
+      "drug_id": null,
+      "moa": "Other",
+      "all_drug_r": 0.619612,
+      "within_moa_r": 0.576778
+    }
+  ]
+}

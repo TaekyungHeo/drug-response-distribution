@@ -1,0 +1,41 @@
+{
+  "fold": 7,
+  "results": {
+    "lincs_pca64": [
+      {
+        "fold": 7,
+        "condition": "lincs_pca64",
+        "best_epoch": 9,
+        "best_val_r": 0.629263624986327,
+        "test_per_drug_r": 0.7072236896772532,
+        "n_train": 113838,
+        "n_val": 12250,
+        "n_test": 6828
+      }
+    ],
+    "drug_target": [
+      {
+        "fold": 7,
+        "condition": "drug_target",
+        "best_epoch": 54,
+        "best_val_r": 0.6228614544146172,
+        "test_per_drug_r": 0.6582555539831045,
+        "n_train": 113838,
+        "n_val": 12250,
+        "n_test": 14916
+      }
+    ],
+    "moa_onehot": [
+      {
+        "fold": 7,
+        "condition": "moa_onehot",
+        "best_epoch": 155,
+        "best_val_r": 0.6437707733791497,
+        "test_per_drug_r": 0.7194174162003591,
+        "n_train": 113838,
+        "n_val": 12250,
+        "n_test": 14916
+      }
+    ]
+  }
+}

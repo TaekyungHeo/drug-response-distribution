@@ -1,0 +1,99 @@
+# ── Python ────────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+MANIFEST
+
+# Type checker & linter caches
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Test
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ── Data (large files — never commit raw data) ────────────────────────────
+/data/
+*.tgz
+*.tar.gz
+*.zip
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.arrow
+*.csv.gz
+*.tsv.gz
+
+# External data — covered by /data/ rule above; explicit entries kept for clarity
+external/scFoundation/
+external/beataml2/
+
+# ── Experiment artifacts ──────────────────────────────────────────────────
+# Logs are streamed, not useful to track
+experiments/*/logs/*.log
+experiments/**/logs/*.log
+
+# Large result JSON blobs from individual runs
+experiments/*/results/run_*/
+experiments/**/results/run_*/
+
+# ── LaTeX build artifacts ─────────────────────────────────────────────────
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.pdf
+
+# ── Claude Code ───────────────────────────────────────────────────────────
+.claude/
+
+# ── OS / IDE ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Environment / secrets ─────────────────────────────────────────────────
+.env
+*.env
+.env.local
+secrets.yaml
+secrets.json

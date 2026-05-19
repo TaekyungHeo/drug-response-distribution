@@ -1,0 +1,199 @@
+Uninstalled 1 package in 0.46ms
+Installed 1 package in 1ms
+2026-05-08 02:01:08,397 INFO SMOKE MODE: small drug subsets, K=[0,1,50], n_repeats=2, n_folds=2
+2026-05-08 02:01:08,397 INFO === CTRPv2 ===
+2026-05-08 02:01:10,408 INFO CTRPv2: 545 drugs, 838 cells, 364849 pairs
+2026-05-08 02:01:10,464 INFO CTRPv2 after filter: 545 drugs, 812 cells
+2026-05-08 02:01:10,479 INFO CTRPv2: 20 drugs, 812 cells
+/home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/jobs/run.py:110: RuntimeWarning: Mean of empty slice
+  cell_mean = np.nanmean(train_resp, axis=0)
+2026-05-08 02:01:16,809 INFO   CTRPv2 fold 1/2 done in 0.1s (10 test drugs)
+/home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/jobs/run.py:110: RuntimeWarning: Mean of empty slice
+  cell_mean = np.nanmean(train_resp, axis=0)
+2026-05-08 02:01:16,895 INFO   CTRPv2 fold 2/2 done in 0.1s (10 test drugs)
+2026-05-08 02:01:16,907 INFO   K= 0: per_drug_r=0.2788
+2026-05-08 02:01:16,923 INFO   K= 1: per_drug_r=nan
+2026-05-08 02:01:16,938 INFO   K=50: per_drug_r=nan
+2026-05-08 02:01:16,938 INFO === BeatAML ===
+2026-05-08 02:01:17,106 INFO BeatAML response: 155 drugs, 520 patients, 53539 pairs
+2026-05-08 02:01:19,392 INFO BeatAML expression: 520 patients × 5000 genes
+2026-05-08 02:01:19,397 INFO BeatAML: 20 drugs, 520 patients
+/home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/jobs/run.py:110: RuntimeWarning: Mean of empty slice
+  cell_mean = np.nanmean(train_resp, axis=0)
+2026-05-08 02:01:19,883 INFO   BeatAML fold 1/2 done in 0.0s (10 test drugs)
+/home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/jobs/run.py:110: RuntimeWarning: Mean of empty slice
+  cell_mean = np.nanmean(train_resp, axis=0)
+2026-05-08 02:01:19,919 INFO   BeatAML fold 2/2 done in 0.0s (10 test drugs)
+2026-05-08 02:01:19,928 INFO   K= 0: per_drug_r=0.3444
+2026-05-08 02:01:19,939 INFO   K= 1: per_drug_r=nan
+2026-05-08 02:01:19,949 INFO   K=50: per_drug_r=nan
+2026-05-08 02:01:19,951 INFO === PRISM ===
+2026-05-08 02:01:21,246 INFO Loaded PRISM from prism_drug_response.parquet: (353211, 3)
+2026-05-08 02:01:21,257 INFO PRISM raw: 1415 drugs, 477 cells, 353211 pairs
+2026-05-08 02:01:21,391 INFO After filtering: 1079 drugs, 477 cells, 347626 pairs
+2026-05-08 02:01:21,405 INFO PRISM: 30 drugs, 477 cells
+2026-05-08 02:01:23,670 INFO   PRISM fold 1/2 done in 0.1s (15 test drugs)
+2026-05-08 02:01:23,743 INFO   PRISM fold 2/2 done in 0.1s (15 test drugs)
+2026-05-08 02:01:23,758 INFO   K= 0: per_drug_r=0.0869
+2026-05-08 02:01:23,778 INFO   K= 1: per_drug_r=0.0871
+2026-05-08 02:01:23,797 INFO   K=50: per_drug_r=0.0898
+2026-05-08 02:01:23,798 INFO Saved: /home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/results/run_20260508_020108/results.json
+Uninstalled 1 package in 0.46ms
+Installed 1 package in 1ms
+2026-05-08 02:01:24,891 INFO === CTRPv2 ===
+2026-05-08 02:01:26,797 INFO CTRPv2: 545 drugs, 838 cells, 364849 pairs
+2026-05-08 02:01:26,855 INFO CTRPv2 after filter: 545 drugs, 812 cells
+2026-05-08 02:01:26,864 INFO CTRPv2: 545 drugs, 812 cells
+2026-05-08 02:01:57,362 INFO   CTRPv2 fold 1/5: 20/109 test drugs done
+2026-05-08 02:02:10,405 INFO   CTRPv2 fold 1/5: 40/109 test drugs done
+2026-05-08 02:02:24,990 INFO   CTRPv2 fold 1/5: 60/109 test drugs done
+2026-05-08 02:02:39,336 INFO   CTRPv2 fold 1/5: 80/109 test drugs done
+2026-05-08 02:02:54,609 INFO   CTRPv2 fold 1/5: 100/109 test drugs done
+2026-05-08 02:03:01,669 INFO   CTRPv2 fold 1/5 done in 80.3s (109 test drugs)
+2026-05-08 02:03:19,003 INFO   CTRPv2 fold 2/5: 20/109 test drugs done
+2026-05-08 02:03:33,542 INFO   CTRPv2 fold 2/5: 40/109 test drugs done
+2026-05-08 02:03:48,640 INFO   CTRPv2 fold 2/5: 60/109 test drugs done
+2026-05-08 02:04:03,170 INFO   CTRPv2 fold 2/5: 80/109 test drugs done
+2026-05-08 02:04:18,628 INFO   CTRPv2 fold 2/5: 100/109 test drugs done
+2026-05-08 02:04:25,063 INFO   CTRPv2 fold 2/5 done in 83.4s (109 test drugs)
+2026-05-08 02:04:41,192 INFO   CTRPv2 fold 3/5: 20/109 test drugs done
+2026-05-08 02:04:56,314 INFO   CTRPv2 fold 3/5: 40/109 test drugs done
+2026-05-08 02:05:11,710 INFO   CTRPv2 fold 3/5: 60/109 test drugs done
+2026-05-08 02:05:27,050 INFO   CTRPv2 fold 3/5: 80/109 test drugs done
+2026-05-08 02:05:42,753 INFO   CTRPv2 fold 3/5: 100/109 test drugs done
+2026-05-08 02:05:49,821 INFO   CTRPv2 fold 3/5 done in 84.8s (109 test drugs)
+2026-05-08 02:06:05,991 INFO   CTRPv2 fold 4/5: 20/109 test drugs done
+2026-05-08 02:06:21,551 INFO   CTRPv2 fold 4/5: 40/109 test drugs done
+2026-05-08 02:06:37,135 INFO   CTRPv2 fold 4/5: 60/109 test drugs done
+2026-05-08 02:06:52,610 INFO   CTRPv2 fold 4/5: 80/109 test drugs done
+2026-05-08 02:07:08,119 INFO   CTRPv2 fold 4/5: 100/109 test drugs done
+2026-05-08 02:07:14,587 INFO   CTRPv2 fold 4/5 done in 84.8s (109 test drugs)
+2026-05-08 02:07:31,426 INFO   CTRPv2 fold 5/5: 20/109 test drugs done
+2026-05-08 02:07:46,030 INFO   CTRPv2 fold 5/5: 40/109 test drugs done
+2026-05-08 02:08:01,352 INFO   CTRPv2 fold 5/5: 60/109 test drugs done
+2026-05-08 02:08:16,867 INFO   CTRPv2 fold 5/5: 80/109 test drugs done
+2026-05-08 02:08:32,861 INFO   CTRPv2 fold 5/5: 100/109 test drugs done
+2026-05-08 02:08:40,014 INFO   CTRPv2 fold 5/5 done in 85.4s (109 test drugs)
+2026-05-08 02:08:40,967 INFO   K= 0: per_drug_r=0.4115
+2026-05-08 02:08:56,689 INFO   K= 1: per_drug_r=0.4160
+2026-05-08 02:09:12,128 INFO   K= 3: per_drug_r=0.3139
+2026-05-08 02:09:27,674 INFO   K= 5: per_drug_r=0.3085
+2026-05-08 02:09:42,937 INFO   K=10: per_drug_r=0.3255
+2026-05-08 02:09:57,830 INFO   K=20: per_drug_r=0.3788
+2026-05-08 02:10:11,710 INFO   K=50: per_drug_r=0.4628
+2026-05-08 02:10:11,797 INFO === BeatAML ===
+2026-05-08 02:10:11,921 INFO BeatAML response: 155 drugs, 520 patients, 53539 pairs
+2026-05-08 02:10:13,917 INFO BeatAML expression: 520 patients × 5000 genes
+2026-05-08 02:10:13,924 INFO BeatAML: 155 drugs, 520 patients
+2026-05-08 02:10:20,216 INFO   BeatAML fold 1/5: 20/31 test drugs done
+2026-05-08 02:10:22,534 INFO   BeatAML fold 1/5 done in 6.9s (31 test drugs)
+2026-05-08 02:10:26,950 INFO   BeatAML fold 2/5: 20/31 test drugs done
+2026-05-08 02:10:29,321 INFO   BeatAML fold 2/5 done in 6.8s (31 test drugs)
+/home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/jobs/run.py:110: RuntimeWarning: Mean of empty slice
+  cell_mean = np.nanmean(train_resp, axis=0)
+2026-05-08 02:10:33,783 INFO   BeatAML fold 3/5: 20/31 test drugs done
+2026-05-08 02:10:36,151 INFO   BeatAML fold 3/5 done in 6.8s (31 test drugs)
+2026-05-08 02:10:40,114 INFO   BeatAML fold 4/5: 20/31 test drugs done
+2026-05-08 02:10:42,641 INFO   BeatAML fold 4/5 done in 6.5s (31 test drugs)
+2026-05-08 02:10:47,165 INFO   BeatAML fold 5/5: 20/31 test drugs done
+2026-05-08 02:10:49,288 INFO   BeatAML fold 5/5 done in 6.6s (31 test drugs)
+2026-05-08 02:10:49,384 INFO   K= 0: per_drug_r=0.4532
+2026-05-08 02:10:50,345 INFO   K= 1: per_drug_r=nan
+2026-05-08 02:10:51,312 INFO   K= 3: per_drug_r=nan
+2026-05-08 02:10:52,272 INFO   K= 5: per_drug_r=nan
+2026-05-08 02:10:53,209 INFO   K=10: per_drug_r=nan
+2026-05-08 02:10:54,126 INFO   K=20: per_drug_r=nan
+2026-05-08 02:10:54,965 INFO   K=50: per_drug_r=nan
+2026-05-08 02:10:54,986 INFO === PRISM ===
+2026-05-08 02:10:56,250 INFO Loaded PRISM from prism_drug_response.parquet: (353211, 3)
+2026-05-08 02:10:56,262 INFO PRISM raw: 1415 drugs, 477 cells, 353211 pairs
+2026-05-08 02:10:56,399 INFO After filtering: 1079 drugs, 477 cells, 347626 pairs
+2026-05-08 02:10:56,408 INFO PRISM: 1079 drugs, 477 cells
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4744950149747638e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:11:52,462 INFO   PRISM fold 1/10: 20/108 test drugs done
+2026-05-08 02:12:32,934 INFO   PRISM fold 1/10: 40/108 test drugs done
+2026-05-08 02:13:15,323 INFO   PRISM fold 1/10: 60/108 test drugs done
+2026-05-08 02:13:58,125 INFO   PRISM fold 1/10: 80/108 test drugs done
+2026-05-08 02:14:39,923 INFO   PRISM fold 1/10: 100/108 test drugs done
+2026-05-08 02:14:57,252 INFO   PRISM fold 1/10 done in 229.7s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.1984464975967057e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:15:42,306 INFO   PRISM fold 2/10: 20/108 test drugs done
+2026-05-08 02:16:25,724 INFO   PRISM fold 2/10: 40/108 test drugs done
+2026-05-08 02:17:08,721 INFO   PRISM fold 2/10: 60/108 test drugs done
+2026-05-08 02:17:51,951 INFO   PRISM fold 2/10: 80/108 test drugs done
+2026-05-08 02:18:32,948 INFO   PRISM fold 2/10: 100/108 test drugs done
+2026-05-08 02:18:50,305 INFO   PRISM fold 2/10 done in 233.1s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.3938046272699012e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:19:35,627 INFO   PRISM fold 3/10: 20/108 test drugs done
+2026-05-08 02:20:19,005 INFO   PRISM fold 3/10: 40/108 test drugs done
+2026-05-08 02:21:02,193 INFO   PRISM fold 3/10: 60/108 test drugs done
+2026-05-08 02:21:45,304 INFO   PRISM fold 3/10: 80/108 test drugs done
+2026-05-08 02:22:28,556 INFO   PRISM fold 3/10: 100/108 test drugs done
+2026-05-08 02:22:45,990 INFO   PRISM fold 3/10 done in 235.7s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.5616896220649323e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:23:30,982 INFO   PRISM fold 4/10: 20/108 test drugs done
+2026-05-08 02:24:11,953 INFO   PRISM fold 4/10: 40/108 test drugs done
+2026-05-08 02:24:54,835 INFO   PRISM fold 4/10: 60/108 test drugs done
+2026-05-08 02:25:38,227 INFO   PRISM fold 4/10: 80/108 test drugs done
+2026-05-08 02:26:21,345 INFO   PRISM fold 4/10: 100/108 test drugs done
+2026-05-08 02:26:38,702 INFO   PRISM fold 4/10 done in 232.7s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4968700057238493e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:27:23,823 INFO   PRISM fold 5/10: 20/108 test drugs done
+2026-05-08 02:28:07,357 INFO   PRISM fold 5/10: 40/108 test drugs done
+2026-05-08 02:28:49,013 INFO   PRISM fold 5/10: 60/108 test drugs done
+2026-05-08 02:29:31,975 INFO   PRISM fold 5/10: 80/108 test drugs done
+2026-05-08 02:30:14,902 INFO   PRISM fold 5/10: 100/108 test drugs done
+2026-05-08 02:30:32,234 INFO   PRISM fold 5/10 done in 233.5s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4299478934276522e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:31:17,848 INFO   PRISM fold 6/10: 20/108 test drugs done
+2026-05-08 02:32:01,103 INFO   PRISM fold 6/10: 40/108 test drugs done
+2026-05-08 02:32:44,201 INFO   PRISM fold 6/10: 60/108 test drugs done
+2026-05-08 02:33:27,536 INFO   PRISM fold 6/10: 80/108 test drugs done
+2026-05-08 02:34:11,037 INFO   PRISM fold 6/10: 100/108 test drugs done
+2026-05-08 02:34:28,243 INFO   PRISM fold 6/10 done in 236.0s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4796204261813273e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:35:13,397 INFO   PRISM fold 7/10: 20/108 test drugs done
+2026-05-08 02:35:56,621 INFO   PRISM fold 7/10: 40/108 test drugs done
+2026-05-08 02:36:39,821 INFO   PRISM fold 7/10: 60/108 test drugs done
+2026-05-08 02:37:22,229 INFO   PRISM fold 7/10: 80/108 test drugs done
+2026-05-08 02:38:05,097 INFO   PRISM fold 7/10: 100/108 test drugs done
+2026-05-08 02:38:22,588 INFO   PRISM fold 7/10 done in 234.3s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.4095455469487206e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:39:08,378 INFO   PRISM fold 8/10: 20/108 test drugs done
+2026-05-08 02:39:50,971 INFO   PRISM fold 8/10: 40/108 test drugs done
+2026-05-08 02:40:33,967 INFO   PRISM fold 8/10: 60/108 test drugs done
+2026-05-08 02:41:17,392 INFO   PRISM fold 8/10: 80/108 test drugs done
+2026-05-08 02:42:01,055 INFO   PRISM fold 8/10: 100/108 test drugs done
+2026-05-08 02:42:18,668 INFO   PRISM fold 8/10 done in 236.1s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.514126779511571e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:43:04,176 INFO   PRISM fold 9/10: 20/108 test drugs done
+2026-05-08 02:43:47,961 INFO   PRISM fold 9/10: 40/108 test drugs done
+2026-05-08 02:44:31,274 INFO   PRISM fold 9/10: 60/108 test drugs done
+2026-05-08 02:45:14,279 INFO   PRISM fold 9/10: 80/108 test drugs done
+2026-05-08 02:45:57,965 INFO   PRISM fold 9/10: 100/108 test drugs done
+2026-05-08 02:46:14,916 INFO   PRISM fold 9/10 done in 236.2s (108 test drugs)
+/home/spark/multi-onco/.venv/lib/python3.11/site-packages/sklearn/linear_model/_ridge.py:228: LinAlgWarning: An ill-conditioned matrix detected: slice 0 has rcond = 1.284344808283322e-08.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+2026-05-08 02:46:58,663 INFO   PRISM fold 10/10: 20/107 test drugs done
+2026-05-08 02:47:41,570 INFO   PRISM fold 10/10: 40/107 test drugs done
+2026-05-08 02:48:24,757 INFO   PRISM fold 10/10: 60/107 test drugs done
+2026-05-08 02:49:07,753 INFO   PRISM fold 10/10: 80/107 test drugs done
+2026-05-08 02:49:50,602 INFO   PRISM fold 10/10: 100/107 test drugs done
+2026-05-08 02:50:05,671 INFO   PRISM fold 10/10 done in 230.8s (107 test drugs)
+2026-05-08 02:50:07,198 INFO   K= 0: per_drug_r=0.1116
+2026-05-08 02:50:29,573 INFO   K= 1: per_drug_r=0.1115
+2026-05-08 02:50:51,834 INFO   K= 3: per_drug_r=0.0220
+2026-05-08 02:51:13,964 INFO   K= 5: per_drug_r=0.0125
+2026-05-08 02:51:35,748 INFO   K=10: per_drug_r=0.0044
+2026-05-08 02:51:56,836 INFO   K=20: per_drug_r=0.0011
+2026-05-08 02:52:15,867 INFO   K=50: per_drug_r=0.0064
+2026-05-08 02:52:16,033 INFO Saved: /home/spark/multi-onco/experiments/06_external_validation/03_kshot_matching/results/run_20260508_020124/results.json

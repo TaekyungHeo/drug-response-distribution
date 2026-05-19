@@ -1,0 +1,878 @@
+{
+  "weights": [
+    1,
+    2,
+    5,
+    10,
+    20
+  ],
+  "overall": [
+    {
+      "weight": 1,
+      "mean_per_drug_r": 0.645022,
+      "n_drugs": 233
+    },
+    {
+      "weight": 2,
+      "mean_per_drug_r": 0.65249,
+      "n_drugs": 233
+    },
+    {
+      "weight": 5,
+      "mean_per_drug_r": 0.667269,
+      "n_drugs": 233
+    },
+    {
+      "weight": 10,
+      "mean_per_drug_r": 0.679196,
+      "n_drugs": 233
+    },
+    {
+      "weight": 20,
+      "mean_per_drug_r": 0.686816,
+      "n_drugs": 233
+    }
+  ],
+  "per_moa": [
+    {
+      "moa": "ABL signaling",
+      "weight": 1,
+      "mean_r": 0.662268,
+      "std_r": 0.0,
+      "n_drugs": 1
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "weight": 1,
+      "mean_r": 0.524102,
+      "std_r": 0.143462,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Cell cycle",
+      "weight": 1,
+      "mean_r": 0.766894,
+      "std_r": 0.035665,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "weight": 1,
+      "mean_r": 0.635578,
+      "std_r": 0.122551,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "weight": 1,
+      "mean_r": 0.730962,
+      "std_r": 0.062749,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Chromatin other",
+      "weight": 1,
+      "mean_r": 0.713807,
+      "std_r": 0.038066,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Cytoskeleton",
+      "weight": 1,
+      "mean_r": 0.593534,
+      "std_r": 0.056673,
+      "n_drugs": 2
+    },
+    {
+      "moa": "DNA replication",
+      "weight": 1,
+      "mean_r": 0.693168,
+      "std_r": 0.109082,
+      "n_drugs": 20
+    },
+    {
+      "moa": "EGFR signaling",
+      "weight": 1,
+      "mean_r": 0.424841,
+      "std_r": 0.082121,
+      "n_drugs": 7
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "weight": 1,
+      "mean_r": 0.426911,
+      "std_r": 0.16775,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Genome integrity",
+      "weight": 1,
+      "mean_r": 0.741948,
+      "std_r": 0.034293,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Hormone-related",
+      "weight": 1,
+      "mean_r": 0.670571,
+      "std_r": 0.060259,
+      "n_drugs": 4
+    },
+    {
+      "moa": "IGF1R signaling",
+      "weight": 1,
+      "mean_r": 0.608212,
+      "std_r": 0.06085,
+      "n_drugs": 5
+    },
+    {
+      "moa": "JNK and p38 signaling",
+      "weight": 1,
+      "mean_r": 0.675624,
+      "std_r": 0.047862,
+      "n_drugs": 2
+    },
+    {
+      "moa": "Metabolism",
+      "weight": 1,
+      "mean_r": 0.592456,
+      "std_r": 0.132911,
+      "n_drugs": 6
+    },
+    {
+      "moa": "Mitosis",
+      "weight": 1,
+      "mean_r": 0.771515,
+      "std_r": 0.033534,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Other",
+      "weight": 1,
+      "mean_r": 0.742602,
+      "std_r": 0.052538,
+      "n_drugs": 19
+    },
+    {
+      "moa": "Other, kinases",
+      "weight": 1,
+      "mean_r": 0.647605,
+      "std_r": 0.120295,
+      "n_drugs": 15
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "weight": 1,
+      "mean_r": 0.610301,
+      "std_r": 0.087907,
+      "n_drugs": 23
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "weight": 1,
+      "mean_r": 0.646835,
+      "std_r": 0.100531,
+      "n_drugs": 9
+    },
+    {
+      "moa": "RTK signaling",
+      "weight": 1,
+      "mean_r": 0.605351,
+      "std_r": 0.115572,
+      "n_drugs": 12
+    },
+    {
+      "moa": "Unclassified",
+      "weight": 1,
+      "mean_r": 0.561797,
+      "std_r": 0.211407,
+      "n_drugs": 11
+    },
+    {
+      "moa": "WNT signaling",
+      "weight": 1,
+      "mean_r": 0.615386,
+      "std_r": 0.079022,
+      "n_drugs": 9
+    },
+    {
+      "moa": "p53 pathway",
+      "weight": 1,
+      "mean_r": 0.716724,
+      "std_r": 0.064266,
+      "n_drugs": 4
+    },
+    {
+      "moa": "ABL signaling",
+      "weight": 2,
+      "mean_r": 0.662268,
+      "std_r": 0.0,
+      "n_drugs": 1
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "weight": 2,
+      "mean_r": 0.529039,
+      "std_r": 0.141483,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Cell cycle",
+      "weight": 2,
+      "mean_r": 0.768861,
+      "std_r": 0.035522,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "weight": 2,
+      "mean_r": 0.636547,
+      "std_r": 0.123068,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "weight": 2,
+      "mean_r": 0.733919,
+      "std_r": 0.063214,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Chromatin other",
+      "weight": 2,
+      "mean_r": 0.723682,
+      "std_r": 0.034773,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Cytoskeleton",
+      "weight": 2,
+      "mean_r": 0.594208,
+      "std_r": 0.056959,
+      "n_drugs": 2
+    },
+    {
+      "moa": "DNA replication",
+      "weight": 2,
+      "mean_r": 0.707265,
+      "std_r": 0.110954,
+      "n_drugs": 20
+    },
+    {
+      "moa": "EGFR signaling",
+      "weight": 2,
+      "mean_r": 0.444268,
+      "std_r": 0.081007,
+      "n_drugs": 7
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "weight": 2,
+      "mean_r": 0.459187,
+      "std_r": 0.153517,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Genome integrity",
+      "weight": 2,
+      "mean_r": 0.743792,
+      "std_r": 0.034257,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Hormone-related",
+      "weight": 2,
+      "mean_r": 0.673211,
+      "std_r": 0.058712,
+      "n_drugs": 4
+    },
+    {
+      "moa": "IGF1R signaling",
+      "weight": 2,
+      "mean_r": 0.613054,
+      "std_r": 0.059491,
+      "n_drugs": 5
+    },
+    {
+      "moa": "JNK and p38 signaling",
+      "weight": 2,
+      "mean_r": 0.677088,
+      "std_r": 0.047915,
+      "n_drugs": 2
+    },
+    {
+      "moa": "Metabolism",
+      "weight": 2,
+      "mean_r": 0.588999,
+      "std_r": 0.134717,
+      "n_drugs": 6
+    },
+    {
+      "moa": "Mitosis",
+      "weight": 2,
+      "mean_r": 0.777003,
+      "std_r": 0.034489,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Other",
+      "weight": 2,
+      "mean_r": 0.744527,
+      "std_r": 0.052441,
+      "n_drugs": 19
+    },
+    {
+      "moa": "Other, kinases",
+      "weight": 2,
+      "mean_r": 0.64924,
+      "std_r": 0.119182,
+      "n_drugs": 15
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "weight": 2,
+      "mean_r": 0.630559,
+      "std_r": 0.081833,
+      "n_drugs": 23
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "weight": 2,
+      "mean_r": 0.647328,
+      "std_r": 0.100714,
+      "n_drugs": 9
+    },
+    {
+      "moa": "RTK signaling",
+      "weight": 2,
+      "mean_r": 0.611673,
+      "std_r": 0.115335,
+      "n_drugs": 12
+    },
+    {
+      "moa": "Unclassified",
+      "weight": 2,
+      "mean_r": 0.565281,
+      "std_r": 0.210182,
+      "n_drugs": 11
+    },
+    {
+      "moa": "WNT signaling",
+      "weight": 2,
+      "mean_r": 0.617257,
+      "std_r": 0.079344,
+      "n_drugs": 9
+    },
+    {
+      "moa": "p53 pathway",
+      "weight": 2,
+      "mean_r": 0.717468,
+      "std_r": 0.064327,
+      "n_drugs": 4
+    },
+    {
+      "moa": "ABL signaling",
+      "weight": 5,
+      "mean_r": 0.662268,
+      "std_r": 0.0,
+      "n_drugs": 1
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "weight": 5,
+      "mean_r": 0.538797,
+      "std_r": 0.136823,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Cell cycle",
+      "weight": 5,
+      "mean_r": 0.772029,
+      "std_r": 0.035535,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "weight": 5,
+      "mean_r": 0.638567,
+      "std_r": 0.124405,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "weight": 5,
+      "mean_r": 0.740162,
+      "std_r": 0.064447,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Chromatin other",
+      "weight": 5,
+      "mean_r": 0.746339,
+      "std_r": 0.029139,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Cytoskeleton",
+      "weight": 5,
+      "mean_r": 0.596134,
+      "std_r": 0.057783,
+      "n_drugs": 2
+    },
+    {
+      "moa": "DNA replication",
+      "weight": 5,
+      "mean_r": 0.728702,
+      "std_r": 0.116639,
+      "n_drugs": 20
+    },
+    {
+      "moa": "EGFR signaling",
+      "weight": 5,
+      "mean_r": 0.496492,
+      "std_r": 0.077933,
+      "n_drugs": 7
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "weight": 5,
+      "mean_r": 0.534358,
+      "std_r": 0.116003,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Genome integrity",
+      "weight": 5,
+      "mean_r": 0.74697,
+      "std_r": 0.034517,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Hormone-related",
+      "weight": 5,
+      "mean_r": 0.680317,
+      "std_r": 0.05434,
+      "n_drugs": 4
+    },
+    {
+      "moa": "IGF1R signaling",
+      "weight": 5,
+      "mean_r": 0.625607,
+      "std_r": 0.056155,
+      "n_drugs": 5
+    },
+    {
+      "moa": "JNK and p38 signaling",
+      "weight": 5,
+      "mean_r": 0.68132,
+      "std_r": 0.048049,
+      "n_drugs": 2
+    },
+    {
+      "moa": "Metabolism",
+      "weight": 5,
+      "mean_r": 0.576552,
+      "std_r": 0.138748,
+      "n_drugs": 6
+    },
+    {
+      "moa": "Mitosis",
+      "weight": 5,
+      "mean_r": 0.788727,
+      "std_r": 0.037057,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Other",
+      "weight": 5,
+      "mean_r": 0.746862,
+      "std_r": 0.052669,
+      "n_drugs": 19
+    },
+    {
+      "moa": "Other, kinases",
+      "weight": 5,
+      "mean_r": 0.651378,
+      "std_r": 0.116141,
+      "n_drugs": 15
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "weight": 5,
+      "mean_r": 0.666669,
+      "std_r": 0.073873,
+      "n_drugs": 23
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "weight": 5,
+      "mean_r": 0.647694,
+      "std_r": 0.10112,
+      "n_drugs": 9
+    },
+    {
+      "moa": "RTK signaling",
+      "weight": 5,
+      "mean_r": 0.625518,
+      "std_r": 0.114799,
+      "n_drugs": 12
+    },
+    {
+      "moa": "Unclassified",
+      "weight": 5,
+      "mean_r": 0.57297,
+      "std_r": 0.20655,
+      "n_drugs": 11
+    },
+    {
+      "moa": "WNT signaling",
+      "weight": 5,
+      "mean_r": 0.621475,
+      "std_r": 0.079925,
+      "n_drugs": 9
+    },
+    {
+      "moa": "p53 pathway",
+      "weight": 5,
+      "mean_r": 0.71908,
+      "std_r": 0.064401,
+      "n_drugs": 4
+    },
+    {
+      "moa": "ABL signaling",
+      "weight": 10,
+      "mean_r": 0.662268,
+      "std_r": 0.0,
+      "n_drugs": 1
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "weight": 10,
+      "mean_r": 0.54557,
+      "std_r": 0.13202,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Cell cycle",
+      "weight": 10,
+      "mean_r": 0.772935,
+      "std_r": 0.036196,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "weight": 10,
+      "mean_r": 0.639731,
+      "std_r": 0.126044,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "weight": 10,
+      "mean_r": 0.745475,
+      "std_r": 0.065873,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Chromatin other",
+      "weight": 10,
+      "mean_r": 0.769283,
+      "std_r": 0.030309,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Cytoskeleton",
+      "weight": 10,
+      "mean_r": 0.599043,
+      "std_r": 0.05905,
+      "n_drugs": 2
+    },
+    {
+      "moa": "DNA replication",
+      "weight": 10,
+      "mean_r": 0.73962,
+      "std_r": 0.123632,
+      "n_drugs": 20
+    },
+    {
+      "moa": "EGFR signaling",
+      "weight": 10,
+      "mean_r": 0.565589,
+      "std_r": 0.072873,
+      "n_drugs": 7
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "weight": 10,
+      "mean_r": 0.609419,
+      "std_r": 0.075442,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Genome integrity",
+      "weight": 10,
+      "mean_r": 0.748417,
+      "std_r": 0.035425,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Hormone-related",
+      "weight": 10,
+      "mean_r": 0.689891,
+      "std_r": 0.047902,
+      "n_drugs": 4
+    },
+    {
+      "moa": "IGF1R signaling",
+      "weight": 10,
+      "mean_r": 0.641337,
+      "std_r": 0.052931,
+      "n_drugs": 5
+    },
+    {
+      "moa": "JNK and p38 signaling",
+      "weight": 10,
+      "mean_r": 0.687873,
+      "std_r": 0.04819,
+      "n_drugs": 2
+    },
+    {
+      "moa": "Metabolism",
+      "weight": 10,
+      "mean_r": 0.551831,
+      "std_r": 0.142075,
+      "n_drugs": 6
+    },
+    {
+      "moa": "Mitosis",
+      "weight": 10,
+      "mean_r": 0.799095,
+      "std_r": 0.040275,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Other",
+      "weight": 10,
+      "mean_r": 0.746212,
+      "std_r": 0.053467,
+      "n_drugs": 19
+    },
+    {
+      "moa": "Other, kinases",
+      "weight": 10,
+      "mean_r": 0.65063,
+      "std_r": 0.112109,
+      "n_drugs": 15
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "weight": 10,
+      "mean_r": 0.690614,
+      "std_r": 0.075199,
+      "n_drugs": 23
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "weight": 10,
+      "mean_r": 0.646329,
+      "std_r": 0.101582,
+      "n_drugs": 9
+    },
+    {
+      "moa": "RTK signaling",
+      "weight": 10,
+      "mean_r": 0.638274,
+      "std_r": 0.114193,
+      "n_drugs": 12
+    },
+    {
+      "moa": "Unclassified",
+      "weight": 10,
+      "mean_r": 0.579858,
+      "std_r": 0.200892,
+      "n_drugs": 11
+    },
+    {
+      "moa": "WNT signaling",
+      "weight": 10,
+      "mean_r": 0.625396,
+      "std_r": 0.08009,
+      "n_drugs": 9
+    },
+    {
+      "moa": "p53 pathway",
+      "weight": 10,
+      "mean_r": 0.720199,
+      "std_r": 0.064268,
+      "n_drugs": 4
+    },
+    {
+      "moa": "ABL signaling",
+      "weight": 20,
+      "mean_r": 0.662268,
+      "std_r": 0.0,
+      "n_drugs": 1
+    },
+    {
+      "moa": "Apoptosis regulation",
+      "weight": 20,
+      "mean_r": 0.546691,
+      "std_r": 0.127823,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Cell cycle",
+      "weight": 20,
+      "mean_r": 0.770469,
+      "std_r": 0.037821,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Chromatin histone acetylation",
+      "weight": 20,
+      "mean_r": 0.637458,
+      "std_r": 0.127832,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Chromatin histone methylation",
+      "weight": 20,
+      "mean_r": 0.748566,
+      "std_r": 0.067182,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Chromatin other",
+      "weight": 20,
+      "mean_r": 0.790048,
+      "std_r": 0.042595,
+      "n_drugs": 10
+    },
+    {
+      "moa": "Cytoskeleton",
+      "weight": 20,
+      "mean_r": 0.603827,
+      "std_r": 0.061174,
+      "n_drugs": 2
+    },
+    {
+      "moa": "DNA replication",
+      "weight": 20,
+      "mean_r": 0.743018,
+      "std_r": 0.131107,
+      "n_drugs": 20
+    },
+    {
+      "moa": "EGFR signaling",
+      "weight": 20,
+      "mean_r": 0.654812,
+      "std_r": 0.062227,
+      "n_drugs": 7
+    },
+    {
+      "moa": "ERK MAPK signaling",
+      "weight": 20,
+      "mean_r": 0.673366,
+      "std_r": 0.070254,
+      "n_drugs": 11
+    },
+    {
+      "moa": "Genome integrity",
+      "weight": 20,
+      "mean_r": 0.747235,
+      "std_r": 0.037262,
+      "n_drugs": 13
+    },
+    {
+      "moa": "Hormone-related",
+      "weight": 20,
+      "mean_r": 0.702993,
+      "std_r": 0.03789,
+      "n_drugs": 4
+    },
+    {
+      "moa": "IGF1R signaling",
+      "weight": 20,
+      "mean_r": 0.660412,
+      "std_r": 0.053061,
+      "n_drugs": 5
+    },
+    {
+      "moa": "JNK and p38 signaling",
+      "weight": 20,
+      "mean_r": 0.699303,
+      "std_r": 0.048204,
+      "n_drugs": 2
+    },
+    {
+      "moa": "Metabolism",
+      "weight": 20,
+      "mean_r": 0.501058,
+      "std_r": 0.142589,
+      "n_drugs": 6
+    },
+    {
+      "moa": "Mitosis",
+      "weight": 20,
+      "mean_r": 0.80637,
+      "std_r": 0.044025,
+      "n_drugs": 7
+    },
+    {
+      "moa": "Other",
+      "weight": 20,
+      "mean_r": 0.742139,
+      "std_r": 0.054709,
+      "n_drugs": 19
+    },
+    {
+      "moa": "Other, kinases",
+      "weight": 20,
+      "mean_r": 0.645479,
+      "std_r": 0.106908,
+      "n_drugs": 15
+    },
+    {
+      "moa": "PI3K/MTOR signaling",
+      "weight": 20,
+      "mean_r": 0.703133,
+      "std_r": 0.084151,
+      "n_drugs": 23
+    },
+    {
+      "moa": "Protein stability and degradation",
+      "weight": 20,
+      "mean_r": 0.641284,
+      "std_r": 0.102227,
+      "n_drugs": 9
+    },
+    {
+      "moa": "RTK signaling",
+      "weight": 20,
+      "mean_r": 0.647798,
+      "std_r": 0.113337,
+      "n_drugs": 12
+    },
+    {
+      "moa": "Unclassified",
+      "weight": 20,
+      "mean_r": 0.583611,
+      "std_r": 0.191612,
+      "n_drugs": 11
+    },
+    {
+      "moa": "WNT signaling",
+      "weight": 20,
+      "mean_r": 0.627573,
+      "std_r": 0.079244,
+      "n_drugs": 9
+    },
+    {
+      "moa": "p53 pathway",
+      "weight": 20,
+      "mean_r": 0.719032,
+      "std_r": 0.063544,
+      "n_drugs": 4
+    }
+  ]
+}

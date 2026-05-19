@@ -1,0 +1,57 @@
+# 01 — Within-MoA Leave-One-Drug-Out Ridge
+
+## Research question
+
+Does restricting Ridge training to same-MoA drugs improve within-MoA per-drug r
+beyond the all-drug baseline (~0.644)?
+
+## Background
+
+Under all-drug training, Ridge learns a drug-agnostic cell ordering — a single
+function of cell features averaged across all drug mechanisms. This forces the
+model to capture a compromise representation that may be suboptimal for any
+individual MoA. By training only on same-MoA drugs, the model can specialize:
+it learns which cell-state dimensions predict sensitivity specifically to that
+mechanism. The 02_moa_ceiling experiment confirmed that ERK MAPK and EGFR
+signaling have high within-MoA profile concordance — making them the primary
+candidates for improvement here.
+
+## Experimental design
+
+| Component | Description |
+|-----------|-------------|
+| Data | GDSC2, {{ results.overall.n_drugs }} drugs across {{ results.overall.n_moa_classes }} MoA classes |
+| Model | Ridge(alpha=1.0), RNA PCA(550) + mutation PCA(200), cell features only |
+| Procedure | Within-MoA LOO: for each MoA with ≥3 drugs, hold out one drug, train on remaining same-MoA drugs, predict held-out |
+| Baseline | All-drug Ridge per-drug r from 01_diagnosis/01_moa_performance |
+| Metric | Per-drug Pearson r, macro-averaged within each MoA class |
+
+## Results
+
+**Overall**: all-drug mean r = {{ results.overall.all_drug_mean_r | fmt }}, within-MoA mean r = {{ results.overall.within_moa_mean_r | fmt }} ({{ results.overall.n_drugs }} drugs)
+
+### Per-MoA table (sorted by delta descending)
+
+| MoA | all-drug r | within-MoA r | delta | n_drugs |
+|-----|-----------|-------------|-------|---------|
+{% for m in results.per_moa %}
+| {{ m.moa }} | {{ m.all_drug_mean_r | fmt }} | {{ m.within_moa_mean_r | fmt }} | {{ "%+.3f" | format(m.delta) }} | {{ m.n_drugs }} |
+{% endfor %}
+
+### Focus classes
+
+{% for m in results.per_moa %}
+{% if m.moa in ["ERK MAPK signaling", "EGFR signaling", "Mitosis", "Cell cycle"] %}
+- **{{ m.moa }}**: all-drug {{ m.all_drug_mean_r | fmt }} → within-MoA {{ m.within_moa_mean_r | fmt }} (delta {{ "%+.3f" | format(m.delta) }}, n={{ m.n_drugs }})
+{% endif %}
+{% endfor %}
+
+## Interpretation
+
+If within-MoA training substantially exceeds 0.644 for ERK MAPK / EGFR
+signaling, training distribution is the first known mechanism for exceeding the
+cell-mean oracle. If easy classes (Mitosis, Cell cycle) also gain, the effect
+may be an artifact of reduced training set size rather than mechanism-specific
+learning. The 03_onehot_control experiment dissociates training distribution
+from representation to confirm the mechanism.
+

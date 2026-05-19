@@ -1,0 +1,1038 @@
+{
+  "datasets": {
+    "ctrpv2": {
+      "n_drugs_total": 545,
+      "n_drugs_with_moa": 222,
+      "n_moa_classes": 25,
+      "moa_classes": [
+        {
+          "moa": "Abl kinase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.5387003123479946,
+          "within_moa_r": 0.3177573529743046,
+          "delta": -0.22094295937369007
+        },
+        {
+          "moa": "BCL inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.5493354211696043,
+          "within_moa_r": 0.4374861913136045,
+          "delta": -0.11184922985599982
+        },
+        {
+          "moa": "CDK inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.6104406959482328,
+          "within_moa_r": 0.49924237101533,
+          "delta": -0.11119832493290283
+        },
+        {
+          "moa": "DNA alkylating agent",
+          "n_drugs": 5,
+          "all_drug_r": 0.15623319735944025,
+          "within_moa_r": 0.08448331075547073,
+          "delta": -0.07174988660396951
+        },
+        {
+          "moa": "DNA inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.5857970522379897,
+          "within_moa_r": 0.39958231030229907,
+          "delta": -0.18621474193569065
+        },
+        {
+          "moa": "DNA methyltransferase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.3943462676434642,
+          "within_moa_r": 0.18554311733131576,
+          "delta": -0.20880315031214844
+        },
+        {
+          "moa": "EGFR inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.33562643426000527,
+          "within_moa_r": 0.706834381276682,
+          "delta": 0.3712079470166767
+        },
+        {
+          "moa": "FGFR inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.4417893058861632,
+          "within_moa_r": 0.495902159645717,
+          "delta": 0.05411285375955377
+        },
+        {
+          "moa": "FLT3 inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.5191414134015939,
+          "within_moa_r": 0.5542960244829076,
+          "delta": 0.03515461108131368
+        },
+        {
+          "moa": "HDAC inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.6748657365761422,
+          "within_moa_r": 0.7130359524257802,
+          "delta": 0.03817021584963798
+        },
+        {
+          "moa": "HMGCR inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.26030253253012026,
+          "within_moa_r": 0.510433539351037,
+          "delta": 0.2501310068209167
+        },
+        {
+          "moa": "HSP inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.4994675329774941,
+          "within_moa_r": 0.4794118059921842,
+          "delta": -0.020055726985309885
+        },
+        {
+          "moa": "IGF-1 inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.46152993730571623,
+          "within_moa_r": 0.6385261435489958,
+          "delta": 0.1769962062432796
+        },
+        {
+          "moa": "JAK inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.5079137292309136,
+          "within_moa_r": 0.40088603048211785,
+          "delta": -0.10702769874879575
+        },
+        {
+          "moa": "KIT inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.5073986453376497,
+          "within_moa_r": 0.42505832540885946,
+          "delta": -0.0823403199287902
+        },
+        {
+          "moa": "MDM inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.41707904196682116,
+          "within_moa_r": 0.30559996945283213,
+          "delta": -0.11147907251398903
+        },
+        {
+          "moa": "PI3K inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.4042245484846219,
+          "within_moa_r": 0.5258856773437355,
+          "delta": 0.12166112885911357
+        },
+        {
+          "moa": "PLK inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.6680435881391477,
+          "within_moa_r": 0.6223987479461396,
+          "delta": -0.045644840193008074
+        },
+        {
+          "moa": "RAF inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.33442266385727404,
+          "within_moa_r": 0.33036231197602534,
+          "delta": -0.004060351881248703
+        },
+        {
+          "moa": "VEGFR inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.5619005446243794,
+          "within_moa_r": 0.560584043067644,
+          "delta": -0.001316501556735461
+        },
+        {
+          "moa": "histone lysine methyltransferase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.37631477463038304,
+          "within_moa_r": 0.28746006818467956,
+          "delta": -0.08885470644570348
+        },
+        {
+          "moa": "mTOR inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.5890657164304819,
+          "within_moa_r": 0.7534295239675217,
+          "delta": 0.16436380753703983
+        },
+        {
+          "moa": "retinoid receptor agonist",
+          "n_drugs": 6,
+          "all_drug_r": 0.5012812424365971,
+          "within_moa_r": 0.4835968451288187,
+          "delta": -0.017684397307778432
+        },
+        {
+          "moa": "topoisomerase inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.7184495395737486,
+          "within_moa_r": 0.8072758432329922,
+          "delta": 0.0888263036592436
+        },
+        {
+          "moa": "tubulin polymerization inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.674566108383043,
+          "within_moa_r": 0.8152767853055298,
+          "delta": 0.14071067692248684
+        }
+      ]
+    },
+    "beataml": {
+      "n_drugs_total": 155,
+      "n_drugs_with_moa": 71,
+      "n_moa_classes": 6,
+      "moa_classes": [
+        {
+          "moa": "AKT inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.33757447359937637,
+          "within_moa_r": 0.19009532763231568,
+          "delta": -0.1474791459670607
+        },
+        {
+          "moa": "CDK inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.3476660838481716,
+          "within_moa_r": 0.18012305406139906,
+          "delta": -0.16754302978677255
+        },
+        {
+          "moa": "EGFR inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.6163790201677941,
+          "within_moa_r": 0.5717385545875655,
+          "delta": -0.044640465580228605
+        },
+        {
+          "moa": "FLT3 inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.6551768005883996,
+          "within_moa_r": 0.6609262350576111,
+          "delta": 0.005749434469211501
+        },
+        {
+          "moa": "PI3K inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.51140881598447,
+          "within_moa_r": 0.26035019270948134,
+          "delta": -0.2510586232749886
+        },
+        {
+          "moa": "p38 MAPK inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.5814469967348328,
+          "within_moa_r": 0.6711825834475933,
+          "delta": 0.0897355867127605
+        }
+      ]
+    },
+    "prism": {
+      "n_drugs_total": 1079,
+      "n_drugs_with_moa": 1022,
+      "n_moa_classes": 109,
+      "moa_classes": [
+        {
+          "moa": "AKT inhibitor",
+          "n_drugs": 9,
+          "all_drug_r": 0.1299819082869304,
+          "within_moa_r": 0.09233672383476912,
+          "delta": -0.03764518445216128
+        },
+        {
+          "moa": "ALK tyrosine kinase receptor inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.14682247775506968,
+          "within_moa_r": 0.21089999788512354,
+          "delta": 0.06407752013005386
+        },
+        {
+          "moa": "ATPase inhibitor",
+          "n_drugs": 10,
+          "all_drug_r": 0.11067907196961695,
+          "within_moa_r": 0.1614291625264091,
+          "delta": 0.05075009055679215
+        },
+        {
+          "moa": "ATR kinase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.21328832494787509,
+          "within_moa_r": 0.09049325096366466,
+          "delta": -0.12279507398421043
+        },
+        {
+          "moa": "Abl kinase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.14342093989137897,
+          "within_moa_r": 0.07837183502434697,
+          "delta": -0.065049104867032
+        },
+        {
+          "moa": "Aurora kinase inhibitor",
+          "n_drugs": 21,
+          "all_drug_r": 0.1788487513390451,
+          "within_moa_r": 0.3524139409900904,
+          "delta": 0.17356518965104528
+        },
+        {
+          "moa": "BCL inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.11854480803072949,
+          "within_moa_r": 0.0395845783799586,
+          "delta": -0.07896022965077089
+        },
+        {
+          "moa": "Bcr-Abl kinase inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.15082990459955778,
+          "within_moa_r": 0.08039441527576298,
+          "delta": -0.0704354893237948
+        },
+        {
+          "moa": "Bruton's tyrosine kinase (BTK) inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.0890492626873496,
+          "within_moa_r": 0.02751875906410893,
+          "delta": -0.06153050362324067
+        },
+        {
+          "moa": "CC chemokine receptor antagonist",
+          "n_drugs": 5,
+          "all_drug_r": 0.05510556864329651,
+          "within_moa_r": 0.024882017006281613,
+          "delta": -0.030223551637014894
+        },
+        {
+          "moa": "CDK inhibitor",
+          "n_drugs": 22,
+          "all_drug_r": 0.1412881069493834,
+          "within_moa_r": 0.23613526224827572,
+          "delta": 0.09484715529889232
+        },
+        {
+          "moa": "CHK inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.14976306089461938,
+          "within_moa_r": 0.477214370848666,
+          "delta": 0.32745130995404664
+        },
+        {
+          "moa": "DNA alkylating agent",
+          "n_drugs": 12,
+          "all_drug_r": 0.1719469982601661,
+          "within_moa_r": 0.0757632070323891,
+          "delta": -0.096183791227777
+        },
+        {
+          "moa": "DNA inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.026235850859023586,
+          "within_moa_r": -0.02015021951959079,
+          "delta": -0.04638607037861438
+        },
+        {
+          "moa": "DNA methyltransferase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.14767077336400533,
+          "within_moa_r": 0.12579271803928668,
+          "delta": -0.021878055324718648
+        },
+        {
+          "moa": "DNA polymerase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.12040615855173971,
+          "within_moa_r": 0.02748790749700074,
+          "delta": -0.09291825105473897
+        },
+        {
+          "moa": "DNA synthesis inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.041518158776210984,
+          "within_moa_r": 0.06874828834655448,
+          "delta": 0.0272301295703435
+        },
+        {
+          "moa": "EGFR inhibitor",
+          "n_drugs": 37,
+          "all_drug_r": 0.11762393855071655,
+          "within_moa_r": 0.24543387579928533,
+          "delta": 0.12780993724856876
+        },
+        {
+          "moa": "FGFR inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.261246286989081,
+          "within_moa_r": 0.22724813207189407,
+          "delta": -0.03399815491718691
+        },
+        {
+          "moa": "FLT3 inhibitor",
+          "n_drugs": 9,
+          "all_drug_r": 0.13916031718768201,
+          "within_moa_r": 0.07517128560013132,
+          "delta": -0.06398903158755069
+        },
+        {
+          "moa": "GABA receptor antagonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.14155734252918836,
+          "within_moa_r": 0.06900866057277306,
+          "delta": -0.0725486819564153
+        },
+        {
+          "moa": "HCV inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.0946543377436152,
+          "within_moa_r": 0.08679732213960807,
+          "delta": -0.007857015604007131
+        },
+        {
+          "moa": "HDAC inhibitor",
+          "n_drugs": 23,
+          "all_drug_r": 0.11095328640665239,
+          "within_moa_r": 0.09019483394605032,
+          "delta": -0.020758452460602067
+        },
+        {
+          "moa": "HMGCR inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.12023564994497767,
+          "within_moa_r": 0.36396655331561045,
+          "delta": 0.2437309033706328
+        },
+        {
+          "moa": "HSP inhibitor",
+          "n_drugs": 13,
+          "all_drug_r": 0.12604271954801632,
+          "within_moa_r": 0.31904313950297664,
+          "delta": 0.1930004199549603
+        },
+        {
+          "moa": "IGF-1 inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.14166576572661327,
+          "within_moa_r": -0.01011466755254714,
+          "delta": -0.1517804332791604
+        },
+        {
+          "moa": "IKK inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.15887208280488416,
+          "within_moa_r": 0.20389615304593697,
+          "delta": 0.045024070241052816
+        },
+        {
+          "moa": "JAK inhibitor",
+          "n_drugs": 9,
+          "all_drug_r": 0.1277168176026077,
+          "within_moa_r": -0.03976862028565772,
+          "delta": -0.16748543788826542
+        },
+        {
+          "moa": "KIT inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.2739905208221555,
+          "within_moa_r": 0.2740214278958797,
+          "delta": 3.090707372416235e-05
+        },
+        {
+          "moa": "MDM inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.08279540301056787,
+          "within_moa_r": 0.13984847044363993,
+          "delta": 0.05705306743307206
+        },
+        {
+          "moa": "MEK inhibitor",
+          "n_drugs": 16,
+          "all_drug_r": 0.09128262041270896,
+          "within_moa_r": 0.37463552438527825,
+          "delta": 0.2833529039725693
+        },
+        {
+          "moa": "MET inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.21220053056187407,
+          "within_moa_r": 0.16267262175986005,
+          "delta": -0.04952790880201402
+        },
+        {
+          "moa": "NFkB pathway inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.12195212105814539,
+          "within_moa_r": 0.05289563276373345,
+          "delta": -0.06905648829441194
+        },
+        {
+          "moa": "PARP inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.06753701920396829,
+          "within_moa_r": -0.003044637097659439,
+          "delta": -0.07058165630162773
+        },
+        {
+          "moa": "PDGFR tyrosine kinase receptor inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.27357107784328477,
+          "within_moa_r": 0.38960641225318077,
+          "delta": 0.116035334409896
+        },
+        {
+          "moa": "PI3K inhibitor",
+          "n_drugs": 14,
+          "all_drug_r": 0.1517908929260285,
+          "within_moa_r": 0.08010612644536906,
+          "delta": -0.07168476648065943
+        },
+        {
+          "moa": "PKC inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.11473924486855576,
+          "within_moa_r": 0.006729630817669394,
+          "delta": -0.10800961405088637
+        },
+        {
+          "moa": "PLK inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.14100791968858017,
+          "within_moa_r": 0.4164551645084422,
+          "delta": 0.27544724481986205
+        },
+        {
+          "moa": "Pim kinase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.20755341954463224,
+          "within_moa_r": 0.051448086340928324,
+          "delta": -0.15610533320370393
+        },
+        {
+          "moa": "RAF inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.09495823407189531,
+          "within_moa_r": 0.26251514871223114,
+          "delta": 0.16755691464033584
+        },
+        {
+          "moa": "RNA polymerase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.14283835009657816,
+          "within_moa_r": -0.03949762253287997,
+          "delta": -0.18233597262945814
+        },
+        {
+          "moa": "SRC inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.17111414301769434,
+          "within_moa_r": 0.07361275713968263,
+          "delta": -0.09750138587801171
+        },
+        {
+          "moa": "TGF beta receptor inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.1185890799315874,
+          "within_moa_r": 0.11773161325843574,
+          "delta": -0.0008574666731516606
+        },
+        {
+          "moa": "VEGFR inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.10511807784308513,
+          "within_moa_r": 0.001207761762486816,
+          "delta": -0.10391031608059832
+        },
+        {
+          "moa": "XIAP inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.0855353981115511,
+          "within_moa_r": 0.4143440716042748,
+          "delta": 0.3288086734927237
+        },
+        {
+          "moa": "acetylcholine receptor agonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.1043671605694444,
+          "within_moa_r": 0.04644392165238409,
+          "delta": -0.057923238917060305
+        },
+        {
+          "moa": "acetylcholine receptor antagonist",
+          "n_drugs": 4,
+          "all_drug_r": 0.14263731999746182,
+          "within_moa_r": 0.09354631237682022,
+          "delta": -0.0490910076206416
+        },
+        {
+          "moa": "acetylcholinesterase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.12067358374772201,
+          "within_moa_r": 0.026635566591992357,
+          "delta": -0.09403801715572965
+        },
+        {
+          "moa": "adenosine receptor antagonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.17981993839839852,
+          "within_moa_r": 0.2622598352317655,
+          "delta": 0.08243989683336697
+        },
+        {
+          "moa": "adrenergic receptor agonist",
+          "n_drugs": 10,
+          "all_drug_r": 0.10183815507299072,
+          "within_moa_r": 0.08234143182057872,
+          "delta": -0.019496723252412
+        },
+        {
+          "moa": "adrenergic receptor antagonist",
+          "n_drugs": 13,
+          "all_drug_r": 0.11191947193138395,
+          "within_moa_r": 0.03827200697503756,
+          "delta": -0.07364746495634639
+        },
+        {
+          "moa": "antimalarial agent",
+          "n_drugs": 3,
+          "all_drug_r": 0.23357842063017442,
+          "within_moa_r": -0.03883260695474741,
+          "delta": -0.27241102758492186
+        },
+        {
+          "moa": "antioxidant",
+          "n_drugs": 3,
+          "all_drug_r": 0.0912331422004593,
+          "within_moa_r": -0.04272841617880168,
+          "delta": -0.133961558379261
+        },
+        {
+          "moa": "antiprotozoal agent",
+          "n_drugs": 3,
+          "all_drug_r": 0.07926607336376885,
+          "within_moa_r": 0.018531991895729086,
+          "delta": -0.06073408146803977
+        },
+        {
+          "moa": "antitumor agent",
+          "n_drugs": 3,
+          "all_drug_r": 0.22327694386797658,
+          "within_moa_r": 0.1734432945164294,
+          "delta": -0.04983364935154719
+        },
+        {
+          "moa": "apoptosis stimulant",
+          "n_drugs": 4,
+          "all_drug_r": 0.029722782990795348,
+          "within_moa_r": -0.03346847609412083,
+          "delta": -0.06319125908491618
+        },
+        {
+          "moa": "bacterial 30S ribosomal subunit inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": -0.0063047765305236855,
+          "within_moa_r": -0.03336274938943304,
+          "delta": -0.027057972858909353
+        },
+        {
+          "moa": "bacterial 50S ribosomal subunit inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.026284453527131924,
+          "within_moa_r": 0.008092338878722467,
+          "delta": -0.018192114648409457
+        },
+        {
+          "moa": "bacterial DNA gyrase inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.01753597290411909,
+          "within_moa_r": -0.14780944837981427,
+          "delta": -0.16534542128393337
+        },
+        {
+          "moa": "benzodiazepine receptor agonist",
+          "n_drugs": 5,
+          "all_drug_r": 0.07614699418810515,
+          "within_moa_r": 0.09903692584445228,
+          "delta": 0.02288993165634713
+        },
+        {
+          "moa": "bromodomain inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.046069091146708006,
+          "within_moa_r": 0.36769401468807944,
+          "delta": 0.32162492354137145
+        },
+        {
+          "moa": "calcium channel blocker",
+          "n_drugs": 5,
+          "all_drug_r": 0.17455563876469293,
+          "within_moa_r": 0.022866921349372064,
+          "delta": -0.15168871741532086
+        },
+        {
+          "moa": "carbonic anhydrase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.18574558125373555,
+          "within_moa_r": 0.018655748745601736,
+          "delta": -0.1670898325081338
+        },
+        {
+          "moa": "caspase activator",
+          "n_drugs": 3,
+          "all_drug_r": 0.09918910844933082,
+          "within_moa_r": 0.04560751747524541,
+          "delta": -0.05358159097408541
+        },
+        {
+          "moa": "chelating agent",
+          "n_drugs": 3,
+          "all_drug_r": 0.14610003977459943,
+          "within_moa_r": 0.014164213295776005,
+          "delta": -0.13193582647882343
+        },
+        {
+          "moa": "cyclooxygenase inhibitor",
+          "n_drugs": 14,
+          "all_drug_r": 0.11778705516967712,
+          "within_moa_r": 0.023794067516285804,
+          "delta": -0.09399298765339131
+        },
+        {
+          "moa": "cytochrome P450 inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.10376997349496826,
+          "within_moa_r": 0.00483852538637435,
+          "delta": -0.09893144810859392
+        },
+        {
+          "moa": "dehydrogenase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.12648708426057226,
+          "within_moa_r": 0.0143140703754489,
+          "delta": -0.11217301388512335
+        },
+        {
+          "moa": "dihydrofolate reductase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.14367701821734977,
+          "within_moa_r": 0.14825970618457218,
+          "delta": 0.004582687967222415
+        },
+        {
+          "moa": "dopamine receptor antagonist",
+          "n_drugs": 9,
+          "all_drug_r": 0.10640625606649429,
+          "within_moa_r": 0.028525692383608865,
+          "delta": -0.07788056368288543
+        },
+        {
+          "moa": "estrogen receptor antagonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.1091121849829596,
+          "within_moa_r": -0.046431922621426557,
+          "delta": -0.15554410760438617
+        },
+        {
+          "moa": "exportin antagonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.10458065439686515,
+          "within_moa_r": 0.4026571024398202,
+          "delta": 0.2980764480429551
+        },
+        {
+          "moa": "farnesyltransferase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.17518860656317783,
+          "within_moa_r": 0.4473734292895795,
+          "delta": 0.27218482272640165
+        },
+        {
+          "moa": "focal adhesion kinase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.24714522374538955,
+          "within_moa_r": 0.09612146266223544,
+          "delta": -0.15102376108315413
+        },
+        {
+          "moa": "glucocorticoid receptor agonist",
+          "n_drugs": 14,
+          "all_drug_r": 0.11641944472523388,
+          "within_moa_r": 0.09830665182341662,
+          "delta": -0.018112792901817262
+        },
+        {
+          "moa": "glutamate receptor antagonist",
+          "n_drugs": 5,
+          "all_drug_r": 0.19107110854669962,
+          "within_moa_r": 0.07539257063100323,
+          "delta": -0.11567853791569639
+        },
+        {
+          "moa": "glutamate receptor positive allosteric modulator",
+          "n_drugs": 3,
+          "all_drug_r": -0.19777100233690562,
+          "within_moa_r": 0.05936417145760408,
+          "delta": 0.2571351737945097
+        },
+        {
+          "moa": "glycogen synthase kinase inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.22286060224184598,
+          "within_moa_r": 0.186283613226296,
+          "delta": -0.03657698901554998
+        },
+        {
+          "moa": "histamine receptor antagonist",
+          "n_drugs": 10,
+          "all_drug_r": 0.12048618762579862,
+          "within_moa_r": 0.057035256854160866,
+          "delta": -0.06345093077163774
+        },
+        {
+          "moa": "histone lysine methyltransferase inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.11667125019707181,
+          "within_moa_r": 0.02437605045609251,
+          "delta": -0.0922951997409793
+        },
+        {
+          "moa": "kinesin-like spindle protein inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.09648487942771052,
+          "within_moa_r": 0.04844865959292464,
+          "delta": -0.04803621983478588
+        },
+        {
+          "moa": "mTOR inhibitor",
+          "n_drugs": 26,
+          "all_drug_r": 0.1311548111283609,
+          "within_moa_r": 0.2360860229734185,
+          "delta": 0.1049312118450576
+        },
+        {
+          "moa": "membrane integrity inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.10601914545008188,
+          "within_moa_r": 0.04406286452770135,
+          "delta": -0.061956280922380536
+        },
+        {
+          "moa": "microtubule inhibitor",
+          "n_drugs": 8,
+          "all_drug_r": 0.1080083271605015,
+          "within_moa_r": 0.12228453606875243,
+          "delta": 0.014276208908250931
+        },
+        {
+          "moa": "microtubule stabilizing agent",
+          "n_drugs": 4,
+          "all_drug_r": 0.04119301984204672,
+          "within_moa_r": 0.09452459415381367,
+          "delta": 0.05333157431176695
+        },
+        {
+          "moa": "opioid receptor agonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.054733689742498114,
+          "within_moa_r": 0.09376000889017538,
+          "delta": 0.03902631914767727
+        },
+        {
+          "moa": "opioid receptor antagonist",
+          "n_drugs": 4,
+          "all_drug_r": 0.06185448051081725,
+          "within_moa_r": 0.03387702434301398,
+          "delta": -0.027977456167803276
+        },
+        {
+          "moa": "other antibiotic",
+          "n_drugs": 4,
+          "all_drug_r": 0.08159364940970297,
+          "within_moa_r": -0.08964378646351887,
+          "delta": -0.17123743587322182
+        },
+        {
+          "moa": "p38 MAPK inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.13152236588958469,
+          "within_moa_r": 0.0867000888244563,
+          "delta": -0.04482227706512838
+        },
+        {
+          "moa": "phosphodiesterase inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.07909673345675433,
+          "within_moa_r": -0.04314770528221374,
+          "delta": -0.12224443873896806
+        },
+        {
+          "moa": "potassium channel blocker",
+          "n_drugs": 4,
+          "all_drug_r": 0.12369832561880546,
+          "within_moa_r": -0.006225835272320509,
+          "delta": -0.12992416089112596
+        },
+        {
+          "moa": "progesterone receptor agonist",
+          "n_drugs": 4,
+          "all_drug_r": 0.10586786940276681,
+          "within_moa_r": 0.06684856631434785,
+          "delta": -0.03901930308841896
+        },
+        {
+          "moa": "proteasome inhibitor",
+          "n_drugs": 7,
+          "all_drug_r": 0.02579625603736646,
+          "within_moa_r": 0.5364704554874693,
+          "delta": 0.5106741994501028
+        },
+        {
+          "moa": "protein synthesis inhibitor",
+          "n_drugs": 14,
+          "all_drug_r": 0.14232817359661878,
+          "within_moa_r": 0.19227649175320602,
+          "delta": 0.049948318156587235
+        },
+        {
+          "moa": "protein tyrosine kinase inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.08813992073549963,
+          "within_moa_r": 0.033356540138925556,
+          "delta": -0.054783380596574074
+        },
+        {
+          "moa": "retinoid receptor agonist",
+          "n_drugs": 5,
+          "all_drug_r": 0.13138001106283445,
+          "within_moa_r": -0.07148387236929822,
+          "delta": -0.20286388343213269
+        },
+        {
+          "moa": "rho associated kinase inhibitor",
+          "n_drugs": 5,
+          "all_drug_r": 0.0908724827592948,
+          "within_moa_r": 0.019041990439167107,
+          "delta": -0.0718304923201277
+        },
+        {
+          "moa": "ribonucleotide reductase inhibitor",
+          "n_drugs": 6,
+          "all_drug_r": 0.0697936056605235,
+          "within_moa_r": -0.061085825408909084,
+          "delta": -0.1308794310694326
+        },
+        {
+          "moa": "serotonin receptor agonist",
+          "n_drugs": 3,
+          "all_drug_r": 0.24968872641701598,
+          "within_moa_r": 0.09870253537472683,
+          "delta": -0.15098619104228916
+        },
+        {
+          "moa": "serotonin receptor antagonist",
+          "n_drugs": 8,
+          "all_drug_r": 0.058181165562710385,
+          "within_moa_r": 0.006278300559792142,
+          "delta": -0.05190286500291824
+        },
+        {
+          "moa": "sodium channel blocker",
+          "n_drugs": 6,
+          "all_drug_r": 0.11590002912493895,
+          "within_moa_r": 0.04859227829782017,
+          "delta": -0.06730775082711879
+        },
+        {
+          "moa": "sterol demethylase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.13723934911502708,
+          "within_moa_r": 0.05994016830874418,
+          "delta": -0.0772991808062829
+        },
+        {
+          "moa": "thymidylate synthase inhibitor",
+          "n_drugs": 4,
+          "all_drug_r": 0.11962959355371276,
+          "within_moa_r": 0.12716476769983492,
+          "delta": 0.007535174146122162
+        },
+        {
+          "moa": "topoisomerase inhibitor",
+          "n_drugs": 22,
+          "all_drug_r": 0.1213797322278518,
+          "within_moa_r": 0.2676411589926151,
+          "delta": 0.14626142676476328
+        },
+        {
+          "moa": "tubulin polymerization inhibitor",
+          "n_drugs": 22,
+          "all_drug_r": 0.1343146363302664,
+          "within_moa_r": 0.3421474148195374,
+          "delta": 0.207832778489271
+        },
+        {
+          "moa": "tyrosine kinase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.09736835672699524,
+          "within_moa_r": 0.01750569544258966,
+          "delta": -0.07986266128440558
+        },
+        {
+          "moa": "tyrosine phosphatase inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.09082231869210992,
+          "within_moa_r": -0.011040172462269834,
+          "delta": -0.10186249115437976
+        },
+        {
+          "moa": "ubiquitin specific protease inhibitor",
+          "n_drugs": 3,
+          "all_drug_r": 0.18939171489266995,
+          "within_moa_r": -0.02616731704344445,
+          "delta": -0.2155590319361144
+        },
+        {
+          "moa": "vitamin D receptor agonist",
+          "n_drugs": 4,
+          "all_drug_r": 0.1760991444288924,
+          "within_moa_r": 0.07903018597387576,
+          "delta": -0.09706895845501665
+        }
+      ]
+    }
+  },
+  "gate": {
+    "focus_moas": [
+      "EGFR inhibitor",
+      "MEK inhibitor"
+    ],
+    "checks": [
+      {
+        "dataset": "ctrpv2",
+        "moa": "EGFR inhibitor",
+        "delta": 0.3712079470166767,
+        "pass": true
+      },
+      {
+        "dataset": "beataml",
+        "moa": "EGFR inhibitor",
+        "delta": -0.044640465580228605,
+        "pass": false
+      },
+      {
+        "dataset": "prism",
+        "moa": "EGFR inhibitor",
+        "delta": 0.12780993724856876,
+        "pass": true
+      },
+      {
+        "dataset": "prism",
+        "moa": "MEK inhibitor",
+        "delta": 0.2833529039725693,
+        "pass": true
+      }
+    ],
+    "summary": "3/4 checks pass"
+  }
+}

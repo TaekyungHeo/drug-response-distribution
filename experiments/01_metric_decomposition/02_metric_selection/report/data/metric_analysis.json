@@ -1,0 +1,56 @@
+{
+  "ci_width": {
+    "r_p": {
+      "median": 0.089932,
+      "iqr": 0.040008,
+      "n_drugs_folds": 117
+    },
+    "r_s": {
+      "median": 0.100419,
+      "iqr": 0.033042,
+      "n_drugs_folds": 117
+    },
+    "tau": {
+      "median": 0.082375,
+      "iqr": 0.014248,
+      "n_drugs_folds": 117
+    },
+    "ndcg5": {
+      "median": 0.191354,
+      "iqr": 0.095011,
+      "n_drugs_folds": 117
+    },
+    "r2": {
+      "median": 0.374846,
+      "iqr": 0.698339,
+      "n_drugs_folds": 117
+    }
+  },
+  "pearson_spearman_ci_ratio": 0.8956,
+  "inter_metric_spearman": {
+    "r_p_vs_r_s": 0.9718,
+    "r_p_vs_tau": 0.9739,
+    "r_p_vs_ndcg5": 0.4969,
+    "r_p_vs_r2": 0.0369,
+    "r_s_vs_tau": 0.9983,
+    "r_s_vs_ndcg5": 0.4789,
+    "r_s_vs_r2": 0.0555,
+    "tau_vs_ndcg5": 0.49,
+    "tau_vs_r2": 0.0468,
+    "ndcg5_vs_r2": 0.1279
+  },
+  "predictor_2a": {
+    "r_p": {"median": 0.0, "n": 117},
+    "r_s": {"median": 0.0, "n": 117},
+    "tau": {"median": 0.0, "n": 117},
+    "ndcg5": {"median": 0.536747, "n": 117},
+    "r2": {"median": 0.0, "n": 117}
+  },
+  "n_drugs_per_fold": {
+    "0": 24,
+    "1": 24,
+    "2": 24,
+    "3": 23,
+    "4": 22
+  }
+}

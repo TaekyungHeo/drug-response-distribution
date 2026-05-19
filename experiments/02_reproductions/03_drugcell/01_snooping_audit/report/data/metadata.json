@@ -1,0 +1,11 @@
+{
+  "experiment": "drugcell_snooping_audit",
+  "git_hash": "55d32a9",
+  "completed_at": "2026-05-19T00:00:00Z",
+  "model": "OmniCancerV1",
+  "data": "GDSC2 IC50 (proxy; full DrugCell AUC data not in repo)",
+  "n_seeds": 1,
+  "n_epochs": 2,
+  "test_frac": 0.05,
+  "snooping_mechanism": "train_drugcell.py:140-142 tracks best_model by test_corr; drugcell_val.txt never loaded"
+}

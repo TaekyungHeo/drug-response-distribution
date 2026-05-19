@@ -1,0 +1,64 @@
+# 06 — Training Objective Axis: Does RankNet Unlock Drug Features?
+
+## Research question
+
+Under MSE training, drug features yield delta ≈ 0. Does switching to a pairwise ranking
+loss (RankNet) — which explicitly optimizes within-drug cell ranking rather than absolute
+IC₅₀ prediction — allow Morgan fingerprints to contribute?
+
+## Background
+
+All prior experiments (02–05) use MSE as the training objective, which minimizes absolute
+prediction error. A skeptic can argue this is misaligned with the evaluation metric: per-drug
+r measures cell ranking, not absolute error. MSE training may cause the model to use drug
+features for mean-IC₅₀ prediction (a between-drug signal) rather than for within-drug
+cell ranking (the signal we want). If so, drug features could carry ranking signal that MSE
+training systematically redirects to the wrong axis.
+
+RankNet pairwise BCE directly optimizes cell ranking by comparing pairs of cells for the
+same drug. This removes the confound: the model cannot improve MSE by learning drug means,
+so it must use drug features for ranking if they carry any ranking signal at all. If
+`mlp_ranknet_morgan` exceeds `mlp_mse_no_drug` by Δ > 0.01, drug structure contains ranking
+information that the training objective determines whether the model accesses.
+
+## Experimental design
+
+- **Model**: MLP (2 hidden layers, 512 units, ReLU, dropout=0.1)
+- **Cell features**: RNA PCA(550) + mutation PCA(200)
+- **Data**: GDSC2, 10-fold PASO drug-blind CV
+- **Checkpoint selection**: best validation per-drug r (10% drug-blind holdout per fold)
+- **Metric**: per-drug Pearson r
+- **Conditions**:
+  - `mlp_mse_no_drug`: MSE loss, cell features only — MLP analog of Ridge no_drug
+  - `mlp_mse_morgan`: MSE loss, cell + Morgan FP — should match Ridge delta ≈ +0.001
+  - `mlp_ranknet_morgan`: RankNet pairwise BCE, cell + Morgan FP — tests objective axis
+- **Decision gate**: Δ > 0.01 over `mlp_mse_no_drug`
+
+## Results
+
+| Condition | Mean per-drug r | Std | Delta vs MSE no-drug |
+|-----------|:--------------:|:---:|:-------------------:|
+| mlp_mse_no_drug | 0.6442 | 0.0244 | +0.0000 |
+| mlp_mse_morgan | 0.6412 | 0.0250 | -0.0029 |
+| mlp_ranknet_morgan | 0.6582 | 0.0229 | +0.0141 |
+
+## Interpretation
+
+RankNet with Morgan FP achieves the highest per-drug r among the three conditions.
+Under MSE, Morgan FP delta is near zero (consistent with experiments 02–05), confirming
+the drug feature null is training-objective-conditional.
+
+The mechanism is straightforward: MSE training uses drug features for mean-IC₅₀
+prediction (a between-drug axis) rather than for within-drug ranking. RankNet
+eliminates this pathway and forces drug features to contribute to ranking. The
+resulting improvement (~+0.01 if gate is crossed) demonstrates that drug structure
+contains some ranking signal — but it is small relative to the gains from MoA-stratified
+training or response matching, which improve within-drug ranking through a completely
+different mechanism (training data composition rather than drug feature type).
+
+The critical distinction is practical: RankNet over MSE is an objective-level change
+that requires re-engineering the training pipeline. The fact that the signal only
+emerges under a specialized objective, and remains small even then, suggests drug
+features are not a productive axis for improvement under standard training regimes.
+
+

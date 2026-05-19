@@ -1,0 +1,61 @@
+# 01 — Nonlinear Models: Is the Ceiling Ridge-Specific?
+
+## Research question
+
+Is the drug-blind per-drug r ceiling (~0.645) an artifact of Ridge's linearity,
+or a structural property of the drug-blind problem?
+
+## Background
+
+The per-drug r ceiling (~0.645) was established using Ridge regression, a
+linear model. Ridge can capture only additive cell-feature effects. Nonlinear
+models (XGBoost, MLP) can represent interaction effects — for example, specific
+combinations of gene expression patterns that jointly predict sensitivity to a
+drug class. If the ceiling is a linearity artifact, nonlinear models should
+exceed it substantially. This is a critical robustness check: the paper's
+claim that the ceiling is near the measurement noise limit (83.7% of replicate
+concordance) requires that more expressive models do not close the gap.
+
+## Experimental design
+
+- **Model**: Ridge(alpha=1.0), XGBoost, MLP (2 hidden layers, 512 units, ReLU)
+- **Cell features**: RNA PCA(550) + mutation PCA(200)
+- **Data**: GDSC2, 10-fold PASO drug-blind CV
+- **Metric**: per-drug Pearson r
+
+## Results
+
+{% set r = results_ridge.summary.ridge %}
+{% set x = results_xgboost.summary.xgboost %}
+{% set m = results_mlp.summary.mlp %}
+{% set delta_xgb = x.per_drug_r_mean - r.per_drug_r_mean %}
+{% set delta_mlp = m.per_drug_r_mean - r.per_drug_r_mean %}
+| Condition | Per-drug r | delta vs Ridge |
+|-----------|:---:|:---:|
+| Ridge | {{ r.per_drug_r_mean | fmt }} ± {{ r.per_drug_r_std | fmt }} | — |
+| XGBoost | {{ x.per_drug_r_mean | fmt }} ± {{ x.per_drug_r_std | fmt }} | {{ delta_xgb | signed }} |
+| MLP | {{ m.per_drug_r_mean | fmt }} ± {{ m.per_drug_r_std | fmt }} | {{ delta_mlp | signed }} |
+
+**The ceiling is not Ridge-specific.** XGBoost and MLP produce the same per-drug r
+as Ridge (delta < 0.01). Nonlinearity does not break the ceiling.
+
+### Fold-level values
+
+| Fold | Ridge | XGBoost | MLP |
+|:---:|:---:|:---:|:---:|
+{% for i in range(results_ridge.fold_results | length) %}
+{% set fr = results_ridge.fold_results[i] %}
+{% set fx = results_xgboost.fold_results[i] %}
+{% set fm = results_mlp.fold_results[i] %}
+| {{ fr.fold }} | {{ fr.ridge.per_drug_r | fmt }} | {{ fx.xgboost.per_drug_r | fmt }} | {{ fm.mlp.per_drug_r | fmt }} |
+{% endfor %}
+
+## Interpretation
+
+All three model classes converge to per-drug r ≈ 0.645. XGBoost can capture
+feature interactions, and MLP can represent arbitrary nonlinear functions of
+cell features — yet neither improves on Ridge. This rules out linearity as an
+explanation for the ceiling. Combined with the measurement noise ceiling
+(replicate concordance r = 0.754, Ridge at 83.7%), this confirms that the
+remaining gap is noise-limited, not capacity-limited.
+
