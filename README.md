@@ -1,6 +1,8 @@
-# Training distribution, not drug representation, limits cancer drug sensitivity prediction
+# Training distribution determines the ceiling of drug-blind cancer sensitivity prediction
 
-Precision oncology requires predicting which drugs will suppress a specific tumor from its molecular profile. Drug-blind sensitivity prediction has plateaued despite increasingly complex drug representations. We show that this stagnation reflects a metric artifact rather than a representational bottleneck. Global Pearson *r* is dominated by between-drug potency differences that a trivial drug-mean predictor captures without any cell-specific learning. Per-drug Pearson *r*, which isolates within-drug cell ranking, reveals that no drug encoding improves over cell-only features across four independent datasets. A controlled experiment channeling mechanism-of-action identity as either a drug feature or a training-distribution constraint identifies the cause. Supplying MoA as a feature yields negligible benefit, whereas using it to stratify training raises per-drug *r* substantially for targeted kinase inhibitors. Mechanism-stratified training and response matching from pilot observations provide two deployable strategies that together recover the principal sources of predictive gain.
+[![arXiv](https://img.shields.io/badge/arXiv-2605.20885-b31b1b.svg)](https://arxiv.org/abs/2605.20885)
+
+Precision oncology requires predicting which drugs will suppress a specific tumor from its molecular profile, but drug-blind sensitivity prediction has plateaued despite increasingly complex drug representations. Here we show that this stagnation reflects a metric artifact rather than a representational bottleneck. The standard benchmark, global Pearson *r*, is dominated by between-drug potency differences that a trivial drug-mean predictor captures without any cell-specific learning. Per-drug Pearson *r*, which isolates within-drug cell ranking, reveals that no drug encoding improves over cell-only features across four independent datasets. A controlled experiment channeling mechanism-of-action identity as either a drug feature or a training-distribution constraint identifies the cause. Supplying MoA as a feature yields negligible benefit, whereas using it to stratify training raises per-drug *r* substantially for targeted kinase inhibitors, because pan-cancer co-training suppresses pathway-specific sensitivity signals. Mechanism-stratified training and response matching from pilot observations provide two deployable strategies that together recover the principal sources of predictive gain in drug-blind sensitivity prediction.
 
 ---
 
@@ -37,7 +39,16 @@ Each experiment directory is self-contained: it has its own script(s) and a `rep
 
 ## Citation
 
-> [Paper citation will appear here after publication.]
+```bibtex
+@article{heo2026training,
+  title   = {Training distribution determines the ceiling of drug-blind cancer sensitivity prediction},
+  author  = {Heo, Taekyung},
+  journal = {arXiv preprint arXiv:2605.20885},
+  year    = {2026}
+}
+```
+
+Heo, T. Training distribution determines the ceiling of drug-blind cancer sensitivity prediction. *arXiv* 2605.20885 (2026).
 
 ---
 
